@@ -1,0 +1,67 @@
+﻿<window id="145">
+    <defaultcontrol>11</defaultcontrol>
+    <include>Fade_In_WindowOpen</include>
+    <include>Fade_Out_WindowClose</include>
+    <coordinates>
+        <system>1</system>
+        <posx>585</posx>
+        <posy>52</posy>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>750</width>
+            <height>218</height>
+            <include>Zoom_In_WindowOpen</include>
+            <include>Zoom_Out_WindowClose</include>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>750</width>
+                <height>218</height>
+                <texture>dialogs\dialog-background-small.png</texture>
+            </control>
+            <control type="label" id="10">
+                <description>Dialog header</description>
+                <posx>90</posx>
+                <posy>68</posy>
+                <width>435</width>
+                <height>30</height>
+                <align>left</align>
+                <font>Medium</font>
+                <textcolor>Text</textcolor>
+            </control>
+            <control type="label" id="12">
+                <description>Slider Value</description>
+                <posx>660</posx>
+                <posy>68</posy>
+                <width>435</width>
+                <height>30</height>
+                <align>right</align>
+                <font>Medium</font>
+                <textcolor>Text</textcolor>
+            </control>
+            <control type="slider" id="11">
+                <description>Slider</description>
+                <posx>75</posx>
+                <posy>98</posy>
+                <width>600</width>
+                <height>48</height>
+                <aligny>top</aligny>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <sliderwidth>400</sliderwidth>
+                <sliderheight>32</sliderheight>
+                <texturesliderbar>controls\slider_large_back.png</texturesliderbar>
+                <textureslidernib>controls\slider_nib.png</textureslidernib>
+                <textureslidernibfocus>controls\slider_nib_focus.png</textureslidernibfocus>
+                <onup>11</onup>
+                <ondown>11</ondown>
+                <onleft>11</onleft>
+                <onright>11</onright>
+            </control>
+        </control>
+        <include>Debug</include>
+    </controls>
+</window>

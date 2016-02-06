@@ -1,0 +1,1115 @@
+﻿<includes>
+    <include name="Snaps_View">
+        <control type="list" id="51">
+            <posx>0</posx>
+            <posy>297</posy>
+            <width>1920</width>
+            <height>486</height>
+            <onup>9000</onup>
+            <ondown>ActivateWindow(1201)</ondown>
+            <viewtype label="50139">list</viewtype>
+            <focusposition>2</focusposition>
+            <orientation>horizontal</orientation>
+            <scrolltime>250</scrolltime>
+            <itemlayout height="486" width="384">
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>384</width>
+                    <height>486</height>
+                    <font>Default</font>
+                    <align>center</align>
+                    <info>ListItem.label</info>
+                    <visible>false</visible>
+                </control>
+            </itemlayout>
+            <focusedlayout height="486" width="384">
+                <control type="label">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>384</width>
+                    <height>486</height>
+                    <font>Default</font>
+                    <align>center</align>
+                    <info>ListItem.label</info>
+                    <visible>false</visible>
+                </control>
+            </focusedlayout>
+        </control>
+        <control type="group">
+            <posx>960</posx>
+            <posy>297</posy>
+            <visible>Control.IsVisible(51)</visible>
+            <!-- Snaps View Scroller Icons - Counter Clockwise Mothion -->
+            <control type="group" id="5101">
+                <visible>Container(51).OnPrevious</visible>
+                <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
+                <!-- Show Far Left Icon On Move Previous -->
+                <control type="group">
+                    <posx>-1293</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(-2).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnPrevious</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="fade" start="0" end="100" time="250" />
+                            <effect type="slide" start="0,0" end="327,0" time="250" />
+                            <effect type="rotate" start="-6" end="4" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="4" end="4" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(-2).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>33</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(-2).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Move Icon 1 To Icon 2 Position On Move Previous -->
+                <control type="group">
+                    <posx>-966</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(-1).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnPrevious</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="slide" start="0,0" end="375,0" time="250" />
+                            <effect type="rotate" start="4" end="-6" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="4" end="4" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(-1).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(-1).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Move Icon 2 To Icon 3 Position On Move Previous -->
+                <control type="group">
+                    <posx>-591</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnPrevious</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="zoom" start="0,0,333,384" end="381,-60,420,486" time="250" />
+                            <effect type="rotate" start="-6" end="3" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="-6" end="-6" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(0).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(0).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Move Icon 3 To Icon 4 Position On Move Previous -->
+                <control type="group">
+                    <posx>-210</posx>
+                    <posy>0</posy>
+                    <width>420</width>
+                    <height>486</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>420</width>
+                        <height>486</height>
+                        <visible>Container(51).OnPrevious</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="zoom" start="0,0,420,486" end="501,60,333,384" time="250" />
+                            <effect type="rotate" start="3" end="-7" center="210,243" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="3" end="3" time="250" center="210,243" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>420</width>
+                            <height>486</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(1).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>44</posx>
+                            <posy>399</posy>
+                            <width>333</width>
+                            <height>105</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(1).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Move Icon 4 To Icon 5 Position On Move Previous -->
+                <control type="group">
+                    <posx>291</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnPrevious</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="slide" start="0,0" end="375,0" time="250" />
+                            <effect type="rotate" start="-7" end="8" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="-7" end="-7" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(2).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(2).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Hide Far Right Icon On Move Previous -->
+                <control type="group">
+                    <posx>666</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnPrevious</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="slide" start="0,0" end="294,0" time="250" />
+                            <effect type="rotate" start="8" end="-2" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="8" end="8" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(3).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(3).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <!-- Snaps View Scroller Icons - Clockwise Mothion -->
+            <control type="group" id="5102">
+                <visible>Container(51).OnNext</visible>
+                <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
+                <!-- Hide Far Left Icon On Move Next -->
+                <control type="group">
+                    <posx>-966</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(-3).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnNext</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="slide" start="0,0" end="-327,0" time="250" />
+                            <effect type="rotate" start="4" end="6" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="4" end="4" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(-3).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(-3).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Move Icon 2 To Icon 1 Position On Move Next -->
+                <control type="group">
+                    <posx>-591</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(-2).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnNext</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="slide" start="0,0" end="-375,0" time="250" />
+                            <effect type="rotate" start="-6" end="4" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="-6" end="-6" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(-2).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(-2).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Move Icon 3 To Icon 2 Position On Move Next -->
+                <control type="group">
+                    <posx>-210</posx>
+                    <posy>0</posy>
+                    <width>420</width>
+                    <height>486</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(-1).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>420</width>
+                        <height>486</height>
+                        <visible>Container(51).OnNext</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="zoom" start="0,0,420,486" end="-381,60,333,384" time="250" />
+                            <effect type="rotate" start="3" end="-6" center="210,243" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="3" end="3" time="250" center="210,243" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>420</width>
+                            <height>486</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(-1).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>44</posx>
+                            <posy>399</posy>
+                            <width>333</width>
+                            <height>105</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(-1).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Move Icon 4 To Icon 3 Position On Move Previous -->
+                <control type="group">
+                    <posx>291</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnNext</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="zoom" start="0,0,333,384" end="-501,-60,420,486" time="250" />
+                            <effect type="rotate" start="-7" end="3" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="-7" end="-7" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(0).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(0).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Move Icon 5 To Icon 4 Position On Move Previous -->
+                <control type="group">
+                    <posx>666</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnNext</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="slide" start="0,0" end="-375,0" time="250" />
+                            <effect type="rotate" start="8" end="-7" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="8" end="8" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(1).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(1).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+                <!-- Show Far Right Icon On Move Next -->
+                <control type="group">
+                    <posx>960</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <visible>Container(51).OnNext</visible>
+                        <animation type="Hidden" reversible="false">
+                            <effect type="fade" start="0" end="100" time="250" />
+                            <effect type="slide" start="0,0" end="-294,0" time="250" />
+                            <effect type="rotate" start="-2" end="8" center="166,192" time="250" />
+                        </animation>
+                        <animation effect="rotate" start="8" end="8" time="250" center="166,192" reversible="false">Visible</animation>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(2).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(2).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <!-- Snaps View Scroller Static Icons -->
+            <control type="group" id="5100">
+                <visible>!Control.IsVisible(5101)  + !Control.IsVisible(5102)</visible>
+                <!-- Icon 1 -->
+                <control type="group">
+                    <posx>-966</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(-2).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(-2).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(-2).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                        <animation type="WindowOpen" reversible="false">
+                            <effect type="fade" start="0" end="100" time="200" />
+                            <effect type="zoom" start="200" end="100" center="auto" time="200" />
+                            <effect type="rotate" start="-6" end="4" center="166,192" time="200" />
+                        </animation>
+                        <animation type="WindowClose" reversible="false">
+                            <effect type="fade" start="100" end="0" time="200" />
+                            <effect type="zoom" start="100" end="200" center="auto" time="200" />
+                            <effect type="rotate" start="4" end="-6" center="166,192" time="200" />
+                        </animation>
+                    </control>
+                </control>
+                <!-- Icon 2 -->
+                <control type="group">
+                    <posx>-591</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(-1).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(-1).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(-1).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                        <animation type="WindowOpen" reversible="false">
+                            <effect type="fade" start="0" end="100" time="200" delay="100" />
+                            <effect type="zoom" start="200" end="100" center="auto" time="200" delay="100" />
+                            <effect type="rotate" start="4" end="-6" center="166,192" time="200" delay="100" />
+                        </animation>
+                        <animation type="WindowClose" reversible="false">
+                            <effect type="fade" start="100" end="0" time="200" delay="100" />
+                            <effect type="zoom" start="100" end="200" center="auto" time="200" delay="100" />
+                            <effect type="rotate" start="-6" end="4" center="166,192" time="200" delay="100" />
+                        </animation>
+                    </control>
+                </control>
+                <!-- Icon 3 -->
+                <control type="group">
+                    <posx>-210</posx>
+                    <posy>0</posy>
+                    <width>420</width>
+                    <height>486</height>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>420</width>
+                        <height>486</height>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>420</width>
+                            <height>486</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(0).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>44</posx>
+                            <posy>44</posy>
+                            <width>333</width>
+                            <height>333</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>44</posx>
+                            <posy>399</posy>
+                            <width>333</width>
+                            <height>105</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(0).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                        <animation type="WindowOpen" reversible="false">
+                            <effect type="fade" start="0" end="100" time="200" delay="200" />
+                            <effect type="zoom" start="200" end="100" center="auto" time="200" delay="200" />
+                            <effect type="rotate" start="-7" end="3" center="206,254" time="200" delay="200" />
+                        </animation>
+                        <animation type="WindowClose" reversible="false">
+                            <effect type="fade" start="100" end="0" time="200" delay="200" />
+                            <effect type="zoom" start="100" end="200" center="auto" time="200" delay="200" />
+                            <effect type="rotate" start="3" end="-7" center="206,254" time="200" delay="200" />
+                        </animation>
+                    </control>
+                </control>
+                <!-- Icon 4 -->
+                <control type="group">
+                    <posx>291</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(1).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(1).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                        <animation type="WindowOpen" reversible="false">
+                            <effect type="fade" start="0" end="100" time="200" delay="300" />
+                            <effect type="zoom" start="200" end="100" center="auto" time="200" delay="300" />
+                            <effect type="rotate" start="3" end="-7" center="166,192" time="200" delay="300" />
+                        </animation>
+                        <animation type="WindowClose" reversible="false">
+                            <effect type="fade" start="100" end="0" time="200" delay="300" />
+                            <effect type="zoom" start="100" end="200" center="auto" time="200" delay="300" />
+                            <effect type="rotate" start="-7" end="3" center="166,192" time="200" delay="300" />
+                        </animation>
+                    </control>
+                </control>
+                <!-- Icon 5 -->
+                <control type="group">
+                    <posx>666</posx>
+                    <posy>60</posy>
+                    <width>333</width>
+                    <height>384</height>
+                    <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>333</width>
+                        <height>384</height>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>333</width>
+                            <height>384</height>
+                            <texture>thumb-polaroid.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <aspectratio align="center">scale</aspectratio>
+                            <info>Container(51).ListItem(2).Icon</info>
+                            <texture diffuse="thumb-polaroid-diffuse.png" />
+                        </control>
+                        <control type="image">
+                            <posx>34</posx>
+                            <posy>34</posy>
+                            <width>264</width>
+                            <height>254</height>
+                            <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>34</posx>
+                            <posy>308</posy>
+                            <width>264</width>
+                            <height>60</height>
+                            <align>center</align>
+                            <info>Container(51).ListItem(2).Label</info>
+                            <font>Snaps_View_Photo_Name</font>
+                            <textcolor>FF000000</textcolor>
+                            <scroll>true</scroll>
+                        </control>
+                        <animation type="WindowOpen" reversible="false">
+                            <effect type="fade" start="0" end="100" time="200" delay="400" />
+                            <effect type="zoom" start="200" end="100" center="auto" time="200" delay="400" />
+                            <effect type="rotate" start="-2" end="8" center="166,192" time="200" delay="400" />
+                        </animation>
+                        <animation type="WindowClose" reversible="false">
+                            <effect type="fade" start="100" end="0" time="200" delay="400" />
+                            <effect type="zoom" start="100" end="200" center="auto" time="200" delay="400" />
+                            <effect type="rotate" start="8" end="-2" center="166,192" time="200" delay="400" />
+                        </animation>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
+</includes>

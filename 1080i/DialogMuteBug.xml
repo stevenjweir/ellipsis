@@ -1,0 +1,32 @@
+﻿<window id="113">
+    <defaultcontrol>-</defaultcontrol>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+    <controls>
+        <control type="group">
+            <visible>!Window.IsActive(startup)</visible>
+            <posx>1713</posx>
+            <posy>0</posy>
+            <animation effect="slide" start="207" end="0" time="300" tween="sine" easing="out" reversible="false">WindowOpen</animation>
+            <animation effect="slide" start="0" end="207" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>351</width>
+                <height>80</height>
+                <texture>dialogs\tab-topright-volume-red.png</texture>
+            </control>
+            <control type="image">
+                <posx>112</posx>
+                <posy>12</posy>
+                <width>34</width>
+                <height>33</height>
+                <texture>dialogs\volume-mute-icon.png</texture>
+            </control>
+        </control>
+        <include>Debug</include>
+    </controls>
+</window>

@@ -1,0 +1,1000 @@
+﻿<includes>
+    <include name="Library_Info">
+        <control type="group">
+            <!-- Show Case Views -->
+            <control type="group">
+                <visible>Control.IsVisible(50)</visible>
+                <control type="group">
+                    <visible>Container.Content(Episodes)</visible>
+                    <posx>544</posx>
+                    <posy>576</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>830</width>
+                        <height>348</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>772</width>
+                            <height>348</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <description>Episode And Title</description>
+                            <posx>28</posx>
+                            <posy>15</posy>
+                            <width>772</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Episode,,. ][/B]$INFO[ListItem.Title]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Aired</description>
+                            <posx>28</posx>
+                            <posy>70</posy>
+                            <width>772</width>
+                            <height>52</height>
+                            <font>Library_Light_20</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Date,Aired: ]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="textbox">
+                            <posx>28</posx>
+                            <posy>112</posy>
+                            <width>772</width>
+                            <height>108</height>
+                            <font>Library_Normal_20</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Plot]</label>
+                            <align>left</align>
+                            <autoscroll>False</autoscroll>
+                        </control>
+                        <control type="image">
+                            <posx>28</posx>
+                            <posy>237</posy>
+                            <width>216</width>
+                            <height>34</height>
+                            <texture>$INFO[ListItem.StarRating]</texture>
+                        </control>
+                        <control type="label">
+                            <posx>750</posx>
+                            <posy>238</posy>
+                            <width>644</width>
+                            <height>30</height>
+                            <font>Library_Normal_14</font>
+                            <textcolor>Text</textcolor>
+                            <label>$LOCALIZE[50065]</label>
+                            <align>right</align>
+                            <aligny>bottom</aligny>
+                        </control>
+                        <control type="image">
+                            <posx>765</posx>
+                            <posy>237</posy>
+                            <width>33</width>
+                            <height>33</height>
+                            <texture>menu\library\info-icon.png</texture>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>288</posy>
+                            <width>830</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Container.Content(Seasons)</visible>
+                    <posx>597</posx>
+                    <posy>634</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>726</width>
+                        <height>291</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>669</width>
+                            <height>291</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <description>TV Show</description>
+                            <posx>28</posx>
+                            <posy>21</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_28</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.TVShowTitle][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Season</description>
+                            <posx>28</posx>
+                            <posy>75</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Normal_43</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Watched</description>
+                            <posx>28</posx>
+                            <posy>171</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Normal_24</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), of , EPISODES WATCHED]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>228</posy>
+                            <width>740</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Container.Content(TVShows)</visible>
+                    <posx>597</posx>
+                    <posy>634</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>726</width>
+                        <height>291</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>669</width>
+                            <height>291</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="image">
+                            <posx>255</posx>
+                            <posy>15</posy>
+                            <width>216</width>
+                            <height>34</height>
+                            <texture>$INFO[ListItem.StarRating]</texture>
+                        </control>
+                        <control type="label">
+                            <description>TV Show</description>
+                            <posx>28</posx>
+                            <posy>64</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_35</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.TVShowTitle][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Watched</description>
+                            <posx>28</posx>
+                            <posy>150</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Normal_22</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), of , EPISODES WATCHED]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>228</posy>
+                            <width>726</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Container.Content(Movies)</visible>
+                    <posx>597</posx>
+                    <posy>634</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>726</width>
+                        <height>291</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>669</width>
+                            <height>291</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="image">
+                            <posx>255</posx>
+                            <posy>21</posy>
+                            <width>216</width>
+                            <height>34</height>
+                            <texture>$INFO[ListItem.StarRating]</texture>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>78</posy>
+                            <width>669</width>
+                            <height>42</height>
+                            <font>Library_Light_28</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Title][/B]$INFO[ListItem.Year, (,)]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>148</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_20</font>
+                            <textcolor>Text</textcolor>
+                            <label>[UPPERCASE]$INFO[ListItem.Director][/UPPERCASE]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>224</posy>
+                            <width>726</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Container.Content(MusicVideos)</visible>
+                    <posx>597</posx>
+                    <posy>634</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>726</width>
+                        <height>291</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>669</width>
+                            <height>291</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>15</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_35</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Title][/B]$INFO[ListItem.Duration, - (,)]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>87</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Artist][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>150</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Album][/B]$INFO[ListItem.Year, (,)]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>219</posy>
+                            <width>726</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.IsVisible(50)</visible>
+                    <visible>!Container.Content(MusicVideos) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Movies) + !Container.Content(Episodes)</visible>
+                    <posx>544</posx>
+                    <posy>634</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>830</width>
+                        <height>291</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>772</width>
+                            <height>291</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>22</posy>
+                            <width>772</width>
+                            <height>52</height>
+                            <font>Library_Light_35</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Title][/B]$INFO[ListItem.Label2, - (,)]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>94</posy>
+                            <width>772</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Artist][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>158</posy>
+                            <width>772</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Album]$INFO[ListItem.Year, (,)]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>218</posy>
+                            <width>772</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Genre][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <!-- Show Case Hybrid Views -->
+            <control type="group">
+                <control type="group">
+                    <visible>Control.IsVisible(52)</visible>
+                    <visible>Container.Content(Episodes)</visible>
+                    <posx>66</posx>
+                    <posy>278</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>936</width>
+                        <height>528</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>879</width>
+                            <height>528</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="image">
+                            <posx>360</posx>
+                            <posy>21</posy>
+                            <width>216</width>
+                            <height>34</height>
+                            <texture>$INFO[ListItem.StarRating]</texture>
+                        </control>
+                        <control type="label">
+                            <description>Episode And Title</description>
+                            <posx>28</posx>
+                            <posy>80</posy>
+                            <width>879</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Episode,,. ][/B]$INFO[ListItem.Title]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Aired</description>
+                            <posx>28</posx>
+                            <posy>148</posy>
+                            <width>879</width>
+                            <height>52</height>
+                            <font>Library_Light_18</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Date,Aired: ]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="textbox">
+                            <posx>28</posx>
+                            <posy>198</posy>
+                            <width>879</width>
+                            <height>180</height>
+                            <font>Library_Normal_20</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Plot]</label>
+                            <align>left</align>
+                            <autoscroll>False</autoscroll>
+                        </control>
+                        <control type="label">
+                            <posx>872</posx>
+                            <posy>402</posy>
+                            <width>644</width>
+                            <height>30</height>
+                            <font>Library_Normal_14</font>
+                            <textcolor>Text</textcolor>
+                            <label>$LOCALIZE[50065]</label>
+                            <align>right</align>
+                            <aligny>bottom</aligny>
+                        </control>
+                        <control type="image">
+                            <posx>879</posx>
+                            <posy>399</posy>
+                            <width>33</width>
+                            <height>33</height>
+                            <texture>menu\library\info-icon.png</texture>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>454</posy>
+                            <width>936</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.IsVisible(51)</visible>
+                    <visible>Container.Content(Movies)</visible>
+                    <posx>124</posx>
+                    <posy>238</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>726</width>
+                        <height>531</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>669</width>
+                            <height>531</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="image">
+                            <posx>255</posx>
+                            <posy>33</posy>
+                            <width>216</width>
+                            <height>34</height>
+                            <texture>$INFO[ListItem.StarRating]</texture>
+                        </control>
+                        <control type="label">
+                            <description>Title And Year</description>
+                            <posx>28</posx>
+                            <posy>88</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Title][/B]$INFO[ListItem.Year, (,)]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Director</description>
+                            <posx>28</posx>
+                            <posy>150</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_20</font>
+                            <textcolor>Text</textcolor>
+                            <label>[UPPERCASE]$INFO[ListItem.Director][/UPPERCASE]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="textbox">
+                            <posx>28</posx>
+                            <posy>198</posy>
+                            <width>669</width>
+                            <height>180</height>
+                            <font>Library_Normal_20</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Plot]</label>
+                            <align>left</align>
+                            <autoscroll>False</autoscroll>
+                        </control>
+                        <control type="label">
+                            <posx>662</posx>
+                            <posy>404</posy>
+                            <width>644</width>
+                            <height>30</height>
+                            <font>Library_Normal_14</font>
+                            <textcolor>Text</textcolor>
+                            <label>$LOCALIZE[50065]</label>
+                            <align>right</align>
+                            <aligny>bottom</aligny>
+                        </control>
+                        <control type="image">
+                            <posx>669</posx>
+                            <posy>400</posy>
+                            <width>33</width>
+                            <height>33</height>
+                            <texture>menu\library\info-icon.png</texture>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>450</posy>
+                            <width>669</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.IsVisible(51)</visible>
+                    <visible>Container.Content(Seasons)</visible>
+                    <posx>124</posx>
+                    <posy>238</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>726</width>
+                        <height>531</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>669</width>
+                            <height>531</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <description>TV Show</description>
+                            <posx>28</posx>
+                            <posy>98</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_28</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.TVShowTitle][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Season</description>
+                            <posx>28</posx>
+                            <posy>200</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Normal_69</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Watched</description>
+                            <posx>28</posx>
+                            <posy>384</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Normal_24</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), of , EPISODES WATCHED]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>465</posy>
+                            <width>740</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.IsVisible(51)</visible>
+                    <visible>Container.Content(TVShows)</visible>
+                    <posx>124</posx>
+                    <posy>238</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>726</width>
+                        <height>531</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>669</width>
+                            <height>531</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="image">
+                            <posx>255</posx>
+                            <posy>33</posy>
+                            <width>216</width>
+                            <height>34</height>
+                            <texture>$INFO[ListItem.StarRating]</texture>
+                        </control>
+                        <control type="label">
+                            <description>TV Show</description>
+                            <posx>28</posx>
+                            <posy>90</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.TVShowTitle][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <description>Watched</description>
+                            <posx>28</posx>
+                            <posy>165</posy>
+                            <width>669</width>
+                            <height>52</height>
+                            <font>Library_Normal_18</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), of , EPISODES WATCHED]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="textbox">
+                            <posx>28</posx>
+                            <posy>216</posy>
+                            <width>669</width>
+                            <height>147</height>
+                            <font>Library_Normal_20</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Plot]</label>
+                            <align>left</align>
+                            <autoscroll>False</autoscroll>
+                        </control>
+                        <control type="label">
+                            <posx>662</posx>
+                            <posy>404</posy>
+                            <width>644</width>
+                            <height>30</height>
+                            <font>Library_Normal_14</font>
+                            <textcolor>Text</textcolor>
+                            <label>$LOCALIZE[50065]</label>
+                            <align>right</align>
+                            <aligny>bottom</aligny>
+                        </control>
+                        <control type="image">
+                            <posx>669</posx>
+                            <posy>400</posy>
+                            <width>33</width>
+                            <height>33</height>
+                            <texture>menu\library\info-icon.png</texture>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>459</posy>
+                            <width>726</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.IsVisible(52)</visible>
+                    <visible>Container.Content(MusicVideos)</visible>
+                    <posx>66</posx>
+                    <posy>278</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>936</width>
+                        <height>528</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>879</width>
+                            <height>531</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>44</posy>
+                            <width>879</width>
+                            <height>52</height>
+                            <font>Library_Light_35</font>
+                            <textcolor>Text</textcolor>
+                            <label>$INFO[ListItem.Title]$INFO[ListItem.Duration, - (,)]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>144</posy>
+                            <width>879</width>
+                            <height>52</height>
+                            <font>Library_Normal_28</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Artist][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>228</posy>
+                            <width>879</width>
+                            <height>52</height>
+                            <font>Library_Normal_28</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Album][/B]$INFO[ListItem.Year, (,)]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>322</posy>
+                            <width>879</width>
+                            <height>52</height>
+                            <font>Library_Light_24</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Studio][/B]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
+                        </control>
+                        <control type="label">
+                            <posx>872</posx>
+                            <posy>394</posy>
+                            <width>644</width>
+                            <height>30</height>
+                            <font>Library_Normal_14</font>
+                            <textcolor>Text</textcolor>
+                            <label>$LOCALIZE[50065]</label>
+                            <align>right</align>
+                            <aligny>bottom</aligny>
+                        </control>
+                        <control type="image">
+                            <posx>879</posx>
+                            <posy>392</posy>
+                            <width>33</width>
+                            <height>33</height>
+                            <texture>menu\library\info-icon.png</texture>
+                        </control>
+                        <control type="grouplist">
+                            <posx>0</posx>
+                            <posy>454</posy>
+                            <width>936</width>
+                            <height>45</height>
+                            <itemgap>15</itemgap>
+                            <align>center</align>
+                            <orientation>horizontal</orientation>
+                            <include>MediaFlags</include>
+                        </control>
+                    </control>
+                </control>
+                <control type="group">
+                    <visible>Control.IsVisible(51)</visible>
+                    <visible>!Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Movies)</visible>
+                    <posx>124</posx>
+                    <posy>238</posy>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>726</width>
+                        <height>531</height>
+                        <texture border="10,10,10,10">menu\library\panel.png</texture>
+                        <colordiffuse>LibraryPanelDiffuse</colordiffuse>
+                    </control>
+                    <control type="group">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <control type="label">
+                            <posx>28</posx>
+                            <posy>0</posy>
+                            <width>669</width>
+                            <height>531</height>
+                            <font>Library_Light_25</font>
+                            <textcolor>Text</textcolor>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
+                            <align>center</align>
+                            <aligny>center</aligny>
+                            <scroll>true</scroll>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
+</includes>

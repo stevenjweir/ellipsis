@@ -1,0 +1,14 @@
+Ellipsis 1.3.0 Changelist:
+
+Scroll bars and improvements to speed of navigating large libraries in music, videos and pictures.
+View Types or lack of!
+Banner View Types
+Video OSD improvements involving navigation, layout and information available
+Increased label sizes for OnScreenKeyboard
+Animation Speeds for entering and exiting screens. Also Scrolling.
+Customisable home icons
+Recently added functionality
+Custom colours
+Extra fanart use
+More attention to the Music and Music Video Sections
+A slightly complicated settings section, maybe too similar to homescreen.

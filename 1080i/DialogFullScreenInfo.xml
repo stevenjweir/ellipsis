@@ -1,0 +1,258 @@
+﻿<window type="dialog" id="142">
+    <defaultcontrol always="true">1</defaultcontrol>
+    <include>Fade_In_WindowOpen</include>
+    <include>Fade_Out_WindowClose</include>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+    <controls>
+        <!-- THIS IS FOR VIDEOS PLAYING WITHOUT LIBRARY ENTRIES -->
+        <control type="group">
+            <visible>!VideoPlayer.Content(Episodes)</visible>
+            <visible>!VideoPlayer.Content(Movies)</visible>
+            <visible>!VideoPlayer.Content(MusicVideos)</visible>
+            <include>Zoom_In_WindowOpen</include>
+            <include>Zoom_Out_WindowClose</include>
+            <posx>315</posx>
+            <posy>564</posy>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1290</width>
+                <height>267</height>
+                <texture border="15,15,15,15">menu\fullscreen\info-popup-panel-fullscreen.png</texture>
+                <colordiffuse>InfoPanelDiffuse</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>15</posx>
+                <posy>15</posy>
+                <width>422</width>
+                <height>237</height>
+                <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+                <texture diffuse="episode-diffuse.png" />
+                <info>VideoPlayer.Cover</info>
+            </control>
+            <control type="image">
+                <posx>15</posx>
+                <posy>15</posy>
+                <width>422</width>
+                <height>237</height>
+                <texture>episode-overlay.png</texture>
+            </control>
+            <control type="label">
+                <posx>466</posx>
+                <posy>30</posy>
+                <width>808</width>
+                <height>45</height>
+                <font>Library_Light_28</font>
+                <textcolor>TextGrey</textcolor>
+                <label>[B]$INFO[VideoPlayer.Title][/B]</label>
+                <scroll>true</scroll>
+            </control>
+            <control type="label">
+                <posx>466</posx>
+                <posy>90</posy>
+                <width>808</width>
+                <height>45</height>
+                <font>Library_Bold_20</font>
+                <textcolor>Text</textcolor>
+                <label>$LOCALIZE[50127] $INFO[Player.FinishTime]</label>
+                <align>left</align>
+            </control>
+        </control>
+        <control type="group">
+            <visible>VideoPlayer.Content(Movies)</visible>
+            <include>Zoom_In_WindowOpen</include>
+            <include>Zoom_Out_WindowClose</include>
+            <posx>429</posx>
+            <posy>564</posy>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1062</width>
+                <height>267</height>
+                <texture border="15,15,15,15">menu\fullscreen\info-popup-panel-fullscreen.png</texture>
+                <colordiffuse>InfoPanelDiffuse</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>27</posx>
+                <posy>15</posy>
+                <width>162</width>
+                <height>237</height>
+                <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+                <texture diffuse="dvdbox-diffuse.png" />
+                <info>VideoPlayer.Cover</info>
+            </control>
+            <control type="image">
+                <posx>27</posx>
+                <posy>15</posy>
+                <width>162</width>
+                <height>237</height>
+                <texture>dvdbox-overlay.png</texture>
+            </control>
+            <control type="label">
+                <posx>216</posx>
+                <posy>30</posy>
+                <width>831</width>
+                <height>45</height>
+                <font>Library_Light_28</font>
+                <textcolor>TextGrey</textcolor>
+                <label>[B]$INFO[VideoPlayer.Title][/B]$INFO[VideoPlayer.Year, (,)]</label>
+                <scroll>true</scroll>
+            </control>
+            <control type="textbox">
+                <posx>216</posx>
+                <posy>90</posy>
+                <width>831</width>
+                <height>105</height>
+                <font>Library_Normal_18</font>
+                <textcolor>TextGrey</textcolor>
+                <label>$INFO[VideoPlayer.Plot]</label>
+                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+            </control>
+            <control type="label">
+                <posx>216</posx>
+                <posy>210</posy>
+                <width>831</width>
+                <height>45</height>
+                <font>Library_Bold_20</font>
+                <textcolor>TextGrey</textcolor>
+                <label>$LOCALIZE[50127] $INFO[Player.FinishTime]</label>
+            </control>
+        </control>
+        <control type="group">
+            <visible>VideoPlayer.Content(Episodes)</visible>
+            <include>Zoom_In_WindowOpen</include>
+            <include>Zoom_Out_WindowClose</include>
+            <posx>315</posx>
+            <posy>564</posy>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1290</width>
+                <height>267</height>
+                <texture border="15,15,15,15">menu\fullscreen\info-popup-panel-fullscreen.png</texture>
+                <colordiffuse>InfoPanelDiffuse</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>15</posx>
+                <posy>15</posy>
+                <width>422</width>
+                <height>237</height>
+                <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+                <texture diffuse="episode-diffuse.png" />
+                <info>VideoPlayer.Cover</info>
+            </control>
+            <control type="image">
+                <posx>15</posx>
+                <posy>15</posy>
+                <width>422</width>
+                <height>237</height>
+                <texture>episode-overlay.png</texture>
+            </control>
+            <control type="label">
+                <posx>466</posx>
+                <posy>30</posy>
+                <width>808</width>
+                <height>45</height>
+                <font>Library_Light_28</font>
+                <textcolor>TextGrey</textcolor>
+                <label>[B]$INFO[VideoPlayer.TVShowTitle][/B]$INFO[VideoPlayer.Year, (,)][B]$INFO[VideoPlayer.Title, ][/B]</label>
+                <scroll>true</scroll>
+            </control>
+            <control type="textbox">
+                <posx>466</posx>
+                <posy>90</posy>
+                <width>808</width>
+                <height>105</height>
+                <font>Library_Normal_18</font>
+                <textcolor>TextGrey</textcolor>
+                <label>$INFO[VideoPlayer.Plot]</label>
+                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+            </control>
+            <control type="label">
+                <posx>466</posx>
+                <posy>210</posy>
+                <width>808</width>
+                <height>45</height>
+                <font>Library_Bold_20</font>
+                <textcolor>Text</textcolor>
+                <label>$LOCALIZE[50127] $INFO[Player.FinishTime]</label>
+                <align>left</align>
+            </control>
+        </control>
+        <control type="group">
+            <visible>VideoPlayer.Content(MusicVideos)</visible>
+            <include>Zoom_In_WindowOpen</include>
+            <include>Zoom_Out_WindowClose</include>
+            <posx>351</posx>
+            <posy>564</posy>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1218</width>
+                <height>267</height>
+                <texture border="15,15,15,15">menu\fullscreen\info-popup-panel-fullscreen.png</texture>
+                <colordiffuse>InfoPanelDiffuse</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>15</posx>
+                <posy>15</posy>
+                <width>316</width>
+                <height>237</height>
+                <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+                <texture diffuse="musicvideo-diffuse.png" />
+                <info>VideoPlayer.Cover</info>
+            </control>
+            <control type="image">
+                <posx>15</posx>
+                <posy>15</posy>
+                <width>316</width>
+                <height>237</height>
+                <texture>musicvideo-overlay.png</texture>
+            </control>
+            <control type="label">
+                <posx>362</posx>
+                <posy>30</posy>
+                <width>842</width>
+                <height>45</height>
+                <font>Library_Bold_24</font>
+                <textcolor>TextGrey</textcolor>
+                <label>$INFO[VideoPlayer.Title]</label>
+                <scroll>true</scroll>
+            </control>
+            <control type="label">
+                <posx>362</posx>
+                <posy>84</posy>
+                <width>842</width>
+                <height>45</height>
+                <font>Library_Normal_24</font>
+                <textcolor>TextGrey</textcolor>
+                <label>$INFO[VideoPlayer.Artist]</label>
+                <scroll>true</scroll>
+            </control>
+            <control type="label">
+                <posx>362</posx>
+                <posy>135</posy>
+                <width>842</width>
+                <height>45</height>
+                <font>Library_Light_24</font>
+                <textcolor>TextGrey</textcolor>
+                <label>$INFO[VideoPlayer.Album]$INFO[VideoPlayer.Year, (,)]</label>
+                <scroll>true</scroll>
+            </control>
+            <control type="label">
+                <posx>362</posx>
+                <posy>210</posy>
+                <width>842</width>
+                <height>45</height>
+                <font>Library_Bold_22</font>
+                <textcolor>TextGrey</textcolor>
+                <label>$LOCALIZE[50127] $INFO[Player.FinishTime]</label>
+            </control>
+        </control>
+        <include>Debug</include>
+    </controls>
+</window>

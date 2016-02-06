@@ -1,0 +1,161 @@
+﻿<window id="34">
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <!-- Backgrounds -->
+        <include>Background</include>
+        <include>Profiles_View</include>
+        <control type="image">
+            <posx>681</posx>
+            <posy>718</posy>
+            <width>558</width>
+            <height>558</height>
+            <texture>settings-big-cog.png</texture>
+            <aspectratio>keep</aspectratio>
+            <animation type="Conditional" reversible="false" condition="Control.IsVisible(7001)">
+                <effect type="rotate" start="0" end="-45" center="auto" time="200" />
+            </animation>
+            <animation type="Conditional" reversible="false" condition="Control.IsVisible(7002)">
+                <effect type="rotate" start="0" end="45" center="auto" time="200" />
+            </animation>
+        </control>
+        <control type="radiobutton" id="4">
+            <description>fake login screen</description>
+            <posx>-150</posx>
+            <posy>0</posy>
+            <width>15</width>
+            <height>15</height>
+            <label>-</label>
+            <onleft>4</onleft>
+            <onright>4</onright>
+            <onup>2</onup>
+            <ondown>4</ondown>
+            <font>-</font>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <textureradiofocus>-</textureradiofocus>
+            <textureradionofocus>-</textureradionofocus>
+        </control>
+        <!-- Elipsis Visor -->
+        <include>Visor_Filter</include>
+        <!-- Edge Filter -->
+        <include>Edge_Filter</include>
+        <!-- Clock -->
+        <include>Clock</include>
+        <!-- Now Playing Widget -->
+        <include>Now_Playing_Widget</include>
+        <!-- Elipsis Button -->
+        <control type="group">
+            <posx>960</posx>
+            <posy>1080</posy>
+            <include>Dock_Elipsis_Home</include>
+        </control>
+        <control type="group">
+            <posx>960</posx>
+            <posy>930</posy>
+            <control type="image">
+                <posx>-960</posx>
+                <posy>-930</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <texture>filter_dockshadow.png</texture>
+                <animation effect="fade" start="0" end="100" time="200" condition="Control.HasFocus(4)">conditional</animation>
+                <animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(2)">conditional</animation>
+                <visible>!Window.IsActive(FullScreenVideo)</visible>
+            </control>
+            <control type="group">
+                <visible>Control.HasFocus(4)</visible>
+                <visible>!Skin.HasSetting(Disable_Icon_Labels)</visible>
+                <animation effect="fade" time="300">Visible</animation>
+                <animation effect="fade" time="300">Hidden</animation>
+                <animation effect="fade" time="300">WindowOpen</animation>
+                <animation effect="fade" time="300">WindowClose</animation>
+                <control type="image">
+                    <posx>-454</posx>
+                    <posy>-21</posy>
+                    <width>908</width>
+                    <height>72</height>
+                    <texture>filter_iconlabel.png</texture>
+                </control>
+                <control type="label">
+                    <description>Current Selection</description>
+                    <posx>-960</posx>
+                    <posy>-18</posy>
+                    <width>1920</width>
+                    <height>72</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$LOCALIZE[50118]</label>
+                    <font>Selected_Item</font>
+                    <textcolor>TextSelectedItem</textcolor>
+                    <shadowcolor>TextShadow</shadowcolor>
+                    <visible>system.hasloginscreen</visible>
+                </control>
+                <control type="label">
+                    <description>Current Selection</description>
+                    <posx>-960</posx>
+                    <posy>-18</posy>
+                    <width>1920</width>
+                    <height>72</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <label>$LOCALIZE[50119]</label>
+                    <font>Selected_Item</font>
+                    <textcolor>TextSelectedItem</textcolor>
+                    <shadowcolor>TextShadow</shadowcolor>
+                    <visible>!system.hasloginscreen</visible>
+                </control>
+            </control>
+            <control type="image">
+                <posx>-68</posx>
+                <posy>0</posy>
+                <width>135</width>
+                <height>135</height>
+                <texture>button_ex_idle.png</texture>
+                <animation type="conditional" condition="Control.HasFocus(4)" reversible="false">
+                    <effect type="zoom" start="150" center="auto" time="400" />
+                    <effect type="fade" end="100" time="600" />
+                </animation>
+                <animation type="conditional" condition="Control.HasFocus(2)" reversible="false">
+                    <effect type="zoom" end="150" center="auto" time="400" />
+                    <effect type="fade" end="0" time="600" />
+                </animation>
+            </control>
+            <control type="group">
+                <posx>0</posx>
+                <posy>22</posy>
+                <animation type="conditional" condition="Control.HasFocus(4)">
+                    <effect type="slide" start="0,128" time="300" tween="elastic" easing="out" reversible="false" />
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" reversible="false" />
+                </animation>
+                <animation type="conditional" condition="Control.HasFocus(2)">
+                    <effect type="slide" end="0,128" time="300" tween="back" easing="in" reversible="false" />
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" reversible="false" />
+                </animation>
+                <control type="group">
+                    <posx>-45</posx>
+                    <posy>0</posy>
+                    <width>90</width>
+                    <height>90</height>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>90</width>
+                        <height>90</height>
+                        <texture>dock\icons\login-screen-on.png</texture>
+                        <visible>system.hasloginscreen</visible>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>90</width>
+                        <height>90</height>
+                        <texture>dock\icons\login-screen-off.png</texture>
+                        <visible>!system.hasloginscreen</visible>
+                    </control>
+                </control>
+            </control>
+        </control>
+        <include>Debug</include>
+    </controls>
+</window>

@@ -1,0 +1,195 @@
+﻿<window id="139">
+    <defaultcontrol always="true">5</defaultcontrol>
+    <include>Fade_In_WindowOpen</include>
+    <include>Fade_Out_WindowClose</include>
+    <coordinates>
+        <system>1</system>
+        <posx>0</posx>
+        <posy>0</posy>
+    </coordinates>
+    <controls>
+        <include>Zoom_In_WindowOpen</include>
+        <include>Zoom_Out_WindowClose</include>
+        <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>filter_keyboard_shadow.png</texture>
+        </control>
+        <control type="group">
+            <posx>292</posx>
+            <posy>165</posy>
+            <width>1335</width>
+            <height>842</height>
+            <include>Zoom_In_WindowOpen</include>
+            <include>Zoom_Out_WindowClose</include>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1335</width>
+                <height>842</height>
+                <texture>dialogs\dialog-background-nav.png</texture>
+            </control>
+            <control type="image">
+                <posx>620</posx>
+                <posy>69</posy>
+                <width>96</width>
+                <height>96</height>
+                <texture>dialogs\picinfo-dialog-icon.png</texture>
+            </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>172</posy>
+                <width>1335</width>
+                <align>center</align>
+                <font>Heading</font>
+                <label>13406</label>
+                <textcolor>Text</textcolor>
+            </control>
+            <control type="image">
+                <posx>90</posx>
+                <posy>280</posy>
+                <width>384</width>
+                <height>384</height>
+                <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+                <texture diffuse="iconview-diffuse.png">$INFO[ListItem.Icon]</texture>
+            </control>
+            <control type="image">
+                <posx>90</posx>
+                <posy>280</posy>
+                <width>384</width>
+                <height>384</height>
+                <texture>iconview-overlay.png</texture>
+            </control>
+            <control type="list" id="5">
+                <posx>504</posx>
+                <posy>252</posy>
+                <width>690</width>
+                <height>441</height>
+                <onleft>60</onleft>
+                <onright>60</onright>
+                <onup>5</onup>
+                <ondown>5</ondown>
+                <pagecontrol>60</pagecontrol>
+                <itemlayout width="690" height="63">
+                    <control type="label">
+                        <posx>15</posx>
+                        <posy>0</posy>
+                        <width>660</width>
+                        <height>63</height>
+                        <aligny>center</aligny>
+                        <label>[COLOR=TextMediun]$INFO[ListItem.Label]:[/COLOR] $INFO[ListItem.Label2]</label>
+                        <selectedcolor>Text</selectedcolor>
+                        <font>Medium_Bold</font>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="690" height="63">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>690</width>
+                        <height>63</height>
+                        <texture border="4,5,6,8">controls\button_f.png</texture>
+                        <visible>Control.HasFocus(5)</visible>
+                    </control>
+                    <control type="label">
+                        <posx>15</posx>
+                        <posy>0</posy>
+                        <width>660</width>
+                        <height>63</height>
+                        <aligny>center</aligny>
+                        <label>[COLOR=TextMediun]$INFO[ListItem.Label]:[/COLOR] $INFO[ListItem.Label2]</label>
+                        <selectedcolor>Text</selectedcolor>
+                        <font>Medium_Bold</font>
+                    </control>
+                </focusedlayout>
+            </control>
+            <control type="image">
+                <posx>1208</posx>
+                <posy>252</posy>
+                <width>60</width>
+                <height>60</height>
+                <texture>menu\nav\nav_arrow_up_END.png</texture>
+                <animation effect="fade" time="600">Visible</animation>
+                <animation effect="fade" time="600">Hidden</animation>
+                <animation effect="fade" start="50" end="100" time="200" tween="sine" pulse="true" condition="true">Conditional</animation>
+                <visible>!Container(5).HasPrevious</visible>
+            </control>
+            <control type="image">
+                <posx>1208</posx>
+                <posy>252</posy>
+                <width>60</width>
+                <height>60</height>
+                <texture>menu\nav\nav_arrow_up_NF.png</texture>
+                <animation effect="fade" time="600">Visible</animation>
+                <visible>!Container(5).OnPrevious</visible>
+                <visible>Container(5).HasPrevious</visible>
+            </control>
+            <control type="image">
+                <posx>1208</posx>
+                <posy>252</posy>
+                <width>60</width>
+                <height>60</height>
+                <texture>menu\nav\nav_arrow_up_FO.png</texture>
+                <animation type="Hidden">
+                    <effect type="slide" start="0,-15" end="0" center="auto" time="300" reversible="false" />
+                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                </animation>
+                <visible>Container(5).OnPrevious</visible>
+                <visible>Container(5).HasPrevious</visible>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1230</posx>
+                <posy>312</posy>
+                <width>15</width>
+                <height>321</height>
+                <onleft>5</onleft>
+                <onright>5</onright>
+            </control>
+            <control type="image">
+                <posx>1208</posx>
+                <posy>633</posy>
+                <width>60</width>
+                <height>60</height>
+                <texture>menu\nav\nav_arrow_down_END.png</texture>
+                <animation effect="fade" time="600">Visible</animation>
+                <animation effect="fade" time="600">Hidden</animation>
+                <animation effect="fade" start="50" end="100" time="200" tween="sine" pulse="true" condition="true">Conditional</animation>
+                <visible>!Container(5).HasNext</visible>
+            </control>
+            <control type="image">
+                <posx>1208</posx>
+                <posy>633</posy>
+                <width>60</width>
+                <height>60</height>
+                <texture>menu\nav\nav_arrow_down_NF.png</texture>
+                <animation effect="fade" time="600">Visible</animation>
+                <visible>!Container(5).OnNext</visible>
+                <visible>Container(5).HasNext</visible>
+            </control>
+            <control type="image">
+                <posx>1208</posx>
+                <posy>633</posy>
+                <width>60</width>
+                <height>60</height>
+                <texture>menu\nav\nav_arrow_down_FO.png</texture>
+                <animation type="Hidden">
+                    <effect type="slide" start="0,15" end="0" center="auto" time="300" reversible="false" />
+                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                </animation>
+                <visible>Container(5).OnNext</visible>
+                <visible>Container(5).HasNext</visible>
+            </control>
+            <control type="label">
+                <posx>519</posx>
+                <posy>723</posy>
+                <width>690</width>
+                <font>Medium</font>
+                <scroll>true</scroll>
+                <label>$INFO[Container(5).NumItems] $LOCALIZE[50129] - $LOCALIZE[50130] $INFO[Container(5).CurrentPage] $LOCALIZE[20163] $INFO[Container(5).NumPages]</label>
+            </control>
+        </control>
+        <include>Debug</include>
+    </controls>
+</window>
