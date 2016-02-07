@@ -1,0 +1,77 @@
+<window>
+    <defaultcontrol always="true">10</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <control type="group">
+            <visible>!Skin.HasSetting(Disable_Intro)</visible>
+            <control type="group">
+                <animation effect="fade" start="0" end="0" time="250" reversible="false">WindowClose</animation>
+                <control type="image">
+                    <posx>278</posx>
+                    <posy>690</posy>
+                    <width>588</width>
+                    <height>262</height>
+                    <texture>intro\intro_tbblogo.png</texture>
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="fade" start="0" end="100" time="1000" />
+                        <effect type="fade" start="100" end="0" time="5000" delay="2000" />
+                    </animation>
+                </control>
+                <control type="image">
+                    <posx>848</posx>
+                    <posy>788</posy>
+                    <width>338</width>
+                    <height>92</height>
+                    <texture>intro\intro_presents.png</texture>
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="fade" start="0" end="100" time="1000" delay="3000" />
+                        <effect type="fade" start="100" end="0" time="5000" delay="5000" />
+                    </animation>
+                </control>
+                <control type="image">
+                    <posx>1200</posx>
+                    <posy>735</posy>
+                    <width>506</width>
+                    <height>180</height>
+                    <texture>intro\intro_skinlogo.png</texture>
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="fade" start="0" end="100" time="1000" delay="6000" />
+                        <effect type="fade" start="100" end="0" time="6000" delay="6000" />
+                    </animation>
+                </control>
+            </control>
+            <control type="label">
+                <description>Skip Into</description>
+                <posx>75</posx>
+                <posy>990</posy>
+                <width>435</width>
+                <height>30</height>
+                <align>left</align>
+                <font>Default</font>
+                <label>$LOCALIZE[50122]</label>
+                <textcolor>ff333333</textcolor>
+                <animation type="Conditional" condition="true" reversible="false" pulse="true">
+                    <effect type="fade" start="100" end="50" time="1000" />
+                </animation>
+                <animation effect="fade" start="100" end="0" time="250" reversible="false">WindowClose</animation>
+            </control>
+            <control type="button" id="10">
+                <description>trigger</description>
+                <onfocus>ReplaceWindow(Home)</onfocus>
+                <onclick>ReplaceWindow(Home)</onclick>
+                <texturenofocus>-</texturenofocus>
+                <texturefocus>-</texturefocus>
+                <animation effect="fade" start="0" end="0" time="12000">Focus</animation>
+            </control>
+        </control>
+        <control type="button" id="10">
+            <description>trigger</description>
+            <onfocus>ReplaceWindow(Home)</onfocus>
+            <onclick>ReplaceWindow(Home)</onclick>
+            <texturenofocus>-</texturenofocus>
+            <texturefocus>-</texturefocus>
+            <visible>Skin.HasSetting(Disable_Intro)</visible>
+        </control>
+        <include>Debug</include>
+    </controls>
+</window>

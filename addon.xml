@@ -1,19 +1,20 @@
-<addon id="skin.ellipsis" version="1.3" name="Ellipsis" provider-name="Team Blackbolt">
-  <requires>
-    <import addon="xbmc.gui" version="4.0.0"/>
-    <import addon="script.skin.news" version="1.0.0"/>
-  </requires>
-  <extension
-    point="xbmc.gui.skin"
-    defaultthemename="Textures.xbt"
-    debugging="false"
-    effectslowdown="1">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-  
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>Ellipsis</summary>
-    <description>Our aim with Ellipsis is to make the navigation and use of XBMC as user friendly as possible, so easy to use infact that a young child can use it just as easily as her grandmother can. Hopefully we have achieved this goal. Supporting the latest media center additions, such as full library support, fanart and media flags, We think you will enjoy what Ellipsis has to offer.</description>
-  </extension>
-</addon>
+<?xml version="1.0" encoding="UTF-8"?>
+    <addon id="skin.ellipsis" version="2.0.0" name="Ellipsis" provider-name="Team Blackbolt">
+        <requires>
+            <import addon="xbmc.gui" version="5.10.0" />
+        </requires>
+        <extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
+            <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Ellipsis Skin by Team Blackbolt</summary>
+            <description lang="en">Ellipsis UI for Kodi, developed by Team Blackbolt.</description>
+            <disclaimer lang="en">Thank you for choosing Ellipsis. - Team Blackbolt</disclaimer>
+            <platform>all</platform>
+            <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+            <forum></forum>
+            <website></website>
+            <email></email>
+            <source></source>
+        </extension>
+    </addon>

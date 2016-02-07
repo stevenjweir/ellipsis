@@ -1,9 +1,0 @@
-LIBRARY	XPRTool
-
-EXPORTS
-	Unswizzle
-	ConvertDXT1
-	ConvertDXT3
-	ConvertDXT5
-	ConvertA1R5G5B5
-	MapPalette
