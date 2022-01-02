@@ -60,5 +60,6 @@ EllipsisUI 1.0 Development Team
 Special Thanks:
 ==================
 
-Team Blackbolt
+Team Kodi for continuing to develop the greatest software ever made! 
+Many thanks to Team Blackbolt and in particular Blackbolt himself. You started this journey for me with all the amazing work you did over the years that at this point is just a memory and a couple repos. Whatever you are doing wherever you are, may peace be with you brother.
 
