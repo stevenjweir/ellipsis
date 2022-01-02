@@ -1,6 +1,5 @@
 # Ellipsis [ el·lip·sis ]
-noun: 
-# the omission from speech or writing of a word or words that are superfluous or able to be understood from contextual clues.
+noun: the omission from speech or writing of a word or words that are superfluous or able to be understood from contextual clues.
 
 ------------------------------------------------------------------------
 EllipsisUI for Kodi
