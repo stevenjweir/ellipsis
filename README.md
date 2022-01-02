@@ -4,7 +4,7 @@ EllipsisUI for Kodi IS NOT IN ACTIVE DEVELOPMENT
 About EllipsisUI
 ==============
 
-EllipsisUI is a Graphical User Interface for Kodi, a media playback application available on multiple platforms.
+EllipsisUI will be a Graphical User Interface for Kodi, a media playback application available on multiple platforms.
 
 The aim with EllipsisUI is to make the navigation and use of Kodi as user friendly as possible, so easy to use infact that a young child can use it just as easily as her grandmother can.
 
