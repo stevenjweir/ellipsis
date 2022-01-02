@@ -1,12 +1,12 @@
-EllipsisUI for Kodi IS NOT IN ACTIVE DEVELOPMENT
+EllipsisUI for Kodi
 =====================================
 
 About EllipsisUI
 ==============
 
-EllipsisUI will be a Graphical User Interface for Kodi, a media playback application available on multiple platforms.
+EllipsisUI is a Graphical User Interface for Kodi, a media playback application available on multiple platforms.
 
-The aim with EllipsisUI is to make the navigation and use of Kodi as user friendly as possible, so easy to use infact that a young child can use it just as easily as her grandmother can.
+The aim with EllipsisUI is to resurrect the Ellipsis project from Team Blackbolt. The original goal for Ellipsis was to make the navigation and use of Kodi as user friendly as possible, so easy to use infact that a young child can use it just as easily as her grandmother can.
 
 ------------------------------------------------------------------------
 How to install and use EllipsisUI using Kodi:
@@ -30,17 +30,9 @@ the new one found in this zip file.
 Credits:
 ========
 
-Ellipsis - For XBMC.
+Ellipsis
 By Team Blackbolt
 -----------------------
-
-Designed & Developed by
------------------------
-    - Blackbolt
-
-
-Original Ellipsis Development Team
-----------------------------------
 
 Graphics:
 -----------------------
@@ -51,15 +43,33 @@ Code:
     - EqUiNoX
     - Hitcher
 
+Designed & Developed by
+-----------------------
+    - Blackbolt
 
-EllipsisUI 1.0 Development Team
+EllipsisUI
+by TeamUI
+----------------------------------
+
+EllipsisUI 1.0 (2022)
 -------------------
-    -
+
+Project Lead
+-----------------------
+    - Ch3dd4rGoblin
+    
+Code:
+---------------------
+    - Manfeed
+
+Graphics:
+-----------------------
+    - Manfeed 
 
 ------------------
 Special Thanks:
 ==================
 
 Team Kodi for continuing to develop the greatest software ever made! 
-Many thanks to Team Blackbolt and in particular Blackbolt himself. You started this journey for me with all the amazing work you did over the years that at this point is just a memory and a couple repos. Whatever you are doing wherever you are, may peace be with you brother.
+Many thanks to Team Blackbolt and in particular Blackbolt himself. You started this journey for me with all the amazing work you did over the years that at this point is just a memory and a couple repos. Whatever you are doing, wherever you are, may peace be with you brother.
 
