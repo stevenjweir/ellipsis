@@ -2,26 +2,26 @@
     <defaultcontrol>1</defaultcontrol>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <control type="group">
-            <posx>1569</posx>
-            <posy>0</posy>
+            <left>1569</left>
+            <top>0</top>
             <animation effect="slide" start="351" end="0" time="300" tween="sine" easing="out" reversible="false">WindowOpen</animation>
             <animation effect="slide" start="0" end="351" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>351</width>
                 <height>80</height>
                 <texture>dialogs\tab-topright-volume.png</texture>
             </control>
             <control type="image">
                 <visible>!Player.Muted</visible>
-                <posx>68</posx>
-                <posy>12</posy>
+                <left>68</left>
+                <top>12</top>
                 <width>34</width>
                 <height>33</height>
                 <texture>dialogs\volume-icon.png</texture>
@@ -30,8 +30,8 @@
             </control>
             <control type="image">
                 <visible>Player.Muted</visible>
-                <posx>68</posx>
-                <posy>12</posy>
+                <left>68</left>
+                <top>12</top>
                 <width>34</width>
                 <height>33</height>
                 <texture>dialogs\volume-mute-icon.png</texture>
@@ -40,8 +40,8 @@
             </control>
             <control type="progress" id="1">
                 <description>Progressbar</description>
-                <posx>118</posx>
-                <posy>15</posy>
+                <left>118</left>
+                <top>15</top>
                 <width>218</width>
                 <height>27</height>
                 <info>Player.Volume</info>

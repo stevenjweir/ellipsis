@@ -35,10 +35,10 @@
   </actions>
 
   <windows>
-    <window>
+    <!--window>
       <name>Startup</name>
       <activate>startup.wav</activate>
-    </window>
+    </window-->
 	<window>
 		<name>infodialog</name>
 		<activate>notify.wav</activate>

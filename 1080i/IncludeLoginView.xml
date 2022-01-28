@@ -1,8 +1,8 @@
 ﻿<includes>
     <include name="Login_View">
         <control type="group">
-            <posx>998</posx>
-            <posy>351</posy>
+            <left>998</left>
+            <top>351</top>
             <!-- Login View Icons - Counter Clockwise Mothion -->
             <control type="group" id="5201">
                 <visible>Container(52).OnPrevious</visible>
@@ -15,36 +15,36 @@
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0" end="192" time="250" />
                     </animation>
-                    <posx>471</posx>
-                    <posy>44</posy>
+                    <left>471</left>
+                    <top>44</top>
                     <width>290</width>
                     <height>579</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(3).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(3).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -55,36 +55,36 @@
                     <visible>Container(52).OnPrevious</visible>
                     <visible>!IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
                     <animation effect="zoom" start="238,22,330,660" end="471,44,290,579" time="250" reversible="false">Hidden</animation>
-                    <posx>238</posx>
-                    <posy>22</posy>
+                    <left>238</left>
+                    <top>22</top>
                     <width>330</width>
                     <height>660</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(2).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(2).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -95,36 +95,36 @@
                     <visible>Container(52).OnPrevious</visible>
                     <visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="0,0,376,753" end="238,22,330,660" time="250" reversible="false">Hidden</animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>376</width>
                     <height>753</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(1).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(1).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -138,36 +138,36 @@
                         <effect type="slide" start="-192" end="0" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>376</width>
                     <height>753</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(0).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(0).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -187,36 +187,36 @@
                         <effect type="slide" start="192" end="0" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>471</posx>
-                    <posy>44</posy>
+                    <left>471</left>
+                    <top>44</top>
                     <width>290</width>
                     <height>579</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(2).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(2).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -227,36 +227,36 @@
                     <visible>Container(52).OnNext</visible>
                     <visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="471,44,290,579" end="238,22,330,660" time="250" reversible="false">Hidden</animation>
-                    <posx>471</posx>
-                    <posy>44</posy>
+                    <left>471</left>
+                    <top>44</top>
                     <width>290</width>
                     <height>579</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(1).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(1).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -267,36 +267,36 @@
                     <visible>Container(52).OnNext</visible>
                     <visible>!IsEmpty(Container(52).ListItemNoWrap(0).Label)</visible>
                     <animation effect="zoom" start="238,22,330,660" end="0,0,376,753" time="250" reversible="false">Hidden</animation>
-                    <posx>238</posx>
-                    <posy>22</posy>
+                    <left>238</left>
+                    <top>22</top>
                     <width>330</width>
                     <height>660</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(0).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(0).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -309,36 +309,36 @@
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0" end="-192" time="250" />
                     </animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>376</width>
                     <height>753</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(-1).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(-1).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -350,8 +350,8 @@
                 <visible>!Control.IsVisible(5201)  + !Control.IsVisible(5202)</visible>
                 <!-- Icon 3 -->
                 <control type="group">
-                    <posx>471</posx>
-                    <posy>44</posy>
+                    <left>471</left>
+                    <top>44</top>
                     <width>290</width>
                     <height>579</height>
                     <animation type="WindowOpen">
@@ -364,31 +364,31 @@
                     </animation>
                     <visible>!IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(2).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(2).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -396,8 +396,8 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="group">
-                    <posx>238</posx>
-                    <posy>22</posy>
+                    <left>238</left>
+                    <top>22</top>
                     <width>330</width>
                     <height>660</height>
                     <animation type="WindowOpen">
@@ -410,31 +410,31 @@
                     </animation>
                     <visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(1).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(1).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -442,8 +442,8 @@
                 </control>
                 <!-- Icon 1 -->
                 <control type="group">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>376</width>
                     <height>753</height>
                     <camera x="0" y="0" />
@@ -456,31 +456,31 @@
                         <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" reversible="false" />
                     </animation>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(52).ListItem(0).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">$INFO[Container(52).ListItem(0).Icon]</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -489,8 +489,8 @@
             </control>
         </control>
         <control type="fixedlist" id="52">
-            <posx>162</posx>
-            <posy>510</posy>
+            <left>162</left>
+            <top>510</top>
             <width>798</width>
             <height>225</height>
             <onleft>-</onleft>
@@ -503,8 +503,8 @@
             <scrolltime>0</scrolltime>
             <itemlayout height="225" width="798">
                 <control type="label">
-                    <posx>798</posx>
-                    <posy>0</posy>
+                    <left>798</left>
+                    <top>0</top>
                     <width>798</width>
                     <height>180</height>
                     <font>Huge</font>
@@ -515,8 +515,8 @@
                     <info>ListItem.Label</info>
                 </control>
                 <control type="label">
-                    <posx>798</posx>
-                    <posy>165</posy>
+                    <left>798</left>
+                    <top>165</top>
                     <width>798</width>
                     <height>60</height>
                     <font>Default</font>
@@ -529,8 +529,8 @@
             </itemlayout>
             <focusedlayout height="225" width="798">
                 <control type="label">
-                    <posx>798</posx>
-                    <posy>0</posy>
+                    <left>798</left>
+                    <top>0</top>
                     <width>798</width>
                     <height>180</height>
                     <font>Huge</font>
@@ -541,8 +541,8 @@
                     <info>ListItem.Label</info>
                 </control>
                 <control type="label">
-                    <posx>798</posx>
-                    <posy>165</posy>
+                    <left>798</left>
+                    <top>165</top>
                     <width>798</width>
                     <height>60</height>
                     <font>Default</font>

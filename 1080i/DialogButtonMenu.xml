@@ -4,41 +4,41 @@
     <defaultcontrol>9000</defaultcontrol>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <texture>filter_keyboard_shadow.png</texture>
         </control>
         <control type="group">
-            <posx>620</posx>
-            <posy>147</posy>
+            <left>620</left>
+            <top>147</top>
             <width>784</width>
             <height>484</height>
             <include>Zoom_In_WindowOpen</include>
             <include>Zoom_Out_WindowClose</include>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>680</width>
                 <height>784</height>
                 <texture>dialogs\dialog-background-power.png</texture>
             </control>
             <control type="image">
-                <posx>291</posx>
-                <posy>90</posy>
+                <left>291</left>
+                <top>90</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>dialogs\power-dialog-icon.png</texture>
             </control>
             <control type="grouplist" id="9000">
-                <posx>90</posx>
-                <posy>195</posy>
+                <left>90</left>
+                <top>195</top>
                 <width>500</width>
                 <height>483</height>
                 <itemgap>0</itemgap>
@@ -54,8 +54,8 @@
                     <visible>System.HasLoginScreen</visible>
                     <visible>System.Loggedon</visible>
                     <label>$LOCALIZE[20126] $INFO[system.profilename]</label>
-                    <posx>45</posx>
-                    <posy>0</posy>
+                    <left>45</left>
+                    <top>0</top>
                     <width>410</width>
                     <height>69</height>
                     <font>Default</font>
@@ -70,8 +70,8 @@
                 <control type="button" id="100">
                     <description>Dashboard</description>
                     <label>$LOCALIZE[13006]</label>
-                    <posx>45</posx>
-                    <posy>0</posy>
+                    <left>45</left>
+                    <top>0</top>
                     <width>410</width>
                     <height>69</height>
                     <font>Default</font>
@@ -87,8 +87,8 @@
                 <control type="button" id="101">
                     <description>Exit XBMC</description>
                     <label>$LOCALIZE[13012] $LOCALIZE[50027]</label>
-                    <posx>45</posx>
-                    <posy>0</posy>
+                    <left>45</left>
+                    <top>0</top>
                     <width>410</width>
                     <height>69</height>
                     <font>Default</font>
@@ -104,8 +104,8 @@
                 <control type="button" id="102">
                     <description>Restart XBMC</description>
                     <label>$LOCALIZE[50028]</label>
-                    <posx>45</posx>
-                    <posy>0</posy>
+                    <left>45</left>
+                    <top>0</top>
                     <width>410</width>
                     <height>69</height>
                     <font>Default</font>
@@ -123,8 +123,8 @@
                     <control type="button" id="200">
                         <description>30min ShutdownTimer button</description>
                         <label>20147</label>
-                        <posx>45</posx>
-                        <posy>0</posy>
+                        <left>45</left>
+                        <top>0</top>
                         <width>410</width>
                         <height>69</height>
                         <font>-</font>
@@ -140,8 +140,8 @@
                     <control type="button" id="201">
                         <description>60min ShutdownTimer button</description>
                         <label>20148</label>
-                        <posx>45</posx>
-                        <posy>0</posy>
+                        <left>45</left>
+                        <top>0</top>
                         <width>410</width>
                         <height>69</height>
                         <font>-</font>
@@ -157,8 +157,8 @@
                     <control type="button" id="202">
                         <description>120min ShutdownTimer button</description>
                         <label>20149</label>
-                        <posx>45</posx>
-                        <posy>0</posy>
+                        <left>45</left>
+                        <top>0</top>
                         <width>410</width>
                         <height>69</height>
                         <font>-</font>
@@ -174,8 +174,8 @@
                     <control type="button" id="203">
                         <description>Custom ShutdownTimer button</description>
                         <label>20150</label>
-                        <posx>45</posx>
-                        <posy>0</posy>
+                        <left>45</left>
+                        <top>0</top>
                         <width>410</width>
                         <height>69</height>
                         <font>-</font>
@@ -191,8 +191,8 @@
                     <control type="button" id="204">
                         <description>Cancel ShutdownTimer button</description>
                         <label>20151</label>
-                        <posx>45</posx>
-                        <posy>0</posy>
+                        <left>45</left>
+                        <top>0</top>
                         <width>410</width>
                         <height>69</height>
                         <font>-</font>
@@ -208,8 +208,8 @@
                     <control type="button" id="205">
                         <description>Shutdown</description>
                         <label>13005</label>
-                        <posx>45</posx>
-                        <posy>0</posy>
+                        <left>45</left>
+                        <top>0</top>
                         <width>410</width>
                         <height>69</height>
                         <font>-</font>
@@ -227,8 +227,8 @@
                         <animation type="Conditional" condition="Control.HasFocus(205)" reversible="false" pulse="true">
                             <effect type="slide" start="0" end="8" tween="sine" easing="inout" time="600" />
                         </animation>
-                        <posx>0</posx>
-                        <posy>18</posy>
+                        <left>0</left>
+                        <top>18</top>
                         <width>33</width>
                         <height>33</height>
                         <texture>dialogs\arrow_left_f.png</texture>
@@ -238,8 +238,8 @@
                         <animation type="Conditional" condition="Control.HasFocus(205)" reversible="false" pulse="true">
                             <effect type="slide" start="0" end="-8" tween="sine" easing="inout" time="600" />
                         </animation>
-                        <posx>466</posx>
-                        <posy>18</posy>
+                        <left>466</left>
+                        <top>18</top>
                         <width>33</width>
                         <height>33</height>
                         <texture>dialogs\arrow_right_f.png</texture>
@@ -248,16 +248,16 @@
                         <visible>Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202) | Control.HasFocus(203) | Control.HasFocus(204) | Control.HasFocus(205)</visible>
                         <control type="image" id="206">
                             <description>Shutdown focus image</description>
-                            <posx>45</posx>
-                            <posy>0</posy>
+                            <left>45</left>
+                            <top>0</top>
                             <width>410</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_power_f.png</texture>
                         </control>
                         <control type="label" id="3100">
                             <description>Label control</description>
-                            <posx>45</posx>
-                            <posy>0</posy>
+                            <left>45</left>
+                            <top>0</top>
                             <width>410</width>
                             <height>69</height>
                             <label>-</label>
@@ -270,16 +270,16 @@
                         <visible>!Control.HasFocus(200) + !Control.HasFocus(201) + !Control.HasFocus(202) + !Control.HasFocus(203) + !Control.HasFocus(204) + !Control.HasFocus(205)</visible>
                         <control type="image" id="207">
                             <description>Shutdown no focus image</description>
-                            <posx>45</posx>
-                            <posy>0</posy>
+                            <left>45</left>
+                            <top>0</top>
                             <width>410</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                         </control>
                         <control type="label">
                             <description>Label control</description>
-                            <posx>45</posx>
-                            <posy>0</posy>
+                            <left>45</left>
+                            <top>0</top>
                             <width>410</width>
                             <height>69</height>
                             <label>13005</label>
@@ -294,8 +294,8 @@
                     <visible>!Skin.HasSetting(ShutdownUseHibernate)</visible>
                     <visible>System.CanSuspend</visible>
                     <label>13011</label>
-                    <posx>45</posx>
-                    <posy>0</posy>
+                    <left>45</left>
+                    <top>0</top>
                     <width>410</width>
                     <height>69</height>
                     <font>Default</font>
@@ -312,8 +312,8 @@
                     <visible>Skin.HasSetting(ShutdownUseHibernate)</visible>
                     <visible>System.CanHibernate</visible>
                     <label>13010</label>
-                    <posx>45</posx>
-                    <posy>0</posy>
+                    <left>45</left>
+                    <top>0</top>
                     <width>410</width>
                     <height>69</height>
                     <font>Default</font>
@@ -328,8 +328,8 @@
                 <control type="button" id="107">
                     <description>Reboot</description>
                     <label>13013</label>
-                    <posx>45</posx>
-                    <posy>0</posy>
+                    <left>45</left>
+                    <top>0</top>
                     <width>410</width>
                     <height>69</height>
                     <font>Default</font>

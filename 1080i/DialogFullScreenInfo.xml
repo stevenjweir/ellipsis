@@ -4,8 +4,8 @@
     <include>Fade_Out_WindowClose</include>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <!-- THIS IS FOR VIDEOS PLAYING WITHOUT LIBRARY ENTRIES -->
@@ -15,19 +15,19 @@
             <visible>!VideoPlayer.Content(MusicVideos)</visible>
             <include>Zoom_In_WindowOpen</include>
             <include>Zoom_Out_WindowClose</include>
-            <posx>315</posx>
-            <posy>564</posy>
+            <left>315</left>
+            <top>564</top>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1290</width>
                 <height>267</height>
                 <texture border="15,15,15,15">menu\fullscreen\info-popup-panel-fullscreen.png</texture>
                 <colordiffuse>InfoPanelDiffuse</colordiffuse>
             </control>
             <control type="image">
-                <posx>15</posx>
-                <posy>15</posy>
+                <left>15</left>
+                <top>15</top>
                 <width>422</width>
                 <height>237</height>
                 <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -35,15 +35,15 @@
                 <info>VideoPlayer.Cover</info>
             </control>
             <control type="image">
-                <posx>15</posx>
-                <posy>15</posy>
+                <left>15</left>
+                <top>15</top>
                 <width>422</width>
                 <height>237</height>
                 <texture>episode-overlay.png</texture>
             </control>
             <control type="label">
-                <posx>466</posx>
-                <posy>30</posy>
+                <left>466</left>
+                <top>30</top>
                 <width>808</width>
                 <height>45</height>
                 <font>Library_Light_28</font>
@@ -52,8 +52,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label">
-                <posx>466</posx>
-                <posy>90</posy>
+                <left>466</left>
+                <top>90</top>
                 <width>808</width>
                 <height>45</height>
                 <font>Library_Bold_20</font>
@@ -66,19 +66,19 @@
             <visible>VideoPlayer.Content(Movies)</visible>
             <include>Zoom_In_WindowOpen</include>
             <include>Zoom_Out_WindowClose</include>
-            <posx>429</posx>
-            <posy>564</posy>
+            <left>429</left>
+            <top>564</top>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1062</width>
                 <height>267</height>
                 <texture border="15,15,15,15">menu\fullscreen\info-popup-panel-fullscreen.png</texture>
                 <colordiffuse>InfoPanelDiffuse</colordiffuse>
             </control>
             <control type="image">
-                <posx>27</posx>
-                <posy>15</posy>
+                <left>27</left>
+                <top>15</top>
                 <width>162</width>
                 <height>237</height>
                 <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -86,15 +86,15 @@
                 <info>VideoPlayer.Cover</info>
             </control>
             <control type="image">
-                <posx>27</posx>
-                <posy>15</posy>
+                <left>27</left>
+                <top>15</top>
                 <width>162</width>
                 <height>237</height>
                 <texture>dvdbox-overlay.png</texture>
             </control>
             <control type="label">
-                <posx>216</posx>
-                <posy>30</posy>
+                <left>216</left>
+                <top>30</top>
                 <width>831</width>
                 <height>45</height>
                 <font>Library_Light_28</font>
@@ -103,8 +103,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="textbox">
-                <posx>216</posx>
-                <posy>90</posy>
+                <left>216</left>
+                <top>90</top>
                 <width>831</width>
                 <height>105</height>
                 <font>Library_Normal_18</font>
@@ -113,8 +113,8 @@
                 <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
             </control>
             <control type="label">
-                <posx>216</posx>
-                <posy>210</posy>
+                <left>216</left>
+                <top>210</top>
                 <width>831</width>
                 <height>45</height>
                 <font>Library_Bold_20</font>
@@ -126,19 +126,19 @@
             <visible>VideoPlayer.Content(Episodes)</visible>
             <include>Zoom_In_WindowOpen</include>
             <include>Zoom_Out_WindowClose</include>
-            <posx>315</posx>
-            <posy>564</posy>
+            <left>315</left>
+            <top>564</top>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1290</width>
                 <height>267</height>
                 <texture border="15,15,15,15">menu\fullscreen\info-popup-panel-fullscreen.png</texture>
                 <colordiffuse>InfoPanelDiffuse</colordiffuse>
             </control>
             <control type="image">
-                <posx>15</posx>
-                <posy>15</posy>
+                <left>15</left>
+                <top>15</top>
                 <width>422</width>
                 <height>237</height>
                 <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -146,15 +146,15 @@
                 <info>VideoPlayer.Cover</info>
             </control>
             <control type="image">
-                <posx>15</posx>
-                <posy>15</posy>
+                <left>15</left>
+                <top>15</top>
                 <width>422</width>
                 <height>237</height>
                 <texture>episode-overlay.png</texture>
             </control>
             <control type="label">
-                <posx>466</posx>
-                <posy>30</posy>
+                <left>466</left>
+                <top>30</top>
                 <width>808</width>
                 <height>45</height>
                 <font>Library_Light_28</font>
@@ -163,8 +163,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="textbox">
-                <posx>466</posx>
-                <posy>90</posy>
+                <left>466</left>
+                <top>90</top>
                 <width>808</width>
                 <height>105</height>
                 <font>Library_Normal_18</font>
@@ -173,8 +173,8 @@
                 <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
             </control>
             <control type="label">
-                <posx>466</posx>
-                <posy>210</posy>
+                <left>466</left>
+                <top>210</top>
                 <width>808</width>
                 <height>45</height>
                 <font>Library_Bold_20</font>
@@ -187,19 +187,19 @@
             <visible>VideoPlayer.Content(MusicVideos)</visible>
             <include>Zoom_In_WindowOpen</include>
             <include>Zoom_Out_WindowClose</include>
-            <posx>351</posx>
-            <posy>564</posy>
+            <left>351</left>
+            <top>564</top>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>1218</width>
                 <height>267</height>
                 <texture border="15,15,15,15">menu\fullscreen\info-popup-panel-fullscreen.png</texture>
                 <colordiffuse>InfoPanelDiffuse</colordiffuse>
             </control>
             <control type="image">
-                <posx>15</posx>
-                <posy>15</posy>
+                <left>15</left>
+                <top>15</top>
                 <width>316</width>
                 <height>237</height>
                 <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -207,15 +207,15 @@
                 <info>VideoPlayer.Cover</info>
             </control>
             <control type="image">
-                <posx>15</posx>
-                <posy>15</posy>
+                <left>15</left>
+                <top>15</top>
                 <width>316</width>
                 <height>237</height>
                 <texture>musicvideo-overlay.png</texture>
             </control>
             <control type="label">
-                <posx>362</posx>
-                <posy>30</posy>
+                <left>362</left>
+                <top>30</top>
                 <width>842</width>
                 <height>45</height>
                 <font>Library_Bold_24</font>
@@ -224,8 +224,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label">
-                <posx>362</posx>
-                <posy>84</posy>
+                <left>362</left>
+                <top>84</top>
                 <width>842</width>
                 <height>45</height>
                 <font>Library_Normal_24</font>
@@ -234,8 +234,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label">
-                <posx>362</posx>
-                <posy>135</posy>
+                <left>362</left>
+                <top>135</top>
                 <width>842</width>
                 <height>45</height>
                 <font>Library_Light_24</font>
@@ -244,8 +244,8 @@
                 <scroll>true</scroll>
             </control>
             <control type="label">
-                <posx>362</posx>
-                <posy>210</posy>
+                <left>362</left>
+                <top>210</top>
                 <width>842</width>
                 <height>45</height>
                 <font>Library_Bold_22</font>

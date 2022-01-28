@@ -4,13 +4,13 @@
     <include>Fade_Out_WindowClose</include>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <texture>filter_keyboard_shadow.png</texture>
@@ -20,29 +20,29 @@
             <include>Zoom_Out_WindowClose</include>
             <control type="image">
                 <description>background image</description>
-                <posx>96</posx>
-                <posy>52</posy>
+                <left>96</left>
+                <top>52</top>
                 <width>1726</width>
                 <height>1062</height>
                 <texture>dialogs\dialog-background-verytall.png</texture>
             </control>
             <control type="group">
-                <posx>188</posx>
-                <posy>126</posy>
+                <left>188</left>
+                <top>126</top>
                 <width>1545</width>
                 <height>836</height>
                 <control type="image">
                     <description>dialog icon</description>
-                    <posx>741</posx>
-                    <posy>34</posy>
+                    <left>741</left>
+                    <top>34</top>
                     <width>63</width>
                     <height>63</height>
                     <texture>dialogs\smart-editor-dialog-icon.png</texture>
                 </control>
                 <control type="label" id="1">
                     <description>heading label</description>
-                    <posx>0</posx>
-                    <posy>102</posy>
+                    <left>0</left>
+                    <top>102</top>
                     <width>1545</width>
                     <align>center</align>
                     <font>Heading</font>
@@ -51,8 +51,8 @@
                 </control>
                 <control type="spincontrolex" id="22">
                     <description>Set Playlist type</description>
-                    <posx>45</posx>
-                    <posy>165</posy>
+                    <left>45</left>
+                    <top>165</top>
                     <width>720</width>
                     <height>69</height>
                     <label>$LOCALIZE[467]:</label>
@@ -63,8 +63,8 @@
                 </control>
                 <control type="button" id="12">
                     <description>Name Button</description>
-                    <posx>780</posx>
-                    <posy>165</posy>
+                    <left>780</left>
+                    <top>165</top>
                     <width>720</width>
                     <height>69</height>
                     <textoffsetx>135</textoffsetx>
@@ -78,8 +78,8 @@
                 </control>
                 <control type="label">
                     <description>Name Label</description>
-                    <posx>802</posx>
-                    <posy>165</posy>
+                    <left>802</left>
+                    <top>165</top>
                     <height>69</height>
                     <font>Default</font>
                     <label>$LOCALIZE[50121]</label>
@@ -87,8 +87,8 @@
                 </control>
                 <control type="label">
                     <description>rules label</description>
-                    <posx>45</posx>
-                    <posy>240</posy>
+                    <left>45</left>
+                    <top>240</top>
                     <width>1455</width>
                     <align>left</align>
                     <font>Default</font>
@@ -96,8 +96,8 @@
                 </control>
                 <control type="list" id="10">
                     <description>Rules List Control</description>
-                    <posx>45</posx>
-                    <posy>285</posy>
+                    <left>45</left>
+                    <top>285</top>
                     <width>1140</width>
                     <height>345</height>
                     <onleft>9000</onleft>
@@ -106,15 +106,15 @@
                     <ondown>16</ondown>
                     <itemlayout height="69">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1140</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                         </control>
                         <control type="label">
-                            <posx>22</posx>
-                            <posy>0</posy>
+                            <left>22</left>
+                            <top>0</top>
                             <width>1095</width>
                             <height>69</height>
                             <font>Default</font>
@@ -126,24 +126,24 @@
                     </itemlayout>
                     <focusedlayout height="69">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1140</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_f.png</texture>
                             <visible>Control.HasFocus(10)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>1140</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                             <visible>!Control.HasFocus(10)</visible>
                         </control>
                         <control type="label">
-                            <posx>22</posx>
-                            <posy>0</posy>
+                            <left>22</left>
+                            <top>0</top>
                             <width>1095</width>
                             <height>69</height>
                             <font>Default</font>
@@ -157,8 +157,8 @@
                 <control type="group" id="9000">
                     <control type="button" id="13">
                         <description>Add Rule Button</description>
-                        <posx>1200</posx>
-                        <posy>285</posy>
+                        <left>1200</left>
+                        <top>285</top>
                         <height>69</height>
                         <width>300</width>
                         <label>15019</label>
@@ -171,8 +171,8 @@
                     </control>
                     <control type="button" id="14">
                         <description>Remove Rule Button</description>
-                        <posx>1200</posx>
-                        <posy>354</posy>
+                        <left>1200</left>
+                        <top>354</top>
                         <height>69</height>
                         <width>300</width>
                         <label>1210</label>
@@ -185,8 +185,8 @@
                     </control>
                     <control type="button" id="15">
                         <description>Edit Rule Button</description>
-                        <posx>1200</posx>
-                        <posy>423</posy>
+                        <left>1200</left>
+                        <top>423</top>
                         <height>69</height>
                         <width>300</width>
                         <label>21435</label>
@@ -198,8 +198,8 @@
                         <ondown>19</ondown>
                     </control>
                     <control type="togglebutton" id="19">
-                        <posx>1200</posx>
-                        <posy>530</posy>
+                        <left>1200</left>
+                        <top>530</top>
                         <width>300</width>
                         <height>69</height>
                         <align>center</align>
@@ -213,8 +213,8 @@
                     </control>
                 </control>
                 <control type="spincontrolex" id="16">
-                    <posx>45</posx>
-                    <posy>645</posy>
+                    <left>45</left>
+                    <top>645</top>
                     <width>1455</width>
                     <height>69</height>
                     <label>21424</label>
@@ -225,8 +225,8 @@
                     <ondown>17</ondown>
                 </control>
                 <control type="spincontrolex" id="17">
-                    <posx>45</posx>
-                    <posy>722</posy>
+                    <left>45</left>
+                    <top>722</top>
                     <width>720</width>
                     <height>69</height>
                     <label>21427</label>
@@ -237,8 +237,8 @@
                     <ondown>20</ondown>
                 </control>
                 <control type="spincontrolex" id="18">
-                    <posx>780</posx>
-                    <posy>722</posy>
+                    <left>780</left>
+                    <top>722</top>
                     <width>720</width>
                     <height>69</height>
                     <label>21429</label>
@@ -250,8 +250,8 @@
                 </control>
                 <control type="button" id="20">
                     <description>OK button</description>
-                    <posx>465</posx>
-                    <posy>825</posy>
+                    <left>465</left>
+                    <top>825</top>
                     <width>300</width>
                     <height>69</height>
                     <align>center</align>
@@ -268,8 +268,8 @@
                 </control>
                 <control type="button" id="21">
                     <description>Cancel button</description>
-                    <posx>780</posx>
-                    <posy>825</posy>
+                    <left>780</left>
+                    <top>825</top>
                     <width>300</width>
                     <height>69</height>
                     <align>center</align>

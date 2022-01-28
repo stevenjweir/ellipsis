@@ -4,13 +4,13 @@
     <include>Fade_Out_WindowClose</include>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <control type="image">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <texture>filter_keyboard_shadow.png</texture>
@@ -19,12 +19,12 @@
             <include>Zoom_In_WindowOpen</include>
             <include>Zoom_Out_WindowClose</include>
             <control type="group">
-                <posx>96</posx>
-                <posy>52</posy>
+                <left>96</left>
+                <top>52</top>
                 <control type="image">
                     <description>background image</description>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>1726</width>
                     <height>1062</height>
                     <texture>dialogs\dialog-background-verytall.png</texture>
@@ -32,11 +32,11 @@
                 <control type="group">
                     <visible>Container.Content(Movies)</visible>
                     <control type="group">
-                        <posx>168</posx>
-                        <posy>111</posy>
+                        <left>168</left>
+                        <top>111</top>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>450</width>
                             <height>662</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -45,8 +45,8 @@
                             <visible>IsEmpty(ListItem.Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>450</width>
                             <height>662</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -55,31 +55,31 @@
                             <visible>!IsEmpty(ListItem.Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>450</width>
                             <height>662</height>
                             <texture>overlays\dvd\$INFO[ListItem.Overlay]</texture>
                             <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>450</width>
                             <height>662</height>
                             <texture>dvdbox-overlay.png</texture>
                         </control>
                     </control>
                     <control type="image">
-                        <posx>1018</posx>
-                        <posy>105</posy>
+                        <left>1018</left>
+                        <top>105</top>
                         <width>216</width>
                         <height>34</height>
                         <texture>$INFO[ListItem.StarRating]</texture>
                     </control>
                     <control type="label">
-                        <posx>694</posx>
-                        <posy>174</posy>
+                        <left>694</left>
+                        <top>174</top>
                         <width>864</width>
                         <height>52</height>
                         <font>Library_Light_35</font>
@@ -89,8 +89,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>694</posx>
-                        <posy>270</posy>
+                        <left>694</left>
+                        <top>270</top>
                         <width>564</width>
                         <height>52</height>
                         <font>Library_Light_20</font>
@@ -99,8 +99,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>1558</posx>
-                        <posy>270</posy>
+                        <left>1558</left>
+                        <top>270</top>
                         <width>300</width>
                         <height>52</height>
                         <font>Library_Light_20</font>
@@ -110,8 +110,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="grouplist">
-                        <posx>694</posx>
-                        <posy>735</posy>
+                        <left>694</left>
+                        <top>735</top>
                         <width>864</width>
                         <height>45</height>
                         <itemgap>15</itemgap>
@@ -123,11 +123,11 @@
                 <control type="group">
                     <visible>Container.Content(TVShows)</visible>
                     <control type="group">
-                        <posx>168</posx>
-                        <posy>111</posy>
+                        <left>168</left>
+                        <top>111</top>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>450</width>
                             <height>662</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -136,8 +136,8 @@
                             <visible>IsEmpty(ListItem.Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>450</width>
                             <height>662</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -146,31 +146,31 @@
                             <visible>!IsEmpty(ListItem.Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>450</width>
                             <height>662</height>
                             <texture>overlays\dvd\$INFO[ListItem.Overlay]</texture>
                             <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>450</width>
                             <height>662</height>
                             <texture>dvdbox-overlay.png</texture>
                         </control>
                     </control>
                     <control type="image">
-                        <posx>1018</posx>
-                        <posy>105</posy>
+                        <left>1018</left>
+                        <top>105</top>
                         <width>216</width>
                         <height>34</height>
                         <texture>$INFO[ListItem.StarRating]</texture>
                     </control>
                     <control type="label">
-                        <posx>694</posx>
-                        <posy>174</posy>
+                        <left>694</left>
+                        <top>174</top>
                         <width>864</width>
                         <height>52</height>
                         <font>Library_Light_35</font>
@@ -180,8 +180,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>694</posx>
-                        <posy>270</posy>
+                        <left>694</left>
+                        <top>270</top>
                         <width>864</width>
                         <height>52</height>
                         <font>Library_Normal_24</font>
@@ -191,8 +191,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="grouplist">
-                        <posx>694</posx>
-                        <posy>735</posy>
+                        <left>694</left>
+                        <top>735</top>
                         <width>864</width>
                         <height>45</height>
                         <itemgap>15</itemgap>
@@ -204,11 +204,11 @@
                 <control type="group">
                     <visible>Container.Content(Episodes)</visible>
                     <control type="group">
-                        <posx>168</posx>
-                        <posy>357</posy>
+                        <left>168</left>
+                        <top>357</top>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>447</width>
                             <height>252</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -217,8 +217,8 @@
                             <visible>IsEmpty(ListItem.Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>447</width>
                             <height>252</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -227,31 +227,31 @@
                             <visible>!IsEmpty(ListItem.Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>447</width>
                             <height>252</height>
                             <texture>overlays\wide\$INFO[ListItem.Overlay]</texture>
                             <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>447</width>
                             <height>252</height>
                             <texture>episode-overlay.png</texture>
                         </control>
                     </control>
                     <control type="image">
-                        <posx>754</posx>
-                        <posy>105</posy>
+                        <left>754</left>
+                        <top>105</top>
                         <width>216</width>
                         <height>34</height>
                         <texture>$INFO[ListItem.StarRating]</texture>
                     </control>
                     <control type="label">
-                        <posx>168</posx>
-                        <posy>174</posy>
+                        <left>168</left>
+                        <top>174</top>
                         <width>1390</width>
                         <height>52</height>
                         <font>Library_Light_35</font>
@@ -261,8 +261,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>168</posx>
-                        <posy>258</posy>
+                        <left>168</left>
+                        <top>258</top>
                         <width>1390</width>
                         <height>52</height>
                         <font>Library_Light_28</font>
@@ -271,8 +271,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>1558</posx>
-                        <posy>270</posy>
+                        <left>1558</left>
+                        <top>270</top>
                         <width>300</width>
                         <height>52</height>
                         <font>Library_Light_20</font>
@@ -282,8 +282,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>168</posx>
-                        <posy>660</posy>
+                        <left>168</left>
+                        <top>660</top>
                         <width>447</width>
                         <height>52</height>
                         <font>Library_Light_20</font>
@@ -291,8 +291,8 @@
                         <label>[B]$INFO[ListItem.Date,AIRED ][/B]</label>
                     </control>
                     <control type="grouplist">
-                        <posx>168</posx>
-                        <posy>735</posy>
+                        <left>168</left>
+                        <top>735</top>
                         <width>1390</width>
                         <height>45</height>
                         <itemgap>15</itemgap>
@@ -304,11 +304,11 @@
                 <control type="group">
                     <visible>Container.Content(MusicVideos)</visible>
                     <control type="group">
-                        <posx>168</posx>
-                        <posy>357</posy>
+                        <left>168</left>
+                        <top>357</top>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>447</width>
                             <height>252</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -317,8 +317,8 @@
                             <visible>IsEmpty(ListItem.Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>447</width>
                             <height>252</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -327,24 +327,24 @@
                             <visible>!IsEmpty(ListItem.Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>447</width>
                             <height>252</height>
                             <texture>overlays\wide\$INFO[ListItem.Overlay]</texture>
                             <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>447</width>
                             <height>252</height>
                             <texture>episode-overlay.png</texture>
                         </control>
                     </control>
                     <control type="label">
-                        <posx>168</posx>
-                        <posy>105</posy>
+                        <left>168</left>
+                        <top>105</top>
                         <width>1390</width>
                         <height>52</height>
                         <font>Library_Light_35</font>
@@ -354,8 +354,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>168</posx>
-                        <posy>188</posy>
+                        <left>168</left>
+                        <top>188</top>
                         <width>1390</width>
                         <height>52</height>
                         <font>Library_Light_28</font>
@@ -365,8 +365,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>168</posx>
-                        <posy>258</posy>
+                        <left>168</left>
+                        <top>258</top>
                         <width>1390</width>
                         <height>52</height>
                         <font>Library_Light_28</font>
@@ -376,8 +376,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="fadelabel">
-                        <posx>168</posx>
-                        <posy>630</posy>
+                        <left>168</left>
+                        <top>630</top>
                         <width>447</width>
                         <height>52</height>
                         <font>Library_Light_20</font>
@@ -386,8 +386,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="grouplist">
-                        <posx>168</posx>
-                        <posy>735</posy>
+                        <left>168</left>
+                        <top>735</top>
                         <width>1390</width>
                         <height>45</height>
                         <itemgap>15</itemgap>
@@ -399,16 +399,16 @@
                 <control type="group">
                     <visible>!Control.IsVisible(50)</visible>
                     <control type="image">
-                        <posx>694</posx>
-                        <posy>333</posy>
+                        <left>694</left>
+                        <top>333</top>
                         <width>864</width>
                         <height>360</height>
                         <texture border="10,10,10,10">menu\library\panel-light.png</texture>
                         <colordiffuse>LibraryPanelDiffuse</colordiffuse>
                     </control>
                     <control type="textbox">
-                        <posx>726</posx>
-                        <posy>362</posy>
+                        <left>726</left>
+                        <top>362</top>
                         <width>807</width>
                         <height>296</height>
                         <font>Library_Normal_20</font>
@@ -419,8 +419,8 @@
                     </control>
                 </control>
                 <control type="panel" id="50">
-                    <posx>694</posx>
-                    <posy>340</posy>
+                    <left>694</left>
+                    <top>340</top>
                     <width>864</width>
                     <height>345</height>
                     <onleft>200</onleft>
@@ -432,22 +432,22 @@
                     <scrolltime>200</scrolltime>
                     <itemlayout height="69" width="864">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>864</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                         </control>
                         <control type="image">
-                            <posx>15</posx>
-                            <posy>6</posy>
+                            <left>15</left>
+                            <top>6</top>
                             <width>52</width>
                             <height>52</height>
                             <info>ListItem.Icon</info>
                         </control>
                         <control type="label">
-                            <posx>82</posx>
-                            <posy>6</posy>
+                            <left>82</left>
+                            <top>6</top>
                             <width>766</width>
                             <height>52</height>
                             <font>Default</font>
@@ -460,31 +460,31 @@
                     </itemlayout>
                     <focusedlayout height="69" width="864">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>864</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                             <visible>!Control.HasFocus(50)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>864</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_f.png</texture>
                             <visible>Control.HasFocus(50)</visible>
                         </control>
                         <control type="image">
-                            <posx>15</posx>
-                            <posy>6</posy>
+                            <left>15</left>
+                            <top>6</top>
                             <width>52</width>
                             <height>52</height>
                             <info>ListItem.Icon</info>
                         </control>
                         <control type="label">
-                            <posx>82</posx>
-                            <posy>6</posy>
+                            <left>82</left>
+                            <top>6</top>
                             <width>766</width>
                             <height>52</height>
                             <font>Default</font>
@@ -497,8 +497,8 @@
                     </focusedlayout>
                 </control>
                 <control type="grouplist" id="200">
-                    <posx>0</posx>
-                    <posy>840</posy>
+                    <left>0</left>
+                    <top>840</top>
                     <width>1726</width>
                     <height>69</height>
                     <onleft>200</onleft>
@@ -532,17 +532,10 @@
                         <align>center</align>
                     </control>
                     <control type="button" id="10">
-                        <description>Thumb</description>
+                        <description>Choose Art</description>
                         <height>69</height>
                         <width>240</width>
-                        <label>13405</label>
-                        <align>center</align>
-                    </control>
-                    <control type="button" id="12">
-                        <description>Fanart</description>
-                        <height>69</height>
-                        <width>240</width>
-                        <label>20413</label>
+                        <label>13511</label>
                         <align>center</align>
                     </control>
                     <control type="button" id="6">

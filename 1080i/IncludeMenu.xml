@@ -6,8 +6,8 @@
         <scrolltime>250</scrolltime>
         <itemlayout height="768" width="384">
             <control type="label">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>255</width>
                 <height>768</height>
                 <font>Default</font>
@@ -18,8 +18,8 @@
         </itemlayout>
         <focusedlayout height="768" width="384">
             <control type="label">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>384</width>
                 <height>768</height>
                 <font>Default</font>
@@ -38,16 +38,16 @@
             <animation effect="fade" time="300">WindowOpen</animation>
             <animation effect="fade" time="300">WindowClose</animation>
             <control type="image">
-                <posx>-454</posx>
-                <posy>579</posy>
+                <left>-454</left>
+                <top>579</top>
                 <width>908</width>
                 <height>72</height>
                 <texture>filter_iconlabel.png</texture>
             </control>
             <control type="label">
                 <description>Current Selection</description>
-                <posx>-960</posx>
-                <posy>576</posy>
+                <left>-960</left>
+                <top>576</top>
                 <width>1920</width>
                 <height>72</height>
                 <align>center</align>
@@ -220,7 +220,7 @@
         <item>
             <icon>menu\settings\skin.png</icon>
             <label>$LOCALIZE[50069]</label>
-            <onclick>ActivateWindow(1111)</onclick>
+            <onclick>ActivateWindow(skinsettings)</onclick>
         </item>
     </include>
     <include name="Settings_System_Info">
@@ -232,8 +232,8 @@
     </include>
     <include name="Menu_Icons">
         <control type="group">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <!-- Home Scroller Icons - Counter Clockwise Mothion -->
             <control type="group" id="7001">
                 <visible>Container(9000).OnPrevious</visible>
@@ -246,20 +246,20 @@
                         <effect type="slide" start="0,0" end="258,0" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>-1152</posx>
-                    <posy>82</posy>
+                    <left>-1152</left>
+                    <top>82</top>
                     <width>192</width>
                     <height>384</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>192</width>
                         <height>192</height>
                         <info>Container(9000).ListItem(-2).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>192</posy>
+                        <left>0</left>
+                        <top>192</top>
                         <width>192</width>
                         <height>192</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -270,20 +270,20 @@
                 <control type="group">
                     <visible>Container(9000).OnPrevious</visible>
                     <animation effect="zoom" start="-894,82,192,384" end="-543,75,240,480" time="250" reversible="false">Hidden</animation>
-                    <posx>-894</posx>
-                    <posy>82</posy>
+                    <left>-894</left>
+                    <top>82</top>
                     <width>192</width>
                     <height>384</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>192</width>
                         <height>192</height>
                         <info>Container(9000).ListItem(-1).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>192</posy>
+                        <left>0</left>
+                        <top>192</top>
                         <width>192</width>
                         <height>192</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -294,20 +294,20 @@
                 <control type="group">
                     <visible>Container(9000).OnPrevious</visible>
                     <animation effect="zoom" start="-543,75,240,480" end="-192,0,384,768" time="250" reversible="false">Hidden</animation>
-                    <posx>-543</posx>
-                    <posy>75</posy>
+                    <left>-543</left>
+                    <top>75</top>
                     <width>240</width>
                     <height>480</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>240</width>
                         <height>240</height>
                         <info>Container(9000).ListItem(0).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>240</posy>
+                        <left>0</left>
+                        <top>240</top>
                         <width>240</width>
                         <height>240</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -318,20 +318,20 @@
                 <control type="group">
                     <visible>Container(9000).OnPrevious</visible>
                     <animation effect="zoom" start="-192,0,384,768" end="318,75,240,480" time="250" reversible="false">Hidden</animation>
-                    <posx>-192</posx>
-                    <posy>0</posy>
+                    <left>-192</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>768</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>384</width>
                         <height>384</height>
                         <info>Container(9000).ListItem(1).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>384</posy>
+                        <left>0</left>
+                        <top>384</top>
                         <width>384</width>
                         <height>384</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -342,20 +342,20 @@
                 <control type="group">
                     <visible>Container(9000).OnPrevious</visible>
                     <animation effect="zoom" start="318,75,240,480" end="702,82,192,384" time="250" reversible="false">Hidden</animation>
-                    <posx>318</posx>
-                    <posy>75</posy>
+                    <left>318</left>
+                    <top>75</top>
                     <width>240</width>
                     <height>480</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>240</width>
                         <height>240</height>
                         <info>Container(9000).ListItem(2).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>240</posy>
+                        <left>0</left>
+                        <top>240</top>
                         <width>240</width>
                         <height>240</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -369,20 +369,20 @@
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0,0" end="258,0" time="250" />
                     </animation>
-                    <posx>702</posx>
-                    <posy>82</posy>
+                    <left>702</left>
+                    <top>82</top>
                     <width>192</width>
                     <height>384</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>192</width>
                         <height>192</height>
                         <info>Container(9000).ListItem(3).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>192</posy>
+                        <left>0</left>
+                        <top>192</top>
                         <width>192</width>
                         <height>192</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -401,20 +401,20 @@
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0,0" end="-258,0" time="250" />
                     </animation>
-                    <posx>-894</posx>
-                    <posy>82</posy>
+                    <left>-894</left>
+                    <top>82</top>
                     <width>192</width>
                     <height>384</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>192</width>
                         <height>192</height>
                         <info>Container(9000).ListItem(-3).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>192</posy>
+                        <left>0</left>
+                        <top>192</top>
                         <width>192</width>
                         <height>192</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -425,20 +425,20 @@
                 <control type="group">
                     <visible>Container(9000).OnNext</visible>
                     <animation effect="zoom" start="-543,75,240,480" end="-894,82,192,384" time="250" reversible="false">Hidden</animation>
-                    <posx>-543</posx>
-                    <posy>75</posy>
+                    <left>-543</left>
+                    <top>75</top>
                     <width>240</width>
                     <height>480</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>240</width>
                         <height>240</height>
                         <info>Container(9000).ListItem(-2).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>240</posy>
+                        <left>0</left>
+                        <top>240</top>
                         <width>240</width>
                         <height>240</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -449,20 +449,20 @@
                 <control type="group">
                     <visible>Container(9000).OnNext</visible>
                     <animation effect="zoom" start="-192,0,384,768" end="-543,75,240,480" time="250" reversible="false">Hidden</animation>
-                    <posx>-192</posx>
-                    <posy>0</posy>
+                    <left>-192</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>768</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>384</width>
                         <height>384</height>
                         <info>Container(9000).ListItem(-1).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>384</posy>
+                        <left>0</left>
+                        <top>384</top>
                         <width>384</width>
                         <height>384</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -473,20 +473,20 @@
                 <control type="group">
                     <visible>Container(9000).OnNext</visible>
                     <animation effect="zoom" start="318,75,240,480" end="-192,0,384,768" time="250" reversible="false">Hidden</animation>
-                    <posx>318</posx>
-                    <posy>75</posy>
+                    <left>318</left>
+                    <top>75</top>
                     <width>240</width>
                     <height>480</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>240</width>
                         <height>240</height>
                         <info>Container(9000).ListItem(0).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>240</posy>
+                        <left>0</left>
+                        <top>240</top>
                         <width>240</width>
                         <height>240</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -497,20 +497,20 @@
                 <control type="group">
                     <visible>Container(9000).OnNext</visible>
                     <animation effect="zoom" start="702,82,192,384" end="318,75,240,480" time="250" reversible="false">Hidden</animation>
-                    <posx>702</posx>
-                    <posy>82</posy>
+                    <left>702</left>
+                    <top>82</top>
                     <width>192</width>
                     <height>384</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>192</width>
                         <height>192</height>
                         <info>Container(9000).ListItem(1).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>192</posy>
+                        <left>0</left>
+                        <top>192</top>
                         <width>192</width>
                         <height>192</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -525,20 +525,20 @@
                         <effect type="slide" start="258,0" end="0,0" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>702</posx>
-                    <posy>82</posy>
+                    <left>702</left>
+                    <top>82</top>
                     <width>192</width>
                     <height>384</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>192</width>
                         <height>192</height>
                         <info>Container(9000).ListItem(2).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>192</posy>
+                        <left>0</left>
+                        <top>192</top>
                         <width>192</width>
                         <height>192</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -552,21 +552,21 @@
                 <animation effect="fade" time="600">WindowClose</animation>
                 <!-- Icon 1 -->
                 <control type="group">
-                    <posx>-894</posx>
-                    <posy>82</posy>
+                    <left>-894</left>
+                    <top>82</top>
                     <width>192</width>
                     <height>384</height>
                     <visible>!Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>192</width>
                         <height>192</height>
                         <info>Container(9000).ListItem(-2).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>192</posy>
+                        <left>0</left>
+                        <top>192</top>
                         <width>192</width>
                         <height>192</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -575,21 +575,21 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="group">
-                    <posx>-543</posx>
-                    <posy>75</posy>
+                    <left>-543</left>
+                    <top>75</top>
                     <width>240</width>
                     <height>480</height>
                     <visible>!Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>240</width>
                         <height>240</height>
                         <info>Container(9000).ListItem(-1).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>240</posy>
+                        <left>0</left>
+                        <top>240</top>
                         <width>240</width>
                         <height>240</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -598,13 +598,13 @@
                 </control>
                 <!-- Icon 3 -->
                 <control type="group">
-                    <posx>-192</posx>
-                    <posy>0</posy>
+                    <left>-192</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>768</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>384</width>
                         <height>384</height>
                         <info>Container(9000).ListItem(0).ActualIcon</info>
@@ -615,8 +615,8 @@
                         </animation>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>384</posy>
+                        <left>0</left>
+                        <top>384</top>
                         <width>384</width>
                         <height>384</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -630,21 +630,21 @@
                 </control>
                 <!-- Icon 4 -->
                 <control type="group">
-                    <posx>318</posx>
-                    <posy>75</posy>
+                    <left>318</left>
+                    <top>75</top>
                     <width>240</width>
                     <height>480</height>
                     <visible>!Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>240</width>
                         <height>240</height>
                         <info>Container(9000).ListItem(1).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>240</posy>
+                        <left>0</left>
+                        <top>240</top>
                         <width>240</width>
                         <height>240</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -653,21 +653,21 @@
                 </control>
                 <!-- Icon 5 -->
                 <control type="group">
-                    <posx>702</posx>
-                    <posy>82</posy>
+                    <left>702</left>
+                    <top>82</top>
                     <width>192</width>
                     <height>384</height>
                     <visible>!Control.IsVisible(7001)  + !Control.IsVisible(7002)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>192</width>
                         <height>192</height>
                         <info>Container(9000).ListItem(2).ActualIcon</info>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>192</posy>
+                        <left>0</left>
+                        <top>192</top>
                         <width>192</width>
                         <height>192</height>
                         <texture flipy="true" diffuse="fade.png" />
@@ -679,11 +679,11 @@
     </include>
     <include name="Menu_Home">
         <control type="group">
-            <posx>960</posx>
-            <posy>330</posy>
+            <left>960</left>
+            <top>330</top>
             <control type="wraplist" id="9000">
-                <posx>-960</posx>
-                <posy>0</posy>
+                <left>-960</left>
+                <top>0</top>
                 <height>384</height>
                 <width>1920</width>
                 <ondown>ActivateWindow(1200)</ondown>
@@ -707,13 +707,13 @@
     <include name="Menu_Config">
 	
         <control type="group">
-            <posx>960</posx>
-            <posy>540</posy>
+            <left>960</left>
+            <top>540</top>
 	
 			<control type="image">
 				<visible>Control.HasFocus(9000)</visible>
-				<posx>-475</posx>
-				<posy>-350</posy>
+				<left>-475</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -728,8 +728,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9001)</visible>
-				<posx>-225</posx>
-				<posy>-350</posy>
+				<left>-225</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -744,8 +744,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9002)</visible>
-				<posx>25</posx>
-				<posy>-350</posy>
+				<left>25</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -760,8 +760,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9003)</visible>
-				<posx>275</posx>
-				<posy>-350</posy>
+				<left>275</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -776,8 +776,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9010)</visible>
-				<posx>-475</posx>
-				<posy>-100</posy>
+				<left>-475</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -792,8 +792,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9011)</visible>
-				<posx>-225</posx>
-				<posy>-100</posy>
+				<left>-225</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -808,8 +808,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9012)</visible>
-				<posx>25</posx>
-				<posy>-100</posy>
+				<left>25</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -824,8 +824,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9013)</visible>
-				<posx>275</posx>
-				<posy>-100</posy>
+				<left>275</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -840,8 +840,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9020)</visible>
-				<posx>-475</posx>
-				<posy>150</posy>
+				<left>-475</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -856,8 +856,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9021)</visible>
-				<posx>-225</posx>
-				<posy>150</posy>
+				<left>-225</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -872,8 +872,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9022)</visible>
-				<posx>25</posx>
-				<posy>150</posy>
+				<left>25</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -888,8 +888,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9023)</visible>
-				<posx>275</posx>
-				<posy>150</posy>
+				<left>275</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\icon_background.png</texture>
@@ -905,8 +905,8 @@
 			
 			<control type="image">
 				<visible>!Control.HasFocus(9000)</visible>
-				<posx>-475</posx>
-				<posy>-350</posy>
+				<left>-475</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\videos_nf.png</texture>
@@ -921,8 +921,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9001)</visible>
-				<posx>-225</posx>
-				<posy>-350</posy>
+				<left>-225</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\music_nf.png</texture>
@@ -937,8 +937,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9002)</visible>
-				<posx>25</posx>
-				<posy>-350</posy>
+				<left>25</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\pictures_nf.png</texture>
@@ -953,8 +953,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9003)</visible>
-				<posx>275</posx>
-				<posy>-350</posy>
+				<left>275</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\profiles_nf.png</texture>
@@ -969,8 +969,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9010)</visible>
-				<posx>-475</posx>
-				<posy>-100</posy>
+				<left>-475</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\weather_nf.png</texture>
@@ -985,8 +985,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9011)</visible>
-				<posx>-225</posx>
-				<posy>-100</posy>
+				<left>-225</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\network_nf.png</texture>
@@ -1001,8 +1001,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9012)</visible>
-				<posx>25</posx>
-				<posy>-100</posy>
+				<left>25</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\system_nf.png</texture>
@@ -1017,8 +1017,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9013)</visible>
-				<posx>275</posx>
-				<posy>-100</posy>
+				<left>275</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\addons_nf.png</texture>
@@ -1033,8 +1033,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9020)</visible>
-				<posx>-475</posx>
-				<posy>150</posy>
+				<left>-475</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\appearance_nf.png</texture>
@@ -1049,8 +1049,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9021)</visible>
-				<posx>-225</posx>
-				<posy>150</posy>
+				<left>-225</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\skin_nf.png</texture>
@@ -1065,8 +1065,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9022)</visible>
-				<posx>25</posx>
-				<posy>150</posy>
+				<left>25</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\sys_info_nf.png</texture>
@@ -1081,8 +1081,8 @@
 			</control>
 			<control type="image">
 				<visible>!Control.HasFocus(9023)</visible>
-				<posx>275</posx>
-				<posy>150</posy>
+				<left>275</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\tv_nf.png</texture>
@@ -1098,8 +1098,8 @@
 			
 			<control type="image">
 				<visible>Control.HasFocus(9000)</visible>
-				<posx>-475</posx>
-				<posy>-350</posy>
+				<left>-475</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\videos_f.png</texture>
@@ -1114,8 +1114,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9001)</visible>
-				<posx>-225</posx>
-				<posy>-350</posy>
+				<left>-225</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\music_f.png</texture>
@@ -1130,8 +1130,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9002)</visible>
-				<posx>25</posx>
-				<posy>-350</posy>
+				<left>25</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\pictures_f.png</texture>
@@ -1146,8 +1146,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9003)</visible>
-				<posx>275</posx>
-				<posy>-350</posy>
+				<left>275</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\profiles_f.png</texture>
@@ -1162,8 +1162,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9010)</visible>
-				<posx>-475</posx>
-				<posy>-100</posy>
+				<left>-475</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\weather_f.png</texture>
@@ -1178,8 +1178,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9011)</visible>
-				<posx>-225</posx>
-				<posy>-100</posy>
+				<left>-225</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\network_f.png</texture>
@@ -1194,8 +1194,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9012)</visible>
-				<posx>25</posx>
-				<posy>-100</posy>
+				<left>25</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\system_f.png</texture>
@@ -1210,8 +1210,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9013)</visible>
-				<posx>275</posx>
-				<posy>-100</posy>
+				<left>275</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\addons_f.png</texture>
@@ -1226,8 +1226,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9020)</visible>
-				<posx>-475</posx>
-				<posy>150</posy>
+				<left>-475</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\appearance_f.png</texture>
@@ -1242,8 +1242,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9021)</visible>
-				<posx>-225</posx>
-				<posy>150</posy>
+				<left>-225</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\skin_f.png</texture>
@@ -1258,8 +1258,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9022)</visible>
-				<posx>25</posx>
-				<posy>150</posy>
+				<left>25</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\sys_info_f.png</texture>
@@ -1274,8 +1274,8 @@
 			</control>
 			<control type="image">
 				<visible>Control.HasFocus(9023)</visible>
-				<posx>275</posx>
-				<posy>150</posy>
+				<left>275</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texture>menu\settings\tv_f.png</texture>
@@ -1290,8 +1290,8 @@
 			</control>
 			
 			<control type="button" id="9000">
-				<posx>-475</posx>
-				<posy>-350</posy>
+				<left>-475</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1303,8 +1303,8 @@
 				<onclick>ActivateWindow(MyVideosSettings)</onclick>
 			</control>
 			<control type="button" id="9001">
-				<posx>-225</posx>
-				<posy>-350</posy>
+				<left>-225</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1316,8 +1316,8 @@
 				<onclick>ActivateWindow(MyMusicSettings)</onclick>
 			</control>
 			<control type="button" id="9002">
-				<posx>25</posx>
-				<posy>-350</posy>
+				<left>25</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1329,8 +1329,8 @@
 				<onclick>ActivateWindow(MyPicturesSettings)</onclick>
 			</control>
 			<control type="button" id="9003">
-				<posx>275</posx>
-				<posy>-350</posy>
+				<left>275</left>
+				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1342,8 +1342,8 @@
 				<onclick>ActivateWindow(Profiles)</onclick>
 			</control>
 			<control type="button" id="9010">
-				<posx>-475</posx>
-				<posy>-100</posy>
+				<left>-475</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1355,8 +1355,8 @@
 				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 			</control>
 			<control type="button" id="9011">
-				<posx>-225</posx>
-				<posy>-100</posy>
+				<left>-225</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1368,8 +1368,8 @@
 				<onclick>ActivateWindow(NetworkSettings)</onclick>
 			</control>
 			<control type="button" id="9012">
-				<posx>25</posx>
-				<posy>-100</posy>
+				<left>25</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1381,8 +1381,8 @@
 				<onclick>ActivateWindow(SystemSettings)</onclick>
 			</control>
 			<control type="button" id="9013">
-				<posx>275</posx>
-				<posy>-100</posy>
+				<left>275</left>
+				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1394,8 +1394,8 @@
 				<onclick>ActivateWindow(addonbrowser)</onclick>
 			</control>
 			<control type="button" id="9020">
-				<posx>-475</posx>
-				<posy>150</posy>
+				<left>-475</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1407,8 +1407,8 @@
 				<onclick>ActivateWindow(AppearanceSettings)</onclick>
 			</control>
 			<control type="button" id="9021">
-				<posx>-225</posx>
-				<posy>150</posy>
+				<left>-225</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1417,11 +1417,11 @@
 				<onright>9022</onright>
 				<onup>9011</onup>
 				<ondown>-</ondown>
-				<onclick>ActivateWindow(1111)</onclick>
+				<onclick>ActivateWindow(skinsettings)</onclick>
 			</control>
 			<control type="button" id="9022">
-				<posx>25</posx>
-				<posy>150</posy>
+				<left>25</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
@@ -1433,8 +1433,8 @@
 				<onclick>ActivateWindow(SystemInfo)</onclick>
 			</control>
 			<control type="button" id="9023">
-				<posx>275</posx>
-				<posy>150</posy>
+				<left>275</left>
+				<top>150</top>
 				<width>200</width>
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>

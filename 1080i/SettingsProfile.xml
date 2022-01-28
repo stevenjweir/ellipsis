@@ -6,8 +6,8 @@
         <include>Background</include>
         <include>Profiles_View</include>
         <control type="image">
-            <posx>681</posx>
-            <posy>718</posy>
+            <left>681</left>
+            <top>718</top>
             <width>558</width>
             <height>558</height>
             <texture>settings-big-cog.png</texture>
@@ -21,8 +21,8 @@
         </control>
         <control type="radiobutton" id="4">
             <description>fake login screen</description>
-            <posx>-150</posx>
-            <posy>0</posy>
+            <left>-150</left>
+            <top>0</top>
             <width>15</width>
             <height>15</height>
             <label>-</label>
@@ -46,16 +46,16 @@
         <include>Now_Playing_Widget</include>
         <!-- Elipsis Button -->
         <control type="group">
-            <posx>960</posx>
-            <posy>1080</posy>
+            <left>960</left>
+            <top>1080</top>
             <include>Dock_Elipsis_Home</include>
         </control>
         <control type="group">
-            <posx>960</posx>
-            <posy>930</posy>
+            <left>960</left>
+            <top>930</top>
             <control type="image">
-                <posx>-960</posx>
-                <posy>-930</posy>
+                <left>-960</left>
+                <top>-930</top>
                 <width>1920</width>
                 <height>1080</height>
                 <texture>filter_dockshadow.png</texture>
@@ -71,16 +71,16 @@
                 <animation effect="fade" time="300">WindowOpen</animation>
                 <animation effect="fade" time="300">WindowClose</animation>
                 <control type="image">
-                    <posx>-454</posx>
-                    <posy>-21</posy>
+                    <left>-454</left>
+                    <top>-21</top>
                     <width>908</width>
                     <height>72</height>
                     <texture>filter_iconlabel.png</texture>
                 </control>
                 <control type="label">
                     <description>Current Selection</description>
-                    <posx>-960</posx>
-                    <posy>-18</posy>
+                    <left>-960</left>
+                    <top>-18</top>
                     <width>1920</width>
                     <height>72</height>
                     <align>center</align>
@@ -93,8 +93,8 @@
                 </control>
                 <control type="label">
                     <description>Current Selection</description>
-                    <posx>-960</posx>
-                    <posy>-18</posy>
+                    <left>-960</left>
+                    <top>-18</top>
                     <width>1920</width>
                     <height>72</height>
                     <align>center</align>
@@ -107,8 +107,8 @@
                 </control>
             </control>
             <control type="image">
-                <posx>-68</posx>
-                <posy>0</posy>
+                <left>-68</left>
+                <top>0</top>
                 <width>135</width>
                 <height>135</height>
                 <texture>button_ex_idle.png</texture>
@@ -122,8 +122,8 @@
                 </animation>
             </control>
             <control type="group">
-                <posx>0</posx>
-                <posy>22</posy>
+                <left>0</left>
+                <top>22</top>
                 <animation type="conditional" condition="Control.HasFocus(4)">
                     <effect type="slide" start="0,128" time="300" tween="elastic" easing="out" reversible="false" />
                     <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" reversible="false" />
@@ -133,21 +133,21 @@
                     <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" reversible="false" />
                 </animation>
                 <control type="group">
-                    <posx>-45</posx>
-                    <posy>0</posy>
+                    <left>-45</left>
+                    <top>0</top>
                     <width>90</width>
                     <height>90</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>90</width>
                         <height>90</height>
                         <texture>dock\icons\login-screen-on.png</texture>
                         <visible>system.hasloginscreen</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>90</width>
                         <height>90</height>
                         <texture>dock\icons\login-screen-off.png</texture>

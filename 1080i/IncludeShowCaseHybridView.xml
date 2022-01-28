@@ -2,8 +2,8 @@
     <include name="Show_Case_Hybrid_View">
         <!-- Show Case Hybrid View -->
         <control type="group">
-            <posx>921</posx>
-            <posy>210</posy>
+            <left>921</left>
+            <top>210</top>
             <visible>Control.IsVisible(51)</visible>
             <visible>!Container.Content(Episodes) + !Container.Content(MusicVideos)</visible>
             <!-- Show Case Hybrid View Icons - Counter Clockwise Mothion -->
@@ -18,13 +18,13 @@
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0" end="192" time="250" />
                     </animation>
-                    <posx>741</posx>
-                    <posy>135</posy>
+                    <left>741</left>
+                    <top>135</top>
                     <width>213</width>
                     <height>627</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -33,8 +33,8 @@
                         <visible>IsEmpty(Container(51).ListItem(4).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -43,23 +43,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(4).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(4).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -68,8 +68,8 @@
                         <visible>IsEmpty(Container(51).ListItem(4).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -78,8 +78,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(4).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -90,13 +90,13 @@
                     <visible>Container(51).OnPrevious</visible>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
                     <animation effect="zoom" start="536,99,262,771" end="741,135,213,627" time="250" reversible="false">Hidden</animation>
-                    <posx>536</posx>
-                    <posy>99</posy>
+                    <left>536</left>
+                    <top>99</top>
                     <width>262</width>
                     <height>771</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -105,8 +105,8 @@
                         <visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -115,23 +115,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(3).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -140,8 +140,8 @@
                         <visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -150,8 +150,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -162,13 +162,13 @@
                     <visible>Container(51).OnPrevious</visible>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
                     <animation effect="zoom" start="288,56,324,948" end="536,99,262,771" time="250" reversible="false">Hidden</animation>
-                    <posx>288</posx>
-                    <posy>56</posy>
+                    <left>288</left>
+                    <top>56</top>
                     <width>324</width>
                     <height>948</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -177,8 +177,8 @@
                         <visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -187,23 +187,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(2).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -212,8 +212,8 @@
                         <visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -222,8 +222,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -234,13 +234,13 @@
                     <visible>Container(51).OnPrevious</visible>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="0,0,399,1170" end="288,56,324,948" time="250" reversible="false">Hidden</animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>399</width>
                     <height>1170</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -249,8 +249,8 @@
                         <visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -259,23 +259,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(1).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -284,8 +284,8 @@
                         <visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -294,8 +294,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -309,13 +309,13 @@
                         <effect type="slide" start="-192" end="0" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>399</width>
                     <height>1170</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -324,8 +324,8 @@
                         <visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -334,23 +334,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(0).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -359,8 +359,8 @@
                         <visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -369,8 +369,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -390,13 +390,13 @@
                         <effect type="slide" start="192" end="0" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>741</posx>
-                    <posy>135</posy>
+                    <left>741</left>
+                    <top>135</top>
                     <width>213</width>
                     <height>627</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -405,8 +405,8 @@
                         <visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -415,23 +415,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(3).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -440,8 +440,8 @@
                         <visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -450,8 +450,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -462,13 +462,13 @@
                     <visible>Container(51).OnNext</visible>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
                     <animation effect="zoom" start="741,135,213,627" end="536,99,262,771" time="250" reversible="false">Hidden</animation>
-                    <posx>741</posx>
-                    <posy>135</posy>
+                    <left>741</left>
+                    <top>135</top>
                     <width>213</width>
                     <height>627</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -477,8 +477,8 @@
                         <visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -487,23 +487,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(2).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -512,8 +512,8 @@
                         <visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -522,8 +522,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -534,13 +534,13 @@
                     <visible>Container(51).OnNext</visible>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="536,99,262,771" end="288,56,324,948" time="250" reversible="false">Hidden</animation>
-                    <posx>536</posx>
-                    <posy>99</posy>
+                    <left>536</left>
+                    <top>99</top>
                     <width>262</width>
                     <height>771</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -549,8 +549,8 @@
                         <visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -559,23 +559,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(1).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -584,8 +584,8 @@
                         <visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -594,8 +594,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -606,13 +606,13 @@
                     <visible>Container(51).OnNext</visible>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(0).Label)</visible>
                     <animation effect="zoom" start="288,56,324,948" end="0,0,399,1170" time="250" reversible="false">Hidden</animation>
-                    <posx>288</posx>
-                    <posy>56</posy>
+                    <left>288</left>
+                    <top>56</top>
                     <width>324</width>
                     <height>948</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -621,8 +621,8 @@
                         <visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -631,23 +631,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(0).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -656,8 +656,8 @@
                         <visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -666,8 +666,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -680,13 +680,13 @@
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0" end="-192" time="250" />
                     </animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>399</width>
                     <height>1170</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -695,8 +695,8 @@
                         <visible>IsEmpty(Container(51).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -705,23 +705,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(-1).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -730,8 +730,8 @@
                         <visible>IsEmpty(Container(51).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -740,8 +740,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -753,8 +753,8 @@
                 <visible>!Control.IsVisible(15101)  + !Control.IsVisible(15102)</visible>
                 <!-- Icon 4 -->
                 <control type="group">
-                    <posx>741</posx>
-                    <posy>135</posy>
+                    <left>741</left>
+                    <top>135</top>
                     <width>213</width>
                     <height>627</height>
                     <animation type="WindowOpen">
@@ -767,8 +767,8 @@
                     </animation>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -777,8 +777,8 @@
                         <visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -787,23 +787,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(3).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>213</width>
                         <height>314</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -812,8 +812,8 @@
                         <visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -822,8 +822,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>314</posy>
+                        <left>0</left>
+                        <top>314</top>
                         <width>213</width>
                         <height>314</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -831,8 +831,8 @@
                 </control>
                 <!-- Icon 3 -->
                 <control type="group">
-                    <posx>536</posx>
-                    <posy>99</posy>
+                    <left>536</left>
+                    <top>99</top>
                     <width>262</width>
                     <height>771</height>
                     <animation type="WindowOpen">
@@ -845,8 +845,8 @@
                     </animation>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -855,8 +855,8 @@
                         <visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -865,23 +865,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(2).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>262</width>
                         <height>386</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -890,8 +890,8 @@
                         <visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -900,8 +900,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>386</posy>
+                        <left>0</left>
+                        <top>386</top>
                         <width>262</width>
                         <height>386</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -909,8 +909,8 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="group">
-                    <posx>288</posx>
-                    <posy>56</posy>
+                    <left>288</left>
+                    <top>56</top>
                     <width>324</width>
                     <height>948</height>
                     <animation type="WindowOpen">
@@ -923,8 +923,8 @@
                     </animation>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -933,8 +933,8 @@
                         <visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -943,23 +943,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(1).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>324</width>
                         <height>474</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -968,8 +968,8 @@
                         <visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -978,8 +978,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>474</posy>
+                        <left>0</left>
+                        <top>474</top>
                         <width>324</width>
                         <height>474</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -987,8 +987,8 @@
                 </control>
                 <!-- Icon 1 -->
                 <control type="group">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>399</width>
                     <height>1170</height>
                     <camera x="0" y="0" />
@@ -1001,8 +1001,8 @@
                         <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" reversible="false" />
                     </animation>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1011,8 +1011,8 @@
                         <visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1021,23 +1021,23 @@
                         <visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <texture>overlays\dvd\$INFO[Container(51).ListItem(0).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>399</width>
                         <height>585</height>
                         <texture>dvdbox-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1046,8 +1046,8 @@
                         <visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1056,8 +1056,8 @@
                         <visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>585</posy>
+                        <left>0</left>
+                        <top>585</top>
                         <width>399</width>
                         <height>585</height>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
@@ -1067,8 +1067,8 @@
         </control>
         <!-- Show Case Hybrid View Wide -->
         <control type="group">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <visible>Control.IsVisible(52)</visible>
             <visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
             <!-- Show Case Hybrid View Wide Icons - Counter Clockwise Mothion -->
@@ -1083,13 +1083,13 @@
                         <effect type="fade" start="0" end="100" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>1200</posx>
-                    <posy>282</posy>
+                    <left>1200</left>
+                    <top>282</top>
                     <width>426</width>
                     <height>240</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1098,8 +1098,8 @@
                         <visible>IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1108,16 +1108,16 @@
                         <visible>!IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>overlays\wide\$INFO[Container(52).ListItem(-1).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>episode-overlay.png</texture>
@@ -1130,13 +1130,13 @@
                     <animation type="Hidden" reversible="false">
                         <effect type="fade" start="0" end="100" time="250" />
                     </animation>
-                    <posx>1200</posx>
-                    <posy>560</posy>
+                    <left>1200</left>
+                    <top>560</top>
                     <width>426</width>
                     <height>240</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1145,8 +1145,8 @@
                         <visible>IsEmpty(Container(52).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1155,16 +1155,16 @@
                         <visible>!IsEmpty(Container(52).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>overlays\wide\$INFO[Container(52).ListItem(2).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>episode-overlay.png</texture>
@@ -1178,13 +1178,13 @@
                         <effect type="zoom" start="1113,372,600,339" end="1200,711,426,240" time="125" />
                         <effect type="slide" start="0,0" end="0,-150" time="125" tween="sine" easing="out" delay="125" />
                     </animation>
-                    <posx>1113</posx>
-                    <posy>372</posy>
+                    <left>1113</left>
+                    <top>372</top>
                     <width>600</width>
                     <height>339</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>600</width>
                         <height>339</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1193,8 +1193,8 @@
                         <visible>IsEmpty(Container(52).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>600</width>
                         <height>339</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1203,16 +1203,16 @@
                         <visible>!IsEmpty(Container(52).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>600</width>
                         <height>339</height>
                         <texture>overlays\wide\$INFO[Container(52).ListItem(1).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>600</width>
                         <height>339</height>
                         <texture>episode-overlay.png</texture>
@@ -1223,13 +1223,13 @@
                     <visible>Container(52).OnPrevious</visible>
                     <visible>!IsEmpty(Container(52).ListItemNoWrap(0).Label)</visible>
                     <animation effect="zoom" start="1200,282,426,240" end="1113,372,600,339" time="250" reversible="false">Hidden</animation>
-                    <posx>1200</posx>
-                    <posy>282</posy>
+                    <left>1200</left>
+                    <top>282</top>
                     <width>426</width>
                     <height>240</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1238,8 +1238,8 @@
                         <visible>IsEmpty(Container(52).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1248,16 +1248,16 @@
                         <visible>!IsEmpty(Container(52).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>overlays\wide\$INFO[Container(52).ListItem(0).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>episode-overlay.png</texture>
@@ -1275,13 +1275,13 @@
                     <animation type="Hidden" reversible="false">
                         <effect type="fade" start="100" end="0" time="250" />
                     </animation>
-                    <posx>1200</posx>
-                    <posy>282</posy>
+                    <left>1200</left>
+                    <top>282</top>
                     <width>426</width>
                     <height>240</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1290,8 +1290,8 @@
                         <visible>IsEmpty(Container(52).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1300,16 +1300,16 @@
                         <visible>!IsEmpty(Container(52).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>overlays\wide\$INFO[Container(52).ListItem(-2).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>episode-overlay.png</texture>
@@ -1323,13 +1323,13 @@
                         <effect type="fade" start="0" end="100" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>1200</posx>
-                    <posy>560</posy>
+                    <left>1200</left>
+                    <top>560</top>
                     <width>426</width>
                     <height>240</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1338,8 +1338,8 @@
                         <visible>IsEmpty(Container(52).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1348,16 +1348,16 @@
                         <visible>!IsEmpty(Container(52).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>overlays\wide\$INFO[Container(52).ListItem(1).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>episode-overlay.png</texture>
@@ -1371,13 +1371,13 @@
                         <effect type="zoom" start="1113,372,600,339" end="1200,132,426,240" time="125" />
                         <effect type="slide" start="0,0" end="0,150" time="125" tween="sine" easing="out" delay="125" />
                     </animation>
-                    <posx>1113</posx>
-                    <posy>372</posy>
+                    <left>1113</left>
+                    <top>372</top>
                     <width>600</width>
                     <height>339</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>600</width>
                         <height>339</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1386,8 +1386,8 @@
                         <visible>IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>600</width>
                         <height>339</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1396,16 +1396,16 @@
                         <visible>!IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>600</width>
                         <height>339</height>
                         <texture>overlays\wide\$INFO[Container(52).ListItem(-1).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>600</width>
                         <height>339</height>
                         <texture>episode-overlay.png</texture>
@@ -1415,13 +1415,13 @@
                 <control type="group">
                     <visible>Container(52).OnNext</visible>
                     <animation effect="zoom" start="1200,560,426,240" end="1113,372,600,339" time="250" reversible="false">Hidden</animation>
-                    <posx>1200</posx>
-                    <posy>560</posy>
+                    <left>1200</left>
+                    <top>560</top>
                     <width>426</width>
                     <height>240</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1430,8 +1430,8 @@
                         <visible>IsEmpty(Container(52).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1440,16 +1440,16 @@
                         <visible>!IsEmpty(Container(52).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>overlays\wide\$INFO[Container(52).ListItem(0).Overlay]</texture>
                         <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>426</width>
                         <height>240</height>
                         <texture>episode-overlay.png</texture>
@@ -1461,8 +1461,8 @@
                 <visible>!Control.IsVisible(25101)  + !Control.IsVisible(25102)</visible>
                 <!-- Icon 1 -->
                 <control type="group">
-                    <posx>1200</posx>
-                    <posy>282</posy>
+                    <left>1200</left>
+                    <top>282</top>
                     <width>426</width>
                     <height>240</height>
                     <control type="group">
@@ -1476,8 +1476,8 @@
                         </animation>
                         <visible>!IsEmpty(Container(52).ListItemNoWrap(-1).Label)</visible>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>426</width>
                             <height>240</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1486,8 +1486,8 @@
                             <visible>IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>426</width>
                             <height>240</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1496,16 +1496,16 @@
                             <visible>!IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>426</width>
                             <height>240</height>
                             <texture>overlays\wide\$INFO[Container(52).ListItem(-1).Overlay]</texture>
                             <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>426</width>
                             <height>240</height>
                             <texture>episode-overlay.png</texture>
@@ -1514,8 +1514,8 @@
                 </control>
                 <!-- Icon 3 -->
                 <control type="group">
-                    <posx>1200</posx>
-                    <posy>560</posy>
+                    <left>1200</left>
+                    <top>560</top>
                     <width>426</width>
                     <height>240</height>
                     <visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
@@ -1529,8 +1529,8 @@
                             <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
                         </animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>426</width>
                             <height>240</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1539,8 +1539,8 @@
                             <visible>IsEmpty(Container(52).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>426</width>
                             <height>240</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1549,16 +1549,16 @@
                             <visible>!IsEmpty(Container(52).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>426</width>
                             <height>240</height>
                             <texture>overlays\wide\$INFO[Container(52).ListItem(1).Overlay]</texture>
                             <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>426</width>
                             <height>240</height>
                             <texture>episode-overlay.png</texture>
@@ -1567,8 +1567,8 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="group">
-                    <posx>1113</posx>
-                    <posy>372</posy>
+                    <left>1113</left>
+                    <top>372</top>
                     <width>600</width>
                     <height>339</height>
                     <control type="group">
@@ -1582,8 +1582,8 @@
                             <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" />
                         </animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>600</width>
                             <height>339</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -1592,8 +1592,8 @@
                             <visible>IsEmpty(Container(52).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>600</width>
                             <height>339</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -1602,16 +1602,16 @@
                             <visible>!IsEmpty(Container(52).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>600</width>
                             <height>339</height>
                             <texture>overlays\wide\$INFO[Container(52).ListItem(0).Overlay]</texture>
                             <visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>600</width>
                             <height>339</height>
                             <texture>episode-overlay.png</texture>
@@ -1621,8 +1621,8 @@
             </control>
         </control>
         <control type="list" id="51">
-            <posx>921</posx>
-            <posy>240</posy>
+            <left>921</left>
+            <top>240</top>
             <width>984</width>
             <height>585</height>
             <visible>!Container.Content(Episodes) + !Container.Content(MusicVideos)</visible>
@@ -1636,8 +1636,8 @@
             <focusedlayout height="585" width="246"></focusedlayout>
         </control>
         <control type="wraplist" id="52">
-            <posx>921</posx>
-            <posy>240</posy>
+            <left>921</left>
+            <top>240</top>
             <width>984</width>
             <height>585</height>
             <visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
@@ -1655,8 +1655,8 @@
             <visible>Control.IsVisible(51)</visible>
             <visible>!Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Movies)</visible>
             <control type="image">
-                <posx>1618</posx>
-                <posy>190</posy>
+                <left>1618</left>
+                <top>190</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_left_NF.png</texture>
@@ -1664,8 +1664,8 @@
                 <visible>!Container(51).OnPrevious</visible>
             </control>
             <control type="image">
-                <posx>1618</posx>
-                <posy>190</posy>
+                <left>1618</left>
+                <top>190</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_left_FO.png</texture>
@@ -1676,8 +1676,8 @@
                 <visible>Container(51).OnPrevious</visible>
             </control>
             <control type="image">
-                <posx>1618</posx>
-                <posy>720</posy>
+                <left>1618</left>
+                <top>720</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_right_NF.png</texture>
@@ -1685,8 +1685,8 @@
                 <visible>!Container(51).OnNext</visible>
             </control>
             <control type="image">
-                <posx>1618</posx>
-                <posy>720</posy>
+                <left>1618</left>
+                <top>720</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_right_FO.png</texture>
@@ -1701,8 +1701,8 @@
             <visible>Control.IsVisible(51)</visible>
             <visible>Container.Content(TVShows) + Container.Content(Seasons) + Container.Content(Movies)</visible>
             <control type="image">
-                <posx>93</posx>
-                <posy>606</posy>
+                <left>93</left>
+                <top>606</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_left_NF.png</texture>
@@ -1710,8 +1710,8 @@
                 <visible>!Container(51).OnPrevious</visible>
             </control>
             <control type="image">
-                <posx>93</posx>
-                <posy>606</posy>
+                <left>93</left>
+                <top>606</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_left_FO.png</texture>
@@ -1722,8 +1722,8 @@
                 <visible>Container(51).OnPrevious</visible>
             </control>
             <control type="image">
-                <posx>1732</posx>
-                <posy>606</posy>
+                <left>1732</left>
+                <top>606</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_right_NF.png</texture>
@@ -1731,8 +1731,8 @@
                 <visible>!Container(51).OnNext</visible>
             </control>
             <control type="image">
-                <posx>1732</posx>
-                <posy>606</posy>
+                <left>1732</left>
+                <top>606</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_right_FO.png</texture>
@@ -1747,8 +1747,8 @@
             <visible>Control.IsVisible(52)</visible>
             <visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
             <control type="image">
-                <posx>1773</posx>
-                <posy>339</posy>
+                <left>1773</left>
+                <top>339</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_up_NF.png</texture>
@@ -1756,8 +1756,8 @@
                 <visible>!Container(52).OnPrevious</visible>
             </control>
             <control type="image">
-                <posx>1773</posx>
-                <posy>339</posy>
+                <left>1773</left>
+                <top>339</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_up_FO.png</texture>
@@ -1768,8 +1768,8 @@
                 <visible>Container(52).OnPrevious</visible>
             </control>
             <control type="image">
-                <posx>1773</posx>
-                <posy>650</posy>
+                <left>1773</left>
+                <top>650</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_down_NF.png</texture>
@@ -1777,8 +1777,8 @@
                 <visible>!Container(52).OnNext</visible>
             </control>
             <control type="image">
-                <posx>1773</posx>
-                <posy>650</posy>
+                <left>1773</left>
+                <top>650</top>
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_down_FO.png</texture>
@@ -1799,16 +1799,16 @@
             <animation effect="fade" time="300">WindowOpen</animation>
             <animation effect="fade" time="300">WindowClose</animation>
             <control type="image">
-                <posx>506</posx>
-                <posy>909</posy>
+                <left>506</left>
+                <top>909</top>
                 <width>908</width>
                 <height>72</height>
                 <texture>filter_iconlabel.png</texture>
             </control>
             <control type="label">
                 <description>Current Selection</description>
-                <posx>0</posx>
-                <posy>906</posy>
+                <left>0</left>
+                <top>906</top>
                 <width>1920</width>
                 <height>72</height>
                 <align>center</align>

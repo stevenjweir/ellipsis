@@ -17,13 +17,13 @@
         <include>Now_Playing_Widget</include>
         <!-- Elipsis Button -->
         <control type="group">
-            <posx>960</posx>
-            <posy>1080</posy>
+            <left>960</left>
+            <top>1080</top>
             <include>Dock_Elipsis_Home</include>
         </control>
         <control type="radiobutton" id="19">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>

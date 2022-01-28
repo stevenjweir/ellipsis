@@ -6,8 +6,8 @@
         <scrolltime>250</scrolltime>
         <itemlayout height="135" width="150">
             <control type="label">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>150</width>
                 <height>135</height>
                 <font>Default</font>
@@ -18,8 +18,8 @@
         </itemlayout>
         <focusedlayout height="135" width="150">
             <control type="label">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>150</width>
                 <height>135</height>
                 <font>Default</font>
@@ -31,8 +31,8 @@
     </include>
     <include name="Dock_TabOSD">
         <control type="image">
-            <posx>-960</posx>
-            <posy>23</posy>
+            <left>-960</left>
+            <top>23</top>
             <width>1920</width>
             <height>200</height>
             <texture>ui\filter_visor.png</texture>
@@ -42,8 +42,8 @@
     </include>
     <include name="Dock_ElipsisOSD">
         <control type="image">
-            <posx>-48</posx>
-            <posy>0</posy>
+            <left>-48</left>
+            <top>0</top>
             <width>96</width>
             <height>96</height>
             <texture>button_osd_dock.png</texture>
@@ -59,16 +59,16 @@
     </include>
     <include name="Dock_LabelOSD">
         <control type="image">
-            <posx>-453</posx>
-            <posy>-93</posy>
+            <left>-453</left>
+            <top>-93</top>
             <width>908</width>
             <height>72</height>
             <texture>filter_iconlabel.png</texture>
         </control>
         <control type="label">
             <description>Current Selection</description>
-            <posx>-960</posx>
-            <posy>-90</posy>
+            <left>-960</left>
+            <top>-90</top>
             <width>1920</width>
             <align>center</align>
             <label>[UPPERCASE]$INFO[Container(9500).ListItem.Label][/UPPERCASE]</label>
@@ -84,80 +84,80 @@
     </include>
     <include name="Dock_CarouselOSD">
         <control type="button" id="6">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="radiobutton" id="7">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="radiobutton" id="14">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="button" id="8">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="button" id="21">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="radiobutton" id="9">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="togglebutton" id="4">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="radiobutton" id="16">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="radiobutton" id="17">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <height>15</height>
             <width>15</width>
             <label>-</label>
             <visible>false</visible>
         </control>
         <control type="spincontrol" id="503">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>15</width>
             <height>15</height>
             <label>-</label>
@@ -173,8 +173,8 @@
         </control>
         <control type="selectbutton" id="5035">
             <description>Visualisation Select Button</description>
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>300</width>
             <height>52</height>
             <label>-</label>
@@ -200,13 +200,13 @@
                     <effect type="slide" start="0,0" end="99,0" time="250" />
                 </animation>
                 <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                <posx>-388</posx>
-                <posy>28</posy>
+                <left>-388</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(-2).ActualIcon</info>
@@ -216,13 +216,13 @@
             <control type="group">
                 <visible>Container(9500).OnPrevious</visible>
                 <animation effect="slide" start="0,0" end="129,0" time="250" reversible="false">Hidden</animation>
-                <posx>-290</posx>
-                <posy>28</posy>
+                <left>-290</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(-1).ActualIcon</info>
@@ -232,13 +232,13 @@
             <control type="group">
                 <visible>Container(9500).OnPrevious</visible>
                 <animation effect="slide" start="0,0" end="129,-12" time="250" reversible="false">Hidden</animation>
-                <posx>-160</posx>
-                <posy>28</posy>
+                <left>-160</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(0).ActualIcon</info>
@@ -248,13 +248,13 @@
             <control type="group">
                 <visible>Container(9500).OnPrevious</visible>
                 <animation effect="slide" start="0,0" end="129,12" time="250" reversible="false">Hidden</animation>
-                <posx>-32</posx>
-                <posy>16</posy>
+                <left>-32</left>
+                <top>16</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(1).ActualIcon</info>
@@ -264,13 +264,13 @@
             <control type="group">
                 <visible>Container(9500).OnPrevious</visible>
                 <animation effect="slide" start="0,0" end="129,0" time="250" reversible="false">Hidden</animation>
-                <posx>98</posx>
-                <posy>28</posy>
+                <left>98</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(2).ActualIcon</info>
@@ -283,13 +283,13 @@
                     <effect type="fade" start="100" end="0" time="250" />
                     <effect type="slide" start="0,0" end="99,0" time="250" />
                 </animation>
-                <posx>226</posx>
-                <posy>28</posy>
+                <left>226</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(3).ActualIcon</info>
@@ -307,13 +307,13 @@
                     <effect type="fade" start="100" end="0" time="250" />
                     <effect type="slide" start="0,0" end="-99,0" time="250" />
                 </animation>
-                <posx>-290</posx>
-                <posy>28</posy>
+                <left>-290</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(-3).ActualIcon</info>
@@ -323,13 +323,13 @@
             <control type="group">
                 <visible>Container(9500).OnNext</visible>
                 <animation effect="slide" start="0,0" end="-129,0" time="250" reversible="false">Hidden</animation>
-                <posx>-160</posx>
-                <posy>28</posy>
+                <left>-160</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(-2).ActualIcon</info>
@@ -339,13 +339,13 @@
             <control type="group">
                 <visible>Container(9500).OnNext</visible>
                 <animation effect="slide" start="0,0" end="-129,12" time="250" reversible="false">Hidden</animation>
-                <posx>-32</posx>
-                <posy>16</posy>
+                <left>-32</left>
+                <top>16</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(-1).ActualIcon</info>
@@ -355,13 +355,13 @@
             <control type="group">
                 <visible>Container(9500).OnNext</visible>
                 <animation effect="slide" start="0,0" end="-129,-12" time="250" reversible="false">Hidden</animation>
-                <posx>98</posx>
-                <posy>28</posy>
+                <left>98</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(0).ActualIcon</info>
@@ -371,13 +371,13 @@
             <control type="group">
                 <visible>Container(9500).OnNext</visible>
                 <animation effect="slide" start="0,0" end="-129,0" time="250" reversible="false">Hidden</animation>
-                <posx>226</posx>
-                <posy>28</posy>
+                <left>226</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(1).ActualIcon</info>
@@ -391,13 +391,13 @@
                     <effect type="slide" start="99,0" end="0,0" time="250" />
                 </animation>
                 <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                <posx>226</posx>
-                <posy>28</posy>
+                <left>226</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(2).ActualIcon</info>
@@ -411,13 +411,13 @@
             <animation effect="slide" start="0" end="0,98" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
             <!-- Icon 1 -->
             <control type="group">
-                <posx>-290</posx>
-                <posy>28</posy>
+                <left>-290</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(-2).ActualIcon</info>
@@ -425,13 +425,13 @@
             </control>
             <!-- Icon 2 -->
             <control type="group">
-                <posx>-160</posx>
-                <posy>28</posy>
+                <left>-160</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(-1).ActualIcon</info>
@@ -439,13 +439,13 @@
             </control>
             <!-- Icon 3 -->
             <control type="group">
-                <posx>-32</posx>
-                <posy>16</posy>
+                <left>-32</left>
+                <top>16</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(0).ActualIcon</info>
@@ -457,13 +457,13 @@
             </control>
             <!-- Icon 4 -->
             <control type="group">
-                <posx>98</posx>
-                <posy>28</posy>
+                <left>98</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(1).ActualIcon</info>
@@ -471,13 +471,13 @@
             </control>
             <!-- Icon 5 -->
             <control type="group">
-                <posx>226</posx>
-                <posy>28</posy>
+                <left>226</left>
+                <top>28</top>
                 <width>63</width>
                 <height>63</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>63</width>
                     <height>63</height>
                     <info>Container(9500).ListItem(2).ActualIcon</info>
@@ -487,11 +487,11 @@
     </include>
     <include name="Dock_VideoOSD">
         <control type="group">
-            <posx>960</posx>
-            <posy>982</posy>
+            <left>960</left>
+            <top>982</top>
             <control type="wraplist" id="9500">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <height>135</height>
                 <width>1350</width>
                 <onup>Dialog.Close(2901)</onup>
@@ -521,11 +521,11 @@
     </include>
     <include name="Dock_MusicOSD">
         <control type="group">
-            <posx>960</posx>
-            <posy>982</posy>
+            <left>960</left>
+            <top>982</top>
             <control type="wraplist" id="9500">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <height>135</height>
                 <width>1350</width>
                 <onup>Dialog.Close(2901)</onup>

@@ -4,28 +4,28 @@
     <include>Fade_Out_WindowClose</include>
     <coordinates>
         <system>1</system>
-        <posx>585</posx>
-        <posy>52</posy>
+        <left>585</left>
+        <top>52</top>
     </coordinates>
     <controls>
         <control type="group">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>750</width>
             <height>218</height>
             <include>Zoom_In_WindowOpen</include>
             <include>Zoom_Out_WindowClose</include>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>750</width>
                 <height>218</height>
                 <texture>dialogs\dialog-background-small.png</texture>
             </control>
             <control type="label" id="10">
                 <description>Dialog header</description>
-                <posx>90</posx>
-                <posy>68</posy>
+                <left>90</left>
+                <top>68</top>
                 <width>435</width>
                 <height>30</height>
                 <align>left</align>
@@ -34,8 +34,8 @@
             </control>
             <control type="label" id="12">
                 <description>Slider Value</description>
-                <posx>660</posx>
-                <posy>68</posy>
+                <left>660</left>
+                <top>68</top>
                 <width>435</width>
                 <height>30</height>
                 <align>right</align>
@@ -44,8 +44,8 @@
             </control>
             <control type="slider" id="11">
                 <description>Slider</description>
-                <posx>75</posx>
-                <posy>98</posy>
+                <left>75</left>
+                <top>98</top>
                 <width>600</width>
                 <height>48</height>
                 <aligny>top</aligny>

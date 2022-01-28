@@ -4,8 +4,8 @@
         <control type="group" id="13">
             <include>Visor_Fullscreen_Filter_Top</include>
             <control type="image">
-                <posx>33</posx>
-                <posy>12</posy>
+                <left>33</left>
+                <top>12</top>
                 <width>170</width>
                 <height>84</height>
                 <texture>video_pause.png</texture>

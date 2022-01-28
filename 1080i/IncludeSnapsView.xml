@@ -1,8 +1,8 @@
 ﻿<includes>
     <include name="Snaps_View">
         <control type="list" id="51">
-            <posx>0</posx>
-            <posy>297</posy>
+            <left>0</left>
+            <top>297</top>
             <width>1920</width>
             <height>486</height>
             <onup>9000</onup>
@@ -13,8 +13,8 @@
             <scrolltime>250</scrolltime>
             <itemlayout height="486" width="384">
                 <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>486</height>
                     <font>Default</font>
@@ -25,8 +25,8 @@
             </itemlayout>
             <focusedlayout height="486" width="384">
                 <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>486</height>
                     <font>Default</font>
@@ -37,8 +37,8 @@
             </focusedlayout>
         </control>
         <control type="group">
-            <posx>960</posx>
-            <posy>297</posy>
+            <left>960</left>
+            <top>297</top>
             <visible>Control.IsVisible(51)</visible>
             <!-- Snaps View Scroller Icons - Counter Clockwise Mothion -->
             <control type="group" id="5101">
@@ -46,14 +46,14 @@
                 <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
                 <!-- Show Far Left Icon On Move Previous -->
                 <control type="group">
-                    <posx>-1293</posx>
-                    <posy>60</posy>
+                    <left>-1293</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnPrevious</visible>
@@ -64,22 +64,22 @@
                         </animation>
                         <animation effect="rotate" start="4" end="4" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -87,15 +87,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>33</posx>
-                            <posy>308</posy>
+                            <left>33</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -108,14 +108,14 @@
                 </control>
                 <!-- Move Icon 1 To Icon 2 Position On Move Previous -->
                 <control type="group">
-                    <posx>-966</posx>
-                    <posy>60</posy>
+                    <left>-966</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnPrevious</visible>
@@ -125,22 +125,22 @@
                         </animation>
                         <animation effect="rotate" start="4" end="4" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -148,15 +148,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -169,13 +169,13 @@
                 </control>
                 <!-- Move Icon 2 To Icon 3 Position On Move Previous -->
                 <control type="group">
-                    <posx>-591</posx>
-                    <posy>60</posy>
+                    <left>-591</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnPrevious</visible>
@@ -185,22 +185,22 @@
                         </animation>
                         <animation effect="rotate" start="-6" end="-6" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -208,15 +208,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -229,14 +229,14 @@
                 </control>
                 <!-- Move Icon 3 To Icon 4 Position On Move Previous -->
                 <control type="group">
-                    <posx>-210</posx>
-                    <posy>0</posy>
+                    <left>-210</left>
+                    <top>0</top>
                     <width>420</width>
                     <height>486</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>420</width>
                         <height>486</height>
                         <visible>Container(51).OnPrevious</visible>
@@ -246,22 +246,22 @@
                         </animation>
                         <animation effect="rotate" start="3" end="3" time="250" center="210,243" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>420</width>
                             <height>486</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -269,15 +269,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>44</posx>
-                            <posy>399</posy>
+                            <left>44</left>
+                            <top>399</top>
                             <width>333</width>
                             <height>105</height>
                             <align>center</align>
@@ -290,14 +290,14 @@
                 </control>
                 <!-- Move Icon 4 To Icon 5 Position On Move Previous -->
                 <control type="group">
-                    <posx>291</posx>
-                    <posy>60</posy>
+                    <left>291</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnPrevious</visible>
@@ -307,22 +307,22 @@
                         </animation>
                         <animation effect="rotate" start="-7" end="-7" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -330,15 +330,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -351,14 +351,14 @@
                 </control>
                 <!-- Hide Far Right Icon On Move Previous -->
                 <control type="group">
-                    <posx>666</posx>
-                    <posy>60</posy>
+                    <left>666</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnPrevious</visible>
@@ -368,22 +368,22 @@
                         </animation>
                         <animation effect="rotate" start="8" end="8" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -391,15 +391,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -417,14 +417,14 @@
                 <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
                 <!-- Hide Far Left Icon On Move Next -->
                 <control type="group">
-                    <posx>-966</posx>
-                    <posy>60</posy>
+                    <left>-966</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(-3).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnNext</visible>
@@ -434,22 +434,22 @@
                         </animation>
                         <animation effect="rotate" start="4" end="4" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -457,15 +457,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -478,14 +478,14 @@
                 </control>
                 <!-- Move Icon 2 To Icon 1 Position On Move Next -->
                 <control type="group">
-                    <posx>-591</posx>
-                    <posy>60</posy>
+                    <left>-591</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnNext</visible>
@@ -495,22 +495,22 @@
                         </animation>
                         <animation effect="rotate" start="-6" end="-6" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -518,15 +518,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -539,14 +539,14 @@
                 </control>
                 <!-- Move Icon 3 To Icon 2 Position On Move Next -->
                 <control type="group">
-                    <posx>-210</posx>
-                    <posy>0</posy>
+                    <left>-210</left>
+                    <top>0</top>
                     <width>420</width>
                     <height>486</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>420</width>
                         <height>486</height>
                         <visible>Container(51).OnNext</visible>
@@ -556,22 +556,22 @@
                         </animation>
                         <animation effect="rotate" start="3" end="3" time="250" center="210,243" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>420</width>
                             <height>486</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -579,15 +579,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>44</posx>
-                            <posy>399</posy>
+                            <left>44</left>
+                            <top>399</top>
                             <width>333</width>
                             <height>105</height>
                             <align>center</align>
@@ -600,13 +600,13 @@
                 </control>
                 <!-- Move Icon 4 To Icon 3 Position On Move Previous -->
                 <control type="group">
-                    <posx>291</posx>
-                    <posy>60</posy>
+                    <left>291</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnNext</visible>
@@ -616,22 +616,22 @@
                         </animation>
                         <animation effect="rotate" start="-7" end="-7" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -639,15 +639,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -660,14 +660,14 @@
                 </control>
                 <!-- Move Icon 5 To Icon 4 Position On Move Previous -->
                 <control type="group">
-                    <posx>666</posx>
-                    <posy>60</posy>
+                    <left>666</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnNext</visible>
@@ -677,22 +677,22 @@
                         </animation>
                         <animation effect="rotate" start="8" end="8" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -700,15 +700,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -721,14 +721,14 @@
                 </control>
                 <!-- Show Far Right Icon On Move Next -->
                 <control type="group">
-                    <posx>960</posx>
-                    <posy>60</posy>
+                    <left>960</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <visible>Container(51).OnNext</visible>
@@ -739,22 +739,22 @@
                         </animation>
                         <animation effect="rotate" start="8" end="8" time="250" center="166,192" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -762,15 +762,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -787,33 +787,33 @@
                 <visible>!Control.IsVisible(5101)  + !Control.IsVisible(5102)</visible>
                 <!-- Icon 1 -->
                 <control type="group">
-                    <posx>-966</posx>
-                    <posy>60</posy>
+                    <left>-966</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -821,15 +821,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -852,33 +852,33 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="group">
-                    <posx>-591</posx>
-                    <posy>60</posy>
+                    <left>-591</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -886,15 +886,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -917,32 +917,32 @@
                 </control>
                 <!-- Icon 3 -->
                 <control type="group">
-                    <posx>-210</posx>
-                    <posy>0</posy>
+                    <left>-210</left>
+                    <top>0</top>
                     <width>420</width>
                     <height>486</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>420</width>
                         <height>486</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>420</width>
                             <height>486</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -950,15 +950,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>44</posx>
-                            <posy>44</posy>
+                            <left>44</left>
+                            <top>44</top>
                             <width>333</width>
                             <height>333</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>44</posx>
-                            <posy>399</posy>
+                            <left>44</left>
+                            <top>399</top>
                             <width>333</width>
                             <height>105</height>
                             <align>center</align>
@@ -981,33 +981,33 @@
                 </control>
                 <!-- Icon 4 -->
                 <control type="group">
-                    <posx>291</posx>
-                    <posy>60</posy>
+                    <left>291</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -1015,15 +1015,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
@@ -1046,33 +1046,33 @@
                 </control>
                 <!-- Icon 5 -->
                 <control type="group">
-                    <posx>666</posx>
-                    <posy>60</posy>
+                    <left>666</left>
+                    <top>60</top>
                     <width>333</width>
                     <height>384</height>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>333</width>
                         <height>384</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>333</width>
                             <height>384</height>
                             <texture>thumb-polaroid.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-black.png</texture>
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <aspectratio align="center">scale</aspectratio>
@@ -1080,15 +1080,15 @@
                             <texture diffuse="thumb-polaroid-diffuse.png" />
                         </control>
                         <control type="image">
-                            <posx>34</posx>
-                            <posy>34</posy>
+                            <left>34</left>
+                            <top>34</top>
                             <width>264</width>
                             <height>254</height>
                             <texture diffuse="thumb-polaroid-diffuse.png">thumb-polaroid-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>34</posx>
-                            <posy>308</posy>
+                            <left>34</left>
+                            <top>308</top>
                             <width>264</width>
                             <height>60</height>
                             <align>center</align>
