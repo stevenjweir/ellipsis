@@ -1,8 +1,8 @@
 ﻿<includes>
     <include name="Profiles_View">
         <control type="list" id="2">
-            <posx>0</posx>
-            <posy>297</posy>
+            <left>0</left>
+            <top>297</top>
             <width>1920</width>
             <height>486</height>
             <onup>2</onup>
@@ -13,8 +13,8 @@
             <scrolltime>250</scrolltime>
             <itemlayout height="486" width="384">
                 <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>486</height>
                     <font>Default</font>
@@ -25,8 +25,8 @@
             </itemlayout>
             <focusedlayout height="486" width="384">
                 <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>486</height>
                     <font>Default</font>
@@ -37,8 +37,8 @@
             </focusedlayout>
         </control>
         <control type="group">
-            <posx>960</posx>
-            <posy>360</posy>
+            <left>960</left>
+            <top>360</top>
             <visible>Control.IsVisible(2)</visible>
             <!-- Profiles View Scroller Icons - Counter Clockwise Motion -->
             <control type="group" id="7001">
@@ -46,14 +46,14 @@
                 <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
                 <!-- Show Far Left Icon On Move Previous -->
                 <control type="group">
-                    <posx>-800</posx>
-                    <posy>34</posy>
+                    <left>-800</left>
+                    <top>34</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnPrevious</visible>
@@ -66,30 +66,30 @@
                             <effect type="rotate" start="25" end="25" center="195,126" time="250" />
                         </animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(-1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -99,8 +99,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -109,8 +109,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -122,14 +122,14 @@
                 </control>
                 <!-- Show Far Left Icon On Move Previous - Reflection -->
                 <control type="group">
-                    <posx>-800</posx>
-                    <posy>-286</posy>
+                    <left>-800</left>
+                    <top>-286</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnPrevious</visible>
@@ -142,30 +142,30 @@
                             <effect type="rotate" start="25" end="25" center="195,126" time="250" />
                         </animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture diffuse="fade.png">settings-profiles-photos.png</texture>
                             <info>Container(2).ListItem(-1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -175,8 +175,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -185,8 +185,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -199,13 +199,13 @@
                 </control>
                 <!-- Move Icon 1 To Icon 2 Position On Move Previous -->
                 <control type="group">
-                    <posx>-800</posx>
-                    <posy>34</posy>
+                    <left>-800</left>
+                    <top>34</top>
                     <width>390</width>
                     <height>252</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnPrevious</visible>
@@ -215,30 +215,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(0).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -248,8 +248,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -258,8 +258,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -271,13 +271,13 @@
                 </control>
                 <!-- Move Icon 1 To Icon 2 Position On Move Previous - Reflection -->
                 <control type="group">
-                    <posx>-800</posx>
-                    <posy>-286</posy>
+                    <left>-800</left>
+                    <top>-286</top>
                     <width>390</width>
                     <height>252</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnPrevious</visible>
@@ -287,30 +287,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(0).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -320,8 +320,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -330,8 +330,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -344,14 +344,14 @@
                 </control>
                 <!-- Move Icon 2 To Icon 3 Position On Move Previous -->
                 <control type="group">
-                    <posx>-248</posx>
-                    <posy>0</posy>
+                    <left>-248</left>
+                    <top>0</top>
                     <width>495</width>
                     <height>321</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>495</width>
                         <height>321</height>
                         <visible>Container(2).OnPrevious</visible>
@@ -361,30 +361,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="248,160" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>495</width>
                             <height>321</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>45</posx>
-                            <posy>68</posy>
+                            <left>45</left>
+                            <top>68</top>
                             <width>141</width>
                             <height>180</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>38</posx>
-                            <posy>60</posy>
+                            <left>38</left>
+                            <top>60</top>
                             <width>156</width>
                             <height>195</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>60</posy>
+                            <left>216</left>
+                            <top>60</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -394,8 +394,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>120</posy>
+                            <left>216</left>
+                            <top>120</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -404,8 +404,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>150</posy>
+                            <left>216</left>
+                            <top>150</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -417,14 +417,14 @@
                 </control>
                 <!-- Move Icon 2 To Icon 3 Position On Move Previous - Reflection-->
                 <control type="group">
-                    <posx>-248</posx>
-                    <posy>-321</posy>
+                    <left>-248</left>
+                    <top>-321</top>
                     <width>495</width>
                     <height>321</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>495</width>
                         <height>321</height>
                         <visible>Container(2).OnPrevious</visible>
@@ -434,30 +434,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="248,160" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>495</width>
                             <height>321</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>45</posx>
-                            <posy>68</posy>
+                            <left>45</left>
+                            <top>68</top>
                             <width>141</width>
                             <height>180</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>38</posx>
-                            <posy>60</posy>
+                            <left>38</left>
+                            <top>60</top>
                             <width>156</width>
                             <height>195</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>60</posy>
+                            <left>216</left>
+                            <top>60</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -467,8 +467,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>120</posy>
+                            <left>216</left>
+                            <top>120</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -477,8 +477,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>150</posy>
+                            <left>216</left>
+                            <top>150</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -491,14 +491,14 @@
                 </control>
                 <!-- Hide Far Right Icon On Move Previous -->
                 <control type="group">
-                    <posx>410</posx>
-                    <posy>34</posy>
+                    <left>410</left>
+                    <top>34</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnPrevious</visible>
@@ -508,30 +508,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(2).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -541,8 +541,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -551,8 +551,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -564,14 +564,14 @@
                 </control>
                 <!-- Hide Far Right Icon On Move Previous - Reflection -->
                 <control type="group">
-                    <posx>410</posx>
-                    <posy>-286</posy>
+                    <left>410</left>
+                    <top>-286</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnPrevious</visible>
@@ -581,30 +581,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(2).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -614,8 +614,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -624,8 +624,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -643,14 +643,14 @@
                 <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
                 <!-- Hide Far Left Icon On Move Next -->
                 <control type="group">
-                    <posx>-800</posx>
-                    <posy>34</posy>
+                    <left>-800</left>
+                    <top>34</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnNext</visible>
@@ -660,30 +660,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(-2).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -693,8 +693,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -703,8 +703,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -716,14 +716,14 @@
                 </control>
                 <!-- Hide Far Left Icon On Move Next - Reflection -->
                 <control type="group">
-                    <posx>-800</posx>
-                    <posy>-286</posy>
+                    <left>-800</left>
+                    <top>-286</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnNext</visible>
@@ -733,30 +733,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(-2).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -766,8 +766,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -776,8 +776,8 @@
                             <textcolor>40000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -790,14 +790,14 @@
                 </control>
                 <!-- Move Icon 2 To Icon 1 Position On Move Next -->
                 <control type="group">
-                    <posx>-248</posx>
-                    <posy>0</posy>
+                    <left>-248</left>
+                    <top>0</top>
                     <width>495</width>
                     <height>321</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>495</width>
                         <height>321</height>
                         <visible>Container(2).OnNext</visible>
@@ -807,30 +807,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="248,160" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>495</width>
                             <height>321</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>45</posx>
-                            <posy>68</posy>
+                            <left>45</left>
+                            <top>68</top>
                             <width>141</width>
                             <height>180</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(-1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>38</posx>
-                            <posy>60</posy>
+                            <left>38</left>
+                            <top>60</top>
                             <width>156</width>
                             <height>195</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>60</posy>
+                            <left>216</left>
+                            <top>60</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -840,8 +840,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>120</posy>
+                            <left>216</left>
+                            <top>120</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -850,8 +850,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>150</posy>
+                            <left>216</left>
+                            <top>150</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -863,14 +863,14 @@
                 </control>
                 <!-- Move Icon 2 To Icon 1 Position On Move Next - Reflection -->
                 <control type="group">
-                    <posx>-248</posx>
-                    <posy>-321</posy>
+                    <left>-248</left>
+                    <top>-321</top>
                     <width>495</width>
                     <height>321</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>495</width>
                         <height>321</height>
                         <visible>Container(2).OnNext</visible>
@@ -880,30 +880,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="248,160" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>495</width>
                             <height>321</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>45</posx>
-                            <posy>68</posy>
+                            <left>45</left>
+                            <top>68</top>
                             <width>141</width>
                             <height>180</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(-1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>38</posx>
-                            <posy>60</posy>
+                            <left>38</left>
+                            <top>60</top>
                             <width>156</width>
                             <height>195</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>60</posy>
+                            <left>216</left>
+                            <top>60</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -913,8 +913,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>120</posy>
+                            <left>216</left>
+                            <top>120</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -923,8 +923,8 @@
                             <textcolor>40000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>150</posy>
+                            <left>216</left>
+                            <top>150</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -937,13 +937,13 @@
                 </control>
                 <!-- Move Icon 3 To Icon 2 Position On Move Previous -->
                 <control type="group">
-                    <posx>410</posx>
-                    <posy>34</posy>
+                    <left>410</left>
+                    <top>34</top>
                     <width>390</width>
                     <height>252</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnNext</visible>
@@ -953,30 +953,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(0).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -986,8 +986,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -996,8 +996,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1009,13 +1009,13 @@
                 </control>
                 <!-- Move Icon 3 To Icon 2 Position On Move Previous - Reflection -->
                 <control type="group">
-                    <posx>410</posx>
-                    <posy>-286</posy>
+                    <left>410</left>
+                    <top>-286</top>
                     <width>390</width>
                     <height>252</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnNext</visible>
@@ -1025,30 +1025,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(0).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1058,8 +1058,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1068,8 +1068,8 @@
                             <textcolor>40000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1082,14 +1082,14 @@
                 </control>
                 <!-- Show Far Right Icon On Move Next -->
                 <control type="group">
-                    <posx>960</posx>
-                    <posy>34</posy>
+                    <left>960</left>
+                    <top>34</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnNext</visible>
@@ -1099,30 +1099,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1132,8 +1132,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1142,8 +1142,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1155,14 +1155,14 @@
                 </control>
                 <!-- Show Far Right Icon On Move Next - Reflection -->
                 <control type="group">
-                    <posx>960</posx>
-                    <posy>-286</posy>
+                    <left>960</left>
+                    <top>-286</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <visible>Container(2).OnNext</visible>
@@ -1172,30 +1172,30 @@
                         </animation>
                         <animation effect="rotate" start="25" end="25" time="250" center="195,126" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1205,8 +1205,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1215,8 +1215,8 @@
                             <textcolor>40000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1232,41 +1232,41 @@
             <control type="group" id="7000">
                 <!-- Icon 1 -->
                 <control type="group">
-                    <posx>-800</posx>
-                    <posy>34</posy>
+                    <left>-800</left>
+                    <top>34</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(-1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1276,8 +1276,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1286,8 +1286,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1310,41 +1310,41 @@
                 </control>
                 <!-- Icon 1 Reflection -->
                 <control type="group">
-                    <posx>-800</posx>
-                    <posy>-286</posy>
+                    <left>-800</left>
+                    <top>-286</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(-1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1354,8 +1354,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1364,8 +1364,8 @@
                             <textcolor>40000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1389,40 +1389,40 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="group">
-                    <posx>-248</posx>
-                    <posy>0</posy>
+                    <left>-248</left>
+                    <top>0</top>
                     <width>495</width>
                     <height>321</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>495</width>
                         <height>321</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>495</width>
                             <height>321</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>45</posx>
-                            <posy>68</posy>
+                            <left>45</left>
+                            <top>68</top>
                             <width>141</width>
                             <height>180</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(0).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>38</posx>
-                            <posy>60</posy>
+                            <left>38</left>
+                            <top>60</top>
                             <width>156</width>
                             <height>195</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>60</posy>
+                            <left>216</left>
+                            <top>60</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -1432,8 +1432,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>120</posy>
+                            <left>216</left>
+                            <top>120</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -1442,8 +1442,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>150</posy>
+                            <left>216</left>
+                            <top>150</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -1470,40 +1470,40 @@
                 </control>
                 <!-- Icon 2 Reflection -->
                 <control type="group">
-                    <posx>-248</posx>
-                    <posy>-321</posy>
+                    <left>-248</left>
+                    <top>-321</top>
                     <width>495</width>
                     <height>321</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>495</width>
                         <height>321</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>495</width>
                             <height>321</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>45</posx>
-                            <posy>68</posy>
+                            <left>45</left>
+                            <top>68</top>
                             <width>141</width>
                             <height>180</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(0).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>38</posx>
-                            <posy>60</posy>
+                            <left>38</left>
+                            <top>60</top>
                             <width>156</width>
                             <height>195</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>60</posy>
+                            <left>216</left>
+                            <top>60</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -1513,8 +1513,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>120</posy>
+                            <left>216</left>
+                            <top>120</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -1523,8 +1523,8 @@
                             <textcolor>40000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>216</posx>
-                            <posy>150</posy>
+                            <left>216</left>
+                            <top>150</top>
                             <width>240</width>
                             <height>38</height>
                             <align>left</align>
@@ -1552,41 +1552,41 @@
                 </control>
                 <!-- Icon 3 -->
                 <control type="group">
-                    <posx>410</posx>
-                    <posy>34</posy>
+                    <left>410</left>
+                    <top>34</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture>settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture>unknown-user.png</texture>
                             <info>Container(2).ListItem(1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture>settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1596,8 +1596,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1606,8 +1606,8 @@
                             <textcolor>FF000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1630,41 +1630,41 @@
                 </control>
                 <!-- Icon 3 Reflection -->
                 <control type="group">
-                    <posx>410</posx>
-                    <posy>-286</posy>
+                    <left>410</left>
+                    <top>-286</top>
                     <width>390</width>
                     <height>252</height>
                     <visible>!IsEmpty(Container(2).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>390</width>
                         <height>252</height>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>390</width>
                             <height>252</height>
                             <texture diffuse="fade.png">settings-profiles-card.png</texture>
                         </control>
                         <control type="image">
-                            <posx>36</posx>
-                            <posy>54</posy>
+                            <left>36</left>
+                            <top>54</top>
                             <width>111</width>
                             <height>141</height>
                             <texture diffuse="fade.png">unknown-user.png</texture>
                             <info>Container(2).ListItem(1).Icon</info>
                         </control>
                         <control type="image">
-                            <posx>30</posx>
-                            <posy>48</posy>
+                            <left>30</left>
+                            <top>48</top>
                             <width>123</width>
                             <height>153</height>
                             <texture diffuse="fade.png">settings-profiles-gloss.png</texture>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>48</posy>
+                            <left>170</left>
+                            <top>48</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1674,8 +1674,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>94</posy>
+                            <left>170</left>
+                            <top>94</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1684,8 +1684,8 @@
                             <textcolor>40000000</textcolor>
                         </control>
                         <control type="label">
-                            <posx>170</posx>
-                            <posy>118</posy>
+                            <left>170</left>
+                            <top>118</top>
                             <width>189</width>
                             <height>38</height>
                             <align>left</align>
@@ -1716,16 +1716,16 @@
                 <animation effect="fade" time="300">WindowOpen</animation>
                 <animation effect="fade" time="300">WindowClose</animation>
                 <control type="image">
-                    <posx>-454</posx>
-                    <posy>549</posy>
+                    <left>-454</left>
+                    <top>549</top>
                     <width>908</width>
                     <height>72</height>
                     <texture>filter_iconlabel.png</texture>
                 </control>
                 <control type="label">
                     <description>Current Selection</description>
-                    <posx>-960</posx>
-                    <posy>546</posy>
+                    <left>-960</left>
+                    <top>546</top>
                     <width>1920</width>
                     <height>72</height>
                     <align>center</align>

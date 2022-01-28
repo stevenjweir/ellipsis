@@ -1,22 +1,22 @@
 ﻿<includes>
     <default type="image">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <aspectratio>stretch</aspectratio>
     </default>
     <default type="label">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <font>Default</font>
         <textcolor>Text</textcolor>
         <shadowcolor>-</shadowcolor>
         <align>left</align>
     </default>
     <default type="fadelabel">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <font>Default</font>
@@ -27,8 +27,8 @@
         <resetonlabelchange>false</resetonlabelchange>
     </default>
     <default type="button">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <font>Default</font>
@@ -43,8 +43,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="togglebutton">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <font>Default</font>
@@ -61,8 +61,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="textbox">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <font>Default</font>
@@ -70,8 +70,8 @@
         <shadowcolor>-</shadowcolor>
     </default>
     <default type="progress">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <texturebg>controls\toast-progress-empty.png</texturebg>
@@ -82,8 +82,8 @@
         <reveal>true</reveal>
     </default>
     <default type="spincontrolex">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <font>Default</font>
@@ -103,8 +103,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="spincontrol">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <font>Default</font>
@@ -125,8 +125,8 @@
         <pulseonselect>false</pulseonselect>
     </default>
     <default type="radiobutton">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <font>Default</font>
@@ -147,8 +147,8 @@
         <controloffsety>0</controloffsety>
     </default>
     <default type="sliderex">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
@@ -166,16 +166,16 @@
         <textoffsety>14</textoffsety>
     </default>
     <default type="mover">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
         <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
     </default>
     <default type="resize">
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
         <width>0</width>
         <height>0</height>
         <texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>

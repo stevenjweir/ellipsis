@@ -1,8 +1,8 @@
 ﻿<includes>
     <include name="File_Stack">
         <control type="panel" id="450">
-            <posx>0</posx>
-            <posy>0</posy>
+            <left>0</left>
+            <top>0</top>
             <width>1920</width>
             <height>1080</height>
             <onup>9000</onup>
@@ -13,8 +13,8 @@
             <scrolltime>250</scrolltime>
             <itemlayout height="768" width="384">
                 <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>768</height>
                     <font>Default</font>
@@ -25,8 +25,8 @@
             </itemlayout>
             <focusedlayout height="768" width="384">
                 <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>768</height>
                     <font>Default</font>
@@ -37,8 +37,8 @@
             </focusedlayout>
         </control>
         <control type="group">
-            <posx>562</posx>
-            <posy>285</posy>
+            <left>562</left>
+            <top>285</top>
             <visible>Control.IsVisible(450)</visible>
             <!-- File Stacking Icons - Counter Clockwise Mothion -->
             <control type="group" id="4501">
@@ -54,8 +54,8 @@
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
                     <control type="image">
-                        <posx>-482</posx>
-                        <posy>18</posy>
+                        <left>-482</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -69,8 +69,8 @@
                         <effect type="slide" start="0,0" end="86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>-396</posx>
-                        <posy>18</posy>
+                        <left>-396</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -84,8 +84,8 @@
                         <effect type="slide" start="0,0" end="86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>-310</posx>
-                        <posy>18</posy>
+                        <left>-310</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -99,8 +99,8 @@
                         <effect type="slide" start="0,0" end="86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>-225</posx>
-                        <posy>18</posy>
+                        <left>-225</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -110,8 +110,8 @@
                 <control type="group">
                     <visible>Container(450).OnPrevious</visible>
                     <visible>!IsEmpty(Container(450).ListItemNoWrap(-1).Label)</visible>
-                    <posx>-140</posx>
-                    <posy>18</posy>
+                    <left>-140</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <animation type="Hidden" reversible="false">
@@ -119,8 +119,8 @@
                         <effect type="zoom" start="-140,18,86,114" end="-54,0,110,150" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -130,8 +130,8 @@
                 <control type="group">
                     <visible>Container(450).OnPrevious</visible>
                     <visible>!IsEmpty(Container(450).ListItemNoWrap(0).Label)</visible>
-                    <posx>-54</posx>
-                    <posy>0</posy>
+                    <left>-54</left>
+                    <top>0</top>
                     <width>110</width>
                     <height>150</height>
                     <animation type="Hidden" reversible="false">
@@ -139,8 +139,8 @@
                         <effect type="zoom" start="-54,0,110,150" end="56,18,86,114" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>110</width>
                         <height>150</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -154,8 +154,8 @@
                         <effect type="slide" start="0,0" end="86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>56</posx>
-                        <posy>18</posy>
+                        <left>56</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -169,8 +169,8 @@
                         <effect type="slide" start="0,0" end="86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>141</posx>
-                        <posy>18</posy>
+                        <left>141</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -184,8 +184,8 @@
                         <effect type="slide" start="0,0" end="86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>226</posx>
-                        <posy>18</posy>
+                        <left>226</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -200,8 +200,8 @@
                         <effect type="slide" start="0,0" end="86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>312</posx>
-                        <posy>18</posy>
+                        <left>312</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -221,8 +221,8 @@
                         <effect type="slide" start="0,0" end="-86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>-396</posx>
-                        <posy>18</posy>
+                        <left>-396</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -236,8 +236,8 @@
                         <effect type="slide" start="0,0" end="-86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>-310</posx>
-                        <posy>18</posy>
+                        <left>-310</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -251,8 +251,8 @@
                         <effect type="slide" start="0,0" end="-86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>-225</posx>
-                        <posy>18</posy>
+                        <left>-225</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -266,8 +266,8 @@
                         <effect type="slide" start="0,0" end="-86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>-140</posx>
-                        <posy>18</posy>
+                        <left>-140</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -277,8 +277,8 @@
                 <control type="group">
                     <visible>Container(450).OnNext</visible>
                     <visible>!IsEmpty(Container(450).ListItemNoWrap(-1).Label)</visible>
-                    <posx>-54</posx>
-                    <posy>0</posy>
+                    <left>-54</left>
+                    <top>0</top>
                     <width>110</width>
                     <height>150</height>
                     <animation type="Hidden" reversible="false">
@@ -286,8 +286,8 @@
                         <effect type="zoom" start="-54,0,110,150" end="-140,18,86,114" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>110</width>
                         <height>150</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -297,8 +297,8 @@
                 <control type="group">
                     <visible>Container(450).OnNext</visible>
                     <visible>!IsEmpty(Container(450).ListItemNoWrap(0).Label)</visible>
-                    <posx>56</posx>
-                    <posy>18</posy>
+                    <left>56</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <animation type="Hidden" reversible="false">
@@ -306,8 +306,8 @@
                         <effect type="zoom" start="56,18,86,114" end="-54,0,110,150" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -321,8 +321,8 @@
                         <effect type="slide" start="0,0" end="-86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>141</posx>
-                        <posy>18</posy>
+                        <left>141</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -336,8 +336,8 @@
                         <effect type="slide" start="0,0" end="-86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>226</posx>
-                        <posy>18</posy>
+                        <left>226</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -351,8 +351,8 @@
                         <effect type="slide" start="0,0" end="-86,0" time="250" />
                     </animation>
                     <control type="image">
-                        <posx>312</posx>
-                        <posy>18</posy>
+                        <left>312</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -368,8 +368,8 @@
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
                     <control type="image">
-                        <posx>312</posx>
-                        <posy>18</posy>
+                        <left>312</left>
+                        <top>18</top>
                         <width>86</width>
                         <height>114</height>
                         <texture>dialogs\stacked-select-FO.png</texture>
@@ -383,8 +383,8 @@
                 <animation effect="fade" time="600">WindowClose</animation>
                 <!-- Icon 1 -->
                 <control type="image">
-                    <posx>-396</posx>
-                    <posy>18</posy>
+                    <left>-396</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <texture>dialogs\stacked-select-FO.png</texture>
@@ -392,8 +392,8 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="image">
-                    <posx>-310</posx>
-                    <posy>18</posy>
+                    <left>-310</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <texture>dialogs\stacked-select-FO.png</texture>
@@ -401,8 +401,8 @@
                 </control>
                 <!-- Icon 3 -->
                 <control type="image">
-                    <posx>-225</posx>
-                    <posy>18</posy>
+                    <left>-225</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <texture>dialogs\stacked-select-FO.png</texture>
@@ -410,8 +410,8 @@
                 </control>
                 <!-- Icon 4 -->
                 <control type="image">
-                    <posx>-140</posx>
-                    <posy>18</posy>
+                    <left>-140</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <texture>dialogs\stacked-select-FO.png</texture>
@@ -419,16 +419,16 @@
                 </control>
                 <!-- Icon 5 -->
                 <control type="image">
-                    <posx>-54</posx>
-                    <posy>0</posy>
+                    <left>-54</left>
+                    <top>0</top>
                     <width>110</width>
                     <height>150</height>
                     <texture>dialogs\stacked-select-FO.png</texture>
                 </control>
                 <!-- Icon 6 -->
                 <control type="image">
-                    <posx>56</posx>
-                    <posy>18</posy>
+                    <left>56</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <texture>dialogs\stacked-select-FO.png</texture>
@@ -436,8 +436,8 @@
                 </control>
                 <!-- Icon 7 -->
                 <control type="image">
-                    <posx>141</posx>
-                    <posy>18</posy>
+                    <left>141</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <texture>dialogs\stacked-select-FO.png</texture>
@@ -445,8 +445,8 @@
                 </control>
                 <!-- Icon 8 -->
                 <control type="image">
-                    <posx>226</posx>
-                    <posy>18</posy>
+                    <left>226</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <texture>dialogs\stacked-select-FO.png</texture>
@@ -454,8 +454,8 @@
                 </control>
                 <!-- Icon 9 -->
                 <control type="image">
-                    <posx>312</posx>
-                    <posy>18</posy>
+                    <left>312</left>
+                    <top>18</top>
                     <width>86</width>
                     <height>114</height>
                     <texture>dialogs\stacked-select-FO.png</texture>

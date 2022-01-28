@@ -1,8 +1,8 @@
 ﻿<includes>
     <include name="Vinyl_View">
         <control type="list" id="53">
-            <posx>0</posx>
-            <posy>297</posy>
+            <left>0</left>
+            <top>297</top>
             <width>1920</width>
             <height>486</height>
             <onup>9000</onup>
@@ -13,8 +13,8 @@
             <scrolltime>250</scrolltime>
             <itemlayout height="486" width="384">
                 <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>486</height>
                     <font>Default</font>
@@ -25,8 +25,8 @@
             </itemlayout>
             <focusedlayout height="486" width="384">
                 <control type="label">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>384</width>
                     <height>486</height>
                     <font>Default</font>
@@ -37,8 +37,8 @@
             </focusedlayout>
         </control>
         <control type="group">
-            <posx>960</posx>
-            <posy>339</posy>
+            <left>960</left>
+            <top>339</top>
             <visible>Control.IsVisible(53)</visible>
             <!-- Snaps View Scroller Icons - Counter Clockwise Mothion -->
             <control type="group" id="5301">
@@ -46,14 +46,14 @@
                 <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
                 <!-- Show Far Left Icon On Move Previous -->
                 <control type="group">
-                    <posx>-1404</posx>
-                    <posy>88</posy>
+                    <left>-1404</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnPrevious</visible>
@@ -64,15 +64,15 @@
                         </animation>
                         <animation effect="rotate" start="4" end="4" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -81,8 +81,8 @@
                             <visible>IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -91,8 +91,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -101,14 +101,14 @@
                 </control>
                 <!-- Move Icon 1 To Icon 2 Position On Move Previous -->
                 <control type="group">
-                    <posx>-966</posx>
-                    <posy>88</posy>
+                    <left>-966</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnPrevious</visible>
@@ -118,15 +118,15 @@
                         </animation>
                         <animation effect="rotate" start="4" end="4" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -135,8 +135,8 @@
                             <visible>IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -145,8 +145,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -155,13 +155,13 @@
                 </control>
                 <!-- Move Icon 2 To Icon 3 Position On Move Previous -->
                 <control type="group">
-                    <posx>-591</posx>
-                    <posy>88</posy>
+                    <left>-591</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnPrevious</visible>
@@ -171,15 +171,15 @@
                         </animation>
                         <animation effect="rotate" start="-6" end="-6" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -188,8 +188,8 @@
                             <visible>IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -198,8 +198,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -208,14 +208,14 @@
                 </control>
                 <!-- Move Icon 3 To Icon 4 Position On Move Previous -->
                 <control type="group">
-                    <posx>-255</posx>
-                    <posy>0</posy>
+                    <left>-255</left>
+                    <top>0</top>
                     <width>680</width>
                     <height>402</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>680</width>
                         <height>402</height>
                         <visible>Container(53).OnPrevious</visible>
@@ -225,15 +225,15 @@
                         </animation>
                         <animation effect="rotate" start="3" end="3" time="250" center="339,201" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>124</posx>
-                            <posy>0</posy>
+                            <left>124</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -242,8 +242,8 @@
                             <visible>IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -252,8 +252,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <texture>record-front.png</texture>
@@ -262,14 +262,14 @@
                 </control>
                 <!-- Move Icon 4 To Icon 5 Position On Move Previous -->
                 <control type="group">
-                    <posx>291</posx>
-                    <posy>88</posy>
+                    <left>291</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnPrevious</visible>
@@ -279,15 +279,15 @@
                         </animation>
                         <animation effect="rotate" start="-7" end="-7" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -296,8 +296,8 @@
                             <visible>IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -306,8 +306,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -316,14 +316,14 @@
                 </control>
                 <!-- Hide Far Right Icon On Move Previous -->
                 <control type="group">
-                    <posx>666</posx>
-                    <posy>88</posy>
+                    <left>666</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(3).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnPrevious</visible>
@@ -333,15 +333,15 @@
                         </animation>
                         <animation effect="rotate" start="8" end="8" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -350,8 +350,8 @@
                             <visible>IsEmpty(Container(53).ListItem(3).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -360,8 +360,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(3).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -375,14 +375,14 @@
                 <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
                 <!-- Hide Far Left Icon On Move Next -->
                 <control type="group">
-                    <posx>-966</posx>
-                    <posy>88</posy>
+                    <left>-966</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(-3).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnNext</visible>
@@ -392,15 +392,15 @@
                         </animation>
                         <animation effect="rotate" start="4" end="4" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -409,8 +409,8 @@
                             <visible>IsEmpty(Container(53).ListItem(-3).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -419,8 +419,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(-3).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -429,14 +429,14 @@
                 </control>
                 <!-- Move Icon 2 To Icon 1 Position On Move Next -->
                 <control type="group">
-                    <posx>-591</posx>
-                    <posy>88</posy>
+                    <left>-591</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnNext</visible>
@@ -446,15 +446,15 @@
                         </animation>
                         <animation effect="rotate" start="-6" end="-6" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -463,8 +463,8 @@
                             <visible>IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -473,8 +473,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -483,14 +483,14 @@
                 </control>
                 <!-- Move Icon 3 To Icon 2 Position On Move Next -->
                 <control type="group">
-                    <posx>-255</posx>
-                    <posy>0</posy>
+                    <left>-255</left>
+                    <top>0</top>
                     <width>680</width>
                     <height>402</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>680</width>
                         <height>402</height>
                         <visible>Container(53).OnNext</visible>
@@ -500,15 +500,15 @@
                         </animation>
                         <animation effect="rotate" start="3" end="3" time="250" center="339,201" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>124</posx>
-                            <posy>0</posy>
+                            <left>124</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -517,8 +517,8 @@
                             <visible>IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -527,8 +527,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <texture>record-front.png</texture>
@@ -537,13 +537,13 @@
                 </control>
                 <!-- Move Icon 4 To Icon 3 Position On Move Previous -->
                 <control type="group">
-                    <posx>291</posx>
-                    <posy>88</posy>
+                    <left>291</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnNext</visible>
@@ -553,15 +553,15 @@
                         </animation>
                         <animation effect="rotate" start="-7" end="-7" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -570,8 +570,8 @@
                             <visible>IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -580,8 +580,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -590,14 +590,14 @@
                 </control>
                 <!-- Move Icon 5 To Icon 4 Position On Move Previous -->
                 <control type="group">
-                    <posx>666</posx>
-                    <posy>88</posy>
+                    <left>666</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnNext</visible>
@@ -607,15 +607,15 @@
                         </animation>
                         <animation effect="rotate" start="8" end="8" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -624,8 +624,8 @@
                             <visible>IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -634,8 +634,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -644,14 +644,14 @@
                 </control>
                 <!-- Show Far Right Icon On Move Next -->
                 <control type="group">
-                    <posx>960</posx>
-                    <posy>88</posy>
+                    <left>960</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <visible>Container(53).OnNext</visible>
@@ -662,15 +662,15 @@
                         </animation>
                         <animation effect="rotate" start="8" end="8" time="250" center="222,130" reversible="false">Visible</animation>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -679,8 +679,8 @@
                             <visible>IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -689,8 +689,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -703,26 +703,26 @@
                 <visible>!Control.IsVisible(5301)  + !Control.IsVisible(5302)</visible>
                 <!-- Icon 1 -->
                 <control type="group">
-                    <posx>-966</posx>
-                    <posy>88</posy>
+                    <left>-966</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -731,8 +731,8 @@
                             <visible>IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -741,8 +741,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -761,26 +761,26 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="group">
-                    <posx>-591</posx>
-                    <posy>88</posy>
+                    <left>-591</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -789,8 +789,8 @@
                             <visible>IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -799,8 +799,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -819,25 +819,25 @@
                 </control>
                 <!-- Icon 3 -->
                 <control type="group">
-                    <posx>-255</posx>
-                    <posy>0</posy>
+                    <left>-255</left>
+                    <top>0</top>
                     <width>680</width>
                     <height>402</height>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>680</width>
                         <height>402</height>
                         <control type="image">
-                            <posx>124</posx>
-                            <posy>0</posy>
+                            <left>124</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -846,8 +846,8 @@
                             <visible>IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -856,8 +856,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>402</width>
                             <height>402</height>
                             <texture>record-front.png</texture>
@@ -876,26 +876,26 @@
                 </control>
                 <!-- Icon 4 -->
                 <control type="group">
-                    <posx>291</posx>
-                    <posy>88</posy>
+                    <left>291</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -904,8 +904,8 @@
                             <visible>IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -914,8 +914,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -934,26 +934,26 @@
                 </control>
                 <!-- Icon 5 -->
                 <control type="group">
-                    <posx>666</posx>
-                    <posy>88</posy>
+                    <left>666</left>
+                    <top>88</top>
                     <width>444</width>
                     <height>262</height>
                     <visible>!IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>444</width>
                         <height>262</height>
                         <control type="image">
-                            <posx>80</posx>
-                            <posy>0</posy>
+                            <left>80</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record.png</texture>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -962,8 +962,8 @@
                             <visible>IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -972,8 +972,8 @@
                             <visible>!IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>262</width>
                             <height>262</height>
                             <texture>record-front.png</texture>
@@ -1000,16 +1000,16 @@
             <animation effect="fade" time="300">WindowOpen</animation>
             <animation effect="fade" time="300">WindowClose</animation>
             <control type="image">
-                <posx>506</posx>
-                <posy>909</posy>
+                <left>506</left>
+                <top>909</top>
                 <width>908</width>
                 <height>72</height>
                 <texture>filter_iconlabel.png</texture>
             </control>
             <control type="label">
                 <description>Current Selection</description>
-                <posx>0</posx>
-                <posy>906</posy>
+                <left>0</left>
+                <top>906</top>
                 <width>1920</width>
                 <height>72</height>
                 <align>center</align>

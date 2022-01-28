@@ -101,24 +101,6 @@
         </item>
     </include>
     <!-- Dock Content Items -->
-    <include name="Dock_LastFM_Love">
-        <item>
-            <icon>dock\icons\love.png</icon>
-            <label>$LOCALIZE[50050]</label>
-            <onclick>XBMC.LastFM.Love</onclick>
-            <onclick>Dialog.Close(1201)</onclick>
-            <visible>LastFM.RadioPlaying</visible>
-        </item>
-    </include>
-    <include name="Dock_LastFM_Hate">
-        <item>
-            <icon>dock\icons\hate.png</icon>
-            <label>$LOCALIZE[50051]</label>
-            <onclick>XBMC.LastFM.Ban</onclick>
-            <onclick>Dialog.Close(1201)</onclick>
-            <visible>LastFM.RadioPlaying</visible>
-        </item>
-    </include>
     <include name="Dock_Bookmark">
         <item>
             <icon>dock\icons\bookmark.png</icon>
@@ -231,6 +213,20 @@
             <label>$LOCALIZE[580]</label>
             <onclick>SendClick(4)</onclick>
             <visible>container.sortdirection(descending)</visible>
+        </item>
+    </include>
+	    <include name="Dock_HideForeignAddons">
+        <item id="31003">
+            <icon>dock\icons\filter-on.png</icon>
+            <label>50156</label>
+            <onclick>SendClick(7)</onclick>
+            <visible>System.GetBool(general.addonforeignfilter) + Container.Content(addons)</visible>
+        </item>
+        <item id="31004">
+            <icon>dock\icons\filter-off.png</icon>
+            <label>25001</label>
+            <onclick>SendClick(7)</onclick>
+            <visible>!System.GetBool(general.addonforeignfilter) + Container.Content(addons)</visible>
         </item>
     </include>
     <include name="Dock_VideoLibrary">

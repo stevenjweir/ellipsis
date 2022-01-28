@@ -6,11 +6,11 @@
                 <visible>Control.IsVisible(50)</visible>
                 <control type="group">
                     <visible>Container.Content(Episodes)</visible>
-                    <posx>544</posx>
-                    <posy>576</posy>
+                    <left>544</left>
+                    <top>576</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>830</width>
                         <height>348</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -19,8 +19,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>772</width>
                             <height>348</height>
                             <font>Library_Light_25</font>
@@ -35,8 +35,8 @@
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="label">
                             <description>Episode And Title</description>
-                            <posx>28</posx>
-                            <posy>15</posy>
+                            <left>28</left>
+                            <top>15</top>
                             <width>772</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -47,8 +47,8 @@
                         </control>
                         <control type="label">
                             <description>Aired</description>
-                            <posx>28</posx>
-                            <posy>70</posy>
+                            <left>28</left>
+                            <top>70</top>
                             <width>772</width>
                             <height>52</height>
                             <font>Library_Light_20</font>
@@ -58,8 +58,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="textbox">
-                            <posx>28</posx>
-                            <posy>112</posy>
+                            <left>28</left>
+                            <top>112</top>
                             <width>772</width>
                             <height>108</height>
                             <font>Library_Normal_20</font>
@@ -69,15 +69,15 @@
                             <autoscroll>False</autoscroll>
                         </control>
                         <control type="image">
-                            <posx>28</posx>
-                            <posy>237</posy>
+                            <left>28</left>
+                            <top>237</top>
                             <width>216</width>
                             <height>34</height>
                             <texture>$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="label">
-                            <posx>750</posx>
-                            <posy>238</posy>
+                            <left>750</left>
+                            <top>238</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
@@ -87,15 +87,15 @@
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <posx>765</posx>
-                            <posy>237</posy>
+                            <left>765</left>
+                            <top>237</top>
                             <width>33</width>
                             <height>33</height>
                             <texture>menu\library\info-icon.png</texture>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>288</posy>
+                            <left>0</left>
+                            <top>288</top>
                             <width>830</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -107,11 +107,11 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(Seasons)</visible>
-                    <posx>597</posx>
-                    <posy>634</posy>
+                    <left>597</left>
+                    <top>634</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>726</width>
                         <height>291</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -120,8 +120,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>669</width>
                             <height>291</height>
                             <font>Library_Light_25</font>
@@ -136,8 +136,8 @@
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="label">
                             <description>TV Show</description>
-                            <posx>28</posx>
-                            <posy>21</posy>
+                            <left>28</left>
+                            <top>21</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_28</font>
@@ -148,8 +148,8 @@
                         </control>
                         <control type="label">
                             <description>Season</description>
-                            <posx>28</posx>
-                            <posy>75</posy>
+                            <left>28</left>
+                            <top>75</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Normal_43</font>
@@ -160,8 +160,8 @@
                         </control>
                         <control type="label">
                             <description>Watched</description>
-                            <posx>28</posx>
-                            <posy>171</posy>
+                            <left>28</left>
+                            <top>171</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Normal_24</font>
@@ -171,8 +171,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>228</posy>
+                            <left>0</left>
+                            <top>228</top>
                             <width>740</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -184,11 +184,11 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(TVShows)</visible>
-                    <posx>597</posx>
-                    <posy>634</posy>
+                    <left>597</left>
+                    <top>634</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>726</width>
                         <height>291</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -197,8 +197,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>669</width>
                             <height>291</height>
                             <font>Library_Light_25</font>
@@ -212,16 +212,16 @@
                     <control type="group">
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="image">
-                            <posx>255</posx>
-                            <posy>15</posy>
+                            <left>255</left>
+                            <top>15</top>
                             <width>216</width>
                             <height>34</height>
                             <texture>$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="label">
                             <description>TV Show</description>
-                            <posx>28</posx>
-                            <posy>64</posy>
+                            <left>28</left>
+                            <top>64</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_35</font>
@@ -232,8 +232,8 @@
                         </control>
                         <control type="label">
                             <description>Watched</description>
-                            <posx>28</posx>
-                            <posy>150</posy>
+                            <left>28</left>
+                            <top>150</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Normal_22</font>
@@ -243,8 +243,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>228</posy>
+                            <left>0</left>
+                            <top>228</top>
                             <width>726</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -256,11 +256,11 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(Movies)</visible>
-                    <posx>597</posx>
-                    <posy>634</posy>
+                    <left>597</left>
+                    <top>634</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>726</width>
                         <height>291</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -269,8 +269,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>669</width>
                             <height>291</height>
                             <font>Library_Light_25</font>
@@ -284,15 +284,15 @@
                     <control type="group">
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="image">
-                            <posx>255</posx>
-                            <posy>21</posy>
+                            <left>255</left>
+                            <top>21</top>
                             <width>216</width>
                             <height>34</height>
                             <texture>$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>78</posy>
+                            <left>28</left>
+                            <top>78</top>
                             <width>669</width>
                             <height>42</height>
                             <font>Library_Light_28</font>
@@ -302,8 +302,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>148</posy>
+                            <left>28</left>
+                            <top>148</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_20</font>
@@ -313,8 +313,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>224</posy>
+                            <left>0</left>
+                            <top>224</top>
                             <width>726</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -326,11 +326,11 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(MusicVideos)</visible>
-                    <posx>597</posx>
-                    <posy>634</posy>
+                    <left>597</left>
+                    <top>634</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>726</width>
                         <height>291</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -339,8 +339,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>669</width>
                             <height>291</height>
                             <font>Library_Light_25</font>
@@ -354,8 +354,8 @@
                     <control type="group">
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>15</posy>
+                            <left>28</left>
+                            <top>15</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_35</font>
@@ -365,8 +365,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>87</posy>
+                            <left>28</left>
+                            <top>87</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -376,8 +376,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>150</posy>
+                            <left>28</left>
+                            <top>150</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -387,8 +387,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>219</posy>
+                            <left>0</left>
+                            <top>219</top>
                             <width>726</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -401,11 +401,11 @@
                 <control type="group">
                     <visible>Control.IsVisible(50)</visible>
                     <visible>!Container.Content(MusicVideos) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Movies) + !Container.Content(Episodes)</visible>
-                    <posx>544</posx>
-                    <posy>634</posy>
+                    <left>544</left>
+                    <top>634</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>830</width>
                         <height>291</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -414,8 +414,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>772</width>
                             <height>291</height>
                             <font>Library_Light_25</font>
@@ -429,8 +429,8 @@
                     <control type="group">
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>22</posy>
+                            <left>28</left>
+                            <top>22</top>
                             <width>772</width>
                             <height>52</height>
                             <font>Library_Light_35</font>
@@ -440,8 +440,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>94</posy>
+                            <left>28</left>
+                            <top>94</top>
                             <width>772</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -451,8 +451,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>158</posy>
+                            <left>28</left>
+                            <top>158</top>
                             <width>772</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -462,8 +462,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>218</posy>
+                            <left>28</left>
+                            <top>218</top>
                             <width>772</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -480,11 +480,11 @@
                 <control type="group">
                     <visible>Control.IsVisible(52)</visible>
                     <visible>Container.Content(Episodes)</visible>
-                    <posx>66</posx>
-                    <posy>278</posy>
+                    <left>66</left>
+                    <top>278</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>936</width>
                         <height>528</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -493,8 +493,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>879</width>
                             <height>528</height>
                             <font>Library_Light_25</font>
@@ -508,16 +508,16 @@
                     <control type="group">
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="image">
-                            <posx>360</posx>
-                            <posy>21</posy>
+                            <left>360</left>
+                            <top>21</top>
                             <width>216</width>
                             <height>34</height>
                             <texture>$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="label">
                             <description>Episode And Title</description>
-                            <posx>28</posx>
-                            <posy>80</posy>
+                            <left>28</left>
+                            <top>80</top>
                             <width>879</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -528,8 +528,8 @@
                         </control>
                         <control type="label">
                             <description>Aired</description>
-                            <posx>28</posx>
-                            <posy>148</posy>
+                            <left>28</left>
+                            <top>148</top>
                             <width>879</width>
                             <height>52</height>
                             <font>Library_Light_18</font>
@@ -539,8 +539,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="textbox">
-                            <posx>28</posx>
-                            <posy>198</posy>
+                            <left>28</left>
+                            <top>198</top>
                             <width>879</width>
                             <height>180</height>
                             <font>Library_Normal_20</font>
@@ -550,8 +550,8 @@
                             <autoscroll>False</autoscroll>
                         </control>
                         <control type="label">
-                            <posx>872</posx>
-                            <posy>402</posy>
+                            <left>872</left>
+                            <top>402</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
@@ -561,15 +561,15 @@
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <posx>879</posx>
-                            <posy>399</posy>
+                            <left>879</left>
+                            <top>399</top>
                             <width>33</width>
                             <height>33</height>
                             <texture>menu\library\info-icon.png</texture>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>454</posy>
+                            <left>0</left>
+                            <top>454</top>
                             <width>936</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -582,11 +582,11 @@
                 <control type="group">
                     <visible>Control.IsVisible(51)</visible>
                     <visible>Container.Content(Movies)</visible>
-                    <posx>124</posx>
-                    <posy>238</posy>
+                    <left>124</left>
+                    <top>238</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>726</width>
                         <height>531</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -595,8 +595,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>669</width>
                             <height>531</height>
                             <font>Library_Light_25</font>
@@ -610,16 +610,16 @@
                     <control type="group">
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="image">
-                            <posx>255</posx>
-                            <posy>33</posy>
+                            <left>255</left>
+                            <top>33</top>
                             <width>216</width>
                             <height>34</height>
                             <texture>$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="label">
                             <description>Title And Year</description>
-                            <posx>28</posx>
-                            <posy>88</posy>
+                            <left>28</left>
+                            <top>88</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -630,8 +630,8 @@
                         </control>
                         <control type="label">
                             <description>Director</description>
-                            <posx>28</posx>
-                            <posy>150</posy>
+                            <left>28</left>
+                            <top>150</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_20</font>
@@ -641,8 +641,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="textbox">
-                            <posx>28</posx>
-                            <posy>198</posy>
+                            <left>28</left>
+                            <top>198</top>
                             <width>669</width>
                             <height>180</height>
                             <font>Library_Normal_20</font>
@@ -652,8 +652,8 @@
                             <autoscroll>False</autoscroll>
                         </control>
                         <control type="label">
-                            <posx>662</posx>
-                            <posy>404</posy>
+                            <left>662</left>
+                            <top>404</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
@@ -663,15 +663,15 @@
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <posx>669</posx>
-                            <posy>400</posy>
+                            <left>669</left>
+                            <top>400</top>
                             <width>33</width>
                             <height>33</height>
                             <texture>menu\library\info-icon.png</texture>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>450</posy>
+                            <left>0</left>
+                            <top>450</top>
                             <width>669</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -684,11 +684,11 @@
                 <control type="group">
                     <visible>Control.IsVisible(51)</visible>
                     <visible>Container.Content(Seasons)</visible>
-                    <posx>124</posx>
-                    <posy>238</posy>
+                    <left>124</left>
+                    <top>238</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>726</width>
                         <height>531</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -697,8 +697,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>669</width>
                             <height>531</height>
                             <font>Library_Light_25</font>
@@ -713,8 +713,8 @@
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="label">
                             <description>TV Show</description>
-                            <posx>28</posx>
-                            <posy>98</posy>
+                            <left>28</left>
+                            <top>98</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_28</font>
@@ -725,8 +725,8 @@
                         </control>
                         <control type="label">
                             <description>Season</description>
-                            <posx>28</posx>
-                            <posy>200</posy>
+                            <left>28</left>
+                            <top>200</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Normal_69</font>
@@ -737,8 +737,8 @@
                         </control>
                         <control type="label">
                             <description>Watched</description>
-                            <posx>28</posx>
-                            <posy>384</posy>
+                            <left>28</left>
+                            <top>384</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Normal_24</font>
@@ -748,8 +748,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>465</posy>
+                            <left>0</left>
+                            <top>465</top>
                             <width>740</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -762,11 +762,11 @@
                 <control type="group">
                     <visible>Control.IsVisible(51)</visible>
                     <visible>Container.Content(TVShows)</visible>
-                    <posx>124</posx>
-                    <posy>238</posy>
+                    <left>124</left>
+                    <top>238</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>726</width>
                         <height>531</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -775,8 +775,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>669</width>
                             <height>531</height>
                             <font>Library_Light_25</font>
@@ -790,16 +790,16 @@
                     <control type="group">
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="image">
-                            <posx>255</posx>
-                            <posy>33</posy>
+                            <left>255</left>
+                            <top>33</top>
                             <width>216</width>
                             <height>34</height>
                             <texture>$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="label">
                             <description>TV Show</description>
-                            <posx>28</posx>
-                            <posy>90</posy>
+                            <left>28</left>
+                            <top>90</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Light_25</font>
@@ -810,8 +810,8 @@
                         </control>
                         <control type="label">
                             <description>Watched</description>
-                            <posx>28</posx>
-                            <posy>165</posy>
+                            <left>28</left>
+                            <top>165</top>
                             <width>669</width>
                             <height>52</height>
                             <font>Library_Normal_18</font>
@@ -821,8 +821,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="textbox">
-                            <posx>28</posx>
-                            <posy>216</posy>
+                            <left>28</left>
+                            <top>216</top>
                             <width>669</width>
                             <height>147</height>
                             <font>Library_Normal_20</font>
@@ -832,8 +832,8 @@
                             <autoscroll>False</autoscroll>
                         </control>
                         <control type="label">
-                            <posx>662</posx>
-                            <posy>404</posy>
+                            <left>662</left>
+                            <top>404</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
@@ -843,15 +843,15 @@
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <posx>669</posx>
-                            <posy>400</posy>
+                            <left>669</left>
+                            <top>400</top>
                             <width>33</width>
                             <height>33</height>
                             <texture>menu\library\info-icon.png</texture>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>459</posy>
+                            <left>0</left>
+                            <top>459</top>
                             <width>726</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -864,11 +864,11 @@
                 <control type="group">
                     <visible>Control.IsVisible(52)</visible>
                     <visible>Container.Content(MusicVideos)</visible>
-                    <posx>66</posx>
-                    <posy>278</posy>
+                    <left>66</left>
+                    <top>278</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>936</width>
                         <height>528</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -877,8 +877,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>879</width>
                             <height>531</height>
                             <font>Library_Light_25</font>
@@ -892,8 +892,8 @@
                     <control type="group">
                         <visible>!IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>44</posy>
+                            <left>28</left>
+                            <top>44</top>
                             <width>879</width>
                             <height>52</height>
                             <font>Library_Light_35</font>
@@ -903,8 +903,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>144</posy>
+                            <left>28</left>
+                            <top>144</top>
                             <width>879</width>
                             <height>52</height>
                             <font>Library_Normal_28</font>
@@ -914,8 +914,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>228</posy>
+                            <left>28</left>
+                            <top>228</top>
                             <width>879</width>
                             <height>52</height>
                             <font>Library_Normal_28</font>
@@ -925,8 +925,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>322</posy>
+                            <left>28</left>
+                            <top>322</top>
                             <width>879</width>
                             <height>52</height>
                             <font>Library_Light_24</font>
@@ -936,8 +936,8 @@
                             <scroll>true</scroll>
                         </control>
                         <control type="label">
-                            <posx>872</posx>
-                            <posy>394</posy>
+                            <left>872</left>
+                            <top>394</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
@@ -947,15 +947,15 @@
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <posx>879</posx>
-                            <posy>392</posy>
+                            <left>879</left>
+                            <top>392</top>
                             <width>33</width>
                             <height>33</height>
                             <texture>menu\library\info-icon.png</texture>
                         </control>
                         <control type="grouplist">
-                            <posx>0</posx>
-                            <posy>454</posy>
+                            <left>0</left>
+                            <top>454</top>
                             <width>936</width>
                             <height>45</height>
                             <itemgap>15</itemgap>
@@ -968,11 +968,11 @@
                 <control type="group">
                     <visible>Control.IsVisible(51)</visible>
                     <visible>!Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Movies)</visible>
-                    <posx>124</posx>
-                    <posy>238</posy>
+                    <left>124</left>
+                    <top>238</top>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>726</width>
                         <height>531</height>
                         <texture border="10,10,10,10">menu\library\panel.png</texture>
@@ -981,8 +981,8 @@
                     <control type="group">
                         <visible>IsEmpty(ListItem.Title)</visible>
                         <control type="label">
-                            <posx>28</posx>
-                            <posy>0</posy>
+                            <left>28</left>
+                            <top>0</top>
                             <width>669</width>
                             <height>531</height>
                             <font>Library_Light_25</font>

@@ -2,28 +2,28 @@
     <defaultcontrol>1</defaultcontrol>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <visible>Window.IsActive(videoosd) | Window.IsActive(fullscreeninfo) | Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding</visible>
     <controls>
         <control type="group">
-            <posx>820</posx>
-            <posy>58</posy>
+            <left>820</left>
+            <top>58</top>
             <animation effect="slide" start="0,-117" end="0" time="300" tween="sine" easing="out" reversible="false">WindowOpen</animation>
             <animation effect="slide" start="0" end="0,-117" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
             <animation effect="slide" start="0,-117" end="0" time="300" tween="sine" easing="out" reversible="false" condition="Control.IsVisible(176)">Conditional</animation>
             <animation effect="slide" start="0" end="0,-117" time="300" tween="sine" easing="in" reversible="false" condition="!Control.IsVisible(176)">Conditional</animation>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>279</width>
                 <height>58</height>
                 <texture>dialogs\tab-seek-sub.png</texture>
             </control>
             <control type="label">
-                <posx>0</posx>
-                <posy>4</posy>
+                <left>0</left>
+                <top>4</top>
                 <width>279</width>
                 <height>58</height>
                 <font>Seek</font>
@@ -34,23 +34,23 @@
             </control>
         </control>
         <control type="group">
-            <posx>549</posx>
-            <posy>0</posy>
+            <left>549</left>
+            <top>0</top>
             <animation effect="slide" start="0,-80" end="0" time="300" tween="sine" easing="out" reversible="false">WindowOpen</animation>
             <animation effect="slide" start="0" end="0,-80" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
             <animation effect="slide" start="0,-80" end="0" time="300" tween="sine" easing="out" reversible="false" condition="Control.IsVisible(175)">Conditional</animation>
             <animation effect="slide" start="0" end="0,-80" time="300" tween="sine" easing="in" reversible="false" condition="!Control.IsVisible(175)">Conditional</animation>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>822</width>
                 <height>80</height>
                 <texture>dialogs\tab-seek-main.png</texture>
             </control>
             <control type="progress" id="24">
                 <description>Progressbar</description>
-                <posx>172</posx>
-                <posy>20</posy>
+                <left>172</left>
+                <top>20</top>
                 <width>477</width>
                 <height>16</height>
                 <info>Player.Progress</info>
@@ -62,8 +62,8 @@
             </control>
             <control type="slider" id="401">
                 <description>Seek Slider</description>
-                <posx>172</posx>
-                <posy>36</posy>
+                <left>172</left>
+                <top>36</top>
                 <width>477</width>
                 <height>14</height>
                 <texturesliderbar>controls\progress_transparent.png</texturesliderbar>
@@ -77,8 +77,8 @@
             </control>
             <control type="label" id="22">
                 <description>Elapsed Time Label</description>
-                <posx>45</posx>
-                <posy>6</posy>
+                <left>45</left>
+                <top>6</top>
                 <width>128</width>
                 <height>60</height>
                 <font>Seek</font>
@@ -89,8 +89,8 @@
             </control>
             <control type="label" id="22">
                 <description>Seek Time Label</description>
-                <posx>45</posx>
-                <posy>6</posy>
+                <left>45</left>
+                <top>6</top>
                 <width>128</width>
                 <height>60</height>
                 <font>Seek</font>
@@ -101,8 +101,8 @@
             </control>
             <control type="label" id="23">
                 <description>Elapsed Time Label</description>
-                <posx>650</posx>
-                <posy>6</posy>
+                <left>650</left>
+                <top>6</top>
                 <width>128</width>
                 <height>60</height>
                 <font>Seek</font>
@@ -113,8 +113,8 @@
             </control>
         </control>
         <control type="group">
-            <posx>-144</posx>
-            <posy>0</posy>
+            <left>-144</left>
+            <top>0</top>
             <animation effect="slide" start="-207" end="0" time="300" tween="sine" easing="out" reversible="false">WindowOpen</animation>
             <animation effect="slide" start="0" end="-207" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
             <animation effect="slide" start="-207" end="0" time="300" tween="sine" easing="out" reversible="false" condition="Control.IsVisible(175)">Conditional</animation>
@@ -122,8 +122,8 @@
             <animation effect="slide" start="0" end="144" time="300" tween="sine" easing="out" reversible="false" condition="Player.Caching">Conditional</animation>
             <animation effect="slide" start="144" end="" time="300" tween="sine" easing="in" reversible="false" condition="!Player.Caching">Conditional</animation>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>351</width>
                 <height>80</height>
                 <texture>dialogs\tab-topleft.png</texture>
@@ -132,8 +132,8 @@
                 <visible>![[Player.Paused + !Player.Caching] + !Player.Seeking]</visible>
             </control>
             <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
+                <left>0</left>
+                <top>0</top>
                 <width>351</width>
                 <height>80</height>
                 <texture>dialogs\tab-topleft-red.png</texture>
@@ -146,16 +146,16 @@
                 <animation effect="fade" start="0" end="100" time="150" reversible="false">Visible</animation>
                 <animation effect="fade" start="100" end="0" time="150" reversible="false">Hidden</animation>
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>12</posy>
+                    <left>15</left>
+                    <top>12</top>
                     <width>42</width>
                     <height>39</height>
                     <texture>cache_icon.png</texture>
                 </control>
                 <control type="progress">
                     <description>Progressbar</description>
-                    <posx>75</posx>
-                    <posy>22</posy>
+                    <left>75</left>
+                    <top>22</top>
                     <width>207</width>
                     <height>16</height>
                     <info>Player.CacheLevel</info>
@@ -172,24 +172,24 @@
                 <animation effect="fade" start="0" end="100" time="150" reversible="false">Visible</animation>
                 <animation effect="fade" start="100" end="0" time="150" reversible="false">Hidden</animation>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Seeking</visible>
                     <texture>video_seek.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Playing + !Player.Seeking</visible>
                     <texture>video_play.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Paused + !Player.Seeking</visible>
@@ -197,80 +197,80 @@
                     <animation effect="fade" start="100" end="50" pulse="true" time="2000" reversible="false" tween="sine" easing="inout" condition="true">Conditional</animation>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Forwarding2x + !Player.Seeking</visible>
                     <texture>video-2x.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Rewinding2x + !Player.Seeking</visible>
                     <texture>video-2xr.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Forwarding4x + !Player.Seeking</visible>
                     <texture>video-4x.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Rewinding4x + !Player.Seeking</visible>
                     <texture>video-4xr.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Forwarding8x + !Player.Seeking</visible>
                     <texture>video-8x.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Rewinding8x + !Player.Seeking</visible>
                     <texture>video-8xr.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Forwarding16x + !Player.Seeking</visible>
                     <texture>video-16x.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Rewinding16x + !Player.Seeking</visible>
                     <texture>video-16xr.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Forwarding32x + !Player.Seeking</visible>
                     <texture>video-32x.png</texture>
                 </control>
                 <control type="image">
-                    <posx>144</posx>
-                    <posy>0</posy>
+                    <left>144</left>
+                    <top>0</top>
                     <width>207</width>
                     <height>80</height>
                     <visible>Player.Rewinding32x + !Player.Seeking</visible>

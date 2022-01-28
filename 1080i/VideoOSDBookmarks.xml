@@ -4,8 +4,8 @@
     <defaultcontrol>2</defaultcontrol>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
-        <posy>0</posy>
+        <left>0</left>
+        <top>0</top>
     </coordinates>
     <controls>
         <control type="group">
@@ -13,19 +13,19 @@
             <include>Zoom_Out_WindowClose</include>
             <control type="image">
                 <description>background image</description>
-                <posx>406</posx>
-                <posy>160</posy>
+                <left>406</left>
+                <top>160</top>
                 <width>1107</width>
                 <height>758</height>
                 <texture>dialogs\video-osd-dialogbackground.png</texture>
             </control>
             <control type="group">
-                <posx>406</posx>
-                <posy>160</posy>
+                <left>406</left>
+                <top>160</top>
                 <control type="label">
                     <description>heading label</description>
-                    <posx>0</posx>
-                    <posy>45</posy>
+                    <left>0</left>
+                    <top>45</top>
                     <width>1107</width>
                     <align>center</align>
                     <font>Heading</font>
@@ -33,8 +33,8 @@
                     <textcolor>Text</textcolor>
                 </control>
                 <control type="image">
-                    <posx>45</posx>
-                    <posy>279</posy>
+                    <left>45</left>
+                    <top>279</top>
                     <width>96</width>
                     <height>96</height>
                     <texture>menu\nav\nav_arrow_left_NF.png</texture>
@@ -42,8 +42,8 @@
                     <visible>!Container(11).OnPrevious</visible>
                 </control>
                 <control type="image">
-                    <posx>45</posx>
-                    <posy>279</posy>
+                    <left>45</left>
+                    <top>279</top>
                     <width>96</width>
                     <height>96</height>
                     <texture>menu\nav\nav_arrow_left_FO.png</texture>
@@ -54,8 +54,8 @@
                     <visible>Container(11).OnPrevious</visible>
                 </control>
                 <control type="image">
-                    <posx>966</posx>
-                    <posy>279</posy>
+                    <left>966</left>
+                    <top>279</top>
                     <width>96</width>
                     <height>96</height>
                     <texture>menu\nav\nav_arrow_right_NF.png</texture>
@@ -63,8 +63,8 @@
                     <visible>!Container(11).OnNext</visible>
                 </control>
                 <control type="image">
-                    <posx>966</posx>
-                    <posy>279</posy>
+                    <left>966</left>
+                    <top>279</top>
                     <width>96</width>
                     <height>96</height>
                     <texture>menu\nav\nav_arrow_right_FO.png</texture>
@@ -75,8 +75,8 @@
                     <visible>Container(11).OnNext</visible>
                 </control>
                 <control type="panel" id="11">
-                    <posx>159</posx>
-                    <posy>105</posy>
+                    <left>159</left>
+                    <top>105</top>
                     <width>789</width>
                     <height>459</height>
                     <onleft>11</onleft>
@@ -89,22 +89,22 @@
                     <orientation>horizontal</orientation>
                     <itemlayout width="429" height="230">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>357</width>
                             <height>214</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                         </control>
                         <control type="image">
-                            <posx>26</posx>
-                            <posy>10</posy>
+                            <left>26</left>
+                            <top>10</top>
                             <width>306</width>
                             <height>168</height>
                             <info>ListItem.Icon</info>
                         </control>
                         <control type="label">
-                            <posx>178</posx>
-                            <posy>170</posy>
+                            <left>178</left>
+                            <top>170</top>
                             <width>357</width>
                             <height>30</height>
                             <font>Medium</font>
@@ -114,22 +114,22 @@
                     </itemlayout>
                     <focusedlayout width="429" height="230">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>357</width>
                             <height>214</height>
                             <texture border="4,5,6,8">controls\button_f.png</texture>
                         </control>
                         <control type="image">
-                            <posx>26</posx>
-                            <posy>10</posy>
+                            <left>26</left>
+                            <top>10</top>
                             <width>306</width>
                             <height>168</height>
                             <info>ListItem.Icon</info>
                         </control>
                         <control type="label">
-                            <posx>178</posx>
-                            <posy>170</posy>
+                            <left>178</left>
+                            <top>170</top>
                             <width>357</width>
                             <height>30</height>
                             <font>Medium</font>
@@ -139,8 +139,8 @@
                     </focusedlayout>
                 </control>
                 <control type="grouplist" id="200">
-                    <posx>0</posx>
-                    <posy>592</posy>
+                    <left>0</left>
+                    <top>592</top>
                     <width>1107</width>
                     <height>69</height>
                     <onleft>200</onleft>

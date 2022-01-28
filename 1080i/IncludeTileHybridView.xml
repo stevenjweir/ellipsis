@@ -1,8 +1,8 @@
 ﻿<includes>
     <include name="Tile_Hybrid_View">
         <control type="group">
-            <posx>998</posx>
-            <posy>351</posy>
+            <left>998</left>
+            <top>351</top>
             <visible>Control.IsVisible(58)</visible>
             <!-- DVD Hybrid View Icons - Counter Clockwise Mothion -->
             <control type="group" id="5801">
@@ -16,13 +16,13 @@
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0" end="192" time="250" />
                     </animation>
-                    <posx>471</posx>
-                    <posy>44</posy>
+                    <left>471</left>
+                    <top>44</top>
                     <width>290</width>
                     <height>579</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -31,8 +31,8 @@
                         <visible>IsEmpty(Container(58).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -41,15 +41,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -58,8 +58,8 @@
                         <visible>IsEmpty(Container(58).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -68,8 +68,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -80,13 +80,13 @@
                     <visible>Container(58).OnPrevious</visible>
                     <visible>!IsEmpty(Container(58).ListItemNoWrap(2).Label)</visible>
                     <animation effect="zoom" start="238,22,330,660" end="471,44,290,579" time="250" reversible="false">Hidden</animation>
-                    <posx>238</posx>
-                    <posy>22</posy>
+                    <left>238</left>
+                    <top>22</top>
                     <width>330</width>
                     <height>660</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -95,8 +95,8 @@
                         <visible>IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -105,15 +105,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -122,8 +122,8 @@
                         <visible>IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -132,8 +132,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -144,13 +144,13 @@
                     <visible>Container(58).OnPrevious</visible>
                     <visible>!IsEmpty(Container(58).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="0,0,376,753" end="238,22,330,660" time="250" reversible="false">Hidden</animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>376</width>
                     <height>753</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -159,8 +159,8 @@
                         <visible>IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -169,15 +169,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -186,8 +186,8 @@
                         <visible>IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -196,8 +196,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -211,13 +211,13 @@
                         <effect type="slide" start="-192" end="0" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>376</width>
                     <height>753</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -226,8 +226,8 @@
                         <visible>IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -236,15 +236,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -253,8 +253,8 @@
                         <visible>IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -263,8 +263,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -284,13 +284,13 @@
                         <effect type="slide" start="192" end="0" time="250" />
                     </animation>
                     <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <posx>471</posx>
-                    <posy>44</posy>
+                    <left>471</left>
+                    <top>44</top>
                     <width>290</width>
                     <height>579</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -299,8 +299,8 @@
                         <visible>IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -309,15 +309,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -326,8 +326,8 @@
                         <visible>IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -336,8 +336,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -348,13 +348,13 @@
                     <visible>Container(58).OnNext</visible>
                     <visible>!IsEmpty(Container(58).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="471,44,290,579" end="238,22,330,660" time="250" reversible="false">Hidden</animation>
-                    <posx>471</posx>
-                    <posy>44</posy>
+                    <left>471</left>
+                    <top>44</top>
                     <width>290</width>
                     <height>579</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -363,8 +363,8 @@
                         <visible>IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -373,15 +373,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -390,8 +390,8 @@
                         <visible>IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -400,8 +400,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -412,13 +412,13 @@
                     <visible>Container(58).OnNext</visible>
                     <visible>!IsEmpty(Container(58).ListItemNoWrap(0).Label)</visible>
                     <animation effect="zoom" start="238,22,330,660" end="0,0,376,753" time="250" reversible="false">Hidden</animation>
-                    <posx>238</posx>
-                    <posy>22</posy>
+                    <left>238</left>
+                    <top>22</top>
                     <width>330</width>
                     <height>660</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -427,8 +427,8 @@
                         <visible>IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -437,15 +437,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -454,8 +454,8 @@
                         <visible>IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -464,8 +464,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -478,13 +478,13 @@
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0" end="-192" time="250" />
                     </animation>
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>376</width>
                     <height>753</height>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -493,8 +493,8 @@
                         <visible>IsEmpty(Container(58).ListItem((-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -503,15 +503,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -520,8 +520,8 @@
                         <visible>IsEmpty(Container(58).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -530,8 +530,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -543,8 +543,8 @@
                 <visible>!Control.IsVisible(5801)  + !Control.IsVisible(5802)</visible>
                 <!-- Icon 3 -->
                 <control type="group">
-                    <posx>471</posx>
-                    <posy>44</posy>
+                    <left>471</left>
+                    <top>44</top>
                     <width>290</width>
                     <height>579</height>
                     <animation type="WindowOpen">
@@ -557,8 +557,8 @@
                     </animation>
                     <visible>!IsEmpty(Container(58).ListItemNoWrap(2).Label)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -567,8 +567,8 @@
                         <visible>IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -577,15 +577,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>290</width>
                         <height>290</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -594,8 +594,8 @@
                         <visible>IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -604,8 +604,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>290</posy>
+                        <left>0</left>
+                        <top>290</top>
                         <width>290</width>
                         <height>290</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -613,8 +613,8 @@
                 </control>
                 <!-- Icon 2 -->
                 <control type="group">
-                    <posx>238</posx>
-                    <posy>22</posy>
+                    <left>238</left>
+                    <top>22</top>
                     <width>330</width>
                     <height>660</height>
                     <animation type="WindowOpen">
@@ -627,8 +627,8 @@
                     </animation>
                     <visible>!IsEmpty(Container(58).ListItemNoWrap(1).Label)</visible>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -637,8 +637,8 @@
                         <visible>IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -647,15 +647,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>330</width>
                         <height>330</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -664,8 +664,8 @@
                         <visible>IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -674,8 +674,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>330</posy>
+                        <left>0</left>
+                        <top>330</top>
                         <width>330</width>
                         <height>330</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -683,8 +683,8 @@
                 </control>
                 <!-- Icon 1 -->
                 <control type="group">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>376</width>
                     <height>753</height>
                     <camera x="0" y="0" />
@@ -697,8 +697,8 @@
                         <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" reversible="false" />
                     </animation>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -707,8 +707,8 @@
                         <visible>IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -717,15 +717,15 @@
                         <visible>!IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
+                        <left>0</left>
+                        <top>0</top>
                         <width>376</width>
                         <height>376</height>
                         <texture>iconview-overlay.png</texture>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
@@ -734,8 +734,8 @@
                         <visible>IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
@@ -744,8 +744,8 @@
                         <visible>!IsEmpty(Container(58).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
-                        <posx>0</posx>
-                        <posy>376</posy>
+                        <left>0</left>
+                        <top>376</top>
                         <width>376</width>
                         <height>376</height>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
@@ -754,8 +754,8 @@
             </control>
         </control>
         <control type="list" id="58">
-            <posx>162</posx>
-            <posy>264</posy>
+            <left>162</left>
+            <top>264</top>
             <width>798</width>
             <height>552</height>
             <onleft>ActivateWindow(1201)</onleft>
@@ -765,22 +765,22 @@
             <scrolltime>200</scrolltime>
             <itemlayout height="69" width="798">
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>798</width>
                     <height>69</height>
                     <texture border="4,5,6,8">controls\button_nf.png</texture>
                 </control>
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>6</posy>
+                    <left>15</left>
+                    <top>6</top>
                     <width>52</width>
                     <height>52</height>
                     <info>ListItem.Icon</info>
                 </control>
                 <control type="label">
-                    <posx>82</posx>
-                    <posy>6</posy>
+                    <left>82</left>
+                    <top>6</top>
                     <width>536</width>
                     <height>52</height>
                     <font>Default</font>
@@ -791,8 +791,8 @@
                     <info>ListItem.Label</info>
                 </control>
                 <control type="label">
-                    <posx>783</posx>
-                    <posy>6</posy>
+                    <left>783</left>
+                    <top>6</top>
                     <width>180</width>
                     <height>52</height>
                     <font>Default</font>
@@ -805,31 +805,31 @@
             </itemlayout>
             <focusedlayout height="69" width="798">
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>798</width>
                     <height>69</height>
                     <texture border="4,5,6,8">controls\button_nf.png</texture>
                     <visible>!Control.HasFocus(58)</visible>
                 </control>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>798</width>
                     <height>69</height>
                     <texture border="4,5,6,8">controls\button_f.png</texture>
                     <visible>Control.HasFocus(58)</visible>
                 </control>
                 <control type="image">
-                    <posx>15</posx>
-                    <posy>6</posy>
+                    <left>15</left>
+                    <top>6</top>
                     <width>52</width>
                     <height>52</height>
                     <info>ListItem.Icon</info>
                 </control>
                 <control type="label">
-                    <posx>82</posx>
-                    <posy>6</posy>
+                    <left>82</left>
+                    <top>6</top>
                     <width>536</width>
                     <height>52</height>
                     <font>Default</font>
@@ -840,8 +840,8 @@
                     <info>ListItem.Label</info>
                 </control>
                 <control type="label">
-                    <posx>783</posx>
-                    <posy>6</posy>
+                    <left>783</left>
+                    <top>6</top>
                     <width>180</width>
                     <height>52</height>
                     <font>Default</font>
@@ -854,8 +854,8 @@
             </focusedlayout>
         </control>
         <control type="group">
-            <posx>453</posx>
-            <posy>434</posy>
+            <left>453</left>
+            <top>434</top>
             <visible>Control.IsVisible(58)</visible>
             <include>Sort_Letter</include>
         </control>
@@ -867,16 +867,16 @@
             <animation effect="fade" time="300">WindowOpen</animation>
             <animation effect="fade" time="300">WindowClose</animation>
             <control type="image">
-                <posx>506</posx>
-                <posy>909</posy>
+                <left>506</left>
+                <top>909</top>
                 <width>908</width>
                 <height>72</height>
                 <texture>filter_iconlabel.png</texture>
             </control>
             <control type="label">
                 <description>Current Selection</description>
-                <posx>0</posx>
-                <posy>906</posy>
+                <left>0</left>
+                <top>906</top>
                 <width>1920</width>
                 <height>72</height>
                 <align>center</align>

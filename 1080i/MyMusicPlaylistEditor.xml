@@ -12,13 +12,13 @@
             <control type="group">
                 <include>Zoom_In_WindowOpen</include>
                 <include>Zoom_Out_WindowClose</include>
-                <posx>12</posx>
-                <posy>189</posy>
+                <left>12</left>
+                <top>189</top>
                 <width>800</width>
                 <height>723</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>800</width>
                     <height>723</height>
                     <texture>dialogs\dialog-playlist-left.png</texture>
@@ -26,16 +26,16 @@
                 <control type="label">
                     <description>Files directory text label left</description>
                     <align>right</align>
-                    <posx>753</posx>
-                    <posy>60</posy>
+                    <left>753</left>
+                    <top>60</top>
                     <width>705</width>
                     <label>1211</label>
                     <font>Large</font>
                     <textcolor>Highlight</textcolor>
                 </control>
                 <control type="list" id="50">
-                    <posx>48</posx>
-                    <posy>123</posy>
+                    <left>48</left>
+                    <top>123</top>
                     <width>705</width>
                     <height>483</height>
                     <onleft>ActivateWindow(1203)</onleft>
@@ -46,22 +46,22 @@
                     <scrolltime>200</scrolltime>
                     <itemlayout height="69">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>705</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                         </control>
                         <control type="image">
-                            <posx>15</posx>
-                            <posy>6</posy>
+                            <left>15</left>
+                            <top>6</top>
                             <width>52</width>
                             <height>52</height>
                             <info>ListItem.Icon</info>
                         </control>
                         <control type="label">
-                            <posx>82</posx>
-                            <posy>6</posy>
+                            <left>82</left>
+                            <top>6</top>
                             <width>442</width>
                             <height>52</height>
                             <font>Default</font>
@@ -72,8 +72,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>690</posx>
-                            <posy>6</posy>
+                            <left>690</left>
+                            <top>6</top>
                             <width>180</width>
                             <height>52</height>
                             <font>Default</font>
@@ -86,31 +86,31 @@
                     </itemlayout>
                     <focusedlayout height="69" width="705">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>705</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                             <visible>!Control.HasFocus(50)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>705</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_f.png</texture>
                             <visible>Control.HasFocus(50)</visible>
                         </control>
                         <control type="image">
-                            <posx>15</posx>
-                            <posy>6</posy>
+                            <left>15</left>
+                            <top>6</top>
                             <width>52</width>
                             <height>52</height>
                             <info>ListItem.Icon</info>
                         </control>
                         <control type="label">
-                            <posx>82</posx>
-                            <posy>6</posy>
+                            <left>82</left>
+                            <top>6</top>
                             <width>442</width>
                             <height>52</height>
                             <font>Default</font>
@@ -121,8 +121,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>690</posx>
-                            <posy>6</posy>
+                            <left>690</left>
+                            <top>6</top>
                             <width>180</width>
                             <height>52</height>
                             <font>Default</font>
@@ -137,8 +137,8 @@
                 <control type="label">
                     <description>number of files in left list text label</description>
                     <align>right</align>
-                    <posx>753</posx>
-                    <posy>622</posy>
+                    <left>753</left>
+                    <top>622</top>
                     <width>705</width>
                     <label>($INFO[Container(50).NumItems]$LOCALIZE[50104]$INFO[Container(50).CurrentPage]/$INFO[Container(50).NumPages])</label>
                     <font>Medium</font>
@@ -151,16 +151,16 @@
                 <control type="group">
                     <visible>Control.HasFocus(50)</visible>
                     <control type="image">
-                        <posx>816</posx>
-                        <posy>240</posy>
+                        <left>816</left>
+                        <top>240</top>
                         <width>288</width>
                         <height>288</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(50).ListItem.Icon]</texture>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>570</posy>
+                        <left>816</left>
+                        <top>570</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -170,8 +170,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>615</posy>
+                        <left>816</left>
+                        <top>615</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Heading_Small</font>
@@ -181,8 +181,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>660</posy>
+                        <left>816</left>
+                        <top>660</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -192,8 +192,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>705</posy>
+                        <left>816</left>
+                        <top>705</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -203,8 +203,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>750</posy>
+                        <left>816</left>
+                        <top>750</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -214,8 +214,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>795</posy>
+                        <left>816</left>
+                        <top>795</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -228,16 +228,16 @@
                 <control type="group">
                     <visible>Control.HasFocus(100)</visible>
                     <control type="image">
-                        <posx>816</posx>
-                        <posy>240</posy>
+                        <left>816</left>
+                        <top>240</top>
                         <width>288</width>
                         <height>288</height>
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">$INFO[Container(100).ListItem.Icon]</texture>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>570</posy>
+                        <left>816</left>
+                        <top>570</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -247,8 +247,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>615</posy>
+                        <left>816</left>
+                        <top>615</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Heading_Small</font>
@@ -258,8 +258,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>660</posy>
+                        <left>816</left>
+                        <top>660</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -269,8 +269,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>705</posy>
+                        <left>816</left>
+                        <top>705</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -280,8 +280,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>750</posy>
+                        <left>816</left>
+                        <top>750</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -291,8 +291,8 @@
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
-                        <posx>816</posx>
-                        <posy>795</posy>
+                        <left>816</left>
+                        <top>795</top>
                         <width>288</width>
                         <height>30</height>
                         <font>Medium</font>
@@ -303,8 +303,8 @@
                     </control>
                 </control>
                 <control type="image">
-                    <posx>816</posx>
-                    <posy>240</posy>
+                    <left>816</left>
+                    <top>240</top>
                     <width>288</width>
                     <height>288</height>
                     <texture>iconview-overlay.png</texture>
@@ -313,13 +313,13 @@
             <control type="group">
                 <include>Zoom_In_WindowOpen</include>
                 <include>Zoom_Out_WindowClose</include>
-                <posx>1108</posx>
-                <posy>189</posy>
+                <left>1108</left>
+                <top>189</top>
                 <width>800</width>
                 <height>723</height>
                 <control type="image">
-                    <posx>0</posx>
-                    <posy>0</posy>
+                    <left>0</left>
+                    <top>0</top>
                     <width>800</width>
                     <height>723</height>
                     <texture>dialogs\dialog-playlist-right.png</texture>
@@ -327,16 +327,16 @@
                 <control type="label">
                     <description>Playlist directory text label right</description>
                     <align>left</align>
-                    <posx>48</posx>
-                    <posy>60</posy>
+                    <left>48</left>
+                    <top>60</top>
                     <width>705</width>
                     <label>559</label>
                     <font>Large</font>
                     <textcolor>Highlight</textcolor>
                 </control>
                 <control type="list" id="100">
-                    <posx>48</posx>
-                    <posy>123</posy>
+                    <left>48</left>
+                    <top>123</top>
                     <width>705</width>
                     <height>483</height>
                     <onleft>50</onleft>
@@ -347,22 +347,22 @@
                     <scrolltime>200</scrolltime>
                     <itemlayout height="69">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>705</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                         </control>
                         <control type="image">
-                            <posx>15</posx>
-                            <posy>6</posy>
+                            <left>15</left>
+                            <top>6</top>
                             <width>52</width>
                             <height>52</height>
                             <info>ListItem.Icon</info>
                         </control>
                         <control type="label">
-                            <posx>82</posx>
-                            <posy>6</posy>
+                            <left>82</left>
+                            <top>6</top>
                             <width>442</width>
                             <height>52</height>
                             <font>Default</font>
@@ -373,8 +373,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>690</posx>
-                            <posy>6</posy>
+                            <left>690</left>
+                            <top>6</top>
                             <width>180</width>
                             <height>52</height>
                             <font>Default</font>
@@ -387,31 +387,31 @@
                     </itemlayout>
                     <focusedlayout height="69">
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>705</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                             <visible>!Control.HasFocus(100)</visible>
                         </control>
                         <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
+                            <left>0</left>
+                            <top>0</top>
                             <width>705</width>
                             <height>69</height>
                             <texture border="4,5,6,8">controls\button_f.png</texture>
                             <visible>Control.HasFocus(100)</visible>
                         </control>
                         <control type="image">
-                            <posx>15</posx>
-                            <posy>6</posy>
+                            <left>15</left>
+                            <top>6</top>
                             <width>52</width>
                             <height>52</height>
                             <info>ListItem.Icon</info>
                         </control>
                         <control type="label">
-                            <posx>82</posx>
-                            <posy>6</posy>
+                            <left>82</left>
+                            <top>6</top>
                             <width>442</width>
                             <height>52</height>
                             <font>Default</font>
@@ -422,8 +422,8 @@
                             <info>ListItem.Label</info>
                         </control>
                         <control type="label">
-                            <posx>690</posx>
-                            <posy>6</posy>
+                            <left>690</left>
+                            <top>6</top>
                             <width>180</width>
                             <height>52</height>
                             <font>Default</font>
@@ -438,8 +438,8 @@
                 <control type="label">
                     <description>number of files in right list text label</description>
                     <align>left</align>
-                    <posx>48</posx>
-                    <posy>622</posy>
+                    <left>48</left>
+                    <top>622</top>
                     <width>705</width>
                     <label>($INFO[Container(100).NumItems]$LOCALIZE[50104]$INFO[Container(100).CurrentPage]/$INFO[Container(100).NumPages])</label>
                     <font>Medium</font>
@@ -455,8 +455,8 @@
         <include>Now_Playing_Widget</include>
         <!-- Elipsis Button -->
         <control type="group">
-            <posx>960</posx>
-            <posy>1080</posy>
+            <left>960</left>
+            <top>1080</top>
             <include>Dock_Elipsis_Home</include>
         </control>
         <include>Debug</include>
