@@ -1,8 +1,9 @@
-﻿<window id="2007">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="2007">
     <defaultcontrol>2</defaultcontrol>
     <controls>
         <control type="group" id="13">
-            <include>Visor_Fullscreen_Filter_Top</include>
+            <!-- <include>Visor_Fullscreen_Filter_Top</include> -->
             <control type="image">
                 <left>33</left>
                 <top>12</top>

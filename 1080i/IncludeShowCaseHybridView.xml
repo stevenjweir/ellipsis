@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <include name="Show_Case_Hybrid_View">
         <!-- Show Case Hybrid View -->
         <control type="group">
@@ -757,13 +758,13 @@
                     <top>135</top>
                     <width>213</width>
                     <height>627</height>
-                    <animation type="WindowOpen">
-                        <effect type="slide" start="-741" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" reversible="false" />
-                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="slide" start="-741" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" />
+                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" />
                     </animation>
-                    <animation type="WindowClose">
-                        <effect type="slide" start="0" end="-741" center="auto" time="150" tween="back" easing="in" reversible="false" />
-                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" reversible="false" />
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="slide" start="0" end="-741" center="auto" time="150" tween="back" easing="in" />
+                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
                     </animation>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
                     <control type="image">
@@ -835,13 +836,13 @@
                     <top>99</top>
                     <width>262</width>
                     <height>771</height>
-                    <animation type="WindowOpen">
-                        <effect type="slide" start="-536" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" reversible="false" />
-                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="slide" start="-536" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" />
+                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" />
                     </animation>
-                    <animation type="WindowClose">
-                        <effect type="slide" start="0" end="-536" center="auto" time="150" tween="back" easing="in" reversible="false" />
-                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" reversible="false" />
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="slide" start="0" end="-536" center="auto" time="150" tween="back" easing="in" />
+                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
                     </animation>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
                     <control type="image">
@@ -913,13 +914,13 @@
                     <top>56</top>
                     <width>324</width>
                     <height>948</height>
-                    <animation type="WindowOpen">
-                        <effect type="slide" start="-288" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" reversible="false" />
-                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="slide" start="-288" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" />
+                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" />
                     </animation>
-                    <animation type="WindowClose">
-                        <effect type="slide" start="0" end="-288" center="auto" time="150" tween="back" easing="in" reversible="false" />
-                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" reversible="false" />
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="slide" start="0" end="-288" center="auto" time="150" tween="back" easing="in" />
+                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
                     </animation>
                     <visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
                     <control type="image">
@@ -992,13 +993,13 @@
                     <width>399</width>
                     <height>1170</height>
                     <camera x="0" y="0" />
-                    <animation type="WindowOpen">
-                        <effect type="fade" start="0" end="100" time="150" tween="sine" easing="out" reversible="false" />
-                        <effect type="rotatey" start="90" end="0" center="0,0" time="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="fade" start="0" end="100" time="150" tween="sine" easing="out" />
+                        <effect type="rotatey" start="90" end="0" center="0,0" time="150" tween="sine" easing="out" />
                     </animation>
-                    <animation type="WindowClose">
-                        <effect type="fade" start="100" end="0" time="150" delay="150" tween="sine" easing="in" reversible="false" />
-                        <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="fade" start="100" end="0" time="150" delay="150" tween="sine" easing="in" />
+                        <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" />
                     </animation>
                     <control type="image">
                         <left>0</left>
@@ -1670,8 +1671,8 @@
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_left_FO.png</texture>
                 <animation type="Hidden">
-                    <effect type="slide" start="-15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                    <effect type="slide" start="-15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(51).OnPrevious</visible>
             </control>
@@ -1691,8 +1692,8 @@
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_right_FO.png</texture>
                 <animation type="Hidden">
-                    <effect type="slide" start="15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                    <effect type="slide" start="15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(51).OnNext</visible>
             </control>
@@ -1716,8 +1717,8 @@
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_left_FO.png</texture>
                 <animation type="Hidden">
-                    <effect type="slide" start="-15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                    <effect type="slide" start="-15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(51).OnPrevious</visible>
             </control>
@@ -1737,8 +1738,8 @@
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_right_FO.png</texture>
                 <animation type="Hidden">
-                    <effect type="slide" start="15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                    <effect type="slide" start="15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(51).OnNext</visible>
             </control>
@@ -1762,8 +1763,8 @@
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_up_FO.png</texture>
                 <animation type="Hidden">
-                    <effect type="slide" start="0,-15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                    <effect type="slide" start="0,-15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(52).OnPrevious</visible>
             </control>
@@ -1783,8 +1784,8 @@
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_down_FO.png</texture>
                 <animation type="Hidden">
-                    <effect type="slide" start="0,15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                    <effect type="slide" start="0,15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(52).OnNext</visible>
             </control>

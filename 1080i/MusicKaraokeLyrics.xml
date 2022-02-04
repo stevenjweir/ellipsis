@@ -1,4 +1,5 @@
-﻿<window id="2009">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="2009">
     <controls>
         <control type="karvisualisation" id="1">
             <description>visualisation</description>
@@ -6,7 +7,7 @@
             <top>0</top>
             <width>1920</width>
             <height>1080</height>
-            <visibility>false</visibility>
+            <visible>false</visible>
         </control>
         <control type="image" id="2">
             <description>fullscreen image</description>
@@ -14,7 +15,7 @@
             <top>0</top>
             <width>1920</width>
             <height>1080</height>
-            <visibility>false</visibility>
+            <visible>false</visible>
         </control>
         <include>Debug</include>
     </controls>

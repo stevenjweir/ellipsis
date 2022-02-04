@@ -1,4 +1,5 @@
-﻿<window type="dialog" id="114">
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="114">
     <defaultcontrol always="true">99</defaultcontrol>
     <include>Fade_In_WindowOpen</include>
     <include>Fade_Out_WindowClose</include>
@@ -16,7 +17,6 @@
             <label>-</label>
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>
-            <onfocus>XBMC.RunScript(script.skin.news,http://www.teamblackbolt.co.uk/ellipsisnews.php)</onfocus>
             <onfocus>SetFocus(100)</onfocus>
         </control>
         <control type="image">
@@ -63,13 +63,13 @@
                 <focusedlayout></focusedlayout>
                 <content>
                     <item id="1">
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="2">
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="3">
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                 </content>
             </control>
@@ -88,9 +88,9 @@
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_left_FO.png</texture>
-                <animation type="Hidden">
-                    <effect type="slide" start="-15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                <animation type="Hidden" reversible="false">
+                    <effect type="slide" start="-15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(500).OnPrevious</visible>
             </control>
@@ -109,9 +109,9 @@
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_right_FO.png</texture>
-                <animation type="Hidden">
-                    <effect type="slide" start="15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                <animation type="Hidden" reversible="false">
+                    <effect type="slide" start="15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(500).OnNext</visible>
             </control>
@@ -364,16 +364,6 @@
                     <label>$INFO[Window(10000).Property(News)]</label>
                     <autoscroll delay="8000" time="2000" repeat="10000" />
                 </control>
-                <control type="label">
-                    <description>Skin Revision Build Number</description>
-                    <left>0</left>
-                    <top>578</top>
-                    <width>1335</width>
-                    <include>Revision</include>
-                    <textcolor>Highlight</textcolor>
-                    <font>Default</font>
-                    <align>center</align>
-                </control>
             </control>
             <control type="list" id="100">
                 <left>150</left>
@@ -524,7 +514,7 @@
                     <onleft>206</onleft>
                     <onright>201</onright>
                     <onup>100</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="201">
@@ -539,7 +529,7 @@
                     <onleft>200</onleft>
                     <onright>202</onright>
                     <onup>100</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="button" id="202">
@@ -554,7 +544,7 @@
                     <onleft>201</onleft>
                     <onright>203</onright>
                     <onup>100</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="203">
@@ -569,7 +559,7 @@
                     <onleft>202</onleft>
                     <onright>204</onright>
                     <onup>100</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="image">
@@ -620,7 +610,7 @@
                     <onleft>203</onleft>
                     <onright>205</onright>
                     <onup>100</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="button" id="205">
@@ -635,7 +625,7 @@
                     <onleft>204</onleft>
                     <onright>206</onright>
                     <onup>100</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
             </control>

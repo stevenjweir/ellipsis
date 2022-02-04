@@ -1,5 +1,6 @@
-﻿<window type="dialog" id="1204">
-	<onload>PlayMedia(special://skin/sounds/Credits.mp3)</onload>
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="1204">
+    <onload>PlayMedia(special://skin/sounds/Credits.mp3)</onload>
     <defaultcontrol always="true">10</defaultcontrol>
     <coordinates>
         <system>1</system>
@@ -487,7 +488,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>KAREN WARANIS</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -498,7 +498,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>AONGHUS FRASER</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -509,7 +508,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>ALEXANDRE PILLOUD</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -520,7 +518,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>BOB KRATTLI</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -531,7 +528,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>BJARTE ROLLAND</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -542,7 +538,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>GEORGE WELSH</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -553,7 +548,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>MARTY McFLY JR.</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -564,7 +558,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>JAMIE SOARES SILVA</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -575,7 +568,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>ENRICO ACKERMANN</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -587,8 +579,6 @@
                     <height>120</height>
                     <label>-</label>
                     <textcolor>Text</textcolor>
-                    <label>CLIFF WARNER</label>
-                    <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
                     <align>center</align>
                     <aligny>center</aligny>
@@ -597,7 +587,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>NICK GIBSON</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -608,7 +597,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>PATRICK GRUBER</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -619,7 +607,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>NICHOLAS WHITE</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -630,7 +617,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>MARKUS KAHLE</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -641,7 +627,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>DEAN MOILER</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -652,7 +637,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>ALAN HAWKINS</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -663,7 +647,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>BARRY WILLIAMS</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -674,7 +657,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>JOHAN WESSBERG</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -685,7 +667,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>MIKE HERTEL</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -696,7 +677,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>KENNY JOHANSSON</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -707,7 +687,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>STUART MCLEAN</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -718,7 +697,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>WILLIAM O'NEILL</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -729,7 +707,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>ROBERT SCHUELER</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -740,7 +717,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>STEPHAN MARX</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -751,7 +727,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>RICHARD DOBOSZ</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -762,7 +737,6 @@
                     <width>1920</width>
                     <height>120</height>
                     <label>-</label>
-                    <textcolor>Text</textcolor>
                     <label>NEIL BURGOYNE</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
@@ -972,9 +946,9 @@
             </control>
         </control>
         <control type="button" id="10">
-			<onfocus>PlayerControl(stop)</onfocus>
+            <onfocus>PlayerControl(stop)</onfocus>
             <onfocus>Dialog.Close(1204)</onfocus>
-			<onclick>PlayerControl(stop)</onclick>
+            <onclick>PlayerControl(stop)</onclick>
             <onclick>Dialog.Close(1204)</onclick>
             <texturenofocus>-</texturenofocus>
             <texturefocus>-</texturefocus>

@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <include name="Game_Hybrid_View">
         <control type="group">
             <left>998</left>
@@ -547,13 +548,13 @@
                     <top>63</top>
                     <width>290</width>
                     <height>849</height>
-                    <animation type="WindowOpen">
-                        <effect type="slide" start="-471" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" reversible="false" />
-                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="slide" start="-471" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" />
+                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" />
                     </animation>
-                    <animation type="WindowClose">
-                        <effect type="slide" start="0" end="-471" center="auto" time="150" tween="back" easing="in" reversible="false" />
-                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" reversible="false" />
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="slide" start="0" end="-471" center="auto" time="150" tween="back" easing="in" />
+                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
                     </animation>
                     <visible>!IsEmpty(Container(56).ListItemNoWrap(2).Label)</visible>
                     <control type="image">
@@ -617,13 +618,13 @@
                     <top>33</top>
                     <width>330</width>
                     <height>969</height>
-                    <animation type="WindowOpen">
-                        <effect type="slide" start="-238" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" reversible="false" />
-                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="slide" start="-238" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" />
+                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" />
                     </animation>
-                    <animation type="WindowClose">
-                        <effect type="slide" start="0" end="-238" center="auto" time="150" tween="back" easing="in" reversible="false" />
-                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" reversible="false" />
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="slide" start="0" end="-238" center="auto" time="150" tween="back" easing="in" />
+                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
                     </animation>
                     <visible>!IsEmpty(Container(56).ListItemNoWrap(1).Label)</visible>
                     <control type="image">
@@ -688,13 +689,13 @@
                     <width>376</width>
                     <height>849</height>
                     <camera x="0" y="0" />
-                    <animation type="WindowOpen">
-                        <effect type="fade" start="0" end="100" time="150" tween="sine" easing="out" reversible="false" />
-                        <effect type="rotatey" start="90" end="0" center="0,0" time="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowOpen" reversible="false">
+                        <effect type="fade" start="0" end="100" time="150" tween="sine" easing="out" />
+                        <effect type="rotatey" start="90" end="0" center="0,0" time="150" tween="sine" easing="out" />
                     </animation>
-                    <animation type="WindowClose">
-                        <effect type="fade" start="100" end="0" time="150" delay="150" tween="sine" easing="in" reversible="false" />
-                        <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" reversible="false" />
+                    <animation type="WindowClose" reversible="false">
+                        <effect type="fade" start="100" end="0" time="150" delay="150" tween="sine" easing="in" />
+                        <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" />
                     </animation>
                     <control type="image">
                         <left>0</left>

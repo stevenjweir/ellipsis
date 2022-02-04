@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <include name="Fade_In_WindowOpen">
         <animation type="WindowOpen">
             <effect type="fade" start="0" end="100" time="150" delay="50" />
@@ -9,7 +10,7 @@
             <effect type="fade" start="100" end="0" time="150" delay="50" />
         </animation>
     </include>
-	<include name="Slide_In_WindowOpen">
+    <include name="Slide_In_WindowOpen">
         <animation type="WindowOpen">
             <effect type="slide" start="0,1080" end="0,00" time="200" />
         </animation>

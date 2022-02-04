@@ -1,4 +1,5 @@
-﻿<window id="34">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="34">
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
@@ -33,8 +34,8 @@
             <font>-</font>
             <texturefocus>-</texturefocus>
             <texturenofocus>-</texturenofocus>
-            <textureradiofocus>-</textureradiofocus>
-            <textureradionofocus>-</textureradionofocus>
+            <textureradioonfocus>-</textureradioonfocus>
+            <textureradioonnofocus>-</textureradioonnofocus>
         </control>
         <!-- Elipsis Visor -->
         <include>Visor_Filter</include>
@@ -124,13 +125,13 @@
             <control type="group">
                 <left>0</left>
                 <top>22</top>
-                <animation type="conditional" condition="Control.HasFocus(4)">
-                    <effect type="slide" start="0,128" time="300" tween="elastic" easing="out" reversible="false" />
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" reversible="false" />
+                <animation type="conditional" condition="Control.HasFocus(4)" reversible="false">
+                    <effect type="slide" start="0,128" time="300" tween="elastic" easing="out" />
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
                 </animation>
-                <animation type="conditional" condition="Control.HasFocus(2)">
-                    <effect type="slide" end="0,128" time="300" tween="back" easing="in" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" reversible="false" />
+                <animation type="conditional" condition="Control.HasFocus(2)" reversible="false">
+                    <effect type="slide" end="0,128" time="300" tween="back" easing="in" />
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" />
                 </animation>
                 <control type="group">
                     <left>-45</left>

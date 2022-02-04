@@ -1,4 +1,5 @@
-﻿<window type="dialog" id="129">
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="129">
     <defaultcontrol always="true">15</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <include>Fade_In_WindowOpen</include>

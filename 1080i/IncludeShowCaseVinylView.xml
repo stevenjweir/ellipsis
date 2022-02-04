@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <include name="Show_Case_Vinyl_View">
         <control type="list" id="50">
             <left>0</left>
@@ -1010,9 +1011,9 @@
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_left_FO.png</texture>
-                <animation type="Hidden">
-                    <effect type="slide" start="-15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                <animation type="Hidden" reversible="false">
+                    <effect type="slide" start="-15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(50).OnPrevious</visible>
             </control>
@@ -1031,9 +1032,9 @@
                 <width>96</width>
                 <height>96</height>
                 <texture>menu\nav\nav_arrow_right_FO.png</texture>
-                <animation type="Hidden">
-                    <effect type="slide" start="15" end="0" center="auto" time="300" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" reversible="false" />
+                <animation type="Hidden" reversible="false">
+                    <effect type="slide" start="15" end="0" center="auto" time="300" />
+                    <effect type="fade" start="100" end="0" time="300" />
                 </animation>
                 <visible>Container(50).OnNext</visible>
             </control>

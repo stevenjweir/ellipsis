@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <!-- Dock Common -->
     <include name="Dock_LayoutOSD">
         <focusposition>0</focusposition>
@@ -537,7 +538,6 @@
                     <include>Dock_SkipForward</include>
                     <include>Dock_Random</include>
                     <include>Dock_Repeat</include>
-                    <include>Dock_Playlist</include>
                     <include>Dock_Visualisation</include>
                     <include>Dock_Visualisation_Settings</include>
                     <include>Dock_Visualisation_Presets</include>
