@@ -1,4 +1,5 @@
-﻿<window id="103">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="103">
     <defaultcontrol always="true">65</defaultcontrol>
     <include>Fade_In_WindowOpen</include>
     <include>Fade_Out_WindowClose</include>

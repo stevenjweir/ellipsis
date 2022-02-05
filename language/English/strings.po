@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgctxt "#50000"
-msgid "Auto Skip Ellipsis Intro"
+msgid "Auto Skip EllipsisUI Intro"
 msgstr ""
 
 msgctxt "#50001"
@@ -113,7 +113,7 @@ msgid "Hide Now Playing Widget"
 msgstr ""
 
 msgctxt "#50024"
-msgid "SETTINGS - ELLIPSIS SETTINGS"
+msgid "SETTINGS - EllipsisUI SETTINGS"
 msgstr ""
 
 msgctxt "#50025"
@@ -293,7 +293,7 @@ msgid "Music Videos"
 msgstr ""
 
 msgctxt "#50069"
-msgid "Settings - Ellipsis"
+msgid "Settings - EllipsisUI"
 msgstr ""
 
 msgctxt "#50070"
@@ -429,7 +429,7 @@ msgid "Music by Year"
 msgstr ""
 
 msgctxt "#50103"
-msgid "Welcome to [B]Ellipsis[/B]. We appreciate you choosing Ellipsis and we hope you enjoy it."
+msgid "Welcome to [B]EllipsisUI[/B]. We appreciate you choosing EllipsisUI and we hope you enjoy it."
 msgstr ""
 
 msgctxt "#50104"
@@ -642,4 +642,8 @@ msgstr ""
 
 msgctxt "#50156"
 msgid "Show Foreign"
+msgstr ""
+
+msgctxt "#50157"
+msgid "Settings level"
 msgstr ""

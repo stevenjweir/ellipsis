@@ -1,33 +1,30 @@
-﻿<window id="4">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="4">
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-	<include>Slide_In_WindowOpen</include>
-	<include>Slide_Out_WindowClose</include>
+    <include>Slide_In_WindowOpen</include>
+    <include>Slide_Out_WindowClose</include>
     <controls>
-
-		<!-- Config Scroller -->
+        <!-- Config Scroller -->
         <include>Menu_Config</include>
-		
-		<control type="group">
+        <control type="group">
             <left>960</left>
             <top>0</top>
-			<control type="image">
-				<left>-68</left>
-				<top>-68</top>
-				<width>136</width>
-				<height>136</height>
-				<texture>button_ex_idle.png</texture>
-			</control>
-			<control type="image">
-				<left>-68</left>
-				<top>0</top>
-				<width>136</width>
-				<height>68</height>
-				<texture>dock_reveal_icon.png</texture>
-			</control>
-		</control>
-
+            <control type="image">
+                <left>-68</left>
+                <top>-68</top>
+                <width>136</width>
+                <height>136</height>
+                <texture>button_ex_idle.png</texture>
+            </control>
+            <control type="image">
+                <left>-68</left>
+                <top>0</top>
+                <width>136</width>
+                <height>68</height>
+                <texture>dock_reveal_icon.png</texture>
+            </control>
+        </control>
         <include>Debug</include>
-
     </controls>
 </window>

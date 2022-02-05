@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <!-- Dock Common -->
     <include name="Dock_Layout">
         <focusposition>0</focusposition>
@@ -47,19 +48,19 @@
         </control>
     </include>
     <include name="Dock_Elipsis_Home">
-		<control type="group">
-			<top>-68</top>
-			<include>Dock_Elipsis</include>
-			<control type="image">
-				<left>-68</left>
-				<top>0</top>
-				<width>136</width>
-				<height>68</height>
-				<texture flipy="true">dock_reveal_icon.png</texture>
-				<animation effect="fade" time="600">WindowOpen</animation>
-				<animation effect="fade" time="600">WindowClose</animation>
-			</control>
-		</control>
+        <control type="group">
+            <top>-68</top>
+            <include>Dock_Elipsis</include>
+            <control type="image">
+                <left>-68</left>
+                <top>0</top>
+                <width>136</width>
+                <height>68</height>
+                <texture flipy="true">dock_reveal_icon.png</texture>
+                <animation effect="fade" time="600">WindowOpen</animation>
+                <animation effect="fade" time="600">WindowClose</animation>
+            </control>
+        </control>
     </include>
     <include name="Dock_Shadow">
         <control type="image">
@@ -84,7 +85,7 @@
             <font>Selected_Item</font>
             <textcolor>TextSelectedItem</textcolor>
             <shadowcolor>TextShadow</shadowcolor>
-            <visible>!Window.IsActive(123) + !Window.IsActive(124) + !Window.IsActive(125)</visible>
+            <visible>!Window.IsActive(123) + !Window.IsActive(125)</visible>
             <visible>!Container(9500).HasFocus(31000) + !Container(9500).HasFocus(31001)</visible>
             <visible>!Skin.HasSetting(Disable_Icon_Labels)</visible>
             <animation effect="fade" time="300">Visible</animation>
@@ -455,13 +456,13 @@
             <!-- Dock Scroller Static Icons -->
             <control type="group" id="7500">
                 <visible>!Control.IsVisible(7501)  + !Control.IsVisible(7502)</visible>
-                <animation type="WindowOpen">
-                    <effect type="slide" start="0,128" time="300" tween="elastic" easing="out" reversible="false" />
-                    <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" reversible="false" />
+                <animation type="WindowOpen" reversible="false">
+                    <effect type="slide" start="0,128" time="300" tween="elastic" easing="out" />
+                    <effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
                 </animation>
-                <animation type="WindowClose">
-                    <effect type="slide" end="0,128" time="300" tween="back" easing="in" reversible="false" />
-                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" reversible="false" />
+                <animation type="WindowClose" reversible="false">
+                    <effect type="slide" end="0,128" time="300" tween="back" easing="in" />
+                    <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" />
                 </animation>
                 <!-- Icon 1 -->
                 <control type="group">
@@ -550,11 +551,11 @@
                 <height>135</height>
                 <width>1350</width>
                 <onup>Dialog.Close(1200)</onup>
-				<ondown>ActivateWindow(settings)</ondown>
-				<ondown>Dialog.Close(1200)</ondown>
+                <ondown>ActivateWindow(settings)</ondown>
+                <ondown>Dialog.Close(1200)</ondown>
                 <include>Dock_Layout</include>
                 <content>
-					<include>Dock_Settings</include>
+                    <include>Dock_Settings</include>
                     <include>Dock_Logout</include>
                     <include>Dock_Exit</include>
                     <include>Dock_Power_Options_1200</include>
@@ -586,16 +587,14 @@
                     <include>Dock_ViewAs</include>
                     <include>Dock_SortAs</include>
                     <include>Dock_SortDirection</include>
-					<include>Dock_HideForeignAddons</include>
+                    <include>Dock_HideForeignAddons</include>
                     <include>Dock_VideoLibrary</include>
                     <include>Dock_MusicLibrary</include>
                     <include>Dock_Watched</include>
                     <include>Dock_Search</include>
                     <include>Dock_Filter</include>
                     <include>Dock_PartyMode</include>
-                    <include>Dock_Flatten</include>
                     <include>Dock_UnlockSources</include>
-                    <include>Dock_Stack</include>
                     <include>Dock_Slideshow</include>
                     <include>Dock_SlideshowRecursive</include>
                     <include>Dock_Randomize</include>

@@ -1,4 +1,5 @@
-﻿<window id="146">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="146">
     <defaultcontrol always="true">9000</defaultcontrol>
     <include>Fade_In_WindowOpen</include>
     <include>Fade_Out_WindowClose</include>
@@ -57,7 +58,6 @@
                     <top>195</top>
                     <width>360</width>
                     <height>360</height>
-                    <aspectratio>keep</aspectratio>
                     <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                     <texture diffuse="iconview-diffuse.png">$INFO[ListItem.Icon]</texture>
                 </control>
@@ -244,7 +244,7 @@
                     <width>1353</width>
                     <height>177</height>
                     <font>Default</font>
-                    <align>-</align>
+                    <align>left</align>
                     <textcolor>TextMediun</textcolor>
                     <label>$INFO[ListItem.Property(Addon.Description)]</label>
                     <pagecontrol>60</pagecontrol>
@@ -257,7 +257,7 @@
                     <width>1353</width>
                     <height>162</height>
                     <font>Default</font>
-                    <align>-</align>
+                    <align>left</align>
                     <textcolor>TextMediun</textcolor>
                     <label>$INFO[ListItem.Property(Addon.broken)]</label>
                     <pagecontrol>60</pagecontrol>
@@ -363,7 +363,6 @@
                         <label>24036</label>
                         <font>Default</font>
                         <align>center</align>
-                        <aligny>top</aligny>
                         <aligny>top</aligny>
                         <textoffsety>3</textoffsety>
                         <texturenofocus border="5">controls/button_nf.png</texturenofocus>

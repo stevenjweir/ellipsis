@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <include name="Vinyl_View">
         <control type="list" id="53">
             <left>0</left>

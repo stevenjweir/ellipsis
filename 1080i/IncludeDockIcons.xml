@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <include name="Dock_Play">
         <item>
             <icon>dock\icons\pause.png</icon>
@@ -215,7 +216,7 @@
             <visible>container.sortdirection(descending)</visible>
         </item>
     </include>
-	    <include name="Dock_HideForeignAddons">
+    <include name="Dock_HideForeignAddons">
         <item id="31003">
             <icon>dock\icons\filter-on.png</icon>
             <label>50156</label>
@@ -279,22 +280,6 @@
             <onclick>ReplaceWindow(musicfiles)</onclick>
             <onclick>Dialog.Close(1201)</onclick>
             <visible>Window.IsVisible(musiclibrary)</visible>
-        </item>
-    </include>
-    <include name="Dock_Stack">
-        <item>
-            <icon>dock\icons\stack-on.png</icon>
-            <label>$LOCALIZE[50059]</label>
-            <onclick>SendClick(7)</onclick>
-            <visible>Container.IsStacked</visible>
-            <visible>Window.IsVisible(videofiles)</visible>
-        </item>
-        <item>
-            <icon>dock\icons\stack-off.png</icon>
-            <label>$LOCALIZE[50060]</label>
-            <onclick>SendClick(7)</onclick>
-            <visible>!Container.IsStacked</visible>
-            <visible>Window.IsVisible(videofiles)</visible>
         </item>
     </include>
     <include name="Dock_Search">
@@ -366,22 +351,6 @@
             <onclick>playercontrol(partymode(video))</onclick>
             <onclick>Dialog.Close(1201)</onclick>
             <visible>!musicpartymode.enabled</visible>
-            <visible>Window.IsVisible(videolibrary)</visible>
-        </item>
-    </include>
-    <include name="Dock_Flatten">
-        <item>
-            <icon>dock\icons\flatten-on.png</icon>
-            <label>$LOCALIZE[50124]</label>
-            <onclick>SendClick(17)</onclick>
-            <visible>substring(Window(videolibrary).Property(flattened),1)</visible>
-            <visible>Window.IsVisible(videolibrary)</visible>
-        </item>
-        <item>
-            <icon>dock\icons\flatten-off.png</icon>
-            <label>$LOCALIZE[50125]</label>
-            <onclick>SendClick(17)</onclick>
-            <visible>!substring(Window(videolibrary).Property(flattened),1)</visible>
             <visible>Window.IsVisible(videolibrary)</visible>
         </item>
     </include>
@@ -486,12 +455,12 @@
         </item>
     </include>
     <!-- Dock Home Items -->
-	<include name="Dock_Settings">
+    <include name="Dock_Settings">
         <item>
             <icon>dock\icons\settings.png</icon>
             <label>$LOCALIZE[5]</label>
             <onclick>XBMC.ActivateWindow(settings)</onclick>
-			<onclick>Dialog.Close(1200)</onclick>
+            <onclick>Dialog.Close(1200)</onclick>
         </item>
     </include>
     <include name="Dock_Logout">

@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <include file="defaults.xml" />
     <include file="IncludeDock.xml" />
     <include file="IncludeDockOSD.xml" />
@@ -9,7 +10,6 @@
     <include file="IncludeFlags.xml" />
     <include file="IncludeFileStack.xml" />
     <include file="IncludeAnims.xml" />
-    <include file="Revision.xml" />
     <include file="IncludeTBBNews.xml" />
     <include file="IncludeDebug.xml" />
     <include name="Sort_Letter">
@@ -19,13 +19,13 @@
             <width>214</width>
             <height>214</height>
             <visible>Container.Scrolling</visible>
-            <animation type="Visible">
-                <effect type="zoom" start="10" end="100" center="auto" time="100" tween="elastic" easing="out" reversible="false" />
-                <effect type="fade" start="0" end="100" time="100" tween="sine" easing="out" reversible="false" />
+            <animation type="Visible" reversible="false">
+                <effect type="zoom" start="10" end="100" center="auto" time="100" tween="elastic" easing="out" />
+                <effect type="fade" start="0" end="100" time="100" tween="sine" easing="out" />
             </animation>
-            <animation type="Hidden">
-                <effect type="zoom" start="100" end="10" center="auto" time="300" tween="back" easing="in" reversible="false" />
-                <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" reversible="false" />
+            <animation type="Hidden" reversible="false">
+                <effect type="zoom" start="100" end="10" center="auto" time="300" tween="back" easing="in" />
+                <effect type="fade" start="100" end="0" time="300" tween="sine" easing="in" />
             </animation>
             <control type="image">
                 <left>0</left>
@@ -69,6 +69,16 @@
             </control>
         </control>
     </include>
+	<include name="SettingsAnimation">
+	                <animation type="Visible">
+                    <effect type="zoom" start="125" end="100" center="auto" time="100" />
+                    <effect type="fade" tween="sine" easing="out" start="0" end="100" time="100" />
+                </animation>
+                <animation type="Hidden">
+                    <effect type="zoom" start="100" end="125" center="auto" time="100" />
+                    <effect type="fade" tween="sine" easing="out" start="100" end="0" time="100" />
+                </animation>
+	</include>
     <include name="CurrentSection">
         <control type="group">
             <visible>!Skin.HasSetting(Disable_Current_Folder_Section_Widget)</visible>
@@ -901,8 +911,8 @@
             </control>
         </control>
         <control type="multiimage">
-            <animations effect="fade" time="600">Visible</animations>
-            <animations effect="fade" time="600">Hidden</animations>
+            <animation effect="fade" time="600">Visible</animation>
+            <animation effect="fade" time="600">Hidden</animation>
             <left>0</left>
             <top>0</top>
             <width>1920</width>

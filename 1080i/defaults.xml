@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <default type="image">
         <left>0</left>
         <top>0</top>
@@ -136,8 +137,8 @@
         <textoffsetx>22</textoffsetx>
         <texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
         <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
-        <textureradiofocus>controls\radiobutton_f.png</textureradiofocus>
-        <textureradionofocus>controls\radiobutton_nf.png</textureradionofocus>
+        <textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
+        <textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
         <align>left</align>
         <aligny>center</aligny>
         <pulseonselect>false</pulseonselect>

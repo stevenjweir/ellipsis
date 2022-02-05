@@ -1,4 +1,5 @@
-﻿<window id="107">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="107">
     <include>Fade_In_WindowOpen</include>
     <include>Fade_Out_WindowClose</include>
     <coordinates>
@@ -24,7 +25,7 @@
             <control type="image" id="400">
                 <description>avatar</description>
                 <animation type="Conditional" condition="true" pulse="true">
-                <effect type="fade" start="75" end="100" center="auto" time="1000" />
+                    <effect type="fade" start="75" end="100" center="auto" time="1000" />
                 </animation>
                 <left>100</left>
                 <top>6</top>

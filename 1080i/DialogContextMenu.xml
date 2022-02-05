@@ -1,4 +1,5 @@
-﻿<window id="106">
+<?xml version="1.0" encoding="utf-8"?>
+<window id="106">
     <defaultcontrol>1000</defaultcontrol>
     <animation type="WindowOpen">
         <effect type="fade" start="0" end="100" time="150" delay="50" />

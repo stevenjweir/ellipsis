@@ -1,4 +1,5 @@
-﻿<includes>
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
     <include name="Profiles_View">
         <control type="list" id="2">
             <left>0</left>
@@ -1462,10 +1463,10 @@
                             <effect type="zoom" start="100" end="200" center="auto" time="200" delay="200" />
                             <effect type="rotate" start="25" end="25" center="248,160" time="200" delay="200" />
                         </animation>
-                        <animations type="Conditional" condition="Control.HasFocus(2)">
+                        <animation type="Conditional" condition="Control.HasFocus(2)">
                             <effects type="zoom" start="95" end="100" center="auto" time="250" />
                             <effect type="fade" start="75" end="100" center="auto" time="250" />
-                        </animations>
+                        </animation>
                     </control>
                 </control>
                 <!-- Icon 2 Reflection -->
@@ -1543,10 +1544,10 @@
                             <effect type="zoom" start="100" end="200" center="auto" time="200" delay="200" />
                             <effect type="rotate" start="25" end="25" center="248,160" time="200" delay="200" />
                         </animation>
-                        <animations type="Conditional" condition="Control.HasFocus(2)">
+                        <animation type="Conditional" condition="Control.HasFocus(2)">
                             <effects type="zoom" start="95" end="100" center="auto" time="250" />
                             <effect type="fade" start="75" end="100" center="auto" time="250" />
-                        </animations>
+                        </animation>
                     </control>
                     <animation effect="rotatex" center="248" start="-180" end="-180" time="0" condition="true">Conditional</animation>
                 </control>
