@@ -35,6 +35,7 @@
         <control type="group">
             <include>FlagLayout</include>
             <control type="image" id="4000">
+			<aspectratio>keep</aspectratio>
                 <include>FlagLayout</include>
                 <texture fallback="empty">$INFO[ListItem.Studio,flags\studio\,.png]</texture>
             </control>

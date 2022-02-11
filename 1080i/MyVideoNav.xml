@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="25">
-    <defaultcontrol always="true">50</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
-    <views>50,51,52</views>
-    <controls>
-        <include>Background</include>
-        <!-- Elipsis Visor -->
-        <include>Visor_Filter</include>
-        <!-- Edge Filter -->
-        <include>Edge_Filter</include>
-        <include>Video_Library_Views</include>
-        <!-- Clock -->
-        <include>Clock</include>
-        <!-- Folder Name -->
-        <include>CurrentSection</include>
-        <!-- Now Playing Widget -->
-        <include>Now_Playing_Widget</include>
-        <!-- Elipsis Button -->
-        <control type="group">
-            <left>960</left>
-            <top>1080</top>
-            <include>Dock_Elipsis_Home</include>
-        </control>
-        <control type="radiobutton" id="19">
-            <left>0</left>
-            <top>0</top>
-            <height>15</height>
-            <width>15</width>
-            <label>-</label>
-            <visible>false</visible>
-        </control>
-        <include>Debug</include>
-    </controls>
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<views>50,51,52</views>
+	<controls>
+		<include>Background</include>
+		<!-- Elipsis Visor -->
+		<include>Visor_Filter</include>
+		<!-- Edge Filter -->
+		<include>Edge_Filter</include>
+		<include>Video_Library_Views</include>
+		<!-- Clock -->
+		<include>Clock</include>
+		<!-- Folder Name -->
+		<include>CurrentSection</include>
+		<!-- Now Playing Widget -->
+		<include>Now_Playing_Widget</include>
+		<!-- Elipsis Button -->
+		<control type="group">
+			<left>960</left>
+			<top>1080</top>
+			<include>Dock_Elipsis_Home</include>
+		</control>
+		<control type="radiobutton" id="19">
+			<left>0</left>
+			<top>0</top>
+			<height>15</height>
+			<width>15</width>
+			<label>-</label>
+			<visible>false</visible>
+		</control>
+		<include>Debug</include>
+	</controls>
 </window>

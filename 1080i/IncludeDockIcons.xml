@@ -264,6 +264,22 @@
             <visible>Window.IsVisible(videolibrary)</visible>
         </item>
     </include>
+	<include name="Dock_UpdateLibrary">
+        <item>
+            <icon>dock\icons\refresh.png</icon>
+            <label>653</label>
+            <onclick>SendClick(20)</onclick>
+            <visible>!Library.IsScanningVideo</visible>
+            <visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
+        </item>
+        <item>
+            <icon>dock\icons\stop.png</icon>
+            <label>13353</label>
+            <onclick>SendClick(20)</onclick>
+            <visible>Library.IsScanningVideo</visible>
+            <visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
+        </item>
+    </include>
     <include name="Dock_MusicLibrary">
         <item>
             <icon>dock\icons\library.png</icon>

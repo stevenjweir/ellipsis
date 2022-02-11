@@ -185,6 +185,15 @@
             <label>-</label>
             <visible>false</visible>
         </control>
+		<control type="togglebutton" id="20">
+			<description>Update library</description>
+			<left>0</left>
+			<top>0</top>
+			<height>15</height>
+			<width>15</width>
+			<label>-</label>
+			<visible>false</visible>
+		</control>
         <control type="radiobutton" id="16">
             <left>0</left>
             <top>0</top>
@@ -588,6 +597,7 @@
                     <include>Dock_SortAs</include>
                     <include>Dock_SortDirection</include>
                     <include>Dock_HideForeignAddons</include>
+					<include>Dock_UpdateLibrary</include>
                     <include>Dock_VideoLibrary</include>
                     <include>Dock_MusicLibrary</include>
                     <include>Dock_Watched</include>
