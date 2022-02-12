@@ -64,12 +64,13 @@
                 </control>
                 <control type="button" id="12">
                     <description>Name Button</description>
-                    <left>780</left>
+                    <left>800</left>
                     <top>165</top>
                     <width>720</width>
                     <height>69</height>
-                    <textoffsetx>135</textoffsetx>
+                    <textoffsetx>35</textoffsetx>
                     <aligny>center</aligny>
+					<align>right</align>
                     <textcolor>Highlight</textcolor>
                     <label>-</label>
                     <onleft>22</onleft>
@@ -79,7 +80,7 @@
                 </control>
                 <control type="label">
                     <description>Name Label</description>
-                    <left>802</left>
+                    <left>824</left>
                     <top>165</top>
                     <height>69</height>
                     <font>Default</font>
@@ -88,8 +89,8 @@
                 </control>
                 <control type="label">
                     <description>rules label</description>
-                    <left>45</left>
-                    <top>240</top>
+                    <left>67</left>
+                    <top>230</top>
                     <width>1455</width>
                     <align>left</align>
                     <font>Default</font>
@@ -100,7 +101,7 @@
                     <left>45</left>
                     <top>285</top>
                     <width>1140</width>
-                    <height>345</height>
+                    <height>276</height>
                     <onleft>9000</onleft>
                     <onright>9000</onright>
                     <onup>22</onup>
@@ -200,7 +201,7 @@
                     </control>
                     <control type="togglebutton" id="19">
                         <left>1200</left>
-                        <top>530</top>
+                        <top>492</top>
                         <width>300</width>
                         <height>69</height>
                         <align>center</align>
@@ -215,7 +216,7 @@
                 </control>
                 <control type="spincontrolex" id="16">
                     <left>45</left>
-                    <top>645</top>
+                    <top>561</top>
                     <width>1455</width>
                     <height>69</height>
                     <label>21424</label>
@@ -227,7 +228,7 @@
                 </control>
                 <control type="spincontrolex" id="17">
                     <left>45</left>
-                    <top>722</top>
+                    <top>630</top>
                     <width>720</width>
                     <height>69</height>
                     <label>21427</label>
@@ -235,11 +236,11 @@
                     <onright>18</onright>
                     <onleft>18</onleft>
                     <onup>16</onup>
-                    <ondown>20</ondown>
+                    <ondown>23</ondown>
                 </control>
                 <control type="spincontrolex" id="18">
                     <left>780</left>
-                    <top>722</top>
+                    <top>630</top>
                     <width>720</width>
                     <height>69</height>
                     <label>21429</label>
@@ -247,8 +248,34 @@
                     <onright>17</onright>
                     <onleft>17</onleft>
                     <onup>16</onup>
-                    <ondown>21</ondown>
+                    <ondown>23</ondown>
                 </control>
+				<control type="spincontrolex" id="23">
+                    <left>45</left>
+                    <top>699</top>
+                    <width>720</width>
+                    <height>69</height>
+                    <label>21458</label>
+                    <font>Default</font>
+                    <onright>24</onright>
+                    <onleft>23</onleft>
+                    <onup>17</onup>
+                    <ondown>20</ondown>
+                </control>
+                    <control type="radiobutton" id="24">
+                        <description>Mixed</description>
+                        <left>780</left>
+                        <top>699</top>
+                        <height>69</height>
+                        <width>720</width>
+                        <label>21459</label>
+                        <align>center</align>
+                        <aligny>center</aligny>
+                        <onleft>23</onleft>
+                        <onright>24</onright>
+                        <onup>18</onup>
+                        <ondown>21</ondown>
+                    </control>
                 <control type="button" id="20">
                     <description>OK button</description>
                     <left>465</left>

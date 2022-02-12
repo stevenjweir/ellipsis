@@ -66,7 +66,7 @@
                             <font>Library_Normal_20</font>
                             <textcolor>Text</textcolor>
                             <label>$INFO[ListItem.Plot]</label>
-                            <align>left</align>
+                            <align>center</align>
                             <autoscroll>False</autoscroll>
                         </control>
                         <control type="image">
@@ -77,18 +77,18 @@
                             <texture>$INFO[ListItem.StarRating]</texture>
                         </control>
                         <control type="label">
-                            <left>750</left>
+                            <left>350</left>
                             <top>238</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
                             <textcolor>Text</textcolor>
                             <label>$LOCALIZE[50065]</label>
-                            <align>right</align>
+                            <align>left</align>
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <left>765</left>
+                            <left>305</left>
                             <top>237</top>
                             <width>33</width>
                             <height>33</height>
@@ -547,23 +547,23 @@
                             <font>Library_Normal_20</font>
                             <textcolor>Text</textcolor>
                             <label>$INFO[ListItem.Plot]</label>
-                            <align>left</align>
+                            <align>center</align>
                             <autoscroll>False</autoscroll>
                         </control>
                         <control type="label">
-                            <left>872</left>
+                            <left>275</left>
                             <top>402</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
                             <textcolor>Text</textcolor>
                             <label>$LOCALIZE[50065]</label>
-                            <align>right</align>
+                            <align>left</align>
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <left>879</left>
-                            <top>399</top>
+                            <left>229</left>
+                            <top>404</top>
                             <width>33</width>
                             <height>33</height>
                             <texture>menu\library\info-icon.png</texture>
@@ -643,35 +643,35 @@
                         </control>
                         <control type="textbox">
                             <left>28</left>
-                            <top>198</top>
+                            <top>193</top>
                             <width>669</width>
-                            <height>180</height>
+                            <height>185</height>
                             <font>Library_Normal_20</font>
                             <textcolor>Text</textcolor>
                             <label>$INFO[ListItem.Plot]</label>
-                            <align>left</align>
+                            <align>center</align>
                             <autoscroll>False</autoscroll>
                         </control>
                         <control type="label">
-                            <left>662</left>
-                            <top>404</top>
+                            <left>180</left>
+                            <top>400</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
                             <textcolor>Text</textcolor>
                             <label>$LOCALIZE[50065]</label>
-                            <align>right</align>
+                            <align>left</align>
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <left>669</left>
+                            <left>128</left>
                             <top>400</top>
                             <width>33</width>
                             <height>33</height>
                             <texture>menu\library\info-icon.png</texture>
                         </control>
                         <control type="grouplist">
-                            <left>0</left>
+                            <left>25</left>
                             <top>450</top>
                             <width>669</width>
                             <height>45</height>
@@ -829,22 +829,22 @@
                             <font>Library_Normal_20</font>
                             <textcolor>Text</textcolor>
                             <label>$INFO[ListItem.Plot]</label>
-                            <align>left</align>
+                            <align>center</align>
                             <autoscroll>False</autoscroll>
                         </control>
                         <control type="label">
-                            <left>662</left>
-                            <top>404</top>
+                            <left>180</left>
+                            <top>400</top>
                             <width>644</width>
                             <height>30</height>
                             <font>Library_Normal_14</font>
                             <textcolor>Text</textcolor>
                             <label>$LOCALIZE[50065]</label>
-                            <align>right</align>
+                            <align>left</align>
                             <aligny>bottom</aligny>
                         </control>
                         <control type="image">
-                            <left>669</left>
+                            <left>128</left>
                             <top>400</top>
                             <width>33</width>
                             <height>33</height>
