@@ -42,7 +42,7 @@
                 <textcolor>Text</textcolor>
                 <align>center</align>
             </control>
-            <control type="label" id="310">
+            <control type="label" id="312">
                 <animation effect="fade" start="100" end="0" time="300" condition="Window.IsActive(109)">Conditional</animation>
                 <description>Edit Text</description>
                 <left>0</left>

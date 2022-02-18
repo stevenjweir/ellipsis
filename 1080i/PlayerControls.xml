@@ -322,10 +322,10 @@
                     <top>574</top>
                     <width>150</width>
                     <height>45</height>
-                    <texture>menu\nav\xbmclogo_nav.png</texture>
+                    <texture>menu\nav\kodilogo_nav.png</texture>
                 </control>
                 <control type="label">
-                    <description>XBMC XBE BUILD Version</description>
+                    <description>Kodi XBE BUILD Version</description>
                     <left>308</left>
                     <top>568</top>
                     <width>1028</width>

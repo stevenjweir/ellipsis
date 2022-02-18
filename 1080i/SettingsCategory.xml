@@ -156,6 +156,7 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="textbox" id="6">
+				<visible>!Skin.HasSetting(Disable_Current_Folder_Section_Widget)</visible>
 				<description>description area</description>
 				<left>320</left>
 				<top>660</top>
@@ -429,7 +430,7 @@
 					<width>90</width>
 					<height>75</height>
 					<texture>settings\tabs\weather_general_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-100)  | Control.HasFocus(20)</visible>
+					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
 				</control>
 				<control type="image">
 					<left>-45</left>
@@ -445,21 +446,20 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsVisible(NetworkSettings)</visible>
-				<visible>!System.Platform.Linux</visible>
 				<control type="image">
-					<left>-94</left>
+					<left>-292</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
 					<texture>settings\tabs\network_services_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-100)</visible>
+					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
 				</control>
 				<control type="image">
-					<left>4</left>
+					<left>-194</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_internet_nf.png</texture>
+					<texture>settings\tabs\network_upnp_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
 				</control>
 				<control type="image">
@@ -467,8 +467,62 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
+					<texture>settings\tabs\network_internet_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-98)</visible>
+				</control>
+				<control type="image">
+					<left>4</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\network_control_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-97)</visible>
+				</control>
+				<control type="image">
+					<left>104</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\network_zeroconf_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-96)</visible>
+				</control>
+				<control type="image">
+					<left>202</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\network_airplay_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-95)</visible>
+				</control>
+				<control type="image">
+					<left>-292</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
 					<texture>settings\tabs\network_services_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-100)</visible>
+					<visible>ControlGroup(3).HasFocus(-100) + !Control.HasFocus(20)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="-292,0,90,75" end="-296,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>-194</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\network_upnp_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-99)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="-194,0,90,75" end="-196,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>-94</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\network_internet_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-98)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-94,0,90,75" end="-98,-3,96,81" time="200"/>
 					</animation>
@@ -478,71 +532,32 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_internet_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-99)</visible>
+					<texture>settings\tabs\network_control_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-97)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="4,0,90,75" end="1,-3,96,81" time="200"/>
 					</animation>
 				</control>
-			</control>
-			<control type="group">
-				<visible>Window.IsVisible(NetworkSettings)</visible>
-				<visible>System.Platform.Linux</visible>
 				<control type="image">
-					<left>-144</left>
+					<left>104</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_services_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-100)</visible>
-				</control>
-				<control type="image">
-					<left>-45</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\network_smbclient_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-99)</visible>
-				</control>
-				<control type="image">
-					<left>54</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\network_internet_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-98)</visible>
-				</control>
-				<control type="image">
-					<left>-144</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\network_services_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-100)</visible>
+					<texture>settings\tabs\network_zeroconf_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-96)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="-144,0,90,75" end="-147,-3,96,81" time="200"/>
+						<effect type="zoom" start="104,0,90,75" end="100,-3,96,81" time="200"/>
 					</animation>
 				</control>
 				<control type="image">
-					<left>-45</left>
+					<left>202</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_smbclient_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-99)</visible>
+					<texture>settings\tabs\network_airplay_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-95)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="-45,0,90,75" end="-48,-3,96,81" time="200"/>
-					</animation>
-				</control>
-				<control type="image">
-					<left>54</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\network_internet_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-98)</visible>
-					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="54,0,90,75" end="51,-3,96,81" time="200"/>
+						<effect type="zoom" start="202,0,90,75" end="200,-3,96,81" time="200"/>
 					</animation>
 				</control>
 			</control>
@@ -554,7 +569,7 @@
 					<width>90</width>
 					<height>75</height>
 					<texture>settings\tabs\system_videooutput_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-100)</visible>
+					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
 				</control>
 				<control type="image">
 					<left>-194</left>
@@ -577,7 +592,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_power_nf.png</texture>
+					<texture>settings\tabs\sysinfo_network_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
 				</control>
 				<control type="image">
@@ -585,7 +600,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_debug_nf.png</texture>
+					<texture>settings\tabs\system_power_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-96)</visible>
 				</control>
 				<control type="image">
@@ -593,8 +608,16 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_masterlock_nf.png</texture>
+					<texture>settings\tabs\system_debug_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-95)</visible>
+				</control>
+				<control type="image">
+					<left>300</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\system_masterlock_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-94)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
@@ -602,7 +625,7 @@
 					<width>90</width>
 					<height>75</height>
 					<texture>settings\tabs\system_videooutput_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-100)</visible>
+					<visible>ControlGroup(3).HasFocus(-100) + !Control.HasFocus(20)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-292,0,90,75" end="-296,-3,96,81" time="200"/>
 					</animation>
@@ -634,7 +657,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_power_f.png</texture>
+					<texture>settings\tabs\sysinfo_network_fo.png</texture>
 					<visible>ControlGroup(3).HasFocus(-97)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="4,0,90,75" end="1,-3,96,81" time="200"/>
@@ -645,7 +668,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_debug_f.png</texture>
+					<texture>settings\tabs\system_power_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-96)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="104,0,90,75" end="100,-3,96,81" time="200"/>
@@ -656,10 +679,21 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_masterlock_f.png</texture>
+					<texture>settings\tabs\system_debug_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-95)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="202,0,90,75" end="200,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>300</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\system_masterlock_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-94)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="300,0,90,75" end="297,-3,96,81" time="200"/>
 					</animation>
 				</control>
 			</control>
@@ -671,7 +705,7 @@
 					<width>90</width>
 					<height>75</height>
 					<texture>settings\tabs\appearance_lookandfeel_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-100)</visible>
+					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
 				</control>
 				<control type="image">
 					<left>-94</left>
@@ -686,7 +720,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\appearance_files_nf.png</texture>
+					<texture>settings\tabs\pictures_files_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
 				</control>
 				<control type="image">
@@ -703,7 +737,7 @@
 					<width>90</width>
 					<height>75</height>
 					<texture>settings\tabs\appearance_lookandfeel_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-100)</visible>
+					<visible>ControlGroup(3).HasFocus(-100) + !Control.HasFocus(20)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-194,0,90,75" end="-196,-3,96,81" time="200"/>
 					</animation>
@@ -724,7 +758,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\appearance_files_f.png</texture>
+					<texture>settings\tabs\pictures_files_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-98)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="4,0,90,75" end="1,-3,96,81" time="200"/>
@@ -742,10 +776,166 @@
 					</animation>
 				</control>
 			</control>
+			<control type="group">
+				<visible>Window.IsVisible(PVRSettings)</visible>
+				<left>-60</left>
+				<control type="image">
+					<left>-292</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_main_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
+				</control>
+				<control type="image">
+					<left>-194</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_OSD_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-99)</visible>
+				</control>
+				<control type="image">
+					<left>-94</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_EPG_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-98)</visible>
+				</control>
+				<control type="image">
+					<left>4</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_channels_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-97)</visible>
+				</control>
+				<control type="image">
+					<left>104</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_REC_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-96)</visible>
+				</control>
+				<control type="image">
+					<left>202</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_timer_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-95)</visible>
+				</control>
+				<control type="image">
+					<left>300</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\system_masterlock_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-94)</visible>
+				</control>
+				<control type="image">
+					<left>398</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_options_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-93)</visible>
+				</control>
+				<control type="image">
+					<left>-292</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_main_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-100) + !Control.HasFocus(20)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="-292,0,90,75" end="-296,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>-194</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_OSD_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-99)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="-194,0,90,75" end="-196,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>-94</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_EPG_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-98)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="-94,0,90,75" end="-98,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>4</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_channels_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-97)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="4,0,90,75" end="1,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>104</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_REC_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-96)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="104,0,90,75" end="100,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>202</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_timer_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-95)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="202,0,90,75" end="200,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>300</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\system_masterlock_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-94)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="300,0,90,75" end="297,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>398</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_options_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-93)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="398,0,90,75" end="395,-3,96,81" time="200"/>
+					</animation>
+				</control>
+			</control>
 		</control>
 		<control type="image">
 			<left>681</left>
-			<top>718</top>
+			<top>780</top>
 			<width>558</width>
 			<height>558</height>
 			<texture>settings-big-cog.png</texture>
@@ -769,6 +959,9 @@
 				<effect type="rotate" start="0" end="-45" center="auto" time="200"/>
 			</animation>
 			<animation type="Conditional" reversible="false" condition="ControlGroup(3).HasFocus(-94)">
+				<effect type="rotate" start="0" end="-45" center="auto" time="200"/>
+			</animation>
+			<animation type="Conditional" reversible="false" condition="ControlGroup(3).HasFocus(-93)">
 				<effect type="rotate" start="0" end="-45" center="auto" time="200"/>
 			</animation>
 		</control>

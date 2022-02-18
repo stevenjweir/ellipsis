@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="132">
-    <defaultcontrol>3</defaultcontrol>
+    <defaultcontrol>20</defaultcontrol>
     <include>Fade_In_WindowOpen</include>
     <include>Fade_Out_WindowClose</include>
     <coordinates>
@@ -50,7 +50,7 @@
                     <label>20333</label>
                     <textcolor>Text</textcolor>
                 </control>
-                <control type="spincontrolex" id="3">
+                <control type="spincontrolex" id="20">
                     <description>Content Picker</description>
                     <left>45</left>
                     <top>180</top>
@@ -70,19 +70,19 @@
                     <reverse>yes</reverse>
                     <label>20344</label>
                     <onup>29</onup>
-                    <ondown>4</ondown>
-                    <onleft>3</onleft>
-                    <onright>3</onright>
+                    <ondown>21</ondown>
+                    <onleft>20</onleft>
+                    <onright>20</onright>
                 </control>
-                <control type="list" id="4">
+                <control type="list" id="21">
                     <left>45</left>
                     <top>264</top>
                     <width>720</width>
                     <height>276</height>
                     <onleft>5</onleft>
                     <onright>5</onright>
-                    <onup>3</onup>
-                    <ondown>6</ondown>
+                    <onup>20</onup>
+                    <ondown>22</ondown>
                     <pagecontrol>-</pagecontrol>
                     <scrolltime>200</scrolltime>
                     <itemlayout height="69">
@@ -119,7 +119,7 @@
                             <top>0</top>
                             <width>720</width>
                             <height>69</height>
-                            <visible>!Control.HasFocus(4)</visible>
+                            <visible>!Control.HasFocus(21)</visible>
                             <texture border="4,5,6,8">controls\button_nf.png</texture>
                         </control>
                         <control type="image">
@@ -127,7 +127,7 @@
                             <top>0</top>
                             <width>720</width>
                             <height>69</height>
-                            <visible>Control.HasFocus(4)</visible>
+                            <visible>Control.HasFocus(21)</visible>
                             <texture border="4,5,6,8">controls\button_f.png</texture>
                         </control>
                         <control type="image">
@@ -158,10 +158,10 @@
                     <width>720</width>
                     <height>276</height>
                     <itemgap>0</itemgap>
-                    <onup>3</onup>
-                    <ondown>6</ondown>
-                    <onleft>4</onleft>
-                    <onright>4</onright>
+                    <onup>20</onup>
+                    <ondown>22</ondown>
+                    <onleft>21</onleft>
+                    <onright>21</onright>
                 </control>
                 <control type="image">
                     <description>scraper image</description>
@@ -172,7 +172,7 @@
                     <aspectratio>keep</aspectratio>
                     <info>ListItem.Icon</info>
                 </control>
-                <control type="button" id="6">
+                <control type="button" id="22">
                     <description>Set Content Button</description>
                     <left>960</left>
                     <top>550</top>
@@ -185,8 +185,8 @@
                     <disabledcolor>DisabledText</disabledcolor>
                     <label>5</label>
                     <font>Default</font>
-                    <onleft>6</onleft>
-                    <onright>6</onright>
+                    <onleft>22</onleft>
+                    <onright>22</onright>
                     <onup>5</onup>
                     <ondown>28</ondown>
                 </control>
@@ -205,7 +205,7 @@
                     <font>Default</font>
                     <onleft>28</onleft>
                     <onright>28</onright>
-                    <onup>6</onup>
+                    <onup>22</onup>
                     <ondown>29</ondown>
                 </control>
                 <control type="button" id="29">
@@ -224,7 +224,7 @@
                     <onleft>29</onleft>
                     <onright>29</onright>
                     <onup>28</onup>
-                    <ondown>3</ondown>
+                    <ondown>20</ondown>
                 </control>
             </control>
         </control>
