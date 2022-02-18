@@ -1,27 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="20">
-    <defaultcontrol always="true">50</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
-    <views>50,52,55,57,58</views>
-    <controls>
-        <include>Background</include>
-        <!-- Elipsis Visor -->
-        <include>Visor_Filter</include>
-        <!-- Edge Filter -->
-        <include>Edge_Filter</include>
-        <include>AddOn_Views</include>
-        <!-- Clock -->
-        <include>Clock</include>
-        <!-- Folder Name -->
-        <include>FolderName</include>
-        <!-- Now Playing Widget -->
-        <include>Now_Playing_Widget</include>
-        <!-- Elipsis Button -->
-        <control type="group">
-            <left>960</left>
-            <top>1080</top>
-            <include>Dock_Elipsis_Home</include>
-        </control>
-        <include>Debug</include>
-    </controls>
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<views>50,52,55,57,58</views>
+	<controls>
+		<include>Background</include>
+		<!-- Elipsis Visor -->
+		<include>Visor_Filter</include>
+		<!-- Edge Filter -->
+		<include>Edge_Filter</include>
+		<include>AddOn_Views</include>
+		<!-- Clock -->
+		<include>Clock</include>
+		<!-- Folder Name -->
+		<include>FolderName</include>
+		<!-- Now Playing Widget -->
+		<include>Now_Playing_Widget</include>
+		<!-- Elipsis Button -->
+		<control type="group">
+			<left>960</left>
+			<top>1080</top>
+			<include>Dock_Elipsis_Home</include>
+		</control>
+		<control type="button" id="5">
+			<left>80</left>
+			<top>150</top>
+			<height>65</height>
+			<width>1300</width>
+			<align>left</align>
+			<font>Default</font>
+			<textcolor>Text</textcolor>
+			<disabledcolor>DisabledText</disabledcolor>
+			<shadowcolor>-</shadowcolor>
+			<textoffsetx>22</textoffsetx>
+			<texturenofocus>noop</texturenofocus>
+			<texturefocus>noop</texturefocus>
+			<aligny>center</aligny>
+			<pulseonselect>false</pulseonselect>
+		</control>
+		<control type="radiobutton" id="8">
+			<left>0</left>
+			<top>0</top>
+			<height>15</height>
+			<width>15</width>
+			<label>-</label>
+			<visible>false</visible>
+		</control>
+		<include>Debug</include>
+	</controls>
 </window>

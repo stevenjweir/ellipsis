@@ -82,7 +82,7 @@
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <control type="group">
-                    <left>666</left>
+                    <left>510</left>
                     <top>315</top>
                     <control type="label">
                         <description>Type txt</description>
@@ -98,7 +98,7 @@
                     </control>
                     <control type="label">
                         <description>Type Value</description>
-                        <left>225</left>
+                        <left>420</left>
                         <top>0</top>
                         <width>660</width>
                         <height>38</height>
@@ -122,7 +122,7 @@
                     </control>
                     <control type="label">
                         <description>Author Value</description>
-                        <left>225</left>
+                        <left>420</left>
                         <top>45</top>
                         <width>660</width>
                         <height>38</height>
@@ -146,7 +146,7 @@
                     </control>
                     <control type="label">
                         <description>Version Value</description>
-                        <left>225</left>
+                        <left>420</left>
                         <top>90</top>
                         <width>660</width>
                         <height>38</height>
@@ -170,7 +170,7 @@
                     </control>
                     <control type="image">
                         <description>Rating value</description>
-                        <left>225</left>
+                        <left>420</left>
                         <top>135</top>
                         <width>240</width>
                         <height>48</height>
@@ -180,7 +180,7 @@
                         <description>Summary txt</description>
                         <left>192</left>
                         <top>180</top>
-                        <width>225</width>
+                        <width>210</width>
                         <height>38</height>
                         <label>$LOCALIZE[20037]:</label>
                         <align>right</align>
@@ -190,7 +190,7 @@
                     </control>
                     <control type="fadelabel">
                         <description>Summary Value</description>
-                        <left>225</left>
+                        <left>420</left>
                         <top>180</top>
                         <width>765</width>
                         <height>38</height>
@@ -205,7 +205,7 @@
                         <description>Summary txt</description>
                         <left>192</left>
                         <top>225</top>
-                        <width>225</width>
+                        <width>210</width>
                         <height>38</height>
                         <label>$LOCALIZE[24052]:</label>
                         <align>right</align>
@@ -215,7 +215,7 @@
                     </control>
                     <control type="fadelabel">
                         <description>Summary Value</description>
-                        <left>225</left>
+                        <left>420</left>
                         <top>225</top>
                         <width>765</width>
                         <height>38</height>
@@ -286,7 +286,7 @@
                         <description>Enable Addon button</description>
                         <left>0</left>
                         <top>0</top>
-                        <width>285</width>
+                        <width>235</width>
                         <height>63</height>
                         <label>24022</label>
                         <font>Default</font>
@@ -302,9 +302,9 @@
                     </control>
                     <control type="button" id="7">
                         <description>Disable Addon button</description>
-                        <left>306</left>
+                        <left>256</left>
                         <top>0</top>
-                        <width>285</width>
+                        <width>235</width>
                         <height>63</height>
                         <label>24021</label>
                         <font>Default</font>
@@ -320,9 +320,9 @@
                     </control>
                     <control type="button" id="9">
                         <description>Addon Settings</description>
-                        <left>612</left>
+                        <left>512</left>
                         <top>0</top>
-                        <width>285</width>
+                        <width>235</width>
                         <height>63</height>
                         <label>24020</label>
                         <font>Default</font>
@@ -338,9 +338,9 @@
                     </control>
                     <control type="button" id="8">
                         <description>Update Addon button</description>
-                        <left>918</left>
+                        <left>768</left>
                         <top>0</top>
-                        <width>285</width>
+                        <width>235</width>
                         <height>63</height>
                         <label>24069</label>
                         <font>Default</font>
@@ -356,11 +356,28 @@
                     </control>
                     <control type="button" id="10">
                         <description>Changelog button</description>
-                        <left>1224</left>
+                        <left>1024</left>
                         <top>0</top>
-                        <width>285</width>
+                        <width>235</width>
                         <height>63</height>
                         <label>24036</label>
+                        <font>Default</font>
+                        <align>center</align>
+                        <aligny>top</aligny>
+                        <textoffsety>3</textoffsety>
+                        <texturenofocus border="5">controls/button_nf.png</texturenofocus>
+                        <texturefocus border="5">controls/button_f.png</texturefocus>
+                        <onleft>8</onleft>
+                        <onright>6</onright>
+                        <onup>60</onup>
+                        <ondown>close</ondown>
+                    </control>
+					<control type="button" id="12">
+                        <left>1280</left>
+                        <top>0</top>
+                        <width>235</width>
+                        <height>63</height>
+                        <label>518</label>
                         <font>Default</font>
                         <align>center</align>
                         <aligny>top</aligny>

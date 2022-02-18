@@ -647,3 +647,15 @@ msgstr "Mostrar extranjeros"
 msgctxt "#50157"
 msgid "Settings level"
 msgstr "Nivel de ajustes"
+
+msgctxt "#50158"
+msgid "Update addons mode"
+msgstr "Modo de actualizar addons"
+
+msgctxt "#50159"
+msgid "Show broken"
+msgstr "Mostrar rotos"
+
+msgctxt "#50160"
+msgid "Hide broken"
+msgstr "Ocultar rotos"

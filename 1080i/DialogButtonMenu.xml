@@ -86,7 +86,7 @@
                     <visible>System.Platform.Xbox </visible>
                 </control>
                 <control type="button" id="101">
-                    <description>Exit XBMC</description>
+                    <description>Exit Kodi</description>
                     <label>$LOCALIZE[13012] $LOCALIZE[50027]</label>
                     <left>45</left>
                     <top>0</top>
@@ -103,7 +103,7 @@
                     <visible>!System.Platform.Xbox </visible>
                 </control>
                 <control type="button" id="102">
-                    <description>Restart XBMC</description>
+                    <description>Restart Kodi</description>
                     <label>$LOCALIZE[50028]</label>
                     <left>45</left>
                     <top>0</top>

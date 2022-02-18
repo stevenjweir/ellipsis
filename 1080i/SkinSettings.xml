@@ -788,7 +788,7 @@
         </control>
         <control type="image">
             <left>681</left>
-            <top>718</top>
+            <top>780</top>
             <width>558</width>
             <height>558</height>
             <texture>settings-big-cog.png</texture>
@@ -800,6 +800,9 @@
                 <effect type="rotate" start="0" end="-45" center="auto" time="200" />
             </animation>
             <animation type="Conditional" reversible="false" condition="ControlGroup(9000).HasFocus(32)">
+                <effect type="rotate" start="0" end="-45" center="auto" time="200" />
+            </animation>
+			            <animation type="Conditional" reversible="false" condition="ControlGroup(9000).HasFocus(33)">
                 <effect type="rotate" start="0" end="-45" center="auto" time="200" />
             </animation>
         </control>

@@ -647,3 +647,15 @@ msgstr ""
 msgctxt "#50157"
 msgid "Settings level"
 msgstr ""
+
+msgctxt "#50158"
+msgid "Update addons mode"
+msgstr ""
+
+msgctxt "#50159"
+msgid "Show broken"
+msgstr ""
+
+msgctxt "#50160"
+msgid "Hide broken"
+msgstr ""

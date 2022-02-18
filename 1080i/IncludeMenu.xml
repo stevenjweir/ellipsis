@@ -706,125 +706,128 @@
 		</control>
 	</include>
 	<include name="Menu_Config">
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[5] - $LOCALIZE[3]</label>
-			<visible>Control.HasFocus(9000)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[5] - $LOCALIZE[2]</label>
-			<visible>Control.HasFocus(9001)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[5] - $LOCALIZE[1]</label>
-			<visible>Control.HasFocus(9002)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[10034]</label>
-			<visible>Control.HasFocus(9003)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[5] - $LOCALIZE[8]</label>
-			<visible>Control.HasFocus(9010)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[5] - $LOCALIZE[14036]</label>
-			<visible>Control.HasFocus(9011)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[5] - $LOCALIZE[13000]</label>
-			<visible>Control.HasFocus(9012)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[24001]</label>
-			<visible>Control.HasFocus(9013)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[10019]</label>
-			<visible>Control.HasFocus(9020)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[50069]</label>
-			<visible>Control.HasFocus(9021)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[50070]</label>
-			<visible>Control.HasFocus(9022)</visible>
-		</control>
-		<control type="label">
-			<left>0</left>
-			<top>945</top>
-			<width>1920</width>
-			<height>40</height>
-			<font>Large</font>
-			<align>center</align>
-			<label>$LOCALIZE[5] - $LOCALIZE[36037]</label>
-			<visible>Control.HasFocus(9023)</visible>
+		<control type="group">
+			<visible>!Skin.HasSetting(Disable_Icon_Labels)</visible>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[5] - $LOCALIZE[3]</label>
+				<visible>Control.HasFocus(9000)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[5] - $LOCALIZE[2]</label>
+				<visible>Control.HasFocus(9001)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[5] - $LOCALIZE[1]</label>
+				<visible>Control.HasFocus(9002)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[10034]</label>
+				<visible>Control.HasFocus(9003)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[5] - $LOCALIZE[8]</label>
+				<visible>Control.HasFocus(9010)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[5] - $LOCALIZE[14036]</label>
+				<visible>Control.HasFocus(9011)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[5] - $LOCALIZE[13000]</label>
+				<visible>Control.HasFocus(9012)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[24001]</label>
+				<visible>Control.HasFocus(9013)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[10019]</label>
+				<visible>Control.HasFocus(9020)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[50069]</label>
+				<visible>Control.HasFocus(9021)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[50070]</label>
+				<visible>Control.HasFocus(9022)</visible>
+			</control>
+			<control type="label">
+				<left>0</left>
+				<top>945</top>
+				<width>1920</width>
+				<height>40</height>
+				<font>Large</font>
+				<align>center</align>
+				<label>$LOCALIZE[5] - $LOCALIZE[36037]</label>
+				<visible>Control.HasFocus(9023)</visible>
+			</control>
 		</control>
 		<control type="group">
 			<left>960</left>
