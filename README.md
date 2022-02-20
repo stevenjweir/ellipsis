@@ -10,7 +10,7 @@ About EllipsisUI
 
 EllipsisUI is a Graphical User Interface for Kodi, a media playback application available on multiple platforms.
 
-The aim with EllipsisUI is to resurrect Ellipsis by Team Blackbolt. EllipsisUI is a fork of the original Ellipsis project. 
+The aim with EllipsisUI is to resurrect and improve Ellipsis by Team Blackbolt. EllipsisUI is a fork of the original Ellipsis project. 
 The goal for Ellipsis was to make the navigation and use of Kodi as user friendly as possible, so easy to use infact that a young child can use it just as easily as her grandmother can.
 
 --------
@@ -37,6 +37,7 @@ Graphics:
 Special Thanks:
 ==================
 
-Special thanks to Team Kodi for continuing to develop the greatest software ever made! 
+Thanks to Team Kodi for continuing to develop the greatest software ever made! 
+Special thanks to Manfeed for taking on the task of resurrecting Ellipsis in the form of EllipsisUI, you took an idea and made it reality.
 Many thanks to Team Blackbolt for their original work done in creating Ellipsis and in particular Blackbolt himself. You started this journey for me with all the amazing work you did over the years that at this point is just a memory and a couple repos.
 
