@@ -39,6 +39,7 @@
                 <description>row 3 label</description>
                 <left>45</left>
                 <top>142</top>
+				<height>69</height>
                 <label>-</label>
                 <align>left</align>
                 <font>Medium</font>

@@ -86,6 +86,23 @@
 			<aligny>center</aligny>
 			<reverse>yes</reverse>
 		</control>
+		<control type="sliderex" id="13">
+			<description>Default Slider</description>
+			<left>0</left>
+			<top>0</top>
+			<height>69</height>
+			<font>Default</font>
+			<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<textureup>controls\sortup_nf.png</textureup>
+			<texturedown>controls\sortdown_nf.png</texturedown>
+			<textureupfocus>controls\sortup_f.png</textureupfocus>
+			<texturedownfocus>controls\sortdown_f.png</texturedownfocus>
+			<textcolor>Text</textcolor>
+			<disabledcolor>DisabledText</disabledcolor>
+			<textoffsetx>22</textoffsetx>
+			<aligny>center</aligny>
+		</control>
 		<control type="label" id="2">
 			<description>Fake Label so we can pass it value down to the one below</description>
 			<left>0</left>

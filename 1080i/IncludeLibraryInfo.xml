@@ -108,6 +108,7 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(Seasons)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>597</left>
                     <top>634</top>
                     <control type="image">
@@ -185,6 +186,7 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(TVShows)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>597</left>
                     <top>634</top>
                     <control type="image">
@@ -257,6 +259,7 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(Movies)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>597</left>
                     <top>634</top>
                     <control type="image">
@@ -327,6 +330,7 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(MusicVideos)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>597</left>
                     <top>634</top>
                     <control type="image">
@@ -481,6 +485,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(52)</visible>
                     <visible>Container.Content(Episodes)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>66</left>
                     <top>278</top>
                     <control type="image">
@@ -583,6 +588,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(51)</visible>
                     <visible>Container.Content(Movies)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>124</left>
                     <top>238</top>
                     <control type="image">
@@ -685,6 +691,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(51)</visible>
                     <visible>Container.Content(Seasons)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>124</left>
                     <top>238</top>
                     <control type="image">
@@ -763,6 +770,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(51)</visible>
                     <visible>Container.Content(TVShows)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>124</left>
                     <top>238</top>
                     <control type="image">
@@ -865,6 +873,7 @@
                 <control type="group">
                     <visible>Control.IsVisible(52)</visible>
                     <visible>Container.Content(MusicVideos)</visible>
+					<visible>!ListItem.IsFolder</visible>
                     <left>66</left>
                     <top>278</top>
                     <control type="image">

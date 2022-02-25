@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fonts>
-    <fontset id="Default" unicode="true">
+    <fontset id="Default">
         <!-- General -->
         <font>
             <name>font13</name>

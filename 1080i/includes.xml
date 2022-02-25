@@ -69,6 +69,19 @@
 			</control>
 		</control>
 	</include>
+	    <include name="KeyboardButton">
+        <width>72</width>
+        <height>72</height>
+        <texturenofocus border="6,8,6,8">keyboard\button_nf.png</texturenofocus>
+        <texturefocus border="6,8,6,8">keyboard\button_f.png</texturefocus>
+        <align>left</align>
+        <aligny>top</aligny>
+        <font>Keyboard_Key_1</font>
+		<textoffsetx>18</textoffsetx>
+        <textoffsety>30</textoffsety>
+        <textcolor>KeyboardText</textcolor>
+        <focusedcolor>KeyboardHighlight</focusedcolor>
+    </include>
 	<include name="SettingsAnimation">
 		<animation type="Visible">
 			<effect type="zoom" start="125" end="100" center="auto" time="100"/>
