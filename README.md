@@ -37,7 +37,4 @@ Graphics:
 Special Thanks:
 ==================
 
-Thanks to Team Kodi for continuing to develop the greatest software ever made! 
-Special thanks to Manfeed for taking on the task of resurrecting Ellipsis in the form of EllipsisUI, you took an idea and made it reality.
-Many thanks to Team Blackbolt for their original work done in creating Ellipsis and in particular Blackbolt himself. You started this journey for me with all the amazing work you did over the years that at this point is just a memory and a couple repos.
-
+Special thanks to Team Kodi for continuing to develop the greatest software ever made! Big thanks to manfeed for all the work he's done for TeamUI. EllipsisUI was born from the Ellipsis project by Team Blackbolt and manfeed has done a fantastic job. Team Blackbolt for all you've done in the past for the skinning community including the creation of the original Ellipsis.
