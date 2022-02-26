@@ -26,7 +26,7 @@
                         <top>0</top>
                         <width>290</width>
                         <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(3).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(3).Thumb)</visible>
@@ -53,7 +53,7 @@
                         <top>424</top>
                         <width>290</width>
                         <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(3).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(3).Thumb)</visible>
@@ -90,7 +90,7 @@
                         <top>0</top>
                         <width>330</width>
                         <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(2).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
@@ -117,7 +117,7 @@
                         <top>484</top>
                         <width>330</width>
                         <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(2).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
@@ -154,7 +154,7 @@
                         <top>0</top>
                         <width>376</width>
                         <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(1).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
@@ -181,7 +181,7 @@
                         <top>552</top>
                         <width>376</width>
                         <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(1).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
@@ -221,7 +221,7 @@
                         <top>0</top>
                         <width>376</width>
                         <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(0).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
@@ -248,7 +248,7 @@
                         <top>552</top>
                         <width>376</width>
                         <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(0).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
@@ -294,7 +294,7 @@
                         <top>0</top>
                         <width>290</width>
                         <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(2).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
@@ -321,7 +321,7 @@
                         <top>424</top>
                         <width>290</width>
                         <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(2).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
@@ -358,7 +358,7 @@
                         <top>0</top>
                         <width>290</width>
                         <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(1).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
@@ -385,7 +385,7 @@
                         <top>424</top>
                         <width>290</width>
                         <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(1).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
@@ -422,7 +422,7 @@
                         <top>0</top>
                         <width>330</width>
                         <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(0).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
@@ -449,7 +449,7 @@
                         <top>484</top>
                         <width>330</width>
                         <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(0).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
@@ -488,7 +488,7 @@
                         <top>0</top>
                         <width>376</width>
                         <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(-1).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem((-1).Thumb)</visible>
@@ -515,7 +515,7 @@
                         <top>552</top>
                         <width>376</width>
                         <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(-1).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(-1).Thumb)</visible>
@@ -562,7 +562,7 @@
                         <top>0</top>
                         <width>290</width>
                         <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(2).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
@@ -589,7 +589,7 @@
                         <top>424</top>
                         <width>290</width>
                         <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(2).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
@@ -632,7 +632,7 @@
                         <top>0</top>
                         <width>330</width>
                         <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(1).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
@@ -659,7 +659,7 @@
                         <top>484</top>
                         <width>330</width>
                         <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(1).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
@@ -702,7 +702,7 @@
                         <top>0</top>
                         <width>376</width>
                         <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(55).ListItem(0).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
@@ -729,7 +729,7 @@
                         <top>552</top>
                         <width>376</width>
                         <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">keep</aspectratio>
+                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
                         <info>Container(55).ListItem(0).ActualIcon</info>
                         <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>

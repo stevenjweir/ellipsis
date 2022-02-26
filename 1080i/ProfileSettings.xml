@@ -37,7 +37,7 @@
                 <height>96</height>
                 <texture>dialogs\profilesettings-dialog-icon.png</texture>
             </control>
-            <control type="label" id="1">
+            <control type="label" id="2">
                 <description>heading label</description>
                 <left>0</left>
                 <top>218</top>
@@ -50,10 +50,10 @@
             </control>
             <control type="group">
                 <left>1215</left>
-                <top>292</top>
+                <top>192</top>
                 <width>285</width>
                 <height>285</height>
-                <control type="image" id="2">
+                <control type="image" id="101">
                     <left>0</left>
                     <top>0</top>
                     <width>285</width>
@@ -84,14 +84,24 @@
                     <texture flipy="true" diffuse="iconview-reflect-diffuse.png">iconview-overlay.png</texture>
                 </control>
             </control>
-            <control type="label" id="1000">
+            <control type="label" id="102">
                 <description>profile name label</description>
                 <left>1125</left>
-                <top>600</top>
+                <top>500</top>
                 <width>465</width>
                 <font>Extra_Large</font>
                 <textcolor>Text</textcolor>
                 <align>center</align>
+                <scroll>true</scroll>
+            </control>
+			<control type="label" id="103">
+                <description>profile directory Value</description>
+                <left>125</left>
+                <top>600</top>
+                <width>1465</width>
+                <font>Extra_Large</font>
+                <textcolor>Text</textcolor>
+                <align>right</align>
                 <scroll>true</scroll>
             </control>
             <control type="grouplist" id="5">

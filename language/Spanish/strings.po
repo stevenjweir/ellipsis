@@ -154,15 +154,15 @@ msgstr "BORRAR"
 
 msgctxt "#50034"
 msgid "CAPS"
-msgstr "MAYÚSCULAS"
+msgstr "BLOQ.MAYÚSCULAS"
 
 msgctxt "#50035"
 msgid "SHIFT"
-msgstr "SHIFT"
+msgstr "MAYÚSCULAS"
 
 msgctxt "#50036"
 msgid "IP ADDRESS"
-msgstr "DIREC.IP"
+msgstr "Direc.IP"
 
 msgctxt "#50037"
 msgid "SPACE"

@@ -62,7 +62,7 @@
                     <onup>20</onup>
                     <ondown>10</ondown>
                 </control>
-                <control type="button" id="12">
+                <control type="edit" id="12">
                     <description>Name Button</description>
                     <left>800</left>
                     <top>165</top>

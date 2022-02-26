@@ -199,15 +199,6 @@
                 <control type="label">
                     <width>1920</width>
                     <height>120</height>
-                    <label>XBMCG33K</label>
-                    <textcolor>Text</textcolor>
-                    <font>Credits_Info</font>
-                    <align>center</align>
-                    <aligny>center</aligny>
-                </control>
-                <control type="label">
-                    <width>1920</width>
-                    <height>120</height>
                     <label>HITCHER</label>
                     <textcolor>Text</textcolor>
                     <font>Credits_Info</font>
