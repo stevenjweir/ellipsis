@@ -103,6 +103,16 @@
 			<textoffsetx>22</textoffsetx>
 			<aligny>center</aligny>
 		</control>
+			<control type="label" id="14">
+                <description>Default label</description>
+                <left>0</left>
+                <top>0</top>
+                <height>30</height>
+                <font>Heading</font>
+                <textcolor>Text</textcolor>
+                <align>center</align>
+                <label>-</label>
+            </control>
 		<control type="label" id="2">
 			<description>Fake Label so we can pass it value down to the one below</description>
 			<left>0</left>
@@ -234,6 +244,14 @@
 					<visible>!ControlGroup(3).HasFocus(-95)</visible>
 				</control>
 				<control type="image">
+					<left>300</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\impaired_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-94)</visible>
+				</control>
+				<control type="image">
 					<left>-292</left>
 					<top>0</top>
 					<width>90</width>
@@ -297,6 +315,17 @@
 					<visible>ControlGroup(3).HasFocus(-95)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="202,0,90,75" end="200,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>300</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\impaired_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-94)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="300,0,90,75" end="297,-3,96,81" time="200"/>
 					</animation>
 				</control>
 			</control>

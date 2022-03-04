@@ -26,7 +26,7 @@
                     <top>6</top>
                     <width>52</width>
                     <height>52</height>
-                    <info>ListItem.Icon</info>
+                    <texture>$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
                     <left>82</left>
@@ -65,9 +65,9 @@
                     <visible>!Substring(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                 </control>
                 <control type="label">
-                    <left>1581</left>
+                    <left>1190</left>
                     <top>6</top>
-                    <width>180</width>
+                    <width>380</width>
                     <height>52</height>
                     <font>Default</font>
                     <aligny>center</aligny>
@@ -99,7 +99,7 @@
                     <top>6</top>
                     <width>52</width>
                     <height>52</height>
-                    <info>ListItem.Icon</info>
+                    <texture>$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
                     <left>82</left>
@@ -147,9 +147,9 @@
                     <visible>!Substring(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
                 </control>
                 <control type="label">
-                    <left>1581</left>
+                    <left>1190</left>
                     <top>6</top>
-                    <width>180</width>
+                    <width>380</width>
                     <height>52</height>
                     <font>Default</font>
                     <aligny>center</aligny>

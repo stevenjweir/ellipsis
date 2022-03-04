@@ -82,7 +82,7 @@
                     <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
                     <pulseonselect>false</pulseonselect>
                     <onclick>dialog.close(all,true)</onclick>
-                    <onclick>XBMC.Quit()</onclick>
+                    <onclick>Quit()</onclick>
                     <visible>System.Platform.Xbox </visible>
                 </control>
                 <control type="button" id="101">
@@ -99,7 +99,7 @@
                     <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
                     <pulseonselect>false</pulseonselect>
                     <onclick>dialog.close(all,true)</onclick>
-                    <onclick>XBMC.Quit()</onclick>
+                    <onclick>Quit()</onclick>
                     <visible>!System.Platform.Xbox </visible>
                 </control>
                 <control type="button" id="102">
@@ -115,7 +115,7 @@
                     <texturefocus border="4,5,6,8">controls\button_power_f.png</texturefocus>
                     <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
                     <pulseonselect>false</pulseonselect>
-                    <onclick>XBMC.RestartApp</onclick>
+                    <onclick>RestartApp</onclick>
                 </control>
                 <control type="group" id="104">
                     <height>69</height>
@@ -136,7 +136,7 @@
                         <onright>201</onright>
                         <onup>102</onup>
                         <ondown>105</ondown>
-                        <onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),30)</onclick>
+                        <onclick>AlarmClock(shutdowntimer,Shutdown(),30)</onclick>
                     </control>
                     <control type="button" id="201">
                         <description>60min ShutdownTimer button</description>
@@ -153,7 +153,7 @@
                         <onright>202</onright>
                         <onup>102</onup>
                         <ondown>105</ondown>
-                        <onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),60)</onclick>
+                        <onclick>AlarmClock(shutdowntimer,Shutdown(),60)</onclick>
                     </control>
                     <control type="button" id="202">
                         <description>120min ShutdownTimer button</description>
@@ -170,7 +170,7 @@
                         <onright>203</onright>
                         <onup>102</onup>
                         <ondown>105</ondown>
-                        <onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown(),120)</onclick>
+                        <onclick>AlarmClock(shutdowntimer,Shutdown(),120)</onclick>
                     </control>
                     <control type="button" id="203">
                         <description>Custom ShutdownTimer button</description>
@@ -187,7 +187,7 @@
                         <onright>204</onright>
                         <onup>102</onup>
                         <ondown>105</ondown>
-                        <onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
+                        <onclick>AlarmClock(shutdowntimer,Shutdown())</onclick>
                     </control>
                     <control type="button" id="204">
                         <description>Cancel ShutdownTimer button</description>
@@ -204,7 +204,7 @@
                         <onright>205</onright>
                         <onup>102</onup>
                         <ondown>105</ondown>
-                        <onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
+                        <onclick>CancelAlarm(shutdowntimer)</onclick>
                     </control>
                     <control type="button" id="205">
                         <description>Shutdown</description>
@@ -221,7 +221,7 @@
                         <onright>200</onright>
                         <onup>102</onup>
                         <ondown>105</ondown>
-                        <onclick>XBMC.PowerDown()</onclick>
+                        <onclick>PowerDown()</onclick>
                     </control>
                     <control type="image">
                         <description>Shutdown focus arrow left image</description>
@@ -305,7 +305,7 @@
                     <texturefocus border="4,5,6,8">controls\button_power_f.png</texturefocus>
                     <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
                     <pulseonselect>false</pulseonselect>
-                    <onclick>XBMC.Suspend()</onclick>
+                    <onclick>Suspend()</onclick>
                     <onclick>dialog.close(all,true)</onclick>
                 </control>
                 <control type="button" id="106">
@@ -323,7 +323,7 @@
                     <texturefocus border="4,5,6,8">controls\button_power_f.png</texturefocus>
                     <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
                     <pulseonselect>false</pulseonselect>
-                    <onclick>XBMC.Hibernate()</onclick>
+                    <onclick>Hibernate()</onclick>
                     <onclick>dialog.close(all,true)</onclick>
                 </control>
                 <control type="button" id="107">
@@ -339,7 +339,7 @@
                     <texturefocus border="4,5,6,8">controls\button_power_f.png</texturefocus>
                     <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
                     <pulseonselect>false</pulseonselect>
-                    <onclick>XBMC.Reset()</onclick>
+                    <onclick>Reset()</onclick>
                 </control>
             </control>
         </control>

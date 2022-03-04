@@ -40,14 +40,14 @@
                     <height>63</height>
                     <texture>dialogs\smart-editor-dialog-icon.png</texture>
                 </control>
-                <control type="label" id="1">
+                <control type="label" id="2">
                     <description>heading label</description>
                     <left>0</left>
                     <top>102</top>
                     <width>1545</width>
                     <align>center</align>
                     <font>Heading</font>
-                    <label>[UPPERCASE]$LOCALIZE[21432][/UPPERCASE]</label>
+                    <label>-</label>
                     <textcolor>Text</textcolor>
                 </control>
                 <control type="spincontrolex" id="22">

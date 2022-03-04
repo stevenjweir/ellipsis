@@ -560,8 +560,8 @@
 				<height>135</height>
 				<width>1350</width>
 				<onup>Dialog.Close(1200)</onup>
-				<ondown>ActivateWindow(settings)</ondown>
 				<ondown>Dialog.Close(1200)</ondown>
+				<ondown>ActivateWindow(settings)</ondown>
 				<include>Dock_Layout</include>
 				<content>
 					<include>Dock_Settings</include>

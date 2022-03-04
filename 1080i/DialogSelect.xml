@@ -56,19 +56,19 @@
 					<visible>Control.HasFocus(6)</visible>
 					<control type="image">
 						<description>dialog icon</description>
-						<left>338</left>
+						<left>375</left>
 						<top>9</top>
-						<width>150</width>
-						<height>150</height>
+						<width>75</width>
+						<height>75</height>
 						<texture fallback="DefaultAddon.png">$INFO[Container(6).ListItem.Icon]</texture>
 					</control>
 					<control type="image">
 						<description>dialog icon</description>
-						<left>338</left>
+						<left>375</left>
 						<top>9</top>
-						<width>150</width>
-						<height>150</height>
-						<texture>iconview-overlay.png</texture>
+						<width>75</width>
+						<height>75</height>
+						<texture>musicvideo-overlay.png</texture>
 					</control>
 				</control>
 				<control type="list" id="3">

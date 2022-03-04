@@ -49,7 +49,7 @@ Code:
 
 Graphics:
 -----------------------
-    - Tean Blackbolt
+    - Team Blackbolt
 
 ------------------
 Special Thanks:
