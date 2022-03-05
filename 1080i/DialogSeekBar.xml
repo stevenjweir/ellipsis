@@ -13,25 +13,34 @@
             <top>58</top>
             <animation effect="slide" start="0,-117" end="0" time="300" tween="sine" easing="out" reversible="false">WindowOpen</animation>
             <animation effect="slide" start="0" end="0,-117" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
-            <animation effect="slide" start="0,-117" end="0" time="300" tween="sine" easing="out" reversible="false" condition="Control.IsVisible(176)">Conditional</animation>
-            <animation effect="slide" start="0" end="0,-117" time="300" tween="sine" easing="in" reversible="false" condition="!Control.IsVisible(176)">Conditional</animation>
             <control type="image">
-                <left>0</left>
+                <left>-150</left>
                 <top>0</top>
-                <width>279</width>
+                <width>579</width>
                 <height>58</height>
                 <texture>dialogs\tab-seek-sub.png</texture>
             </control>
             <control type="label">
-                <left>0</left>
-                <top>4</top>
-                <width>279</width>
+                <left>-125</left>
+                <top>-4</top>
+                <width>529</width>
                 <height>58</height>
                 <font>Seek</font>
                 <textcolor>TextSeek</textcolor>
                 <align>center</align>
-                <label>$INFO[Player.Chapter,$LOCALIZE[21396] ]$INFO[Player.Chaptercount, of ]</label>
+                <label>$INFO[Player.SeekStepSize]    $INFO[Player.Chapter,$LOCALIZE[21396] ]$INFO[Player.Chaptercount, of ]</label>
                 <visible>Player.ChapterCount</visible>
+            </control>
+			<control type="label">
+                <left>-125</left>
+                <top>-4</top>
+                <width>529</width>
+                <height>58</height>
+                <font>Seek</font>
+                <textcolor>TextSeek</textcolor>
+                <align>center</align>
+                <label>$INFO[Player.SeekStepSize]</label>
+                <visible>!Player.ChapterCount</visible>
             </control>
         </control>
         <control type="group">
@@ -41,7 +50,7 @@
             <animation effect="slide" start="0" end="0,-80" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
             <animation effect="slide" start="0,-80" end="0" time="300" tween="sine" easing="out" reversible="false" condition="Control.IsVisible(175)">Conditional</animation>
             <animation effect="slide" start="0" end="0,-80" time="300" tween="sine" easing="in" reversible="false" condition="!Control.IsVisible(175)">Conditional</animation>
-            <control type="image">
+			<control type="image">
                 <left>0</left>
                 <top>0</top>
                 <width>822</width>

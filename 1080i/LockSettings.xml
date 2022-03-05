@@ -99,6 +99,16 @@
                 <aligny>center</aligny>
                 <reverse>yes</reverse>
             </control>
+			<control type="label" id="14">
+                <description>Default label</description>
+                <left>0</left>
+                <top>0</top>
+                <height>30</height>
+                <font>Heading</font>
+                <textcolor>Text</textcolor>
+                <align>center</align>
+                <label>-</label>
+            </control>
             <control type="button" id="28">
                 <description>OK button</description>
                 <left>480</left>

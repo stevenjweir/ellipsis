@@ -69,19 +69,19 @@
 			</control>
 		</control>
 	</include>
-	    <include name="KeyboardButton">
-        <width>72</width>
-        <height>72</height>
-        <texturenofocus border="6,8,6,8">keyboard\button_nf.png</texturenofocus>
-        <texturefocus border="6,8,6,8">keyboard\button_f.png</texturefocus>
-        <align>left</align>
-        <aligny>top</aligny>
-        <font>Keyboard_Key_1</font>
+	<include name="KeyboardButton">
+		<width>72</width>
+		<height>72</height>
+		<texturenofocus border="6,8,6,8">keyboard\button_nf.png</texturenofocus>
+		<texturefocus border="6,8,6,8">keyboard\button_f.png</texturefocus>
+		<align>left</align>
+		<aligny>top</aligny>
+		<font>Keyboard_Key_1</font>
 		<textoffsetx>18</textoffsetx>
-        <textoffsety>30</textoffsety>
-        <textcolor>KeyboardText</textcolor>
-        <focusedcolor>KeyboardHighlight</focusedcolor>
-    </include>
+		<textoffsety>30</textoffsety>
+		<textcolor>KeyboardText</textcolor>
+		<focusedcolor>KeyboardHighlight</focusedcolor>
+	</include>
 	<include name="SettingsAnimation">
 		<animation type="Visible">
 			<effect type="zoom" start="125" end="100" center="auto" time="100"/>
@@ -95,14 +95,6 @@
 	<include name="CurrentSection">
 		<control type="group">
 			<visible>!Skin.HasSetting(Disable_Current_Folder_Section_Widget)</visible>
-			<control type="image">
-				<left>48</left>
-				<top>975</top>
-				<width>96</width>
-				<height>96</height>
-				<texture>current_section.png</texture>
-				<visible>!IsEmpty(Container.FolderPath)</visible>
-			</control>
 			<control type="fadelabel">
 				<left>144</left>
 				<top>1005</top>
@@ -474,9 +466,9 @@
 			<control type="group">
 				<visible>Player.HasAudio</visible>
 				<control type="label">
-					<left>1755</left>
-					<top>990</top>
-					<width>630</width>
+					<left>1030</left>
+					<top>985</top>
+					<width>720</width>
 					<align>right</align>
 					<label>$INFO[MusicPlayer.Title] - $INFO[MusicPlayer.Artist]</label>
 					<font>NowPlaying_Label</font>
@@ -487,9 +479,9 @@
 			<control type="group">
 				<visible>Player.HasVideo</visible>
 				<control type="label">
-					<left>1755</left>
-					<top>990</top>
-					<width>630</width>
+					<left>1030</left>
+					<top>985</top>
+					<width>720</width>
 					<align>right</align>
 					<label>$INFO[VideoPlayer.TVShowTitle] $INFO[VideoPlayer.Title]</label>
 					<font>NowPlaying_Label</font>
@@ -500,24 +492,24 @@
 			<control type="group">
 				<visible>Player.HasMedia</visible>
 				<control type="label">
-					<left>1750</left>
+					<left>1030</left>
 					<top>1024</top>
-					<width>630</width>
+					<width>720</width>
 					<align>right</align>
 					<label>$INFO[Player.Time] / $INFO[Player.Duration]</label>
 					<font>NowPlaying_Time</font>
-					<textcolor>NowPlaying_Grey</textcolor>
+					<textcolor>Text</textcolor>
 					<scroll>true</scroll>
 					<visible>!Player.Seeking</visible>
 				</control>
 				<control type="label">
-					<left>1750</left>
+					<left>1030</left>
 					<top>1024</top>
-					<width>630</width>
+					<width>720</width>
 					<align>right</align>
 					<label>$INFO[Player.SeekTime] / $INFO[Player.Duration]</label>
 					<font>NowPlaying_Time</font>
-					<textcolor>NowPlaying_Grey</textcolor>
+					<textcolor>Text</textcolor>
 					<scroll>true</scroll>
 					<visible>Player.Seeking</visible>
 				</control>
@@ -526,27 +518,27 @@
 	</include>
 	<include name="RSSHome">
 		<control type="group">
-			<visible>Skin.HasSetting(RSSHomeEnabled) + !Window.IsVisible(114) + !Window.IsVisible(29)</visible>
+			<visible>system.getbool(lookandfeel.enablerssfeeds) + !Window.IsVisible(114) + !Window.IsVisible(29)</visible>
 			<control type="rss">
 				<description>rss feed</description>
-				<left>85</left>
+				<left>70</left>
 				<top>15</top>
-				<width>720</width>
+				<width>742</width>
 				<font>RSS_TopLeft</font>
 				<urlset>1</urlset>
 				<textcolor>RSSHomeText</textcolor>
 				<titlecolor>RSSHomeTitle</titlecolor>
 				<shadowcolor>ff0d0d0d</shadowcolor>
 				<headlinecolor>RSSHomeHeadline</headlinecolor>
-				<visible>Skin.HasSetting(RSSHomeEnabled)</visible>
+				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			</control>
 			<control type="image">
 				<left>15</left>
-				<top>4</top>
-				<width>60</width>
-				<height>60</height>
+				<top>18</top>
+				<width>31</width>
+				<height>31</height>
 				<texture>rss_icon.png</texture>
-				<visible>Skin.HasSetting(RSSHomeEnabled)</visible>
+				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			</control>
 		</control>
 	</include>

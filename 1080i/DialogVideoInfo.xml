@@ -92,11 +92,12 @@
                     <control type="label">
                         <left>694</left>
                         <top>270</top>
-                        <width>564</width>
+                        <width>844</width>
                         <height>52</height>
+						<align>center</align>
                         <font>Library_Light_20</font>
                         <textcolor>Text</textcolor>
-                        <label>[B][UPPERCASE]$INFO[ListItem.Director][/UPPERCASE][/B]</label>
+                        <label>[B][CAPITALIZE]$INFO[ListItem.Director][/CAPITALIZE][/B]</label>
                         <scroll>true</scroll>
                     </control>
                     <control type="label">
@@ -444,7 +445,8 @@
                             <top>6</top>
                             <width>52</width>
                             <height>52</height>
-                            <info>ListItem.Icon</info>
+							<aspectratio>keep</aspectratio>
+							<texture>$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
                             <left>82</left>
@@ -456,7 +458,7 @@
                             <selectedcolor>Highlight</selectedcolor>
                             <textcolor>Text</textcolor>
                             <align>left</align>
-                            <info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
                         </control>
                     </itemlayout>
                     <focusedlayout height="69" width="864">
@@ -481,7 +483,8 @@
                             <top>6</top>
                             <width>52</width>
                             <height>52</height>
-                            <info>ListItem.Icon</info>
+							<aspectratio>keep</aspectratio>
+                            <texture>$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="label">
                             <left>82</left>
@@ -493,7 +496,7 @@
                             <selectedcolor>Highlight</selectedcolor>
                             <textcolor>Text</textcolor>
                             <align>left</align>
-                            <info>ListItem.Label</info>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ,]</label>
                         </control>
                     </focusedlayout>
                 </control>

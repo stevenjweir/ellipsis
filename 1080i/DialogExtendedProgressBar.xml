@@ -55,7 +55,7 @@
 				<top>150</top>
 				<width>930</width>
 				<align>center</align>
-				<font>Heading_Small</font>
+				<font>Medium_Bold</font>
 				<label>$INFO[Control.GetLabel(30)]$INFO[Control.GetLabel(32),: ,%]</label>
 				<textcolor>Text</textcolor>
 			</control>

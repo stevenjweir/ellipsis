@@ -1,119 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="123">
-    <defaultcontrol always="true">5</defaultcontrol>
-    <include>Fade_In_WindowOpen</include>
-    <include>Fade_Out_WindowClose</include>
-    <coordinates>
-        <system>2</system>
-        <left>0</left>
-        <top>0</top>
-    </coordinates>
-    <controls>
-        <control type="group">
-            <animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
-            <include>Zoom_In_WindowOpen</include>
-            <include>Zoom_Out_WindowClose</include>
-            <control type="group">
-                <left>406</left>
-                <top>178</top>
-                <control type="image">
-                    <description>background image</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>1107</width>
-                    <height>758</height>
-                    <texture>dialogs\video-osd-dialogbackground.png</texture>
-                </control>
-                <control type="image">
-                    <left>486</left>
-                    <top>8</top>
-                    <width>135</width>
-                    <height>135</height>
-                    <texture>menu\osd\osd-video-icon.png</texture>
-                    <visible>Window.IsActive(osdvideosettings)</visible>
-                </control>
-                <control type="image">
-                    <left>486</left>
-                    <top>8</top>
-                    <width>135</width>
-                    <height>135</height>
-                    <texture>menu\osd\osd-audio-icon.png</texture>
-                    <visible>Window.IsActive(osdaudiosettings)</visible>
-                </control>
-                <control type="grouplist" id="5">
-                    <description>control area</description>
-                    <left>69</left>
-                    <top>135</top>
-                    <width>969</width>
-                    <height>528</height>
-                    <itemgap>0</itemgap>
-                    <pagecontrol>-</pagecontrol>
-                    <onleft>5</onleft>
-                    <onright>5</onright>
-                    <onup>5</onup>
-                    <ondown>5</ondown>
-                </control>
-                <control type="button" id="7">
-                    <description>Default Button</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <height>66</height>
-                    <font>Medium</font>
-                    <textcolor>Text</textcolor>
-                    <textoffsetx>22</textoffsetx>
-                    <texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-                    <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
-                </control>
-                <control type="radiobutton" id="8">
-                    <left>0</left>
-                    <top>0</top>
-                    <height>66</height>
-                    <font>Medium</font>
-                    <textcolor>Text</textcolor>
-                    <textoffsetx>22</textoffsetx>
-                    <texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-                    <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
-                    <textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
-                    <textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
-                </control>
-                <control type="spincontrolex" id="9">
-                    <description>Default SpinControlex</description>
-                    <left>0</left>
-                    <top>0</top>
-                    <height>66</height>
-                    <font>Medium</font>
-                    <texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-                    <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
-                    <textureup>controls\sortup_nf.png</textureup>
-                    <texturedown>controls\sortdown_nf.png</texturedown>
-                    <textureupfocus>controls\sortup_f.png</textureupfocus>
-                    <texturedownfocus>controls\sortdown_f.png</texturedownfocus>
-                    <textcolor>Text</textcolor>
-                    <disabledcolor>DisabledText</disabledcolor>
-                    <textoffsetx>22</textoffsetx>
-                    <aligny>center</aligny>
-                    <reverse>yes</reverse>
-                </control>
-                <control type="sliderex" id="13">
-                    <description>Default Slider</description>
-                    <left>0</left>
-                    <height>66</height>
-                    <texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-                    <texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
-                    <sliderwidth>150</sliderwidth>
-                    <sliderheight>32</sliderheight>
-                    <texturesliderbar>controls\slider_back.png</texturesliderbar>
-                    <textureslidernib>controls\slider_nib.png</textureslidernib>
-                    <textureslidernibfocus>controls\slider_nib_focus.png</textureslidernibfocus>
-                    <font>Medium</font>
-                    <textcolor>Text</textcolor>
-                    <disabledcolor>DisabledText</disabledcolor>
-                    <aligny>top</aligny>
-                    <textoffsetx>22</textoffsetx>
-                    <textoffsety>14</textoffsety>
-                </control>
-            </control>
-        </control>
-        <include>Debug</include>
-    </controls>
+	<defaultcontrol always="true">5</defaultcontrol>
+	<include>Fade_In_WindowOpen</include>
+	<include>Fade_Out_WindowClose</include>
+	<coordinates>
+		<system>2</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(SliderDialog)">conditional</animation>
+			<include>Zoom_In_WindowOpen</include>
+			<include>Zoom_Out_WindowClose</include>
+			<control type="group">
+				<left>406</left>
+				<top>178</top>
+				<control type="image">
+					<description>background image</description>
+					<left>0</left>
+					<top>0</top>
+					<width>1107</width>
+					<height>758</height>
+					<texture>dialogs\video-osd-dialogbackground.png</texture>
+				</control>
+				<control type="image">
+					<left>286</left>
+					<top>8</top>
+					<width>135</width>
+					<height>135</height>
+					<texture>menu\osd\osd-video-icon.png</texture>
+					<visible>Window.IsActive(osdvideosettings)</visible>
+				</control>
+				<control type="image">
+					<left>286</left>
+					<top>8</top>
+					<width>135</width>
+					<height>135</height>
+					<texture>menu\osd\osd-audio-icon.png</texture>
+					<visible>Window.IsActive(osdaudiosettings)</visible>
+				</control>
+				<control type="label" id="2">
+					<description>header label</description>
+					<left>420</left>
+					<top>60</top>
+					<width>720</width>
+					<height>30</height>
+					<font>Heading</font>
+					<label>-</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>Text</textcolor>
+				</control>
+				<control type="grouplist" id="5">
+					<description>control area</description>
+					<left>69</left>
+					<top>135</top>
+					<width>969</width>
+					<height>528</height>
+					<itemgap>0</itemgap>
+					<pagecontrol>-</pagecontrol>
+					<onleft>5</onleft>
+					<onright>5</onright>
+					<onup>5</onup>
+					<ondown>5</ondown>
+				</control>
+				<control type="button" id="7">
+					<description>Default Button</description>
+					<left>0</left>
+					<top>0</top>
+					<height>66</height>
+					<font>Medium</font>
+					<textcolor>Text</textcolor>
+					<textoffsetx>22</textoffsetx>
+					<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
+					<texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
+				</control>
+				<control type="radiobutton" id="8">
+					<left>0</left>
+					<top>0</top>
+					<height>66</height>
+					<font>Medium</font>
+					<textcolor>Text</textcolor>
+					<textoffsetx>22</textoffsetx>
+					<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
+					<texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
+					<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
+					<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
+				</control>
+				<control type="spincontrolex" id="9">
+					<description>Default SpinControlex</description>
+					<left>0</left>
+					<top>0</top>
+					<height>66</height>
+					<font>Medium</font>
+					<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
+					<texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
+					<textureup>controls\sortup_nf.png</textureup>
+					<texturedown>controls\sortdown_nf.png</texturedown>
+					<textureupfocus>controls\sortup_f.png</textureupfocus>
+					<texturedownfocus>controls\sortdown_f.png</texturedownfocus>
+					<textcolor>Text</textcolor>
+					<disabledcolor>DisabledText</disabledcolor>
+					<textoffsetx>22</textoffsetx>
+					<aligny>center</aligny>
+					<reverse>yes</reverse>
+				</control>
+				<control type="sliderex" id="13">
+					<description>Default Slider</description>
+					<left>0</left>
+					<height>66</height>
+					<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
+					<texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
+					<sliderwidth>150</sliderwidth>
+					<sliderheight>32</sliderheight>
+					<texturesliderbar>controls\slider_back.png</texturesliderbar>
+					<textureslidernib>controls\slider_nib.png</textureslidernib>
+					<textureslidernibfocus>controls\slider_nib_focus.png</textureslidernibfocus>
+					<font>Medium</font>
+					<textcolor>Text</textcolor>
+					<disabledcolor>DisabledText</disabledcolor>
+					<aligny>top</aligny>
+					<textoffsetx>22</textoffsetx>
+					<textoffsety>14</textoffsety>
+				</control>
+				<control type="label" id="14">
+					<description>Default label</description>
+					<left>0</left>
+					<top>0</top>
+					<height>30</height>
+					<font>Heading</font>
+					<textcolor>Text</textcolor>
+					<align>center</align>
+					<label>-</label>
+				</control>
+			</control>
+		</control>
+		<include>Debug</include>
+	</controls>
 </window>

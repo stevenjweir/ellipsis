@@ -4,13 +4,13 @@
 		<item>
 			<icon>dock\icons\pause.png</icon>
 			<label>$LOCALIZE[50039]</label>
-			<onclick>XBMC.PlayerControl(Play)</onclick>
+			<onclick>PlayerControl(Play)</onclick>
 			<visible>!Player.Paused</visible>
 		</item>
 		<item>
 			<icon>dock\icons\play.png</icon>
 			<label>$LOCALIZE[208]</label>
-			<onclick>XBMC.PlayerControl(Play)</onclick>
+			<onclick>PlayerControl(Play)</onclick>
 			<visible>Player.Paused</visible>
 		</item>
 	</include>
@@ -18,21 +18,21 @@
 		<item>
 			<icon>dock\icons\fastforward.png</icon>
 			<label>$LOCALIZE[50040]</label>
-			<onclick>XBMC.PlayerControl(Forward)</onclick>
+			<onclick>PlayerControl(Forward)</onclick>
 		</item>
 	</include>
 	<include name="Dock_SkipForward">
 		<item>
 			<icon>dock\icons\skipforward.png</icon>
 			<label>$LOCALIZE[50041]</label>
-			<onclick>XBMC.PlayerControl(Next)</onclick>
+			<onclick>PlayerControl(Next)</onclick>
 		</item>
 	</include>
 	<include name="Dock_DVD_Menu">
 		<item>
 			<icon>dock\icons\dvd.png</icon>
 			<label>$LOCALIZE[50043]</label>
-			<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+			<onclick>PlayerControl(ShowVideoMenu)</onclick>
 			<visible>VideoPlayer.HasMenu</visible>
 		</item>
 	</include>
@@ -40,14 +40,14 @@
 		<item>
 			<icon>dock\icons\audio.png</icon>
 			<label>$LOCALIZE[292]</label>
-			<onclick>XBMC.ActivateWindow(osdaudiosettings)</onclick>
+			<onclick>ActivateWindow(osdaudiosettings)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Video">
 		<item>
 			<icon>dock\icons\video.png</icon>
 			<label>$LOCALIZE[1212]</label>
-			<onclick>XBMC.ActivateWindow(osdvideosettings)</onclick>
+			<onclick>ActivateWindow(osdvideosettings)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Subtitle">
@@ -76,28 +76,28 @@
 		<item>
 			<icon>dock\icons\vis-presets.png</icon>
 			<label>$LOCALIZE[50046]</label>
-			<onclick>XBMC.ActivateWindow(visualisationpresetlist)</onclick>
+			<onclick>ActivateWindow(visualisationpresetlist)</onclick>
 		</item>
 	</include>
 	<include name="Dock_SkipBack">
 		<item>
 			<icon>dock\icons\skipback.png</icon>
 			<label>$LOCALIZE[50047]</label>
-			<onclick>XBMC.PlayerControl(Previous)</onclick>
+			<onclick>PlayerControl(Previous)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Rewind">
 		<item>
 			<icon>dock\icons\rewind.png</icon>
 			<label>$LOCALIZE[50048]</label>
-			<onclick>XBMC.PlayerControl(Rewind)</onclick>
+			<onclick>PlayerControl(Rewind)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Stop">
 		<item>
 			<icon>dock\icons\stop.png</icon>
 			<label>$LOCALIZE[50049]</label>
-			<onclick>XBMC.PlayerControl(Stop)</onclick>
+			<onclick>PlayerControl(Stop)</onclick>
 			<visible>Player.Playing | Player.Paused | Player.Forwarding | Player.Rewinding</visible>
 		</item>
 	</include>
@@ -106,7 +106,7 @@
 		<item>
 			<icon>dock\icons\bookmark.png</icon>
 			<label>$LOCALIZE[50052]</label>
-			<onclick>XBMC.ActivateWindow(VideoBookmarks)</onclick>
+			<onclick>ActivateWindow(VideoBookmarks)</onclick>
 			<visible>Window.IsVisible(MyVideoOSD)</visible>
 		</item>
 	</include>
@@ -114,14 +114,14 @@
 		<item>
 			<icon>dock\icons\random-on.png</icon>
 			<label>$LOCALIZE[590]$LOCALIZE[50053]</label>
-			<onclick>XBMC.PlayerControl(Random)</onclick>
+			<onclick>PlayerControl(Random)</onclick>
 			<visible>Playlist.IsRandom</visible>
 			<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\random-off.png</icon>
 			<label>$LOCALIZE[590]: $LOCALIZE[591]</label>
-			<onclick>XBMC.PlayerControl(Random)</onclick>
+			<onclick>PlayerControl(Random)</onclick>
 			<visible>!Playlist.IsRandom</visible>
 			<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 		</item>
@@ -130,21 +130,21 @@
 		<item>
 			<icon>dock\icons\repeat-off.png</icon>
 			<label>$LOCALIZE[595]</label>
-			<onclick>XBMC.PlayerControl(Repeat)</onclick>
+			<onclick>PlayerControl(Repeat)</onclick>
 			<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
 			<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\repeat-all.png</icon>
 			<label>$LOCALIZE[597]</label>
-			<onclick>XBMC.PlayerControl(Repeat)</onclick>
+			<onclick>PlayerControl(Repeat)</onclick>
 			<visible>Playlist.IsRepeat</visible>
 			<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\repeat-one.png</icon>
 			<label>$LOCALIZE[596]</label>
-			<onclick>XBMC.PlayerControl(Repeat)</onclick>
+			<onclick>PlayerControl(Repeat)</onclick>
 			<visible>Playlist.IsRepeatOne</visible>
 			<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 		</item>
@@ -244,9 +244,15 @@
 	</include>
 	<include name="Dock_AutoupdateAddons">
 		<item id="31007">
-			<icon>dock\icons\refresh.png</icon>
+			<icon>dock\icons\search.png</icon>
 			<label>50158</label>
 			<onclick>SendClick(5)</onclick>
+			<visible>Window.IsActive(addonbrowser)</visible>
+		</item>
+		<item id="31008">
+			<icon>dock\icons\refresh.png</icon>
+			<label>24034</label>
+			<onclick>SendClick(9)</onclick>
 			<visible>Window.IsActive(addonbrowser)</visible>
 		</item>
 	</include>
@@ -394,7 +400,7 @@
 		<item>
 			<icon>dock\icons\sources_locked.png</icon>
 			<label>$LOCALIZE[20336]$LOCALIZE[50053]</label>
-			<onclick>xbmc.mastermode</onclick>
+			<onclick>mastermode</onclick>
 			<visible>system.haslocks</visible>
 			<visible>system.ismaster</visible>
 			<visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
@@ -402,7 +408,7 @@
 		<item>
 			<icon>dock\icons\sources_unlocked.png</icon>
 			<label>$LOCALIZE[20336]$LOCALIZE[50054]</label>
-			<onclick>xbmc.mastermode</onclick>
+			<onclick>mastermode</onclick>
 			<visible>system.haslocks</visible>
 			<visible>!system.ismaster</visible>
 			<visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
@@ -494,9 +500,9 @@
 	<include name="Dock_Settings">
 		<item>
 			<icon>dock\icons\settings.png</icon>
-			<label>$LOCALIZE[5]</label>
-			<onclick>XBMC.ActivateWindow(settings)</onclick>
+			<label>5</label>
 			<onclick>Dialog.Close(1200)</onclick>
+			<onclick>ActivateWindow(Settings)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Logout">
@@ -512,14 +518,14 @@
 		<item>
 			<icon>dock\icons\exit.png</icon>
 			<label>$LOCALIZE[13006]</label>
-			<onclick>XBMC.Quit()</onclick>
+			<onclick>Quit()</onclick>
 			<visible>!Window.IsVisible(LoginScreen)</visible>
 			<visible>System.Platform.Xbox </visible>
 		</item>
 		<item>
 			<icon>dock\icons\exit.png</icon>
 			<label>$LOCALIZE[13012] $LOCALIZE[50027]</label>
-			<onclick>XBMC.Quit()</onclick>
+			<onclick>Quit()</onclick>
 			<visible>!Window.IsVisible(LoginScreen)</visible>
 			<visible>!System.Platform.Xbox </visible>
 		</item>
@@ -528,15 +534,15 @@
 		<item>
 			<icon>dock\icons\power.png</icon>
 			<label>$LOCALIZE[50062]</label>
-			<onclick>XBMC.ActivateWindow(ShutdownMenu)</onclick>
 			<onclick>Dialog.Close(1200)</onclick>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Power_Options_1201">
 		<item>
 			<icon>dock\icons\power.png</icon>
 			<label>$LOCALIZE[50062]</label>
-			<onclick>XBMC.ActivateWindow(ShutdownMenu)</onclick>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
 		</item>
 	</include>
@@ -544,7 +550,7 @@
 		<item>
 			<icon>dock\icons\power.png</icon>
 			<label>$LOCALIZE[50062]</label>
-			<onclick>XBMC.ActivateWindow(ShutdownMenu)</onclick>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<onclick>Dialog.Close(1202)</onclick>
 		</item>
 	</include>
@@ -552,7 +558,7 @@
 		<item>
 			<icon>dock\icons\power.png</icon>
 			<label>$LOCALIZE[50062]</label>
-			<onclick>XBMC.ActivateWindow(ShutdownMenu)</onclick>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<onclick>Dialog.Close(1203)</onclick>
 		</item>
 	</include>
@@ -560,8 +566,8 @@
 		<item>
 			<icon>dock\icons\nowplaying.png</icon>
 			<label>$LOCALIZE[50144]</label>
-			<onclick>FullScreen</onclick>
 			<onclick>Dialog.Close(1200)</onclick>
+			<onclick>FullScreen</onclick>
 			<visible>Player.HasMedia + !VideoPlayer.IsFullscreen</visible>
 		</item>
 	</include>
@@ -596,8 +602,8 @@
 		<item>
 			<icon>dock\icons\nav.png</icon>
 			<label>$LOCALIZE[50063]</label>
-			<onclick>XBMC.ActivateWindow(PlayerControls)</onclick>
 			<onclick>Dialog.Close(1200)</onclick>
+			<onclick>ActivateWindow(PlayerControls)</onclick>
 			<visible>!Window.IsVisible(LoginScreen)</visible>
 		</item>
 	</include>
@@ -605,7 +611,7 @@
 		<item>
 			<icon>dock\icons\nav.png</icon>
 			<label>$LOCALIZE[50063]</label>
-			<onclick>XBMC.ActivateWindow(PlayerControls)</onclick>
+			<onclick>ActivateWindow(PlayerControls)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
 		</item>
 	</include>
@@ -613,7 +619,7 @@
 		<item>
 			<icon>dock\icons\nav.png</icon>
 			<label>$LOCALIZE[50063]</label>
-			<onclick>XBMC.ActivateWindow(PlayerControls)</onclick>
+			<onclick>ActivateWindow(PlayerControls)</onclick>
 			<onclick>Dialog.Close(1202)</onclick>
 		</item>
 	</include>
@@ -621,7 +627,7 @@
 		<item>
 			<icon>dock\icons\nav.png</icon>
 			<label>$LOCALIZE[50063]</label>
-			<onclick>XBMC.ActivateWindow(PlayerControls)</onclick>
+			<onclick>ActivateWindow(PlayerControls)</onclick>
 			<onclick>Dialog.Close(1203)</onclick>
 		</item>
 	</include>
@@ -629,8 +635,8 @@
 		<item>
 			<icon>dock\icons\systeminfo.png</icon>
 			<label>$LOCALIZE[50064]</label>
-			<onclick>XBMC.ActivateWindow(systeminfo)</onclick>
 			<onclick>Dialog.Close(1200)</onclick>
+			<onclick>ActivateWindow(systeminfo)</onclick>
 			<visible>!Window.IsVisible(LoginScreen)</visible>
 		</item>
 	</include>
@@ -638,8 +644,8 @@
 		<item>
 			<icon>dock\icons\favourites.png</icon>
 			<label>1036</label>
-			<onclick>XBMC.ActivateWindow(Favourites)</onclick>
 			<onclick>Dialog.Close(1200)</onclick>
+			<onclick>ActivateWindow(Favourites)</onclick>
 			<visible>!Window.IsVisible(LoginScreen)</visible>
 		</item>
 	</include>

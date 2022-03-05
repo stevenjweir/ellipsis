@@ -530,7 +530,7 @@ msgstr "Acabaremos reproduciendo @"
 
 msgctxt "#50128"
 msgid "Up Next"
-msgstr "Arriba"
+msgstr "Siguiente"
 
 msgctxt "#50129"
 msgid "Items"
