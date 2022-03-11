@@ -3,7 +3,6 @@
 	<defaultcontrol>-</defaultcontrol>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
-	<allowoverlay>no</allowoverlay>
 	<controls>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>

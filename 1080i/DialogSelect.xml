@@ -51,6 +51,16 @@
 						<label>-</label>
 						<textcolor>Text</textcolor>
 					</control>
+					<control type="textbox" id="4">
+						<description>No Settings Label</description>
+						<left>140</left>
+						<top>350</top>
+						<height>70</height>
+						<width>550</width>
+						<align>center</align>
+						<font>Medium</font>
+						<textcolor>Text</textcolor>
+					</control>
 				</control>
 				<control type="group">
 					<visible>Control.HasFocus(6)</visible>

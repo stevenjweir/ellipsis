@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="4">
 	<defaultcontrol always="true">9000</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
 	<include>Slide_In_WindowOpen</include>
 	<include>Slide_Out_WindowClose</include>
 	<controls>

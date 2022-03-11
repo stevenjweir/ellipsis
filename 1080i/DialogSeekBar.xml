@@ -15,7 +15,7 @@
             <animation effect="slide" start="0" end="0,-117" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
             <control type="image">
                 <left>-150</left>
-                <top>0</top>
+                <top>-2</top>
                 <width>579</width>
                 <height>58</height>
                 <texture>dialogs\tab-seek-sub.png</texture>
@@ -41,6 +41,17 @@
                 <align>center</align>
                 <label>$INFO[Player.SeekStepSize]</label>
                 <visible>!Player.ChapterCount</visible>
+            </control>
+			<control type="label">
+                <left>-125</left>
+                <top>-4</top>
+                <width>529</width>
+                <height>58</height>
+                <font>Seek</font>
+                <textcolor>TextSeek</textcolor>
+                <align>center</align>
+                <label>$INFO[MusicPlayer.TimeSpeed]</label>
+				<visible>IsEmpty(Player.SeekStepSize)</visible>
             </control>
         </control>
         <control type="group">

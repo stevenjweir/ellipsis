@@ -65,8 +65,8 @@
 		<item>
 			<visible>!Skin.HasSetting(Disable_Scripts_Home_Icon)</visible>
 			<icon>icon_home_scripts.png</icon>
-			<label>247</label>
-			<onclick>ActivateWindow(scripts)</onclick>
+			<label>0</label>
+			<onclick>ActivateWindow(AddonBrowser)</onclick>
 		</item>
 	</include>
 	<include name="Menu_Music">
@@ -187,13 +187,6 @@
 			<icon>menu\settings\weather.png</icon>
 			<label>10014</label>
 			<onclick>ActivateWindow(MyWeatherSettings)</onclick>
-		</item>
-	</include>
-	<include name="Settings_Network">
-		<item>
-			<icon>menu\settings\network.png</icon>
-			<label>10018</label>
-			<onclick>ActivateWindow(NetworkSettings)</onclick>
 		</item>
 	</include>
 	<include name="Settings_System">
@@ -699,6 +692,7 @@
 					<include>Menu_FileManager</include>
 					<include>Menu_Weather</include>
 					<include>Menu_Music</include>
+					<include>Menu_Scripts</include>
 				</content>
 			</control>
 			<include>Menu_Icons</include>
@@ -1232,7 +1226,7 @@
 				<onright>9012</onright>
 				<onup>9001</onup>
 				<ondown>9021</ondown>
-				<onclick>ActivateWindow(NetworkSettings)</onclick>
+				<onclick>ActivateWindow(servicesettings)</onclick>
 			</control>
 			<control type="button" id="9012">
 				<left>25</left>

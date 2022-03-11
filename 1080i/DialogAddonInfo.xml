@@ -94,7 +94,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>Default</font>
-                        <textcolor>TextMediun</textcolor>
+                        <textcolor>TextMedium</textcolor>
                     </control>
                     <control type="label">
                         <description>Type Value</description>
@@ -118,7 +118,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>Default</font>
-                        <textcolor>TextMediun</textcolor>
+                        <textcolor>TextMedium</textcolor>
                     </control>
                     <control type="label">
                         <description>Author Value</description>
@@ -142,7 +142,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>Default</font>
-                        <textcolor>TextMediun</textcolor>
+                        <textcolor>TextMedium</textcolor>
                     </control>
                     <control type="label">
                         <description>Version Value</description>
@@ -166,7 +166,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>Default</font>
-                        <textcolor>TextMediun</textcolor>
+                        <textcolor>TextMedium</textcolor>
                     </control>
                     <control type="image">
                         <description>Rating value</description>
@@ -186,7 +186,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>Default</font>
-                        <textcolor>TextMediun</textcolor>
+                        <textcolor>TextMedium</textcolor>
                     </control>
                     <control type="fadelabel">
                         <description>Summary Value</description>
@@ -211,7 +211,7 @@
                         <align>right</align>
                         <aligny>center</aligny>
                         <font>Default</font>
-                        <textcolor>TextMediun</textcolor>
+                        <textcolor>TextMedium</textcolor>
                     </control>
                     <control type="fadelabel">
                         <description>Summary Value</description>
@@ -245,7 +245,7 @@
                     <height>177</height>
                     <font>Default</font>
                     <align>left</align>
-                    <textcolor>TextMediun</textcolor>
+                    <textcolor>TextMedium</textcolor>
                     <label>$INFO[ListItem.Property(Addon.Description)]</label>
                     <pagecontrol>60</pagecontrol>
                 </control>
@@ -258,7 +258,7 @@
                     <height>162</height>
                     <font>Default</font>
                     <align>left</align>
-                    <textcolor>TextMediun</textcolor>
+                    <textcolor>TextMedium</textcolor>
                     <label>$INFO[ListItem.Property(Addon.broken)]</label>
                     <pagecontrol>60</pagecontrol>
                 </control>
