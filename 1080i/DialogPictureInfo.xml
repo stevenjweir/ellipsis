@@ -80,7 +80,7 @@
                         <width>660</width>
                         <height>63</height>
                         <aligny>center</aligny>
-                        <label>[COLOR=TextMediun]$INFO[ListItem.Label]:[/COLOR] $INFO[ListItem.Label2]</label>
+                        <label>[COLOR=TextMedium]$INFO[ListItem.Label]:[/COLOR] $INFO[ListItem.Label2]</label>
                         <selectedcolor>Text</selectedcolor>
                         <font>Medium_Bold</font>
                     </control>
@@ -100,7 +100,7 @@
                         <width>660</width>
                         <height>63</height>
                         <aligny>center</aligny>
-                        <label>[COLOR=TextMediun]$INFO[ListItem.Label]:[/COLOR] $INFO[ListItem.Label2]</label>
+                        <label>[COLOR=TextMedium]$INFO[ListItem.Label]:[/COLOR] $INFO[ListItem.Label2]</label>
                         <selectedcolor>Text</selectedcolor>
                         <font>Medium_Bold</font>
                     </control>

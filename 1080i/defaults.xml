@@ -135,10 +135,14 @@
 		<disabledcolor>DisabledText</disabledcolor>
 		<shadowcolor>-</shadowcolor>
 		<textoffsetx>22</textoffsetx>
+		<radiowidth>24</radiowidth>
+		<radioheight>24</radioheight>
 		<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
 		<texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
 		<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 		<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
+		<textureradioondisabled colordiffuse="40FFFFFF">controls\radiobutton_f.png</textureradioondisabled>
+		<textureradiooffdisabled colordiffuse="40FFFFFF">controls\radiobutton_nf.png</textureradiooffdisabled>
 		<align>left</align>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>

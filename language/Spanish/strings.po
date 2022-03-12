@@ -445,8 +445,8 @@ msgid "NAV"
 msgstr "NAV"
 
 msgctxt "#50107"
-msgid "[B]Welcome to Kodi[/B][CR][CR]We've placed a few links on the left to help you find what you need quicker.[CR][CR]Tip: Don't forget to calibrate your screen correctly, you could improve your viewing pleasure![CR][CR]Below you'll find the latest news from Team Kodi."
-msgstr "[B]Bienvenido a Kodi[/B][CR][CR]Hemos colocado algunos enlaces en la izquierda para ayudarte a encontrar lo que necesitas más rápido.[CR][CR]Consejo: No olvides calibrar tu pantalla correctamente, ¡puedes mejorar tu sensación visual![CR][CR]A continuación encontrará las últimas noticias de equipo Kodi."
+msgid "[B]Welcome to Kodi[/B][CR][CR]We've placed a few links on the left to help you find what you need quicker.[CR][CR]Tip: Don't forget to calibrate your screen correctly, you could improve your viewing pleasure!"
+msgstr "[B]Bienvenido a Kodi[/B][CR][CR]Hemos colocado algunos enlaces en la izquierda para ayudarte a encontrar lo que necesitas más rápido.[CR][CR]Consejo: No olvides calibrar tu pantalla correctamente, ¡puedes mejorar tu sensación visual!"
 
 msgctxt "#50108"
 msgid "Kodi News Feed:"
@@ -659,3 +659,11 @@ msgstr "Mostrar rotos"
 msgctxt "#50160"
 msgid "Hide broken"
 msgstr "Ocultar rotos"
+
+msgctxt "#50161"
+msgid "Episodes Watched"
+msgstr "Episodios vistos"
+
+msgctxt "#50162"
+msgid "A very special thank you for[CR]choosing EllipsisUI..."
+msgstr "Muchísimas gracias por[CR]elegir EllipsisUI..."

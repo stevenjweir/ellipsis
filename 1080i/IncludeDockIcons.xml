@@ -25,7 +25,8 @@
 		<item>
 			<icon>dock\icons\skipforward.png</icon>
 			<label>$LOCALIZE[50041]</label>
-			<onclick>PlayerControl(Next)</onclick>
+			<onclick>Playlist.PlayOffset(1)</onclick>
+			<!-- <onclick>PlayerControl(Next)</onclick> -->
 		</item>
 	</include>
 	<include name="Dock_DVD_Menu">
@@ -77,13 +78,15 @@
 			<icon>dock\icons\vis-presets.png</icon>
 			<label>$LOCALIZE[50046]</label>
 			<onclick>ActivateWindow(visualisationpresetlist)</onclick>
+			<visible>Visualisation.HasPresets</visible>
 		</item>
 	</include>
 	<include name="Dock_SkipBack">
 		<item>
 			<icon>dock\icons\skipback.png</icon>
 			<label>$LOCALIZE[50047]</label>
-			<onclick>PlayerControl(Previous)</onclick>
+			<onclick>Playlist.PlayOffset(-1)</onclick>
+			<!-- <onclick>PlayerControl(Previous)</onclick> -->
 		</item>
 	</include>
 	<include name="Dock_Rewind">
@@ -207,13 +210,13 @@
 			<icon>dock\icons\sort-direction-asc.png</icon>
 			<label>$LOCALIZE[580]</label>
 			<onclick>SendClick(4)</onclick>
-			<visible>container.sortdirection(ascending)</visible>
+			<visible>StringCompare(Container.SortOrder,$LOCALIZE[584])</visible>
 		</item>
 		<item id="31012">
 			<icon>dock\icons\sort-direction-des.png</icon>
 			<label>$LOCALIZE[580]</label>
 			<onclick>SendClick(4)</onclick>
-			<visible>container.sortdirection(descending)</visible>
+			<visible>StringCompare(Container.SortOrder,$LOCALIZE[585])</visible>
 		</item>
 	</include>
 	<include name="Dock_HideForeignAddons">
@@ -256,24 +259,6 @@
 			<visible>Window.IsActive(addonbrowser)</visible>
 		</item>
 	</include>
-	<include name="Dock_VideoLibrary">
-		<item>
-			<icon>dock\icons\library.png</icon>
-			<label>$LOCALIZE[50055]</label>
-			<onclick>ReplaceWindow(videolibrary)</onclick>
-			<onclick>Dialog.Close(1201)</onclick>
-			<visible>Window.IsVisible(videofiles)</visible>
-			<visible>Library.HasContent(Video)</visible>
-			<visible>System.GetBool(videolibrary.enabled)</visible>
-		</item>
-		<item>
-			<icon>dock\icons\files-view.png</icon>
-			<label>$LOCALIZE[50056]</label>
-			<onclick>ReplaceWindow(videofiles)</onclick>
-			<onclick>Dialog.Close(1201)</onclick>
-			<visible>Window.IsVisible(videolibrary)</visible>
-		</item>
-	</include>
 	<include name="Dock_Watched">
 		<item>
 			<icon>dock\icons\new-icon-off.png</icon>
@@ -304,24 +289,6 @@
 			<onclick>SendClick(20)</onclick>
 			<visible>Library.IsScanningVideo</visible>
 			<visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
-		</item>
-	</include>
-	<include name="Dock_MusicLibrary">
-		<item>
-			<icon>dock\icons\library.png</icon>
-			<label>$LOCALIZE[50055]</label>
-			<onclick>ReplaceWindow(musiclibrary)</onclick>
-			<onclick>Dialog.Close(1201)</onclick>
-			<visible>Window.IsVisible(musicfiles)</visible>
-			<visible>Library.HasContent(Music)</visible>
-			<visible>System.GetBool(musiclibrary.enabled)</visible>
-		</item>
-		<item>
-			<icon>dock\icons\files-view.png</icon>
-			<label>$LOCALIZE[50056]</label>
-			<onclick>ReplaceWindow(musicfiles)</onclick>
-			<onclick>Dialog.Close(1201)</onclick>
-			<visible>Window.IsVisible(musiclibrary)</visible>
 		</item>
 	</include>
 	<include name="Dock_Search">
@@ -433,15 +400,15 @@
 		<item>
 			<icon>dock\icons\weather-refresh.png</icon>
 			<label>$LOCALIZE[184]</label>
-			<onclick>SendClick(2)</onclick>
+			<onclick>Weather.Refresh</onclick>
 		</item>
 	</include>
 	<include name="Dock_Weather_Settings">
 		<item>
 			<icon>dock\icons\weather-settings.png</icon>
 			<label>$LOCALIZE[10004]</label>
-			<onclick>ActivateWindow(MyWeatherSettings)</onclick>
 			<onclick>Dialog.Close(1202)</onclick>
+			<onclick>ActivateWindow(weathersettings)</onclick>
 		</item>
 	</include>
 	<!-- Dock Playlist Items -->

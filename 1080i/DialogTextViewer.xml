@@ -43,7 +43,7 @@
                 <font>Medium</font>
                 <align>justify</align>
                 <pagecontrol>60</pagecontrol>
-                <textcolor>TextMediun</textcolor>
+                <textcolor>TextMedium</textcolor>
                 <autoscroll delay="6000" time="2000" repeat="10000">true</autoscroll>
             </control>
             <control type="scrollbar" id="60">

@@ -167,7 +167,7 @@
 							<height>52</height>
 							<font>Library_Normal_24</font>
 							<textcolor>Text</textcolor>
-							<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), of , EPISODES WATCHED]</label>
+							<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), $LOCALIZE[1443] , $LOCALIZE[50161]]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
@@ -239,7 +239,7 @@
 							<height>52</height>
 							<font>Library_Normal_22</font>
 							<textcolor>Text</textcolor>
-							<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), of , EPISODES WATCHED]</label>
+							<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), $LOCALIZE[1443] , $LOCALIZE[50161]]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
@@ -744,7 +744,7 @@
 							<height>52</height>
 							<font>Library_Normal_24</font>
 							<textcolor>Text</textcolor>
-							<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), of , EPISODES WATCHED]</label>
+							<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), $LOCALIZE[1443] , $LOCALIZE[50161]]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
@@ -818,7 +818,7 @@
 							<height>52</height>
 							<font>Library_Normal_18</font>
 							<textcolor>Text</textcolor>
-							<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), of , EPISODES WATCHED]</label>
+							<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), $LOCALIZE[1443] , $LOCALIZE[50161]]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>

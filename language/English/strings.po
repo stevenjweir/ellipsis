@@ -445,7 +445,7 @@ msgid "NAV"
 msgstr ""
 
 msgctxt "#50107"
-msgid "[B]Welcome to Kodi[/B][CR][CR]We've placed a few links on the left to help you find what you need quicker.[CR][CR]Tip: Don't forget to calibrate your screen correctly, you could improve your viewing pleasure![CR][CR]Below you'll find the latest news from Team Kodi."
+msgid "[B]Welcome to Kodi[/B][CR][CR]We've placed a few links on the left to help you find what you need quicker.[CR][CR]Tip: Don't forget to calibrate your screen correctly, you could improve your viewing pleasure!"
 msgstr ""
 
 msgctxt "#50108"
@@ -658,4 +658,12 @@ msgstr ""
 
 msgctxt "#50160"
 msgid "Hide broken"
+msgstr ""
+
+msgctxt "#50161"
+msgid "Episodes Watched"
+msgstr ""
+
+msgctxt "#50162"
+msgid "A very special thank you for[CR]choosing EllipsisUI..."
 msgstr ""

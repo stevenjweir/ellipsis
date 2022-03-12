@@ -599,8 +599,6 @@
 					<include>Dock_HideForeignAddons</include>
 					<include>Dock_AutoupdateAddons</include>
 					<include>Dock_UpdateLibrary</include>
-					<include>Dock_VideoLibrary</include>
-					<include>Dock_MusicLibrary</include>
 					<include>Dock_Watched</include>
 					<include>Dock_Search</include>
 					<include>Dock_Filter</include>

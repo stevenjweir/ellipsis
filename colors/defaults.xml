@@ -7,7 +7,7 @@
 	<color name="TextSelectedItem">FFFFFFFF</color>
 	<color name="TextShadow">FF000000</color>
 	<color name="TextNegative">FF000000</color>
-	<color name="TextMediun">FF808080</color>
+	<color name="TextMedium">FF808080</color>
 	<color name="Highlight">FF00bdf2</color>
 
 	<color name="KeyboardText">CCFFFFFF</color>
