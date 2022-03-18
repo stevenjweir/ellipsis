@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+	<include name="List_View_Media">
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<animation effect="fade" end="40" time="0" condition="true">Conditional</animation>
+			<texture>background.png</texture>
+		</control>
+		<control type="list" id="59">
+			<left>162</left>
+			<top>126</top>
+			<width>1596</width>
+			<height>759</height>
+			<onleft>ActivateWindow(1201)</onleft>
+			<onright>60</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<viewtype label="535">list</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="69">
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>1596</width>
+					<height>69</height>
+					<texture border="4,5,6,8">controls\button_nf.png</texture>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>6</top>
+					<width>52</width>
+					<height>52</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<visible>IsEmpty(ListItem.Art(poster))</visible>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>6</top>
+					<width>52</width>
+					<height>52</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Art(poster)]</texture>
+				</control>
+				<control type="image">
+					<left>82</left>
+					<top>0</top>
+					<width>69</width>
+					<height>69</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>overlays\list_nf\$INFO[ListItem.Overlay]</texture>
+					<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+				</control>
+				<control type="label">
+					<left>152</left>
+					<top>6</top>
+					<width>1264</width>
+					<height>52</height>
+					<font>Default</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+					<visible>Substring(ListItem.Overlay,OverlayUnwatched.png)</visible>
+					<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+				</control>
+				<control type="label">
+					<left>82</left>
+					<top>6</top>
+					<width>1334</width>
+					<height>52</height>
+					<font>Default</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+					<visible>!Substring(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+				</control>
+				<control type="label">
+					<left>1190</left>
+					<top>6</top>
+					<width>380</width>
+					<height>52</height>
+					<font>Default</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>right</align>
+					<info>ListItem.Label2</info>
+				</control>
+			</itemlayout>
+			<focusedlayout height="69">
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>1596</width>
+					<height>69</height>
+					<texture border="4,5,6,8">controls\button_nf.png</texture>
+					<visible>!Control.HasFocus(59)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>1596</width>
+					<height>69</height>
+					<texture border="4,5,6,8">controls\button_f.png</texture>
+					<visible>Control.HasFocus(59)</visible>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>6</top>
+					<width>52</width>
+					<height>52</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<visible>IsEmpty(ListItem.Art(poster))</visible>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>6</top>
+					<width>52</width>
+					<height>52</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Art(poster)]</texture>
+				</control>
+				<control type="image">
+					<left>82</left>
+					<top>0</top>
+					<width>69</width>
+					<height>69</height>
+					<texture>overlays\list_fo\$INFO[ListItem.Overlay]</texture>
+					<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					<visible>Control.HasFocus(59)</visible>
+				</control>
+				<control type="image">
+					<left>82</left>
+					<top>0</top>
+					<width>69</width>
+					<height>69</height>
+					<texture>overlays\list_nf\$INFO[ListItem.Overlay]</texture>
+					<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					<visible>!Control.HasFocus(59)</visible>
+				</control>
+				<control type="label">
+					<left>152</left>
+					<top>6</top>
+					<width>1264</width>
+					<height>52</height>
+					<font>Default</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+					<visible>Substring(ListItem.Overlay,OverlayUnwatched.png)</visible>
+					<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+				</control>
+				<control type="label">
+					<left>82</left>
+					<top>6</top>
+					<width>1334</width>
+					<height>52</height>
+					<font>Default</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+					<visible>!Substring(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+				</control>
+				<control type="label">
+					<left>1190</left>
+					<top>6</top>
+					<width>380</width>
+					<height>52</height>
+					<font>Default</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>right</align>
+					<info>ListItem.Label2</info>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(59)</visible>
+			<control type="image">
+				<left>1804</left>
+				<top>65</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>menu\nav\nav_arrow_up_NF.png</texture>
+				<animation effect="fade" time="600">Visible</animation>
+				<visible>!Container(59).OnPrevious</visible>
+			</control>
+			<control type="image">
+				<left>1804</left>
+				<top>65</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>menu\nav\nav_arrow_up_FO.png</texture>
+				<animation type="Hidden" reversible="false">
+					<effect type="slide" start="0,-15" end="0" center="auto" time="300"/>
+					<effect type="fade" start="100" end="0" time="300"/>
+				</animation>
+				<visible>Container(59).OnPrevious</visible>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>1824</left>
+				<height>759</height>
+				<top>126</top>
+				<width>18</width>
+				<onleft>59</onleft>
+				<onright>ActivateWindow(1201)</onright>
+			</control>
+			<control type="image">
+				<left>1804</left>
+				<top>888</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>menu\nav\nav_arrow_down_NF.png</texture>
+				<animation effect="fade" time="600">Visible</animation>
+				<visible>!Container(59).OnNext</visible>
+			</control>
+			<control type="image">
+				<left>1804</left>
+				<top>888</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>menu\nav\nav_arrow_down_FO.png</texture>
+				<animation type="Hidden" reversible="false">
+					<effect type="slide" start="0,15" end="0" center="auto" time="300"/>
+					<effect type="fade" start="100" end="0" time="300"/>
+				</animation>
+				<visible>Container(59).OnNext</visible>
+			</control>
+			<control type="label">
+				<left>545</left>
+				<top>895</top>
+				<width>1200</width>
+				<align>right</align>
+				<font>Default</font>
+				<scroll>true</scroll>
+				<label>$INFO[Container(59).NumItems] $LOCALIZE[50129] - $LOCALIZE[50130] $INFO[Container(59).CurrentPage] $LOCALIZE[20163] $INFO[Container(59).NumPages]</label>
+			</control>
+		</control>
+		<control type="group">
+			<left>854</left>
+			<top>434</top>
+			<visible>Control.IsVisible(59)</visible>
+			<include>Sort_Letter</include>
+		</control>
+	</include>
+</includes>

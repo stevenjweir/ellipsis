@@ -277,8 +277,8 @@ msgid "Full System Info"
 msgstr "Información completa del sistema"
 
 msgctxt "#50065"
-msgid "FOR MORE PRESS INFO"
-msgstr "PULSE PARA OBTENER MÁS INFORMACIÓN"
+msgid "FOR MORE INFO"
+msgstr "PARA OBTENER MÁS INFORMACIÓN"
 
 msgctxt "#50066"
 msgid "Disc in Drive"
@@ -667,3 +667,7 @@ msgstr "Episodios vistos"
 msgctxt "#50162"
 msgid "A very special thank you for[CR]choosing EllipsisUI..."
 msgstr "Muchísimas gracias por[CR]elegir EllipsisUI..."
+
+msgctxt "#50163"
+msgid "PRESS"
+msgstr "PULSE"

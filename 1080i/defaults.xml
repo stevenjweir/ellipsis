@@ -97,6 +97,8 @@
 		<texturedown>controls\sortdown_nf.png</texturedown>
 		<textureupfocus>controls\sortup_f.png</textureupfocus>
 		<texturedownfocus>controls\sortdown_f.png</texturedownfocus>
+		<textureupdisabled>-</textureupdisabled>
+		<texturedowndisabled>-</texturedowndisabled>
 		<reverse>yes</reverse>
 		<textoffsetx>22</textoffsetx>
 		<align>left</align>
@@ -116,6 +118,8 @@
 		<texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
 		<textureup>controls\sortup_nf.png</textureup>
 		<texturedown>controls\sortdown_nf.png</texturedown>
+		<textureupdisabled>-</textureupdisabled>
+		<texturedowndisabled>-</texturedowndisabled>
 		<textureupfocus>controls\sortup_f.png</textureupfocus>
 		<texturedownfocus>controls\sortdown_f.png</texturedownfocus>
 		<subtype>text</subtype>
