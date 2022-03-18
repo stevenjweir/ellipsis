@@ -1,397 +1,419 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="146">
-    <defaultcontrol always="true">9000</defaultcontrol>
-    <include>Fade_In_WindowOpen</include>
-    <include>Fade_Out_WindowClose</include>
-    <coordinates>
-        <system>1</system>
-        <left>0</left>
-        <top>0</top>
-    </coordinates>
-    <controls>
-        <control type="image">
-            <left>0</left>
-            <top>0</top>
-            <width>1920</width>
-            <height>1080</height>
-            <texture>filter_keyboard_shadow.png</texture>
-        </control>
-        <control type="group">
-            <include>Zoom_In_WindowOpen</include>
-            <include>Zoom_Out_WindowClose</include>
-            <visible>!Window.IsActive(textviewer)</visible>
-            <control type="image">
-                <description>background image</description>
-                <left>96</left>
-                <top>68</top>
-                <width>1726</width>
-                <height>946</height>
-                <texture>dialogs\dialog-background-tall.png</texture>
-            </control>
-            <control type="group">
-                <visible>!Window.IsActive(addonsettings)</visible>
-                <animation type="Conditional" condition="!Window.IsActive(addonsettings)">
-                    <effect type="fade" start="0" end="100" time="200" delay="50" />
-                </animation>
-                <animation type="Conditional" condition="Window.IsActive(addonsettings)">
-                    <effect type="fade" start="100" end="0" time="200" delay="50" />
-                </animation>
-                <control type="button">
-                    <description>Close Window button</description>
-                    <left>1215</left>
-                    <top>14</top>
-                    <width>96</width>
-                    <height>48</height>
-                    <label>-</label>
-                    <font>-</font>
-                    <onclick>PreviousMenu</onclick>
-                    <texturefocus>DialogCloseButton-focus.png</texturefocus>
-                    <texturenofocus>DialogCloseButton.png</texturenofocus>
-                    <onleft>3</onleft>
-                    <onright>3</onright>
-                    <onup>3</onup>
-                    <ondown>3</ondown>
-                    <visible>system.getbool(input.enablemouse)</visible>
-                </control>
-                <control type="image">
-                    <left>255</left>
-                    <top>195</top>
-                    <width>360</width>
-                    <height>360</height>
-                    <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                    <texture diffuse="iconview-diffuse.png">$INFO[ListItem.Icon]</texture>
-                </control>
-                <control type="image">
-                    <left>255</left>
-                    <top>195</top>
-                    <width>360</width>
-                    <height>360</height>
-                    <texture>iconview-overlay.png</texture>
-                </control>
-                <control type="label">
-                    <description>header label</description>
-                    <left>696</left>
-                    <top>207</top>
-                    <width>945</width>
-                    <height>60</height>
-                    <font>Extra_Large</font>
-                    <label>[B]$INFO[ListItem.Property(Addon.Name)][/B]</label>
-                    <align>left</align>
-                    <aligny>center</aligny>
-                    <textcolor>white</textcolor>
-                    <shadowcolor>black</shadowcolor>
-                </control>
-                <control type="group">
-                    <left>510</left>
-                    <top>315</top>
-                    <control type="label">
-                        <description>Type txt</description>
-                        <left>192</left>
-                        <top>0</top>
-                        <width>210</width>
-                        <height>38</height>
-                        <label>$LOCALIZE[146]</label>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <textcolor>TextMedium</textcolor>
-                    </control>
-                    <control type="label">
-                        <description>Type Value</description>
-                        <left>420</left>
-                        <top>0</top>
-                        <width>660</width>
-                        <height>38</height>
-                        <label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <scroll>true</scroll>
-                    </control>
-                    <control type="label">
-                        <description>Author txt</description>
-                        <left>192</left>
-                        <top>45</top>
-                        <width>210</width>
-                        <height>38</height>
-                        <label>$LOCALIZE[21863]:</label>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <textcolor>TextMedium</textcolor>
-                    </control>
-                    <control type="label">
-                        <description>Author Value</description>
-                        <left>420</left>
-                        <top>45</top>
-                        <width>660</width>
-                        <height>38</height>
-                        <label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <scroll>true</scroll>
-                    </control>
-                    <control type="label">
-                        <description>Version txt</description>
-                        <left>192</left>
-                        <top>90</top>
-                        <width>210</width>
-                        <height>38</height>
-                        <label>$LOCALIZE[24051]</label>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <textcolor>TextMedium</textcolor>
-                    </control>
-                    <control type="label">
-                        <description>Version Value</description>
-                        <left>420</left>
-                        <top>90</top>
-                        <width>660</width>
-                        <height>38</height>
-                        <label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <scroll>true</scroll>
-                    </control>
-                    <control type="label">
-                        <description>Rating txt</description>
-                        <left>192</left>
-                        <top>135</top>
-                        <width>210</width>
-                        <height>38</height>
-                        <label>$LOCALIZE[563]:</label>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <textcolor>TextMedium</textcolor>
-                    </control>
-                    <control type="image">
-                        <description>Rating value</description>
-                        <left>420</left>
-                        <top>135</top>
-                        <width>240</width>
-                        <height>48</height>
-                        <texture>LeftRating/$INFO[ListItem.Property(Addon.StarRating)]</texture>
-                    </control>
-                    <control type="label">
-                        <description>Summary txt</description>
-                        <left>192</left>
-                        <top>180</top>
-                        <width>210</width>
-                        <height>38</height>
-                        <label>$LOCALIZE[20037]:</label>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <textcolor>TextMedium</textcolor>
-                    </control>
-                    <control type="fadelabel">
-                        <description>Summary Value</description>
-                        <left>420</left>
-                        <top>180</top>
-                        <width>765</width>
-                        <height>38</height>
-                        <label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <scrollout>false</scrollout>
-                        <pauseatend>2000</pauseatend>
-                    </control>
-                    <control type="label">
-                        <description>Summary txt</description>
-                        <left>192</left>
-                        <top>225</top>
-                        <width>210</width>
-                        <height>38</height>
-                        <label>$LOCALIZE[24052]:</label>
-                        <align>right</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <textcolor>TextMedium</textcolor>
-                    </control>
-                    <control type="fadelabel">
-                        <description>Summary Value</description>
-                        <left>420</left>
-                        <top>225</top>
-                        <width>765</width>
-                        <height>38</height>
-                        <label fallback="416">$INFO[ListItem.Property(Addon.Disclaimer)]</label>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <font>Default</font>
-                        <scrollout>false</scrollout>
-                        <pauseatend>2000</pauseatend>
-                    </control>
-                </control>
-                <control type="image">
-                    <visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
-                    <description>Icon image</description>
-                    <left>1389</left>
-                    <top>279</top>
-                    <width>210</width>
-                    <height>210</height>
-                    <texture>dialogs/dialog-icon-info.png</texture>
-                </control>
-                <control type="textbox" id="400">
-                    <visible>IsEmpty(ListItem.Property(Addon.broken))</visible>
-                    <description>Description</description>
-                    <left>255</left>
-                    <top>603</top>
-                    <width>1353</width>
-                    <height>177</height>
-                    <font>Default</font>
-                    <align>left</align>
-                    <textcolor>TextMedium</textcolor>
-                    <label>$INFO[ListItem.Property(Addon.Description)]</label>
-                    <pagecontrol>60</pagecontrol>
-                </control>
-                <control type="textbox" id="400">
-                    <visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
-                    <description>Description</description>
-                    <left>255</left>
-                    <top>603</top>
-                    <width>1353</width>
-                    <height>162</height>
-                    <font>Default</font>
-                    <align>left</align>
-                    <textcolor>TextMedium</textcolor>
-                    <label>$INFO[ListItem.Property(Addon.broken)]</label>
-                    <pagecontrol>60</pagecontrol>
-                </control>
-                <control type="scrollbar" id="60">
-                    <left>1632</left>
-                    <top>618</top>
-                    <width>39</width>
-                    <height>165</height>
-                    <texturesliderbackground border="13">ScrollBarV.png</texturesliderbackground>
-                    <texturesliderbar border="13">ScrollBarV_bar.png</texturesliderbar>
-                    <texturesliderbarfocus border="13">ScrollBarV_bar.png</texturesliderbarfocus>
-                    <textureslidernib>ScrollBarNib.png</textureslidernib>
-                    <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-                    <onleft>9000</onleft>
-                    <onright>9000</onright>
-                    <showonepage>false</showonepage>
-                    <orientation>vertical</orientation>
-                    <visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
-                    <animation effect="fade" start="100" end="0" time="400">Hidden</animation>
-                </control>
-                <control type="group" id="9000">
-                    <left>204</left>
-                    <top>819</top>
-                    <control type="button" id="6">
-                        <description>Enable Addon button</description>
-                        <left>0</left>
-                        <top>0</top>
-                        <width>235</width>
-                        <height>63</height>
-                        <label>24022</label>
-                        <font>Default</font>
-                        <align>center</align>
-                        <aligny>top</aligny>
-                        <textoffsety>3</textoffsety>
-                        <texturenofocus border="5">controls/button_red_nf.png</texturenofocus>
-                        <texturefocus border="5">controls/button_red_f.png</texturefocus>
-                        <onleft>10</onleft>
-                        <onright>7</onright>
-                        <onup>60</onup>
-                        <ondown>close</ondown>
-                    </control>
-                    <control type="button" id="7">
-                        <description>Disable Addon button</description>
-                        <left>256</left>
-                        <top>0</top>
-                        <width>235</width>
-                        <height>63</height>
-                        <label>24021</label>
-                        <font>Default</font>
-                        <align>center</align>
-                        <aligny>top</aligny>
-                        <textoffsety>3</textoffsety>
-                        <texturenofocus border="5">controls/button_nf.png</texturenofocus>
-                        <texturefocus border="5">controls/button_f.png</texturefocus>
-                        <onleft>6</onleft>
-                        <onright>9</onright>
-                        <onup>60</onup>
-                        <ondown>close</ondown>
-                    </control>
-                    <control type="button" id="9">
-                        <description>Addon Settings</description>
-                        <left>512</left>
-                        <top>0</top>
-                        <width>235</width>
-                        <height>63</height>
-                        <label>24020</label>
-                        <font>Default</font>
-                        <align>center</align>
-                        <aligny>top</aligny>
-                        <textoffsety>3</textoffsety>
-                        <texturenofocus border="5">controls/button_nf.png</texturenofocus>
-                        <texturefocus border="5">controls/button_f.png</texturefocus>
-                        <onleft>7</onleft>
-                        <onright>8</onright>
-                        <onup>60</onup>
-                        <ondown>close</ondown>
-                    </control>
-                    <control type="button" id="8">
-                        <description>Update Addon button</description>
-                        <left>768</left>
-                        <top>0</top>
-                        <width>235</width>
-                        <height>63</height>
-                        <label>24069</label>
-                        <font>Default</font>
-                        <align>center</align>
-                        <aligny>top</aligny>
-                        <textoffsety>3</textoffsety>
-                        <texturenofocus border="5">controls/button_nf.png</texturenofocus>
-                        <texturefocus border="5">controls/button_f.png</texturefocus>
-                        <onleft>9</onleft>
-                        <onright>10</onright>
-                        <onup>60</onup>
-                        <ondown>close</ondown>
-                    </control>
-                    <control type="button" id="10">
-                        <description>Changelog button</description>
-                        <left>1024</left>
-                        <top>0</top>
-                        <width>235</width>
-                        <height>63</height>
-                        <label>24036</label>
-                        <font>Default</font>
-                        <align>center</align>
-                        <aligny>top</aligny>
-                        <textoffsety>3</textoffsety>
-                        <texturenofocus border="5">controls/button_nf.png</texturenofocus>
-                        <texturefocus border="5">controls/button_f.png</texturefocus>
-                        <onleft>8</onleft>
-                        <onright>6</onright>
-                        <onup>60</onup>
-                        <ondown>close</ondown>
-                    </control>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<include>Fade_In_WindowOpen</include>
+	<include>Fade_Out_WindowClose</include>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>filter_keyboard_shadow.png</texture>
+		</control>
+		<control type="group">
+			<include>Zoom_In_WindowOpen</include>
+			<include>Zoom_Out_WindowClose</include>
+			<visible>!Window.IsActive(textviewer)</visible>
+			<control type="image">
+				<description>background image</description>
+				<left>96</left>
+				<top>68</top>
+				<width>1726</width>
+				<height>946</height>
+				<texture>dialogs\dialog-background-tall.png</texture>
+			</control>
+			<control type="group">
+				<visible>!Window.IsActive(addonsettings)</visible>
+				<animation type="Conditional" condition="!Window.IsActive(addonsettings)">
+					<effect type="fade" start="0" end="100" time="200" delay="50"/>
+				</animation>
+				<animation type="Conditional" condition="Window.IsActive(addonsettings)">
+					<effect type="fade" start="100" end="0" time="200" delay="50"/>
+				</animation>
+				<control type="button">
+					<description>Close Window button</description>
+					<left>1215</left>
+					<top>14</top>
+					<width>96</width>
+					<height>48</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>PreviousMenu</onclick>
+					<texturefocus>DialogCloseButton-focus.png</texturefocus>
+					<texturenofocus>DialogCloseButton.png</texturenofocus>
+					<onleft>3</onleft>
+					<onright>3</onright>
+					<onup>3</onup>
+					<ondown>3</ondown>
+					<visible>system.getbool(input.enablemouse)</visible>
+				</control>
+				<control type="image">
+					<left>255</left>
+					<top>195</top>
+					<width>360</width>
+					<height>360</height>
+					<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+					<texture diffuse="iconview-diffuse.png">$INFO[ListItem.Icon]</texture>
+				</control>
+				<control type="image">
+					<left>255</left>
+					<top>195</top>
+					<width>360</width>
+					<height>360</height>
+					<texture>iconview-overlay.png</texture>
+				</control>
+				<control type="label">
+					<description>header label</description>
+					<left>696</left>
+					<top>207</top>
+					<width>945</width>
+					<height>60</height>
+					<font>Extra_Large</font>
+					<label>[B]$INFO[ListItem.Property(Addon.Name)][/B]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="group">
+					<left>510</left>
+					<top>315</top>
+					<control type="label">
+						<description>Type txt</description>
+						<left>192</left>
+						<top>0</top>
+						<width>210</width>
+						<height>38</height>
+						<label>$LOCALIZE[146]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<textcolor>TextMedium</textcolor>
+					</control>
+					<control type="label">
+						<description>Type Value</description>
+						<left>420</left>
+						<top>0</top>
+						<width>660</width>
+						<height>38</height>
+						<label fallback="416">$INFO[ListItem.Property(Addon.Type)]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<description>Author txt</description>
+						<left>192</left>
+						<top>45</top>
+						<width>210</width>
+						<height>38</height>
+						<label>$LOCALIZE[21863]:</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<textcolor>TextMedium</textcolor>
+					</control>
+					<control type="label">
+						<description>Author Value</description>
+						<left>420</left>
+						<top>45</top>
+						<width>660</width>
+						<height>38</height>
+						<label fallback="416">$INFO[ListItem.Property(Addon.Creator)]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<description>Version txt</description>
+						<left>192</left>
+						<top>90</top>
+						<width>210</width>
+						<height>38</height>
+						<label>$LOCALIZE[24051]</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<textcolor>TextMedium</textcolor>
+					</control>
+					<control type="label">
+						<description>Version Value</description>
+						<left>420</left>
+						<top>90</top>
+						<width>660</width>
+						<height>38</height>
+						<label fallback="416">$INFO[ListItem.Property(Addon.Version)]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<scroll>true</scroll>
+					</control>
+					<control type="label">
+						<description>Rating txt</description>
+						<left>192</left>
+						<top>135</top>
+						<width>210</width>
+						<height>38</height>
+						<label>$LOCALIZE[563]:</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<textcolor>TextMedium</textcolor>
+					</control>
+					<control type="image">
+						<description>Rating value</description>
+						<left>420</left>
+						<top>135</top>
+						<width>240</width>
+						<height>48</height>
+						<texture>LeftRating/$INFO[ListItem.Property(Addon.StarRating)]</texture>
+					</control>
+					<control type="label">
+						<description>Summary txt</description>
+						<left>192</left>
+						<top>180</top>
+						<width>210</width>
+						<height>38</height>
+						<label>$LOCALIZE[20037]:</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<textcolor>TextMedium</textcolor>
+					</control>
+					<control type="fadelabel">
+						<description>Summary Value</description>
+						<left>420</left>
+						<top>180</top>
+						<width>765</width>
+						<height>38</height>
+						<label fallback="416">$INFO[ListItem.Property(Addon.Summary)]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<scrollout>false</scrollout>
+						<pauseatend>2000</pauseatend>
+					</control>
+					<control type="label">
+						<description>Summary txt</description>
+						<left>192</left>
+						<top>225</top>
+						<width>210</width>
+						<height>38</height>
+						<label>$LOCALIZE[24052]:</label>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<textcolor>TextMedium</textcolor>
+					</control>
+					<control type="fadelabel">
+						<description>Summary Value</description>
+						<left>420</left>
+						<top>225</top>
+						<width>765</width>
+						<height>38</height>
+						<label fallback="416">$INFO[ListItem.Property(Addon.Disclaimer)]</label>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>Default</font>
+						<scrollout>false</scrollout>
+						<pauseatend>2000</pauseatend>
+					</control>
+				</control>
+				<control type="image">
+					<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+					<description>Icon image</description>
+					<left>1389</left>
+					<top>279</top>
+					<width>210</width>
+					<height>210</height>
+					<texture>dialogs/dialog-icon-info.png</texture>
+				</control>
+				<control type="textbox" id="400">
+					<visible>IsEmpty(ListItem.Property(Addon.broken))</visible>
+					<description>Description</description>
+					<left>255</left>
+					<top>603</top>
+					<width>1353</width>
+					<height>177</height>
+					<font>Default</font>
+					<align>left</align>
+					<textcolor>TextMedium</textcolor>
+					<label>$INFO[ListItem.Property(Addon.Description)]</label>
+					<pagecontrol>60</pagecontrol>
+				</control>
+				<control type="textbox" id="400">
+					<visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+					<description>Description</description>
+					<left>255</left>
+					<top>603</top>
+					<width>1353</width>
+					<height>162</height>
+					<font>Default</font>
+					<align>left</align>
+					<textcolor>TextMedium</textcolor>
+					<label>$INFO[ListItem.Property(Addon.broken)]</label>
+					<pagecontrol>60</pagecontrol>
+				</control>
+				<control type="scrollbar" id="60">
+					<left>1632</left>
+					<top>618</top>
+					<width>39</width>
+					<height>165</height>
+					<texturesliderbackground border="13">ScrollBarV.png</texturesliderbackground>
+					<texturesliderbar border="13">ScrollBarV_bar.png</texturesliderbar>
+					<texturesliderbarfocus border="13">ScrollBarV_bar.png</texturesliderbarfocus>
+					<textureslidernib>ScrollBarNib.png</textureslidernib>
+					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>9000</onleft>
+					<onright>9000</onright>
+					<showonepage>false</showonepage>
+					<orientation>vertical</orientation>
+					<visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
+					<animation effect="fade" start="100" end="0" time="400">Hidden</animation>
+				</control>
+				<control type="group" id="9000">
+					<left>190</left>
+					<top>819</top>
+					<animation effect="slide" end="125,0" condition="!Control.IsEnabled(13)">Conditional</animation>
+					<control type="button" id="6">
+						<description>Enable Addon button</description>
+						<left>0</left>
+						<top>0</top>
+						<width>215</width>
+						<height>63</height>
+						<label>24022</label>
+						<font>Default</font>
+						<align>center</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
+						<texturenofocus border="5">controls/button_red_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_red_f.png</texturefocus>
+						<onleft>10</onleft>
+						<onright>7</onright>
+						<onup>60</onup>
+						<ondown>close</ondown>
+					</control>
+					<control type="button" id="7">
+						<description>Disable Addon button</description>
+						<left>220</left>
+						<top>0</top>
+						<width>215</width>
+						<height>63</height>
+						<label>24021</label>
+						<font>Default</font>
+						<align>center</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
+						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_f.png</texturefocus>
+						<onleft>6</onleft>
+						<onright>9</onright>
+						<onup>60</onup>
+						<ondown>close</ondown>
+					</control>
+					<control type="button" id="9">
+						<description>Addon Settings</description>
+						<left>440</left>
+						<top>0</top>
+						<width>215</width>
+						<height>63</height>
+						<label>24020</label>
+						<font>Default</font>
+						<align>center</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
+						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_f.png</texturefocus>
+						<onleft>7</onleft>
+						<onright>8</onright>
+						<onup>60</onup>
+						<ondown>close</ondown>
+					</control>
+					<control type="button" id="8">
+						<description>Update Addon button</description>
+						<left>660</left>
+						<top>0</top>
+						<width>215</width>
+						<height>63</height>
+						<label>24069</label>
+						<font>Default</font>
+						<align>center</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
+						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_f.png</texturefocus>
+						<onleft>9</onleft>
+						<onright>10</onright>
+						<onup>60</onup>
+						<ondown>close</ondown>
+					</control>
+					<control type="button" id="10">
+						<description>Changelog button</description>
+						<left>880</left>
+						<top>0</top>
+						<width>215</width>
+						<height>63</height>
+						<label>24036</label>
+						<font>Default</font>
+						<align>center</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
+						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_f.png</texturefocus>
+						<onleft>8</onleft>
+						<onright>12</onright>
+						<onup>60</onup>
+						<ondown>close</ondown>
+					</control>
 					<control type="button" id="12">
-                        <left>1280</left>
-                        <top>0</top>
-                        <width>235</width>
-                        <height>63</height>
-                        <label>518</label>
-                        <font>Default</font>
-                        <align>center</align>
-                        <aligny>top</aligny>
-                        <textoffsety>3</textoffsety>
-                        <texturenofocus border="5">controls/button_nf.png</texturenofocus>
-                        <texturefocus border="5">controls/button_f.png</texturefocus>
-                        <onleft>8</onleft>
-                        <onright>6</onright>
-                        <onup>60</onup>
-                        <ondown>close</ondown>
-                    </control>
-                </control>
-            </control>
-        </control>
-        <include>Debug</include>
-    </controls>
+						<left>1100</left>
+						<top>0</top>
+						<width>165</width>
+						<height>63</height>
+						<label>518</label>
+						<font>Default</font>
+						<align>center</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
+						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_f.png</texturefocus>
+						<onleft>10</onleft>
+						<onright>13</onright>
+						<onup>60</onup>
+						<ondown>close</ondown>
+					</control>
+					<control type="radiobutton" id="13">
+					<visible>Control.IsEnabled(13)</visible>
+						<left>1270</left>
+						<top>0</top>
+						<width>265</width>
+						<height>63</height>
+						<label>21340</label>
+						<font>Default</font>
+						<align>left</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
+						<textoffsetx>35</textoffsetx>
+						<radiowidth>18</radiowidth>
+						<radioheight>18</radioheight>
+						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_f.png</texturefocus>
+						<onleft>12</onleft>
+						<onright>6</onright>
+						<onup>60</onup>
+						<ondown>close</ondown>
+					</control>
+				</control>
+			</control>
+		</control>
+		<include>Debug</include>
+	</controls>
 </window>

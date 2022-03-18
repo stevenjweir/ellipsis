@@ -194,6 +194,8 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsVisible(VideosSettings)</visible>
+				<left>292</left>
+				<include>Center_Tab_Settings</include>
 				<control type="image">
 					<left>-292</left>
 					<top>0</top>
@@ -336,7 +338,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<left>100</left>
+				<left>292</left>
+				<include>Center_Tab_Settings</include>
 				<visible>Window.IsVisible(MusicSettings)</visible>
 				<control type="image">
 					<left>-292</left>
@@ -421,6 +424,8 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsVisible(PicturesSettings)</visible>
+				<left>94</left>
+				<include>Center_Tab_Settings</include>
 				<control type="image">
 					<left>-94</left>
 					<top>0</top>
@@ -464,6 +469,8 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsVisible(WeatherSettings)</visible>
+				<left>45</left>
+				<include>Center_Tab_Settings</include>
 				<control type="image">
 					<left>-45</left>
 					<top>0</top>
@@ -486,6 +493,8 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsVisible(servicesettings)</visible>
+				<left>292</left>
+				<include>Center_Tab_Settings</include>
 				<control type="image">
 					<left>-292</left>
 					<top>0</top>
@@ -496,7 +505,7 @@
 					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
 				</control>
 				<control type="image">
-					<left>-194</left>
+					<left>-193</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
@@ -523,7 +532,7 @@
 					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
 				</control>
 				<control type="image">
-					<left>104</left>
+					<left>103</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
@@ -552,14 +561,14 @@
 					</animation>
 				</control>
 				<control type="image">
-					<left>-194</left>
+					<left>-193</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
 					<texture>settings\tabs\network_upnp_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-99)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="-194,0,90,75" end="-196,-3,96,81" time="200"/>
+						<effect type="zoom" start="-193,0,90,75" end="-197,-3,96,81" time="200"/>
 					</animation>
 				</control>
 				<control type="image">
@@ -585,14 +594,14 @@
 					</animation>
 				</control>
 				<control type="image">
-					<left>104</left>
+					<left>103</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
 					<texture>settings\tabs\network_zeroconf_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-96)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="104,0,90,75" end="100,-3,96,81" time="200"/>
+						<effect type="zoom" start="103,0,90,75" end="99,-3,96,81" time="200"/>
 					</animation>
 				</control>
 				<control type="image">
@@ -609,6 +618,8 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsVisible(SystemSettings)</visible>
+				<left>292</left>
+				<include>Center_Tab_Settings</include>
 				<control type="image">
 					<left>-292</left>
 					<top>0</top>
@@ -752,6 +763,8 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsVisible(AppearanceSettings)</visible>
+				<left>194</left>
+				<include>Center_Tab_Settings</include>
 				<control type="image">
 					<left>-194</left>
 					<top>0</top>
@@ -835,7 +848,8 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsVisible(PVRSettings)</visible>
-				<left>-60</left>
+				<left>292</left>
+				<include>Center_Tab_Settings</include>
 				<control type="image">
 					<left>-292</left>
 					<top>0</top>

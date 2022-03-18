@@ -2,6 +2,7 @@
 <includes>
 	<include name="Show_Case_View">
 		<control type="list" id="50">
+			<visible>!Container.Content(MusicVideos)</visible>
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
@@ -67,7 +68,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-3).ActualIcon</info>
+						<info>Container(50).ListItem(-3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -101,7 +102,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-3).ActualIcon</info>
+						<info>Container(50).ListItem(-3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -137,7 +138,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-2).ActualIcon</info>
+						<info>Container(50).ListItem(-2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -171,7 +172,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-2).ActualIcon</info>
+						<info>Container(50).ListItem(-2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -207,7 +208,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -241,7 +242,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -276,7 +277,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -310,7 +311,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -346,7 +347,7 @@
 						<height>404</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -380,7 +381,7 @@
 						<height>404</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -416,7 +417,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(2).ActualIcon</info>
+						<info>Container(50).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -450,7 +451,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(2).ActualIcon</info>
+						<info>Container(50).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -486,7 +487,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(3).ActualIcon</info>
+						<info>Container(50).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -520,7 +521,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(3).ActualIcon</info>
+						<info>Container(50).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -559,7 +560,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(4).ActualIcon</info>
+						<info>Container(50).ListItem(4).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(4).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -593,7 +594,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(4).ActualIcon</info>
+						<info>Container(50).ListItem(4).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(4).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -637,7 +638,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-4).ActualIcon</info>
+						<info>Container(50).ListItem(-4).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-4).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -671,7 +672,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-4).ActualIcon</info>
+						<info>Container(50).ListItem(-4).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-4).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -707,7 +708,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-3).ActualIcon</info>
+						<info>Container(50).ListItem(-3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -741,7 +742,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-3).ActualIcon</info>
+						<info>Container(50).ListItem(-3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -777,7 +778,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-2).ActualIcon</info>
+						<info>Container(50).ListItem(-2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -811,7 +812,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-2).ActualIcon</info>
+						<info>Container(50).ListItem(-2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -847,7 +848,7 @@
 						<height>404</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -881,7 +882,7 @@
 						<height>404</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -916,7 +917,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -950,7 +951,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -986,7 +987,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1020,7 +1021,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1056,7 +1057,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(2).ActualIcon</info>
+						<info>Container(50).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1090,7 +1091,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(2).ActualIcon</info>
+						<info>Container(50).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1130,7 +1131,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(3).ActualIcon</info>
+						<info>Container(50).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1164,7 +1165,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(3).ActualIcon</info>
+						<info>Container(50).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1204,7 +1205,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-3).ActualIcon</info>
+						<info>Container(50).ListItem(-3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1238,7 +1239,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-3).ActualIcon</info>
+						<info>Container(50).ListItem(-3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1272,7 +1273,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-2).ActualIcon</info>
+						<info>Container(50).ListItem(-2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1306,7 +1307,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-2).ActualIcon</info>
+						<info>Container(50).ListItem(-2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1340,7 +1341,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1374,7 +1375,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1407,7 +1408,7 @@
 						<height>404</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1441,7 +1442,7 @@
 						<height>404</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1475,7 +1476,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1516,7 +1517,7 @@
 						<height>336</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1550,7 +1551,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(2).ActualIcon</info>
+						<info>Container(50).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1584,7 +1585,7 @@
 						<height>288</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(2).ActualIcon</info>
+						<info>Container(50).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1618,7 +1619,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(50).ListItem(3).ActualIcon</info>
+						<info>Container(50).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1652,7 +1653,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(3).ActualIcon</info>
+						<info>Container(50).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1704,7 +1705,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -1739,7 +1740,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -1775,7 +1776,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -1810,7 +1811,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -1847,7 +1848,7 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -1882,7 +1883,7 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -1922,7 +1923,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(2).ActualIcon</info>
+						<info>Container(50).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(2).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -1957,7 +1958,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(2).ActualIcon</info>
+						<info>Container(50).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(2).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2002,7 +2003,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(-2).ActualIcon</info>
+						<info>Container(50).ListItem(-2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-2).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2037,7 +2038,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-2).ActualIcon</info>
+						<info>Container(50).ListItem(-2).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-2).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2074,7 +2075,7 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2109,7 +2110,7 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2146,7 +2147,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2181,7 +2182,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2222,7 +2223,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2257,7 +2258,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2298,7 +2299,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2333,7 +2334,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(-1).ActualIcon</info>
+						<info>Container(50).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2367,7 +2368,7 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2402,7 +2403,7 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(0).ActualIcon</info>
+						<info>Container(50).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2437,7 +2438,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
@@ -2472,7 +2473,7 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="episode-reflect-diffuse.png"/>
-						<info>Container(50).ListItem(1).ActualIcon</info>
+						<info>Container(50).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(50).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">

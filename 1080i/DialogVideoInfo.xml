@@ -123,7 +123,7 @@
 						<scroll>true</scroll>
 					</control>
 					<control type="grouplist">
-						<left>694</left>
+						<left>634</left>
 						<top>735</top>
 						<width>864</width>
 						<height>45</height>
@@ -177,14 +177,14 @@
 					<control type="image">
 						<animation effect="slide" end="190,0" time="0" condition="IsEmpty(ListItem.UserRating)">Conditional</animation>
 						<left>818</left>
-						<top>105</top>
+						<top>87</top>
 						<width>216</width>
 						<height>34</height>
 						<texture>$INFO[ListItem.StarRating]</texture>
 					</control>
 					<control type="label">
 						<left>1150</left>
-						<top>100</top>
+						<top>82</top>
 						<width>300</width>
 						<height>52</height>
 						<font>Library_Light_20</font>
@@ -192,16 +192,18 @@
 						<label>[B]$INFO[ListItem.UserRating,$LOCALIZE[38018]: ,][/B]</label>
 						<align>center</align>
 					</control>
-					<control type="label">
+					<control type="textbox">
 						<left>694</left>
-						<top>174</top>
+						<top>134</top>
 						<width>864</width>
-						<height>52</height>
+						<height>122</height>
 						<font>Library_Light_35</font>
 						<textcolor>Text</textcolor>
-						<label>[B]$INFO[ListItem.TVShowTitle]$INFO[ListItem.Season, - ][/B]</label>
+						<label>[B]$INFO[ListItem.TVShowTitle] $INFO[ListItem.Year, (,)][/B]</label>
 						<align>center</align>
-						<scroll>true</scroll>
+						<aligny>center</aligny>
+						<scrolltime>200</scrolltime>
+						<autoscroll delay="1500" time="1000" repeat="1500">true</autoscroll>
 					</control>
 					<control type="label">
 						<left>694</left>
@@ -210,12 +212,12 @@
 						<height>52</height>
 						<font>Library_Normal_24</font>
 						<textcolor>Text</textcolor>
-						<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Episode, of , EPISODES WATCHED]</label>
+						<label>$INFO[ListItem.Season,$LOCALIZE[33054]: , ]   -   $INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), $LOCALIZE[1443] , $LOCALIZE[50161]]</label>
 						<align>center</align>
 						<scroll>true</scroll>
 					</control>
 					<control type="grouplist">
-						<left>694</left>
+						<left>625</left>
 						<top>735</top>
 						<width>864</width>
 						<height>45</height>
@@ -269,14 +271,14 @@
 					<control type="image">
 						<animation effect="slide" end="190,0" time="0" condition="IsEmpty(ListItem.UserRating)">Conditional</animation>
 						<left>570</left>
-						<top>105</top>
+						<top>85</top>
 						<width>216</width>
 						<height>34</height>
 						<texture>$INFO[ListItem.StarRating]</texture>
 					</control>
 					<control type="label">
 						<left>930</left>
-						<top>100</top>
+						<top>80</top>
 						<width>300</width>
 						<height>52</height>
 						<font>Library_Light_20</font>
@@ -284,16 +286,18 @@
 						<label>[B]$INFO[ListItem.UserRating,$LOCALIZE[38018]: ,][/B]</label>
 						<align>center</align>
 					</control>
-					<control type="label">
+					<control type="textbox">
 						<left>168</left>
-						<top>174</top>
+						<top>125</top>
 						<width>1390</width>
-						<height>52</height>
+						<height>130</height>
 						<font>Library_Light_35</font>
 						<textcolor>Text</textcolor>
-						<label>[B]$INFO[ListItem.TVShowTitle]$INFO[ListItem.Season, - Season ][/B]</label>
+						<label>[B]$INFO[ListItem.Episode,,. ]$INFO[ListItem.Title][/B]</label>
 						<align>center</align>
-						<scroll>true</scroll>
+						<aligny>center</aligny>
+						<scrolltime>200</scrolltime>
+						<autoscroll delay="1500" time="1000" repeat="1500">true</autoscroll>
 					</control>
 					<control type="label">
 						<left>168</left>
@@ -302,7 +306,8 @@
 						<height>52</height>
 						<font>Library_Light_28</font>
 						<textcolor>Text</textcolor>
-						<label>[B]$INFO[ListItem.Episode,,. ][/B]$INFO[ListItem.Title]</label>
+						<label>[B]$INFO[ListItem.TVShowTitle]$INFO[ListItem.Season, - $LOCALIZE[20373] ][/B]</label>
+						<align>center</align>
 						<scroll>true</scroll>
 					</control>
 					<control type="label">
@@ -321,12 +326,23 @@
 						<top>660</top>
 						<width>447</width>
 						<height>52</height>
+						<align>center</align>
 						<font>Library_Light_20</font>
 						<textcolor>Text</textcolor>
-						<label>[B]$INFO[ListItem.Date,AIRED ][/B]</label>
+						<label>[B]$INFO[ListItem.Duration,$LOCALIZE[180]: , [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]][/B]</label>
+					</control>
+					<control type="label">
+						<left>168</left>
+						<top>730</top>
+						<width>447</width>
+						<height>52</height>
+						<align>center</align>
+						<font>Library_Light_20</font>
+						<textcolor>Text</textcolor>
+						<label>[B]$INFO[ListItem.Date,$LOCALIZE[20416]: ][/B]</label>
 					</control>
 					<control type="grouplist">
-						<left>168</left>
+						<left>372</left>
 						<top>735</top>
 						<width>1390</width>
 						<height>45</height>
@@ -377,14 +393,32 @@
 							<texture>episode-overlay.png</texture>
 						</control>
 					</control>
+					<control type="image">
+						<animation effect="slide" end="190,0" time="0" condition="IsEmpty(ListItem.UserRating)">Conditional</animation>
+						<left>570</left>
+						<top>70</top>
+						<width>216</width>
+						<height>34</height>
+						<texture>$INFO[ListItem.StarRating]</texture>
+					</control>
+					<control type="label">
+						<left>930</left>
+						<top>65</top>
+						<width>300</width>
+						<height>52</height>
+						<font>Library_Light_20</font>
+						<textcolor>Text</textcolor>
+						<label>[B]$INFO[ListItem.UserRating,$LOCALIZE[38018]: ,][/B]</label>
+						<align>center</align>
+					</control>
 					<control type="label">
 						<left>168</left>
-						<top>105</top>
+						<top>112</top>
 						<width>1390</width>
 						<height>52</height>
 						<font>Library_Light_35</font>
 						<textcolor>Text</textcolor>
-						<label>[B]$INFO[ListItem.Title]$INFO[ListItem.Duration, - (,)][/B]</label>
+						<label>[B]$INFO[ListItem.Title][/B]</label>
 						<align>center</align>
 						<scroll>true</scroll>
 					</control>
@@ -412,7 +446,7 @@
 					</control>
 					<control type="fadelabel">
 						<left>168</left>
-						<top>630</top>
+						<top>730</top>
 						<width>447</width>
 						<height>52</height>
 						<font>Library_Light_20</font>
@@ -420,8 +454,18 @@
 						<label>[B]$INFO[ListItem.Studio][/B]</label>
 						<scroll>true</scroll>
 					</control>
-					<control type="grouplist">
+					<control type="label">
 						<left>168</left>
+						<top>660</top>
+						<width>447</width>
+						<height>52</height>
+						<align>center</align>
+						<font>Library_Light_20</font>
+						<textcolor>Text</textcolor>
+						<label>[B]$INFO[ListItem.Duration,$LOCALIZE[180]: , [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]][/B]</label>
+					</control>
+					<control type="grouplist">
+						<left>422</left>
 						<top>735</top>
 						<width>1390</width>
 						<height>45</height>

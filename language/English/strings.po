@@ -277,7 +277,7 @@ msgid "Full System Info"
 msgstr ""
 
 msgctxt "#50065"
-msgid "FOR MORE PRESS INFO"
+msgid "FOR MORE INFO"
 msgstr ""
 
 msgctxt "#50066"
@@ -666,4 +666,8 @@ msgstr ""
 
 msgctxt "#50162"
 msgid "A very special thank you for[CR]choosing EllipsisUI..."
+msgstr ""
+
+msgctxt "#50163"
+msgid "PRESS"
 msgstr ""

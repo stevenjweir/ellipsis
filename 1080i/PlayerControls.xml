@@ -432,7 +432,7 @@
 					<item>
 						<label>$LOCALIZE[50067]</label>
 						<onclick condition="Container(500).HasFocus(1)">Dialog.Close(114)</onclick>
-						<onclick condition="Container(500).HasFocus(1)">ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
+						<onclick condition="Container(500).HasFocus(1)">ActivateWindow(Videos,TvShowTitles)</onclick>
 					</item>
 					<item>
 						<label>$LOCALIZE[10005]</label>

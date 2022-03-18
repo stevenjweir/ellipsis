@@ -65,6 +65,11 @@
             <filename>Ellipsis_normal.ttf</filename>
             <size>24</size>
         </font>
+		<font>
+            <name>Tiny</name>
+            <filename>Ellipsis_normal.ttf</filename>
+            <size>12</size>
+        </font>
         <font>
             <name>Selected_Item</name>
             <filename>Ellipsis_normal.ttf</filename>
@@ -99,12 +104,7 @@
         <font>
             <name>Toast_Heading</name>
             <filename>Ellipsis_normal.ttf</filename>
-            <size>28</size>
-        </font>
-        <font>
-            <name>Toast_Medium</name>
-            <filename>Ellipsis_normal.ttf</filename>
-            <size>22</size>
+            <size>34</size>
         </font>
         <!-- Keyboard -->
         <font>
@@ -168,6 +168,11 @@
             <filename>Ellipsis_time.ttf</filename>
             <size>40</size>
         </font>
+		<font>
+            <name>Time2</name>
+            <filename>Ellipsis_time.ttf</filename>
+            <size>32</size>
+        </font>
         <!-- Seek -->
         <font>
             <name>Seek</name>
@@ -219,7 +224,7 @@
         <font>
             <name>Library_Normal_43</name>
             <filename>Ellipsis_normal.ttf</filename>
-            <size>64</size>
+            <size>56</size>
         </font>
         <font>
             <name>Library_Normal_69</name>

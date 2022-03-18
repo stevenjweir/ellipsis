@@ -30,7 +30,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(4).ActualIcon</info>
+						<info>Container(51).ListItem(4).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -64,7 +64,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(4).ActualIcon</info>
+						<info>Container(51).ListItem(4).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -100,7 +100,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(3).ActualIcon</info>
+						<info>Container(51).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -134,7 +134,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(3).ActualIcon</info>
+						<info>Container(51).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -170,7 +170,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(2).ActualIcon</info>
+						<info>Container(51).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -204,7 +204,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(2).ActualIcon</info>
+						<info>Container(51).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -240,7 +240,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(1).ActualIcon</info>
+						<info>Container(51).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -274,7 +274,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(1).ActualIcon</info>
+						<info>Container(51).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -313,7 +313,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(0).ActualIcon</info>
+						<info>Container(51).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -347,7 +347,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(0).ActualIcon</info>
+						<info>Container(51).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -392,7 +392,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(3).ActualIcon</info>
+						<info>Container(51).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -426,7 +426,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(3).ActualIcon</info>
+						<info>Container(51).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -462,7 +462,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(2).ActualIcon</info>
+						<info>Container(51).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -496,7 +496,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(2).ActualIcon</info>
+						<info>Container(51).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -532,7 +532,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(1).ActualIcon</info>
+						<info>Container(51).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -566,7 +566,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(1).ActualIcon</info>
+						<info>Container(51).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -602,7 +602,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(0).ActualIcon</info>
+						<info>Container(51).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -636,7 +636,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(0).ActualIcon</info>
+						<info>Container(51).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -674,7 +674,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(-1).ActualIcon</info>
+						<info>Container(51).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -708,7 +708,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(-1).ActualIcon</info>
+						<info>Container(51).ListItem(-1).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -754,7 +754,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(3).ActualIcon</info>
+						<info>Container(51).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -788,7 +788,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(3).ActualIcon</info>
+						<info>Container(51).ListItem(3).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -830,7 +830,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(2).ActualIcon</info>
+						<info>Container(51).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -864,7 +864,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(2).ActualIcon</info>
+						<info>Container(51).ListItem(2).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -906,7 +906,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(1).ActualIcon</info>
+						<info>Container(51).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -940,7 +940,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(1).ActualIcon</info>
+						<info>Container(51).ListItem(1).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -982,7 +982,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
-						<info>Container(51).ListItem(0).ActualIcon</info>
+						<info>Container(51).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1016,7 +1016,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
-						<info>Container(51).ListItem(0).ActualIcon</info>
+						<info>Container(51).ListItem(0).Icon</info>
 						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
@@ -1042,16 +1042,16 @@
 		<control type="group">
 			<left>0</left>
 			<top>0</top>
-			<visible>Control.IsVisible(52)</visible>
-			<visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+			<visible>Control.IsVisible(62)</visible>
+			<visible>Container.Content(Episodes)</visible>
 			<!-- Show Case Hybrid View Wide Icons - Counter Clockwise Mothion -->
 			<control type="group" id="25101">
-				<visible>Container(52).OnPrevious</visible>
+				<visible>Container(62).OnPrevious</visible>
 				<animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
 				<!-- Show Far Top Icon On Move Previous -->
 				<control type="group">
-					<visible>Container(52).OnPrevious</visible>
-					<visible>!IsEmpty(Container(52).ListItemNoWrap(-1).Label)</visible>
+					<visible>Container(62).OnPrevious</visible>
+					<visible>!IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="0" end="100" time="250"/>
 					</animation>
@@ -1067,8 +1067,8 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(-1).ActualIcon</info>
-						<visible>IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
+						<info>Container(62).ListItem(-1).Icon</info>
+						<visible>IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1077,15 +1077,15 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(-1).Thumb</info>
-						<visible>!IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
+						<info>Container(62).ListItem(-1).Thumb</info>
+						<visible>!IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>426</width>
 						<height>240</height>
-						<texture>overlays\wide\$INFO[Container(52).ListItem(-1).Overlay]</texture>
+						<texture>overlays\wide\$INFO[Container(62).ListItem(-1).Overlay]</texture>
 						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
@@ -1098,8 +1098,8 @@
 				</control>
 				<!-- Hide Far Bottom Icon On Move Previous -->
 				<control type="group">
-					<visible>Container(52).OnPrevious</visible>
-					<visible>!IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
+					<visible>Container(62).OnPrevious</visible>
+					<visible>!IsEmpty(Container(62).ListItemNoWrap(2).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="0" end="100" time="250"/>
 					</animation>
@@ -1114,8 +1114,8 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(2).ActualIcon</info>
-						<visible>IsEmpty(Container(52).ListItem(2).Thumb)</visible>
+						<info>Container(62).ListItem(2).Icon</info>
+						<visible>IsEmpty(Container(62).ListItem(2).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1124,15 +1124,15 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(2).Thumb</info>
-						<visible>!IsEmpty(Container(52).ListItem(2).Thumb)</visible>
+						<info>Container(62).ListItem(2).Thumb</info>
+						<visible>!IsEmpty(Container(62).ListItem(2).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>426</width>
 						<height>240</height>
-						<texture>overlays\wide\$INFO[Container(52).ListItem(2).Overlay]</texture>
+						<texture>overlays\wide\$INFO[Container(62).ListItem(2).Overlay]</texture>
 						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
@@ -1145,8 +1145,8 @@
 				</control>
 				<!-- Move Icon 2 To Icon 3 Position On Move Previous -->
 				<control type="group">
-					<visible>Container(52).OnPrevious</visible>
-					<visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
+					<visible>Container(62).OnPrevious</visible>
+					<visible>!IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="zoom" start="1113,372,600,339" end="1200,711,426,240" time="125"/>
 						<effect type="slide" start="0,0" end="0,-150" time="125" tween="sine" easing="out" delay="125"/>
@@ -1162,8 +1162,8 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(1).ActualIcon</info>
-						<visible>IsEmpty(Container(52).ListItem(1).Thumb)</visible>
+						<info>Container(62).ListItem(1).Icon</info>
+						<visible>IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1172,15 +1172,15 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(1).Thumb</info>
-						<visible>!IsEmpty(Container(52).ListItem(1).Thumb)</visible>
+						<info>Container(62).ListItem(1).Thumb</info>
+						<visible>!IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>600</width>
 						<height>339</height>
-						<texture>overlays\wide\$INFO[Container(52).ListItem(1).Overlay]</texture>
+						<texture>overlays\wide\$INFO[Container(62).ListItem(1).Overlay]</texture>
 						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
@@ -1193,8 +1193,8 @@
 				</control>
 				<!-- Move Icon 1 To Icon 2 Position On Move Previous -->
 				<control type="group">
-					<visible>Container(52).OnPrevious</visible>
-					<visible>!IsEmpty(Container(52).ListItemNoWrap(0).Label)</visible>
+					<visible>Container(62).OnPrevious</visible>
+					<visible>!IsEmpty(Container(62).ListItemNoWrap(0).Label)</visible>
 					<animation effect="zoom" start="1200,282,426,240" end="1113,372,600,339" time="250" reversible="false">Hidden</animation>
 					<left>1200</left>
 					<top>282</top>
@@ -1207,8 +1207,8 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(0).ActualIcon</info>
-						<visible>IsEmpty(Container(52).ListItem(0).Thumb)</visible>
+						<info>Container(62).ListItem(0).Icon</info>
+						<visible>IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1217,15 +1217,15 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(0).Thumb</info>
-						<visible>!IsEmpty(Container(52).ListItem(0).Thumb)</visible>
+						<info>Container(62).ListItem(0).Thumb</info>
+						<visible>!IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>426</width>
 						<height>240</height>
-						<texture>overlays\wide\$INFO[Container(52).ListItem(0).Overlay]</texture>
+						<texture>overlays\wide\$INFO[Container(62).ListItem(0).Overlay]</texture>
 						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
@@ -1239,12 +1239,12 @@
 			</control>
 			<!-- Show Case Hybrid View Wide Icons - Clockwise Mothion -->
 			<control type="group" id="25102">
-				<visible>Container(52).OnNext</visible>
+				<visible>Container(62).OnNext</visible>
 				<animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
 				<!-- Hide Far Top Icon On Move Next -->
 				<control type="group">
-					<visible>Container(52).OnNext</visible>
-					<visible>!IsEmpty(Container(52).ListItemNoWrap(-2).Label)</visible>
+					<visible>Container(62).OnNext</visible>
+					<visible>!IsEmpty(Container(62).ListItemNoWrap(-2).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="100" end="0" time="250"/>
 					</animation>
@@ -1259,8 +1259,8 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(-2).ActualIcon</info>
-						<visible>IsEmpty(Container(52).ListItem(-2).Thumb)</visible>
+						<info>Container(62).ListItem(-2).Icon</info>
+						<visible>IsEmpty(Container(62).ListItem(-2).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1269,15 +1269,15 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(-2).Thumb</info>
-						<visible>!IsEmpty(Container(52).ListItem(-2).Thumb)</visible>
+						<info>Container(62).ListItem(-2).Thumb</info>
+						<visible>!IsEmpty(Container(62).ListItem(-2).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>426</width>
 						<height>240</height>
-						<texture>overlays\wide\$INFO[Container(52).ListItem(-2).Overlay]</texture>
+						<texture>overlays\wide\$INFO[Container(62).ListItem(-2).Overlay]</texture>
 						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
@@ -1290,8 +1290,8 @@
 				</control>
 				<!-- Show Far Bottom Icon On Move Next -->
 				<control type="group">
-					<visible>Container(52).OnNext</visible>
-					<visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
+					<visible>Container(62).OnNext</visible>
+					<visible>!IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="0" end="100" time="250"/>
 					</animation>
@@ -1307,8 +1307,8 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(1).ActualIcon</info>
-						<visible>IsEmpty(Container(52).ListItem(1).Thumb)</visible>
+						<info>Container(62).ListItem(1).Icon</info>
+						<visible>IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1317,15 +1317,15 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(1).Thumb</info>
-						<visible>!IsEmpty(Container(52).ListItem(1).Thumb)</visible>
+						<info>Container(62).ListItem(1).Thumb</info>
+						<visible>!IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>426</width>
 						<height>240</height>
-						<texture>overlays\wide\$INFO[Container(52).ListItem(1).Overlay]</texture>
+						<texture>overlays\wide\$INFO[Container(62).ListItem(1).Overlay]</texture>
 						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
@@ -1338,8 +1338,8 @@
 				</control>
 				<!-- Move Icon 2 To Icon 1 Position On Move Next -->
 				<control type="group">
-					<visible>Container(52).OnNext</visible>
-					<visible>!IsEmpty(Container(52).ListItemNoWrap(-1).Label)</visible>
+					<visible>Container(62).OnNext</visible>
+					<visible>!IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="zoom" start="1113,372,600,339" end="1200,132,426,240" time="125"/>
 						<effect type="slide" start="0,0" end="0,150" time="125" tween="sine" easing="out" delay="125"/>
@@ -1355,8 +1355,8 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(-1).ActualIcon</info>
-						<visible>IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
+						<info>Container(62).ListItem(-1).Icon</info>
+						<visible>IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1365,15 +1365,15 @@
 						<height>339</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(-1).Thumb</info>
-						<visible>!IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
+						<info>Container(62).ListItem(-1).Thumb</info>
+						<visible>!IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>600</width>
 						<height>339</height>
-						<texture>overlays\wide\$INFO[Container(52).ListItem(-1).Overlay]</texture>
+						<texture>overlays\wide\$INFO[Container(62).ListItem(-1).Overlay]</texture>
 						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
@@ -1386,7 +1386,7 @@
 				</control>
 				<!-- Move Icon 3 To Icon 2 Position On Move Next -->
 				<control type="group">
-					<visible>Container(52).OnNext</visible>
+					<visible>Container(62).OnNext</visible>
 					<animation effect="zoom" start="1200,560,426,240" end="1113,372,600,339" time="250" reversible="false">Hidden</animation>
 					<left>1200</left>
 					<top>560</top>
@@ -1399,8 +1399,8 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(0).ActualIcon</info>
-						<visible>IsEmpty(Container(52).ListItem(0).Thumb)</visible>
+						<info>Container(62).ListItem(0).Icon</info>
+						<visible>IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1409,15 +1409,15 @@
 						<height>240</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
-						<info>Container(52).ListItem(0).Thumb</info>
-						<visible>!IsEmpty(Container(52).ListItem(0).Thumb)</visible>
+						<info>Container(62).ListItem(0).Thumb</info>
+						<visible>!IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<width>426</width>
 						<height>240</height>
-						<texture>overlays\wide\$INFO[Container(52).ListItem(0).Overlay]</texture>
+						<texture>overlays\wide\$INFO[Container(62).ListItem(0).Overlay]</texture>
 						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
@@ -1447,7 +1447,7 @@
 							<effect type="slide" start="0" end="0,148" center="auto" time="150" tween="back" easing="in"/>
 							<effect type="fade" start="100" end="0" time="150" tween="sine" easing="in"/>
 						</animation>
-						<visible>!IsEmpty(Container(52).ListItemNoWrap(-1).Label)</visible>
+						<visible>!IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
@@ -1455,8 +1455,8 @@
 							<height>240</height>
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
-							<info>Container(52).ListItem(-1).ActualIcon</info>
-							<visible>IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
+							<info>Container(62).ListItem(-1).Icon</info>
+							<visible>IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1465,15 +1465,15 @@
 							<height>240</height>
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
-							<info>Container(52).ListItem(-1).Thumb</info>
-							<visible>!IsEmpty(Container(52).ListItem(-1).Thumb)</visible>
+							<info>Container(62).ListItem(-1).Thumb</info>
+							<visible>!IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>426</width>
 							<height>240</height>
-							<texture>overlays\wide\$INFO[Container(52).ListItem(-1).Overlay]</texture>
+							<texture>overlays\wide\$INFO[Container(62).ListItem(-1).Overlay]</texture>
 							<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 						</control>
 						<control type="image">
@@ -1491,7 +1491,7 @@
 					<top>560</top>
 					<width>426</width>
 					<height>240</height>
-					<visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
+					<visible>!IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
 					<control type="group">
 						<animation type="WindowOpen" reversible="false">
 							<effect type="slide" start="0,-148" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out"/>
@@ -1508,8 +1508,8 @@
 							<height>240</height>
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
-							<info>Container(52).ListItem(1).ActualIcon</info>
-							<visible>IsEmpty(Container(52).ListItem(1).Thumb)</visible>
+							<info>Container(62).ListItem(1).Icon</info>
+							<visible>IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1518,15 +1518,15 @@
 							<height>240</height>
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
-							<info>Container(52).ListItem(1).Thumb</info>
-							<visible>!IsEmpty(Container(52).ListItem(1).Thumb)</visible>
+							<info>Container(62).ListItem(1).Thumb</info>
+							<visible>!IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>426</width>
 							<height>240</height>
-							<texture>overlays\wide\$INFO[Container(52).ListItem(1).Overlay]</texture>
+							<texture>overlays\wide\$INFO[Container(62).ListItem(1).Overlay]</texture>
 							<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 						</control>
 						<control type="image">
@@ -1561,8 +1561,8 @@
 							<height>339</height>
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
-							<info>Container(52).ListItem(0).ActualIcon</info>
-							<visible>IsEmpty(Container(52).ListItem(0).Thumb)</visible>
+							<info>Container(62).ListItem(0).Icon</info>
+							<visible>IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1571,15 +1571,15 @@
 							<height>339</height>
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
-							<info>Container(52).ListItem(0).Thumb</info>
-							<visible>!IsEmpty(Container(52).ListItem(0).Thumb)</visible>
+							<info>Container(62).ListItem(0).Thumb</info>
+							<visible>!IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>600</width>
 							<height>339</height>
-							<texture>overlays\wide\$INFO[Container(52).ListItem(0).Overlay]</texture>
+							<texture>overlays\wide\$INFO[Container(62).ListItem(0).Overlay]</texture>
 							<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 						</control>
 						<control type="image">
@@ -1608,16 +1608,16 @@
 			<itemlayout height="585" width="246"/>
 			<focusedlayout height="585" width="246"/>
 		</control>
-		<control type="wraplist" id="52">
+		<control type="wraplist" id="62">
 			<left>921</left>
 			<top>240</top>
 			<width>984</width>
 			<height>585</height>
-			<visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+			<visible>Container.Content(Episodes)</visible>
 			<onleft>ActivateWindow(1201)</onleft>
 			<onright>ActivateWindow(1201)</onright>
-			<onup>52</onup>
-			<ondown>52</ondown>
+			<onup>62</onup>
+			<ondown>62</ondown>
 			<viewtype label="50136">list</viewtype>
 			<pagecontrol>-</pagecontrol>
 			<scrolltime>200</scrolltime>
@@ -1717,8 +1717,8 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.IsVisible(52)</visible>
-			<visible>Container.Content(Episodes) | Container.Content(MusicVideos)</visible>
+			<visible>Control.IsVisible(62)</visible>
+			<visible>Container.Content(Episodes)</visible>
 			<control type="image">
 				<left>1773</left>
 				<top>339</top>
@@ -1726,7 +1726,7 @@
 				<height>96</height>
 				<texture>menu\nav\nav_arrow_up_NF.png</texture>
 				<animation effect="fade" time="600">Visible</animation>
-				<visible>!Container(52).OnPrevious</visible>
+				<visible>!Container(62).OnPrevious</visible>
 			</control>
 			<control type="image">
 				<left>1773</left>
@@ -1738,7 +1738,7 @@
 					<effect type="slide" start="0,-15" end="0" center="auto" time="300"/>
 					<effect type="fade" start="100" end="0" time="300"/>
 				</animation>
-				<visible>Container(52).OnPrevious</visible>
+				<visible>Container(62).OnPrevious</visible>
 			</control>
 			<control type="image">
 				<left>1773</left>
@@ -1747,7 +1747,7 @@
 				<height>96</height>
 				<texture>menu\nav\nav_arrow_down_NF.png</texture>
 				<animation effect="fade" time="600">Visible</animation>
-				<visible>!Container(52).OnNext</visible>
+				<visible>!Container(62).OnNext</visible>
 			</control>
 			<control type="image">
 				<left>1773</left>
@@ -1759,7 +1759,7 @@
 					<effect type="slide" start="0,15" end="0" center="auto" time="300"/>
 					<effect type="fade" start="100" end="0" time="300"/>
 				</animation>
-				<visible>Container(52).OnNext</visible>
+				<visible>Container(62).OnNext</visible>
 			</control>
 		</control>
 		<control type="group">

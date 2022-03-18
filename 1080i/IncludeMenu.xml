@@ -74,7 +74,7 @@
 			<visible>!Skin.HasSetting(Disable_Music_Home_Icon)</visible>
 			<icon>icon_home_music.png</icon>
 			<label>1211</label>
-			<onclick>ActivateWindow(MyMusic)</onclick>
+			<onclick>ActivateWindow(Music)</onclick>
 		</item>
 	</include>
 	<include name="Menu_Videos">
@@ -100,7 +100,7 @@
 			<visible>Library.HasContent(TVShows)</visible>
 			<icon>icon_home_tv_library.png</icon>
 			<label>$LOCALIZE[50067]</label>
-			<onclick>ActivateWindow(VideoLibrary,tvshowtitles)</onclick>
+			<onclick>ActivateWindow(Videos,TvShowTitles)</onclick>
 		</item>
 	</include>
 	<include name="Menu_Movie_Library">
@@ -109,7 +109,7 @@
 			<visible>Library.HasContent(Movies)</visible>
 			<icon>icon_home_movie_library.png</icon>
 			<label>$LOCALIZE[20342]</label>
-			<onclick>ActivateWindow(VideoLibrary,movietitles)</onclick>
+			<onclick>ActivateWindow(Videos,MovieTitles)</onclick>
 		</item>
 	</include>
 	<include name="Menu_Music_Video_Library">
@@ -118,7 +118,7 @@
 			<visible>Library.HasContent(MusicVideos)</visible>
 			<icon>icon_home_musicvideo_library.png</icon>
 			<label>$LOCALIZE[50068]</label>
-			<onclick>ActivateWindow(VideoLibrary,musicvideotitles)</onclick>
+			<onclick>ActivateWindow(Videos,MusicVideoTitles)</onclick>
 		</item>
 	</include>
 	<include name="Menu_Pictures">
@@ -126,7 +126,7 @@
 			<visible>!Skin.HasSetting(Disable_Pictures_Home_Icon)</visible>
 			<icon>icon_home_pictures.png</icon>
 			<label>1213</label>
-			<onclick>ActivateWindow(MyPictures)</onclick>
+			<onclick>ActivateWindow(pictures)</onclick>
 		</item>
 	</include>
 	<include name="Menu_Games">
@@ -142,7 +142,7 @@
 			<visible>!Skin.HasSetting(Disable_File_Manager_Home_Icon)</visible>
 			<icon>icon_home_filemanager.png</icon>
 			<label>7</label>
-			<onclick>ActivateWindow(MyFiles)</onclick>
+			<onclick>ActivateWindow(filemanager)</onclick>
 		</item>
 	</include>
 	<include name="Menu_Weather">
@@ -158,21 +158,21 @@
 		<item>
 			<icon>menu\settings\videos.png</icon>
 			<label>10017</label>
-			<onclick>ActivateWindow(MyVideosSettings)</onclick>
+			<onclick>ActivateWindow(VideosSettings)</onclick>
 		</item>
 	</include>
 	<include name="Settings_Music">
 		<item>
 			<icon>menu\settings\music.png</icon>
 			<label>10015</label>
-			<onclick>ActivateWindow(MyMusicSettings)</onclick>
+			<onclick>ActivateWindow(musicsettings)</onclick>
 		</item>
 	</include>
 	<include name="Settings_Pictures">
 		<item>
 			<icon>menu\settings\pictures.png</icon>
 			<label>10012</label>
-			<onclick>ActivateWindow(MyPicturesSettings)</onclick>
+			<onclick>ActivateWindow(picturessettings)</onclick>
 		</item>
 	</include>
 	<include name="Settings_Profiles">
@@ -186,7 +186,7 @@
 		<item>
 			<icon>menu\settings\weather.png</icon>
 			<label>10014</label>
-			<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+			<onclick>ActivateWindow(WeatherSettings)</onclick>
 		</item>
 	</include>
 	<include name="Settings_System">
@@ -686,13 +686,13 @@
 					<include>Menu_Videos</include>
 					<include>Menu_Movie_Library</include>
 					<include>Menu_Tv_Library</include>
-					<include>Menu_Music_Video_Library</include>
 					<include>Menu_Play_DVD</include>
 					<include>Menu_Pictures</include>
 					<include>Menu_FileManager</include>
 					<include>Menu_Weather</include>
-					<include>Menu_Music</include>
 					<include>Menu_Scripts</include>
+					<include>Menu_Music_Video_Library</include>
+					<include>Menu_Music</include>
 				</content>
 			</control>
 			<include>Menu_Icons</include>
@@ -1161,7 +1161,7 @@
 				<onright>9001</onright>
 				<onup>close</onup>
 				<ondown>9010</ondown>
-				<onclick>ActivateWindow(MyVideosSettings)</onclick>
+				<onclick>ActivateWindow(VideosSettings)</onclick>
 			</control>
 			<control type="button" id="9001">
 				<left>-225</left>
@@ -1174,7 +1174,7 @@
 				<onright>9002</onright>
 				<onup>close</onup>
 				<ondown>9011</ondown>
-				<onclick>ActivateWindow(MyMusicSettings)</onclick>
+				<onclick>ActivateWindow(musicsettings)</onclick>
 			</control>
 			<control type="button" id="9002">
 				<left>25</left>
@@ -1187,7 +1187,7 @@
 				<onright>9003</onright>
 				<onup>close</onup>
 				<ondown>9012</ondown>
-				<onclick>ActivateWindow(MyPicturesSettings)</onclick>
+				<onclick>ActivateWindow(picturessettings)</onclick>
 			</control>
 			<control type="button" id="9003">
 				<left>275</left>
@@ -1213,7 +1213,7 @@
 				<onright>9011</onright>
 				<onup>9000</onup>
 				<ondown>9020</ondown>
-				<onclick>ActivateWindow(MyWeatherSettings)</onclick>
+				<onclick>ActivateWindow(WeatherSettings)</onclick>
 			</control>
 			<control type="button" id="9011">
 				<left>-225</left>

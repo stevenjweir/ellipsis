@@ -1,892 +1,942 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <include name="DVD_Hybrid_View">
-        <control type="group">
-            <left>998</left>
-            <top>264</top>
-            <visible>Control.IsVisible(55)</visible>
-            <!-- DVD Hybrid View Icons - Counter Clockwise Mothion -->
-            <control type="group" id="5501">
-                <visible>Container(55).OnPrevious</visible>
-                <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
-                <!-- Hide Far Right Icon On Move Previous -->
-                <control type="group">
-                    <visible>Container(55).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(55).ListItemNoWrap(3).Label)</visible>
-                    <animation type="Hidden" reversible="false">
-                        <effect type="fade" start="100" end="0" time="250" />
-                        <effect type="slide" start="0" end="192" time="250" />
-                    </animation>
-                    <left>471</left>
-                    <top>63</top>
-                    <width>290</width>
-                    <height>849</height>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(3).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(3).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(3).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(3).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(3).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(3).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(3).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(3).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-                <!-- Move Icon 2 To Icon 3 Position On Move Previous -->
-                <control type="group">
-                    <visible>Container(55).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(55).ListItemNoWrap(2).Label)</visible>
-                    <animation effect="zoom" start="238,33,330,969" end="471,63,290,849" time="250" reversible="false">Hidden</animation>
-                    <left>238</left>
-                    <top>33</top>
-                    <width>330</width>
-                    <height>969</height>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-                <!-- Move Icon 1 To Icon 2 Position On Move Previous -->
-                <control type="group">
-                    <visible>Container(55).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(55).ListItemNoWrap(1).Label)</visible>
-                    <animation effect="zoom" start="0,0,376,1104" end="238,33,330,969" time="250" reversible="false">Hidden</animation>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>376</width>
-                    <height>1104</height>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-                <!-- Show Far Left Icon On Move Previous -->
-                <control type="group">
-                    <visible>Container(55).OnPrevious</visible>
-                    <animation type="Hidden" reversible="false">
-                        <effect type="fade" start="0" end="100" time="250" />
-                        <effect type="slide" start="-192" end="0" time="250" />
-                    </animation>
-                    <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>376</width>
-                    <height>1104</height>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-            </control>
-            <!-- DVD Hybrid View Icons - Clockwise Mothion -->
-            <control type="group" id="5502">
-                <visible>Container(55).OnNext</visible>
-                <animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
-                <!-- Show Far Right Icon On Move Next -->
-                <control type="group">
-                    <visible>Container(55).OnNext</visible>
-                    <visible>!IsEmpty(Container(55).ListItemNoWrap(2).Label)</visible>
-                    <animation type="Hidden" reversible="false">
-                        <effect type="fade" start="0" end="100" time="250" />
-                        <effect type="slide" start="192" end="0" time="250" />
-                    </animation>
-                    <animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
-                    <left>471</left>
-                    <top>63</top>
-                    <width>290</width>
-                    <height>849</height>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-                <!-- Move Icon 3 To Icon 2 Position On Move Next -->
-                <control type="group">
-                    <visible>Container(55).OnNext</visible>
-                    <visible>!IsEmpty(Container(55).ListItemNoWrap(1).Label)</visible>
-                    <animation effect="zoom" start="471,63,290,849" end="238,33,330,969" time="250" reversible="false">Hidden</animation>
-                    <left>471</left>
-                    <top>63</top>
-                    <width>290</width>
-                    <height>849</height>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-                <!-- Move Icon 2 To Icon 1 Position On Move Next -->
-                <control type="group">
-                    <visible>Container(55).OnNext</visible>
-                    <visible>!IsEmpty(Container(55).ListItemNoWrap(0).Label)</visible>
-                    <animation effect="zoom" start="238,33,330,969" end="0,0,376,1104" time="250" reversible="false">Hidden</animation>
-                    <left>238</left>
-                    <top>33</top>
-                    <width>330</width>
-                    <height>969</height>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-                <!-- Hide Far Left Icon On Move Next -->
-                <control type="group">
-                    <visible>Container(55).OnNext</visible>
-                    <animation type="Hidden" reversible="false">
-                        <effect type="fade" start="100" end="0" time="250" />
-                        <effect type="slide" start="0" end="-192" time="250" />
-                    </animation>
-                    <left>0</left>
-                    <top>0</top>
-                    <width>376</width>
-                    <height>1104</height>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(-1).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem((-1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(-1).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(-1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(-1).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(-1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(-1).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(-1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-            </control>
-            <!-- DVD Hybrid View Static Icons -->
-            <control type="group" id="5500">
-                <visible>!Control.IsVisible(5501)  + !Control.IsVisible(5502)</visible>
-                <!-- Icon 3 -->
-                <control type="group">
-                    <left>471</left>
-                    <top>63</top>
-                    <width>290</width>
-                    <height>849</height>
-                    <animation type="WindowOpen" reversible="false">
-                        <effect type="slide" start="-471" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" />
-                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" />
-                    </animation>
-                    <animation type="WindowClose" reversible="false">
-                        <effect type="slide" start="0" end="-471" center="auto" time="150" tween="back" easing="in" />
-                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
-                    </animation>
-                    <visible>!IsEmpty(Container(55).ListItemNoWrap(2).Label)</visible>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(2).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>424</top>
-                        <width>290</width>
-                        <height>424</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-                <!-- Icon 2 -->
-                <control type="group">
-                    <left>238</left>
-                    <top>33</top>
-                    <width>330</width>
-                    <height>969</height>
-                    <animation type="WindowOpen" reversible="false">
-                        <effect type="slide" start="-238" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" />
-                        <effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" />
-                    </animation>
-                    <animation type="WindowClose" reversible="false">
-                        <effect type="slide" start="0" end="-238" center="auto" time="150" tween="back" easing="in" />
-                        <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
-                    </animation>
-                    <visible>!IsEmpty(Container(55).ListItemNoWrap(1).Label)</visible>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(1).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>484</top>
-                        <width>330</width>
-                        <height>484</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-                <!-- Icon 1 -->
-                <control type="group">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>376</width>
-                    <height>1104</height>
-                    <camera x="0" y="0" />
-                    <animation type="WindowOpen" reversible="false">
-                        <effect type="fade" start="0" end="100" time="150" tween="sine" easing="out" />
-                        <effect type="rotatey" start="90" end="0" center="0,0" time="150" tween="sine" easing="out" />
-                    </animation>
-                    <animation type="WindowClose" reversible="false">
-                        <effect type="fade" start="100" end="0" time="150" delay="150" tween="sine" easing="in" />
-                        <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" />
-                    </animation>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture diffuse="dvdbox-diffuse.png" />
-                        <info>Container(55).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>0</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <texture>dvdbox-overlay.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <aspectratio align="center" scalediffuse="false">scale</aspectratio>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png" />
-                        <info>Container(55).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(55).ListItem(0).Thumb)</visible>
-                    </control>
-                    <control type="image">
-                        <left>0</left>
-                        <top>552</top>
-                        <width>376</width>
-                        <height>552</height>
-                        <texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
-                    </control>
-                </control>
-            </control>
-        </control>
-        <control type="list" id="55">
-            <left>162</left>
-            <top>264</top>
-            <width>798</width>
-            <height>552</height>
-            <onleft>ActivateWindow(1201)</onleft>
-            <onright>ActivateWindow(1201)</onright>
-            <viewtype label="50132">list</viewtype>
-            <pagecontrol>-</pagecontrol>
-            <scrolltime>200</scrolltime>
-            <itemlayout height="69" width="798">
-                <control type="image">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>798</width>
-                    <height>69</height>
-                    <texture border="4,5,6,8">controls\button_nf.png</texture>
-                </control>
-                <control type="image">
-                    <left>15</left>
-                    <top>6</top>
-                    <width>52</width>
-                    <height>52</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
-                </control>
-                <control type="label">
-                    <left>82</left>
-                    <top>6</top>
-                    <width>502</width>
-                    <height>52</height>
-                    <font>Default</font>
-                    <aligny>center</aligny>
-                    <selectedcolor>Highlight</selectedcolor>
-                    <textcolor>Text</textcolor>
-                    <align>left</align>
-                    <info>ListItem.Label</info>
-                </control>
-                <control type="label">
-                    <left>750</left>
-                    <top>6</top>
-                    <width>180</width>
-                    <height>52</height>
-                    <font>Default</font>
-                    <aligny>center</aligny>
-                    <selectedcolor>Highlight</selectedcolor>
-                    <textcolor>Text</textcolor>
-                    <align>right</align>
-                    <info>ListItem.Label2</info>
-                </control>
-            </itemlayout>
-            <focusedlayout height="69" width="798">
-                <control type="image">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>798</width>
-                    <height>69</height>
-                    <texture border="4,5,6,8">controls\button_nf.png</texture>
-                    <visible>!Control.HasFocus(55)</visible>
-                </control>
-                <control type="image">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>798</width>
-                    <height>69</height>
-                    <texture border="4,5,6,8">controls\button_f.png</texture>
-                    <visible>Control.HasFocus(55)</visible>
-                </control>
-                <control type="image">
-                    <left>15</left>
-                    <top>6</top>
-                    <width>52</width>
-                    <height>52</height>
-                    <texture>$INFO[ListItem.Icon]</texture>
-                </control>
-                <control type="label">
-                    <left>82</left>
-                    <top>6</top>
-                    <width>502</width>
-                    <height>52</height>
-                    <font>Default</font>
-                    <aligny>center</aligny>
-                    <selectedcolor>Highlight</selectedcolor>
-                    <textcolor>Text</textcolor>
-                    <align>left</align>
-                    <info>ListItem.Label</info>
-                </control>
-                <control type="label">
-                    <left>750</left>
-                    <top>6</top>
-                    <width>180</width>
-                    <height>52</height>
-                    <font>Default</font>
-                    <aligny>center</aligny>
-                    <selectedcolor>Highlight</selectedcolor>
-                    <textcolor>Text</textcolor>
-                    <align>right</align>
-                    <info>ListItem.Label2</info>
-                </control>
-            </focusedlayout>
-        </control>
-        <control type="group">
-            <left>453</left>
-            <top>434</top>
-            <visible>Control.IsVisible(55)</visible>
-            <include>Sort_Letter</include>
-        </control>
-        <control type="group">
-            <visible>Control.IsVisible(55) + !Window.IsActive(1201)</visible>
-            <visible>!Skin.HasSetting(Disable_Icon_Labels)</visible>
-            <animation effect="fade" time="300">Visible</animation>
-            <animation effect="fade" time="300">Hidden</animation>
-            <animation effect="fade" time="300">WindowOpen</animation>
-            <animation effect="fade" time="300">WindowClose</animation>
-            <control type="image">
-                <left>506</left>
-                <top>909</top>
-                <width>908</width>
-                <height>72</height>
-                <texture>filter_iconlabel.png</texture>
-            </control>
-            <control type="label">
-                <description>Current Selection</description>
-                <left>0</left>
-                <top>906</top>
-                <width>1920</width>
-                <height>72</height>
-                <align>center</align>
-                <aligny>center</aligny>
-                <label>$INFO[Container(55).ListItem.Label]</label>
-                <font>Selected_Item</font>
-                <textcolor>TextSelectedItem</textcolor>
-                <shadowcolor>TextShadow</shadowcolor>
-            </control>
-        </control>
-    </include>
+	<include name="DVD_Hybrid_View">
+		<control type="group">
+			<left>998</left>
+			<top>230</top>
+			<visible>Control.IsVisible(55)</visible>
+			<!-- DVD Hybrid View Icons - Counter Clockwise Mothion -->
+			<control type="group" id="5501">
+				<visible>Container(55).OnPrevious</visible>
+				<animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
+				<!-- Hide Far Right Icon On Move Previous -->
+				<control type="group">
+					<visible>Container(55).OnPrevious</visible>
+					<visible>!IsEmpty(Container(55).ListItemNoWrap(3).Label)</visible>
+					<animation type="Hidden" reversible="false">
+						<effect type="fade" start="100" end="0" time="250"/>
+						<effect type="slide" start="0" end="192" time="250"/>
+					</animation>
+					<left>471</left>
+					<top>63</top>
+					<width>290</width>
+					<height>849</height>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(3).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(3).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(3).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(3).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(3).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(3).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(3).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(3).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+				<!-- Move Icon 2 To Icon 3 Position On Move Previous -->
+				<control type="group">
+					<visible>Container(55).OnPrevious</visible>
+					<visible>!IsEmpty(Container(55).ListItemNoWrap(2).Label)</visible>
+					<animation effect="zoom" start="238,33,330,969" end="471,63,290,849" time="250" reversible="false">Hidden</animation>
+					<left>238</left>
+					<top>33</top>
+					<width>330</width>
+					<height>969</height>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(2).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(2).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(2).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(2).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+				<!-- Move Icon 1 To Icon 2 Position On Move Previous -->
+				<control type="group">
+					<visible>Container(55).OnPrevious</visible>
+					<visible>!IsEmpty(Container(55).ListItemNoWrap(1).Label)</visible>
+					<animation effect="zoom" start="0,0,376,1104" end="238,33,330,969" time="250" reversible="false">Hidden</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>376</width>
+					<height>1104</height>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(1).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(1).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(1).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(1).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+				<!-- Show Far Left Icon On Move Previous -->
+				<control type="group">
+					<visible>Container(55).OnPrevious</visible>
+					<animation type="Hidden" reversible="false">
+						<effect type="fade" start="0" end="100" time="250"/>
+						<effect type="slide" start="-192" end="0" time="250"/>
+					</animation>
+					<animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>376</width>
+					<height>1104</height>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(0).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(0).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(0).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(0).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+			</control>
+			<!-- DVD Hybrid View Icons - Clockwise Mothion -->
+			<control type="group" id="5502">
+				<visible>Container(55).OnNext</visible>
+				<animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>
+				<!-- Show Far Right Icon On Move Next -->
+				<control type="group">
+					<visible>Container(55).OnNext</visible>
+					<visible>!IsEmpty(Container(55).ListItemNoWrap(2).Label)</visible>
+					<animation type="Hidden" reversible="false">
+						<effect type="fade" start="0" end="100" time="250"/>
+						<effect type="slide" start="192" end="0" time="250"/>
+					</animation>
+					<animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation>
+					<left>471</left>
+					<top>63</top>
+					<width>290</width>
+					<height>849</height>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(2).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(2).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(2).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(2).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+				<!-- Move Icon 3 To Icon 2 Position On Move Next -->
+				<control type="group">
+					<visible>Container(55).OnNext</visible>
+					<visible>!IsEmpty(Container(55).ListItemNoWrap(1).Label)</visible>
+					<animation effect="zoom" start="471,63,290,849" end="238,33,330,969" time="250" reversible="false">Hidden</animation>
+					<left>471</left>
+					<top>63</top>
+					<width>290</width>
+					<height>849</height>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(1).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(1).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(1).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(1).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+				<!-- Move Icon 2 To Icon 1 Position On Move Next -->
+				<control type="group">
+					<visible>Container(55).OnNext</visible>
+					<visible>!IsEmpty(Container(55).ListItemNoWrap(0).Label)</visible>
+					<animation effect="zoom" start="238,33,330,969" end="0,0,376,1104" time="250" reversible="false">Hidden</animation>
+					<left>238</left>
+					<top>33</top>
+					<width>330</width>
+					<height>969</height>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(0).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(0).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(0).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(0).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+				<!-- Hide Far Left Icon On Move Next -->
+				<control type="group">
+					<visible>Container(55).OnNext</visible>
+					<animation type="Hidden" reversible="false">
+						<effect type="fade" start="100" end="0" time="250"/>
+						<effect type="slide" start="0" end="-192" time="250"/>
+					</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>376</width>
+					<height>1104</height>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(-1).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem((-1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(-1).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(-1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(-1).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(-1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(-1).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(-1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+			</control>
+			<!-- DVD Hybrid View Static Icons -->
+			<control type="group" id="5500">
+				<visible>!Control.IsVisible(5501)  + !Control.IsVisible(5502)</visible>
+				<!-- Icon 3 -->
+				<control type="group">
+					<left>471</left>
+					<top>63</top>
+					<width>290</width>
+					<height>849</height>
+					<animation type="WindowOpen" reversible="false">
+						<effect type="slide" start="-471" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out"/>
+						<effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out"/>
+					</animation>
+					<animation type="WindowClose" reversible="false">
+						<effect type="slide" start="0" end="-471" center="auto" time="150" tween="back" easing="in"/>
+						<effect type="fade" start="100" end="0" time="150" tween="sine" easing="in"/>
+					</animation>
+					<visible>!IsEmpty(Container(55).ListItemNoWrap(2).Label)</visible>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(2).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(2).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(2).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(2).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>424</top>
+						<width>290</width>
+						<height>424</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+				<!-- Icon 2 -->
+				<control type="group">
+					<left>238</left>
+					<top>33</top>
+					<width>330</width>
+					<height>969</height>
+					<animation type="WindowOpen" reversible="false">
+						<effect type="slide" start="-238" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out"/>
+						<effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out"/>
+					</animation>
+					<animation type="WindowClose" reversible="false">
+						<effect type="slide" start="0" end="-238" center="auto" time="150" tween="back" easing="in"/>
+						<effect type="fade" start="100" end="0" time="150" tween="sine" easing="in"/>
+					</animation>
+					<visible>!IsEmpty(Container(55).ListItemNoWrap(1).Label)</visible>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(1).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(1).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(1).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(1).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>484</top>
+						<width>330</width>
+						<height>484</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+				<!-- Icon 1 -->
+				<control type="group">
+					<left>0</left>
+					<top>0</top>
+					<width>376</width>
+					<height>1104</height>
+					<camera x="0" y="0"/>
+					<animation type="WindowOpen" reversible="false">
+						<effect type="fade" start="0" end="100" time="150" tween="sine" easing="out"/>
+						<effect type="rotatey" start="90" end="0" center="0,0" time="150" tween="sine" easing="out"/>
+					</animation>
+					<animation type="WindowClose" reversible="false">
+						<effect type="fade" start="100" end="0" time="150" delay="150" tween="sine" easing="in"/>
+						<effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out"/>
+					</animation>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png"/>
+						<info>Container(55).ListItem(0).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(0).Art(poster)]</texture>
+						<visible>!IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<texture>dvdbox-overlay.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(0).Icon</info>
+						<visible>IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
+						<info>Container(55).ListItem(0).Thumb</info>
+						<visible>!IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>552</top>
+						<width>376</width>
+						<height>552</height>
+						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">dvdbox-overlay.png</texture>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="list" id="55">
+			<visible>!Container.Content(MusicVideos) + !Container.Content(Episodes)</visible>
+			<left>162</left>
+			<top>161</top>
+			<width>798</width>
+			<height>690</height>
+			<onleft>ActivateWindow(1201)</onleft>
+			<onright>60</onright>
+			<viewtype label="50132">list</viewtype>
+			<pagecontrol>60</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<itemlayout height="69" width="798">
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>798</width>
+					<height>69</height>
+					<texture border="4,5,6,8">controls\button_nf.png</texture>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>6</top>
+					<width>52</width>
+					<height>52</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<visible>IsEmpty(ListItem.Art(poster))</visible>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>6</top>
+					<width>52</width>
+					<height>52</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Art(poster)]</texture>
+				</control>
+				<control type="label">
+					<left>82</left>
+					<top>6</top>
+					<width>700</width>
+					<height>52</height>
+					<font>Medium_Large</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>left</align>
+					<label>$INFO[ListItem.Label] [COLOR=TextMedium]$INFO[ListItem.Label2, - ,][/COLOR]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="69" width="798">
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>798</width>
+					<height>69</height>
+					<texture border="4,5,6,8">controls\button_nf.png</texture>
+					<visible>!Control.HasFocus(55)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>798</width>
+					<height>69</height>
+					<texture border="4,5,6,8">controls\button_f.png</texture>
+					<visible>Control.HasFocus(55)</visible>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>6</top>
+					<width>52</width>
+					<height>52</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<visible>IsEmpty(ListItem.Art(poster))</visible>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>6</top>
+					<width>52</width>
+					<height>52</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[ListItem.Art(poster)]</texture>
+				</control>
+				<control type="label">
+					<left>82</left>
+					<top>6</top>
+					<width>700</width>
+					<height>52</height>
+					<font>Medium_Large</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>left</align>
+					<label>$INFO[ListItem.Label] [COLOR=TextMedium]$INFO[ListItem.Label2, - ,][/COLOR]</label>
+				</control>
+			</focusedlayout>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(55)</visible>
+			<top>-20</top>
+			<left>10</left>
+			<control type="image">
+				<left>1804</left>
+				<top>112</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>menu\nav\nav_arrow_up_NF.png</texture>
+				<animation effect="fade" time="600">Visible</animation>
+				<visible>!Container(55).OnPrevious</visible>
+			</control>
+			<control type="image">
+				<left>1804</left>
+				<top>112</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>menu\nav\nav_arrow_up_FO.png</texture>
+				<animation type="Hidden" reversible="false">
+					<effect type="slide" start="0,-15" end="0" center="auto" time="300"/>
+					<effect type="fade" start="100" end="0" time="300"/>
+				</animation>
+				<visible>Container(55).OnPrevious</visible>
+			</control>
+			<control type="scrollbar" id="60">
+				<left>1824</left>
+				<height>690</height>
+				<top>175</top>
+				<width>18</width>
+				<onleft>55</onleft>
+				<onright>ActivateWindow(1201)</onright>
+			</control>
+			<control type="image">
+				<left>1804</left>
+				<top>868</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>menu\nav\nav_arrow_down_NF.png</texture>
+				<animation effect="fade" time="600">Visible</animation>
+				<visible>!Container(55).OnNext</visible>
+			</control>
+			<control type="image">
+				<left>1804</left>
+				<top>868</top>
+				<width>60</width>
+				<height>60</height>
+				<texture>menu\nav\nav_arrow_down_FO.png</texture>
+				<animation type="Hidden" reversible="false">
+					<effect type="slide" start="0,15" end="0" center="auto" time="300"/>
+					<effect type="fade" start="100" end="0" time="300"/>
+				</animation>
+				<visible>Container(55).OnNext</visible>
+			</control>
+			<control type="label">
+				<left>560</left>
+				<top>865</top>
+				<width>1200</width>
+				<align>right</align>
+				<font>Medium_Large</font>
+				<scroll>true</scroll>
+				<label>$INFO[Container(55).NumItems] $LOCALIZE[50129] - $LOCALIZE[50130] $INFO[Container(55).CurrentPage] $LOCALIZE[20163] $INFO[Container(55).NumPages]</label>
+			</control>
+		</control>
+		<control type="group">
+			<left>453</left>
+			<top>434</top>
+			<visible>Control.IsVisible(55)</visible>
+			<include>Sort_Letter</include>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(55) + !Window.IsActive(1201)</visible>
+			<visible>!Skin.HasSetting(Disable_Icon_Labels)</visible>
+			<animation effect="fade" time="300">Visible</animation>
+			<animation effect="fade" time="300">Hidden</animation>
+			<animation effect="fade" time="300">WindowOpen</animation>
+			<animation effect="fade" time="300">WindowClose</animation>
+			<control type="image">
+				<left>506</left>
+				<top>909</top>
+				<width>908</width>
+				<height>72</height>
+				<texture>filter_iconlabel.png</texture>
+			</control>
+			<control type="label">
+				<description>Current Selection</description>
+				<left>0</left>
+				<top>906</top>
+				<width>1920</width>
+				<height>72</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[Container(55).ListItem.Label] $INFO[Container(55).ListItem.Year,(,)]</label>
+				<font>Selected_Item</font>
+				<textcolor>TextSelectedItem</textcolor>
+				<shadowcolor>TextShadow</shadowcolor>
+			</control>
+		</control>
+	</include>
 </includes>

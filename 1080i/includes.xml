@@ -69,6 +69,23 @@
 			</control>
 		</control>
 	</include>
+	<include name="Center_Tab_Settings">
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,0)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,1)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,2)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,3)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,4)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,5)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,6)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,7)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,8)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,9)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,10)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,11)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,12)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,13)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,14)">Conditional</animation>
+	</include>
 	<include name="KeyboardButton">
 		<width>72</width>
 		<height>72</height>
@@ -977,7 +994,7 @@
 	<include name="Clock_Time">
 		<control type="grouplist">
 			<left>0</left>
-			<top>12</top>
+			<top>6</top>
 			<width>1920</width>
 			<height>51</height>
 			<itemgap>9</itemgap>
@@ -1046,8 +1063,8 @@
 				<top>0</top>
 				<width min="15" max="750">auto</width>
 				<height>51</height>
-				<label>[UPPERCASE]$INFO[system.time][COLOR ClockDate] - $INFO[system.date(ddd)][/COLOR][/UPPERCASE]</label>
-				<font>Time</font>
+				<label>$INFO[system.time][COLOR ClockDate] - $INFO[system.date][/COLOR]</label>
+				<font>Time2</font>
 				<textcolor>ClockTime</textcolor>
 				<aligny>center</aligny>
 			</control>
