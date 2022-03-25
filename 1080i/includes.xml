@@ -69,6 +69,45 @@
 			</control>
 		</control>
 	</include>
+	<include name="DefaultSettingButton">
+		<param name="height">69</param>
+		<param name="textoffsetx">22</param>
+		<definition>
+			<textoffsetx>$PARAM[textoffsetx]</textoffsetx>
+			<top>0</top>
+			<height>$PARAM[height]</height>
+			<aligny>center</aligny>
+			<selectedcolor>Highlight</selectedcolor>
+			<texturefocus border="8">controls\button_f.png</texturefocus>
+			<texturenofocus/>
+		</definition>
+	</include>
+	<include name="DefaultDialogButton">
+		<param name="width">315</param>
+		<param name="height">69</param>
+		<param name="wrapmultiline">false</param>
+		<param name="font">Default</param>
+		<param name="onclick"/>
+		<param name="visible">true</param>
+		<param name="focus">controls\button_f.png</param>
+		<param name="nofocus">controls\button_nf.png</param>
+		<definition>
+			<control type="button" id="$PARAM[id]">
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<label>$PARAM[label]</label>
+				<font>$PARAM[font]</font>
+				<textcolor>Text</textcolor>
+				<disabledcolor>DisabledText</disabledcolor>
+				<onclick>$PARAM[onclick]</onclick>
+				<wrapmultiline>$PARAM[wrapmultiline]</wrapmultiline>
+				<align>center</align>
+				<texturefocus border="8">$PARAM[focus]</texturefocus>
+				<texturenofocus border="8">$PARAM[nofocus]</texturenofocus>
+				<visible>$PARAM[visible]</visible>
+			</control>
+		</definition>
+	</include>
 	<include name="Center_Tab_Settings">
 		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,0)">Conditional</animation>
 		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,1)">Conditional</animation>
@@ -436,16 +475,18 @@
 	</include>
 	<include name="Now_Playing_Widget">
 		<control type="group">
+			<top>-907</top>
+			<left>42</left>
 			<visible>!Skin.HasSetting(Disable_Now_Playing_Widget)</visible>
 			<control type="group">
 				<left>1766</left>
-				<top>992</top>
+				<top>985</top>
 				<width>82</width>
 				<height>75</height>
 				<visible>Player.HasAudio + !Player.Paused</visible>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
+					<left>-8</left>
+					<top>-35</top>
 					<width>82</width>
 					<height>75</height>
 					<texture>nowplaying_icon_music.png</texture>
@@ -453,13 +494,13 @@
 			</control>
 			<control type="group">
 				<left>1766</left>
-				<top>992</top>
+				<top>985</top>
 				<width>82</width>
 				<height>75</height>
 				<visible>Player.HasVideo + !Player.Paused</visible>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
+					<left>-8</left>
+					<top>-35</top>
 					<width>82</width>
 					<height>75</height>
 					<texture>nowplaying_icon_video.png</texture>
@@ -467,17 +508,17 @@
 			</control>
 			<control type="group">
 				<left>1766</left>
-				<top>992</top>
+				<top>985</top>
 				<width>82</width>
 				<height>75</height>
 				<visible>Player.HasMedia + Player.Paused</visible>
 				<control type="image">
-					<left>0</left>
-					<top>0</top>
+					<left>-8</left>
+					<top>-35</top>
 					<width>82</width>
 					<height>75</height>
 					<texture>nowplaying_icon_paused.png</texture>
-					<animation effect="fade" start="100" end="50" pulse="true" time="2000" reversible="false" tween="sine" easing="inout" condition="true">Conditional</animation>
+					<animation effect="fade" start="100" end="15" pulse="true" time="1200" reversible="false" tween="sine" easing="inout" condition="true">Conditional</animation>
 				</control>
 			</control>
 			<control type="group">
@@ -510,7 +551,7 @@
 				<visible>Player.HasMedia</visible>
 				<control type="label">
 					<left>1030</left>
-					<top>1024</top>
+					<top>956</top>
 					<width>720</width>
 					<align>right</align>
 					<label>$INFO[Player.Time] / $INFO[Player.Duration]</label>
@@ -521,7 +562,7 @@
 				</control>
 				<control type="label">
 					<left>1030</left>
-					<top>1024</top>
+					<top>956</top>
 					<width>720</width>
 					<align>right</align>
 					<label>$INFO[Player.SeekTime] / $INFO[Player.Duration]</label>
@@ -535,12 +576,12 @@
 	</include>
 	<include name="RSSHome">
 		<control type="group">
-			<visible>system.getbool(lookandfeel.enablerssfeeds) + !Window.IsVisible(114) + !Window.IsVisible(29)</visible>
+			<visible>system.getbool(lookandfeel.enablerssfeeds) + !Window.IsVisible(114) + !Window.IsVisible(29) + Window.IsActive(home)</visible>
 			<control type="rss">
 				<description>rss feed</description>
 				<left>70</left>
-				<top>15</top>
-				<width>742</width>
+				<top>965</top>
+				<width>1802</width>
 				<font>RSS_TopLeft</font>
 				<urlset>1</urlset>
 				<textcolor>RSSHomeText</textcolor>
@@ -550,10 +591,10 @@
 				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			</control>
 			<control type="image">
-				<left>15</left>
-				<top>18</top>
-				<width>31</width>
-				<height>31</height>
+				<left>17</left>
+				<top>968</top>
+				<width>32</width>
+				<height>32</height>
 				<texture>rss_icon.png</texture>
 				<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
 			</control>
@@ -570,8 +611,8 @@
 			<texture>background2.png</texture>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(Listitem.Property(Fanart_Image))]</visible>
-			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(Listitem.Property(Fanart_Image))]</visible>
+			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Art(fanart))]</visible>
 			<visible>![Skin.HasSetting(Enable_Custom_Background) + !IsEmpty(Skin.String(Custom_Background))]</visible>
 			<visible>![Skin.HasSetting(Enable_Custom_Background_Folder) + !IsEmpty(Skin.String(Custom_Background_Folder))]</visible>
 			<visible>!Skin.HasSetting(Enable_Time_Of_Day_Background)</visible>
@@ -592,23 +633,23 @@
 			<height>1080</height>
 			<visible>!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture>filter_keyboard_shadow.png</texture>
+			<texture background="true">filter_keyboard_shadow.png</texture>
 			<visible>!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture>filter_keyboard_shadow.png</texture>
+			<texture background="true">filter_keyboard_shadow.png</texture>
 			<visible>!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
@@ -617,20 +658,20 @@
 			<fadetime>300</fadetime>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>!IsEmpty(Fanart.Image) + IsEmpty(Listitem.Property(Fanart_Image))</visible>
+			<visible>!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
 			<height>1080</height>
-			<texture diffuse="background-diffuse.png" background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+			<texture diffuse="background-diffuse.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
 			<fadetime>300</fadetime>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>!Skin.HasSetting(Disable_Fanart) + !IsEmpty(Listitem.Property(Fanart_Image))</visible>
+			<visible>!Skin.HasSetting(Disable_Fanart) + !IsEmpty(ListItem.Art(fanart))</visible>
 		</control>
-		<control type="largeimage">
+		<control type="image">
 			<left>0</left>
 			<top>0</top>
 			<width>1920</width>
@@ -639,8 +680,8 @@
 			<texture diffuse="background-diffuse.png" background="true"/>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(Listitem.Property(Fanart_Image))]</visible>
-			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(Listitem.Property(Fanart_Image))]</visible>
+			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Art(fanart))]</visible>
 			<visible>Skin.HasSetting(Enable_Custom_Background) + !IsEmpty(Skin.String(Custom_Background))</visible>
 		</control>
 		<control type="multiimage">
@@ -654,16 +695,16 @@
 			<colordiffuse>BackgroundDiffuse</colordiffuse>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(Listitem.Property(Fanart_Image))]</visible>
-			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(Listitem.Property(Fanart_Image))]</visible>
+			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Art(fanart))]</visible>
 			<visible>![Skin.HasSetting(Enable_Custom_Background) + !IsEmpty(Skin.String(Custom_Background))]</visible>
 			<visible>Skin.HasSetting(Enable_Custom_Background_Folder) + !IsEmpty(Skin.String(Custom_Background_Folder))</visible>
 		</control>
 		<control type="group">
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(Listitem.Property(Fanart_Image))]</visible>
-			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(Listitem.Property(Fanart_Image))]</visible>
+			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Art(fanart))]</visible>
 			<visible>![Skin.HasSetting(Enable_Custom_Background) + !IsEmpty(Skin.String(Custom_Background))]</visible>
 			<visible>![Skin.HasSetting(Enable_Custom_Background_Folder) + !IsEmpty(Skin.String(Custom_Background_Folder))]</visible>
 			<visible>Skin.HasSetting(Enable_Time_Of_Day_Background)</visible>

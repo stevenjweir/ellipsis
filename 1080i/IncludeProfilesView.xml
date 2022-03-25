@@ -1731,7 +1731,7 @@
                     <height>72</height>
                     <align>center</align>
                     <aligny>center</aligny>
-                    <label>$LOCALIZE[50072]</label>
+                    <label>[LOWERCASE][CAPITALIZE]$LOCALIZE[50072][/CAPITALIZE][/LOWERCASE]</label>
                     <font>Selected_Item</font>
                     <textcolor>TextSelectedItem</textcolor>
                     <shadowcolor>TextShadow</shadowcolor>

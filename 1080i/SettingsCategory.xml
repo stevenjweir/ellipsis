@@ -106,7 +106,7 @@
 			<description>Default label</description>
 			<left>0</left>
 			<top>0</top>
-			<height>30</height>
+			<height>68</height>
 			<font>Heading</font>
 			<textcolor>Text</textcolor>
 			<align>center</align>
@@ -145,7 +145,7 @@
 				<aligny>center</aligny>
 				<textcolor>TextSelectedItem</textcolor>
 				<shadowcolor>TextShadow</shadowcolor>
-				<label>[UPPERCASE]$LOCALIZE[5] - $INFO[Control.GetLabel(2)][/UPPERCASE]</label>
+				<label>[CAPITALIZE]$LOCALIZE[5] - $INFO[Control.GetLabel(2)][/CAPITALIZE]</label>
 			</control>
 		</control>
 		<control type="group">
@@ -193,7 +193,7 @@
 				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 			</control>
 			<control type="group">
-				<visible>Window.IsVisible(VideosSettings)</visible>
+				<visible>Window.IsVisible(PlayerSettings)</visible>
 				<left>292</left>
 				<include>Center_Tab_Settings</include>
 				<control type="image">
@@ -201,7 +201,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_library_nf.png</texture>
+					<texture>settings\tabs\videos_general_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
 				</control>
@@ -210,7 +210,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_general_nf.png</texture>
+					<texture>settings\tabs\music_files_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
 				</control>
@@ -219,7 +219,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_options_nf.png</texture>
+					<texture>settings\tabs\videos_dvd_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
 				</control>
@@ -228,7 +228,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_scrapers_nf.png</texture>
+					<texture>settings\tabs\pictures_slideshow_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
 				</control>
@@ -246,25 +246,16 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_dvd_nf.png</texture>
+					<texture>settings\tabs\impaired_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-95)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,5)</visible>
-				</control>
-				<control type="image">
-					<left>300</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\impaired_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-94)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,6)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_library_f.png</texture>
+					<texture>settings\tabs\videos_general_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-100) + !Control.HasFocus(20)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-292,0,90,75" end="-296,-3,96,81" time="200"/>
@@ -275,7 +266,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_general_f.png</texture>
+					<texture>settings\tabs\music_files_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-99)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-194,0,90,75" end="-196,-3,96,81" time="200"/>
@@ -286,7 +277,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_options_f.png</texture>
+					<texture>settings\tabs\videos_dvd_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-98)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-94,0,90,75" end="-98,-3,96,81" time="200"/>
@@ -297,7 +288,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_scrapers_f.png</texture>
+					<texture>settings\tabs\pictures_slideshow_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-97)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="4,0,90,75" end="1,-3,96,81" time="200"/>
@@ -319,28 +310,17 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\videos_dvd_f.png</texture>
+					<texture>settings\tabs\impaired_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-95)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="202,0,90,75" end="200,-3,96,81" time="200"/>
-					</animation>
-				</control>
-				<control type="image">
-					<left>300</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\impaired_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-94)</visible>
-					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="300,0,90,75" end="297,-3,96,81" time="200"/>
 					</animation>
 				</control>
 			</control>
 			<control type="group">
 				<left>292</left>
 				<include>Center_Tab_Settings</include>
-				<visible>Window.IsVisible(MusicSettings)</visible>
+				<visible>Window.IsVisible(mediasettings)</visible>
 				<control type="image">
 					<left>-292</left>
 					<top>0</top>
@@ -355,7 +335,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\music_player_nf.png</texture>
+					<texture>settings\tabs\pictures_files_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
 				</control>
@@ -364,7 +344,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\music_files_nf.png</texture>
+					<texture>settings\tabs\videos_options_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
 				</control>
@@ -373,9 +353,18 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\music_cdripping_nf.png</texture>
+					<texture>settings\tabs\videos_library_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
+				</control>
+				<control type="image">
+					<left>100</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_OSD_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-96)</visible>
+					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
@@ -393,7 +382,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\music_player_f.png</texture>
+					<texture>settings\tabs\pictures_files_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-99)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-194,0,90,75" end="-198,-3,96,81" time="200"/>
@@ -404,7 +393,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\music_files_f.png</texture>
+					<texture>settings\tabs\videos_options_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-98)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-96,0,90,75" end="-100,-3,96,81" time="200"/>
@@ -415,79 +404,21 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\music_cdripping_f.png</texture>
+					<texture>settings\tabs\videos_library_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-97)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="2,0,90,75" end="-2,-3,96,81" time="200"/>
 					</animation>
 				</control>
-			</control>
-			<control type="group">
-				<visible>Window.IsVisible(PicturesSettings)</visible>
-				<left>94</left>
-				<include>Center_Tab_Settings</include>
 				<control type="image">
-					<left>-94</left>
+					<left>100</left>
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\pictures_files_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-100)  | Control.HasFocus(20)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
-				</control>
-				<control type="image">
-					<left>4</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\pictures_slideshow_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-99)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
-				</control>
-				<control type="image">
-					<left>-94</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\pictures_files_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-100) + !Control.HasFocus(20)</visible>
+					<texture>settings\tabs\PVR_OSD_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-96)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="-94,0,90,75" end="-98,-3,96,81" time="200"/>
-					</animation>
-				</control>
-				<control type="image">
-					<left>4</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\pictures_slideshow_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-99)</visible>
-					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="4,0,90,75" end="1,-3,96,81" time="200"/>
-					</animation>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Window.IsVisible(WeatherSettings)</visible>
-				<left>45</left>
-				<include>Center_Tab_Settings</include>
-				<control type="image">
-					<left>-45</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\weather_general_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
-				</control>
-				<control type="image">
-					<left>-45</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\weather_general_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-100) + !Control.HasFocus(20)</visible>
-					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="-45,0,90,75" end="-48,-3,96,81" time="200"/>
+						<effect type="zoom" start="100,0,90,75" end="96,-3,96,81" time="200"/>
 					</animation>
 				</control>
 			</control>
@@ -509,7 +440,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_upnp_nf.png</texture>
+					<texture>settings\tabs\network_internet_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
 				</control>
@@ -518,7 +449,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_internet_nf.png</texture>
+					<texture>settings\tabs\network_upnp_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
 				</control>
@@ -527,7 +458,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_control_nf.png</texture>
+					<texture>settings\tabs\network_airplay_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
 				</control>
@@ -536,18 +467,9 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_zeroconf_nf.png</texture>
+					<texture>settings\tabs\weather_general_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-96)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
-				</control>
-				<control type="image">
-					<left>202</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\network_airplay_nf.png</texture>
-					<visible>!ControlGroup(3).HasFocus(-95)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,5)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
@@ -565,7 +487,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_upnp_f.png</texture>
+					<texture>settings\tabs\network_internet_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-99)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-193,0,90,75" end="-197,-3,96,81" time="200"/>
@@ -576,7 +498,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_internet_f.png</texture>
+					<texture>settings\tabs\network_upnp_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-98)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="-94,0,90,75" end="-98,-3,96,81" time="200"/>
@@ -587,7 +509,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_control_f.png</texture>
+					<texture>settings\tabs\network_airplay_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-97)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="4,0,90,75" end="1,-3,96,81" time="200"/>
@@ -598,21 +520,10 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\network_zeroconf_f.png</texture>
+					<texture>settings\tabs\weather_general_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-96)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="103,0,90,75" end="99,-3,96,81" time="200"/>
-					</animation>
-				</control>
-				<control type="image">
-					<left>202</left>
-					<top>0</top>
-					<width>90</width>
-					<height>75</height>
-					<texture>settings\tabs\network_airplay_f.png</texture>
-					<visible>ControlGroup(3).HasFocus(-95)</visible>
-					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
-						<effect type="zoom" start="202,0,90,75" end="200,-3,96,81" time="200"/>
 					</animation>
 				</control>
 			</control>
@@ -670,7 +581,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_debug_nf.png</texture>
+					<texture>settings\tabs\PVR_EPG_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-95)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,5)</visible>
 				</control>
@@ -679,7 +590,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_masterlock_nf.png</texture>
+					<texture>settings\tabs\system_debug_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-94)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,6)</visible>
 				</control>
@@ -743,7 +654,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_debug_f.png</texture>
+					<texture>settings\tabs\PVR_EPG_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-95)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="202,0,90,75" end="200,-3,96,81" time="200"/>
@@ -754,7 +665,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_masterlock_f.png</texture>
+					<texture>settings\tabs\system_debug_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-94)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="300,0,90,75" end="297,-3,96,81" time="200"/>
@@ -762,7 +673,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Window.IsVisible(AppearanceSettings)</visible>
+				<visible>Window.IsVisible(interfacesettings)</visible>
 				<left>194</left>
 				<include>Center_Tab_Settings</include>
 				<control type="image">
@@ -788,7 +699,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\pictures_files_nf.png</texture>
+					<texture>settings\tabs\appearance_screensaver_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
 				</control>
@@ -797,9 +708,18 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\appearance_screensaver_nf.png</texture>
+					<texture>settings\tabs\system_masterlock_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
 					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
+				</control>
+				<control type="image">
+					<left>202</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\skinsettings_homepage_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-96)</visible>
+					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
 					<left>-194</left>
@@ -828,7 +748,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\pictures_files_f.png</texture>
+					<texture>settings\tabs\appearance_screensaver_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-98)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="4,0,90,75" end="1,-3,96,81" time="200"/>
@@ -839,10 +759,21 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\appearance_screensaver_f.png</texture>
+					<texture>settings\tabs\system_masterlock_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-97)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="104,0,90,75" end="100,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>202</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\skinsettings_homepage_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-96)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="202,0,90,75" end="198,-3,96,81" time="200"/>
 					</animation>
 				</control>
 			</control>

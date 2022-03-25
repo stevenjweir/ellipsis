@@ -560,8 +560,9 @@
 				<height>135</height>
 				<width>1350</width>
 				<onup>Dialog.Close(1200)</onup>
+				<onup>9000</onup>
 				<ondown>Dialog.Close(1200)</ondown>
-				<ondown>ActivateWindow(settings)</ondown>
+				<ondown>9000</ondown>
 				<include>Dock_Layout</include>
 				<content>
 					<include>Dock_Settings</include>
@@ -598,7 +599,7 @@
 					<include>Dock_SortDirection</include>
 					<include>Dock_HideForeignAddons</include>
 					<include>Dock_AutoupdateAddons</include>
-					<include>Dock_UpdateLibrary</include>
+					<include>Dock_Update_CleanLibrary</include>
 					<include>Dock_Watched</include>
 					<include>Dock_Search</include>
 					<include>Dock_Filter</include>

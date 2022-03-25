@@ -31,7 +31,7 @@
         </animation>
     </include>
     <include name="Fade_And_Zoom_In_Visible">
-        <animation type="Visble">
+        <animation type="Visible">
             <effect type="fade" start="0" end="100" time="150" delay="50" />
             <effect type="zoom" start="90" end="100" center="auto" time="200" />
         </animation>

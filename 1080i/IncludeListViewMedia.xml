@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="List_View_Media">
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
-			<animation effect="fade" end="40" time="0" condition="true">Conditional</animation>
-			<texture>background.png</texture>
-		</control>
 		<control type="list" id="59">
 			<left>162</left>
-			<top>126</top>
+			<top>156</top>
 			<width>1596</width>
 			<height>759</height>
 			<onleft>ActivateWindow(1201)</onleft>
@@ -190,6 +182,7 @@
 		</control>
 		<control type="group">
 			<visible>Control.IsVisible(59)</visible>
+			<top>50</top>
 			<control type="image">
 				<left>1804</left>
 				<top>65</top>
@@ -252,7 +245,7 @@
 		</control>
 		<control type="group">
 			<left>854</left>
-			<top>434</top>
+			<top>484</top>
 			<visible>Control.IsVisible(59)</visible>
 			<include>Sort_Letter</include>
 		</control>
