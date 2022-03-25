@@ -63,7 +63,8 @@
 		<item>
 			<icon>dock\icons\vis.png</icon>
 			<label>$LOCALIZE[50044]$INFO[visualisation.name]</label>
-			<onclick>Control.Message(500,click)</onclick>
+			<onclick>Dialog.Close(all)</onclick>
+			<onclick>SendClick(500)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Visualisation_Settings">
@@ -156,8 +157,8 @@
 		<item>
 			<icon>dock\icons\slideshow.png</icon>
 			<label>$LOCALIZE[108]</label>
-			<onclick>SendClick(6)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>SendClick(6)</onclick>
 			<visible>Container.HasFiles</visible>
 			<visible>Window.IsVisible(Pictures)</visible>
 		</item>
@@ -166,8 +167,8 @@
 		<item>
 			<icon>dock\icons\slideshow_r.png</icon>
 			<label>$LOCALIZE[13318]</label>
-			<onclick>SendClick(7)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>SendClick(7)</onclick>
 			<visible>Container.HasFolders</visible>
 			<visible>Window.IsVisible(Pictures)</visible>
 		</item>
@@ -176,6 +177,7 @@
 		<item>
 			<icon>dock\icons\random-on.png</icon>
 			<label>$LOCALIZE[590]$LOCALIZE[50053]</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(9)</onclick>
 			<visible>System.GetBool(Slideshow.Shuffle)</visible>
 			<visible>Window.IsVisible(Pictures)</visible>
@@ -183,6 +185,7 @@
 		<item>
 			<icon>dock\icons\random-off.png</icon>
 			<label>$LOCALIZE[590]$LOCALIZE[50054]</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(9)</onclick>
 			<visible>!System.GetBool(Slideshow.Shuffle)</visible>
 			<visible>Window.IsVisible(Pictures)</visible>
@@ -209,38 +212,58 @@
 		<item id="31002">
 			<icon>dock\icons\sort-direction-asc.png</icon>
 			<label>$LOCALIZE[580]</label>
-			<onclick>SendClick(4)</onclick>
+			<onclick>SendClick(10025,4)</onclick>
 			<visible>StringCompare(Container.SortOrder,$LOCALIZE[584])</visible>
+			<visible>Window.IsVisible(videos)</visible>
 		</item>
 		<item id="31012">
 			<icon>dock\icons\sort-direction-des.png</icon>
 			<label>$LOCALIZE[580]</label>
-			<onclick>SendClick(4)</onclick>
+			<onclick>SendClick(10025,4)</onclick>
 			<visible>StringCompare(Container.SortOrder,$LOCALIZE[585])</visible>
+			<visible>Window.IsVisible(videos)</visible>
+		</item>
+				<item id="31020">
+			<icon>dock\icons\sort-direction-asc.png</icon>
+			<label>$LOCALIZE[580]</label>
+			<onclick>SendClick(10502,4)</onclick>
+			<visible>StringCompare(Container.SortOrder,$LOCALIZE[584])</visible>
+			<visible>Window.IsVisible(music)</visible>
+		</item>
+		<item id="31021">
+			<icon>dock\icons\sort-direction-des.png</icon>
+			<label>$LOCALIZE[580]</label>
+			<onclick>SendClick(10502,4)</onclick>
+			<visible>StringCompare(Container.SortOrder,$LOCALIZE[585])</visible>
+			<visible>Window.IsVisible(music)</visible>
 		</item>
 	</include>
 	<include name="Dock_HideForeignAddons">
 		<item id="31003">
 			<icon>dock\icons\filter-on.png</icon>
 			<label>50156</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(7)</onclick>
 			<visible>System.GetBool(general.addonforeignfilter) + Container.Content(addons)</visible>
 		</item>
 		<item id="31004">
 			<icon>dock\icons\filter-off.png</icon>
 			<label>25001</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(7)</onclick>
 			<visible>!System.GetBool(general.addonforeignfilter) + Container.Content(addons)</visible>
 		</item>
 		<item id="31005">
 			<icon>dock\icons\show_broken_on.png</icon>
 			<label>50159</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(8)</onclick>
 			<visible>System.GetBool(general.addonbrokenfilter) + Container.Content(addons)</visible>
 		</item>
 		<item id="31006">
 			<icon>dock\icons\show_broken_off.png</icon>
 			<label>50160</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(8)</onclick>
 			<visible>!System.GetBool(general.addonbrokenfilter) + Container.Content(addons)</visible>
 		</item>
@@ -249,12 +272,14 @@
 		<item id="31007">
 			<icon>dock\icons\search.png</icon>
 			<label>50158</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(5)</onclick>
 			<visible>Window.IsActive(addonbrowser)</visible>
 		</item>
 		<item id="31008">
 			<icon>dock\icons\refresh.png</icon>
 			<label>24034</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(9)</onclick>
 			<visible>Window.IsActive(addonbrowser)</visible>
 		</item>
@@ -263,104 +288,128 @@
 		<item>
 			<icon>dock\icons\new-icon-off.png</icon>
 			<label>$LOCALIZE[50057]</label>
-			<onclick>SendClick(14)</onclick>
+			<onclick>SendClick(10025,14)</onclick>
 			<visible>!System.Setting(HideWatched)</visible>
-			<visible>Window.IsVisible(videolibrary)</visible>
+			<visible>Window.IsVisible(videos)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\new-icon-on.png</icon>
 			<label>$LOCALIZE[50058]</label>
-			<onclick>SendClick(14)</onclick>
+			<onclick>SendClick(10025,14)</onclick>
 			<visible>System.Setting(HideWatched)</visible>
-			<visible>Window.IsVisible(videolibrary)</visible>
+			<visible>Window.IsVisible(videos)</visible>
 		</item>
 	</include>
-	<include name="Dock_UpdateLibrary">
+	<include name="Dock_Update_CleanLibrary">
 		<item>
 			<icon>dock\icons\refresh.png</icon>
 			<label>653</label>
-			<onclick>SendClick(20)</onclick>
+			<onclick>UpdateLibrary(video)</onclick>
 			<visible>!Library.IsScanningVideo</visible>
-			<visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
+			<visible>Window.IsVisible(videos)</visible>
+		</item>
+		<item>
+			<icon>dock\icons\refresh.png</icon>
+			<label>653</label>
+			<onclick>UpdateLibrary(music)</onclick>
+			<visible>Window.IsVisible(music)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\stop.png</icon>
 			<label>13353</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(20)</onclick>
 			<visible>Library.IsScanningVideo</visible>
-			<visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
+			<visible>Window.IsVisible(videos)</visible>
+		</item>
+		<item>
+			<icon>dock\icons\clean.png</icon>
+			<label>334</label>
+			<onclick>CleanLibrary(video)</onclick>
+			<visible>Window.IsVisible(videos)</visible>
+		</item>
+		<item>
+			<icon>dock\icons\clean.png</icon>
+			<label>334</label>
+			<onclick>CleanLibrary(music)</onclick>
+			<visible>Window.IsVisible(music)</visible>
 		</item>
 	</include>
 	<include name="Dock_Search">
 		<item>
 			<icon>dock\icons\search.png</icon>
-			<label>$LOCALIZE[137]: $INFO[Window(musiclibrary).Property(search)]</label>
-			<onclick>SendClick(8)</onclick>
+			<label>$LOCALIZE[137]: $INFO[Window(music).Property(search)]</label>
 			<onclick>Dialog.Close(1201)</onclick>
-			<visible>Window.IsVisible(musiclibrary)</visible>
+			<onclick>SendClick(8)</onclick>
+			<visible>Window.IsVisible(music)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\search.png</icon>
 			<label>$LOCALIZE[137]</label>
-			<onclick>SendClick(8)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
-			<visible>Window.IsVisible(videolibrary)</visible>
+			<onclick>SendClick(8)</onclick>
+			<visible>Window.IsVisible(videos)</visible>
 		</item>
 	</include>
 	<include name="Dock_Filter">
 		<item>
 			<icon>dock\icons\filter-on.png</icon>
-			<label>Filter: On - $INFO[Window(musiclibrary).Property(filter)]</label>
+			<label>$LOCALIZE[587]: $LOCALIZE[16041] - $INFO[Window(music).Property(filter)]</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(19)</onclick>
-			<visible>!IsEmpty(Window(musiclibrary).Property(filter))</visible>
-			<visible>Window.IsVisible(musiclibrary)</visible>
+			<visible>!IsEmpty(Window(music).Property(filter))</visible>
+			<visible>Window.IsVisible(music)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\filter-on.png</icon>
-			<label>Filter: On - $INFO[Window(videolibrary).Property(filter)]</label>
+			<label>$LOCALIZE[587]: $LOCALIZE[16041] - $INFO[Window(videos).Property(filter)]</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(19)</onclick>
-			<visible>!IsEmpty(Window(videolibrary).Property(filter))</visible>
-			<visible>Window.IsVisible(videolibrary)</visible>
+			<visible>!IsEmpty(Window(videos).Property(filter))</visible>
+			<visible>Window.IsVisible(videos)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\filter-off.png</icon>
-			<label>Filter: Off</label>
+			<label>$LOCALIZE[587]: $LOCALIZE[13551]</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(19)</onclick>
-			<visible>IsEmpty(Window(musiclibrary).Property(filter))</visible>
-			<visible>Window.IsVisible(musiclibrary)</visible>
+			<visible>IsEmpty(Window(music).Property(filter))</visible>
+			<visible>Window.IsVisible(music)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\filter-off.png</icon>
-			<label>Filter: Off</label>
+			<label>$LOCALIZE[587]: $LOCALIZE[13551]</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(19)</onclick>
-			<visible>IsEmpty(Window(videolibrary).Property(filter))</visible>
-			<visible>Window.IsVisible(videolibrary)</visible>
+			<visible>IsEmpty(Window(videos).Property(filter))</visible>
+			<visible>Window.IsVisible(videos)</visible>
 		</item>
 	</include>
 	<include name="Dock_PartyMode">
 		<item>
 			<icon>dock\icons\party-mode-on.png</icon>
 			<label>$LOCALIZE[50126]$LOCALIZE[50053]</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>playercontrol(stop)</onclick>
-			<onclick>Dialog.Close(1201)</onclick>
 			<visible>musicpartymode.enabled</visible>
-			<visible>Window.IsVisible(musiclibrary) | Window.IsVisible(videolibrary)</visible>
+			<visible>Window.IsVisible(music) | Container.Content(MusicVideos)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\party-mode-off.png</icon>
 			<label>$LOCALIZE[50126]$LOCALIZE[50054]</label>
+			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>playercontrol(partymode(music))</onclick>
-			<onclick>Dialog.Close(1201)</onclick>
 			<visible>!musicpartymode.enabled</visible>
-			<visible>Window.IsVisible(musiclibrary)</visible>
+			<visible>Window.IsVisible(music)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\party-mode-off.png</icon>
 			<label>$LOCALIZE[50126]$LOCALIZE[50054]</label>
-			<onclick>playercontrol(partymode(video))</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>playercontrol(partymode(video))</onclick>
 			<visible>!musicpartymode.enabled</visible>
-			<visible>Window.IsVisible(videolibrary)</visible>
+			<visible>Container.Content(MusicVideos)</visible>
+			<!-- <visible>Window.IsVisible(videos)</visible> -->
 		</item>
 	</include>
 	<include name="Dock_UnlockSources">
@@ -370,7 +419,7 @@
 			<onclick>mastermode</onclick>
 			<visible>system.haslocks</visible>
 			<visible>system.ismaster</visible>
-			<visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
+			<visible>Window.IsVisible(videos) | Window.IsVisible(music)</visible>
 		</item>
 		<item>
 			<icon>dock\icons\sources_unlocked.png</icon>
@@ -378,7 +427,7 @@
 			<onclick>mastermode</onclick>
 			<visible>system.haslocks</visible>
 			<visible>!system.ismaster</visible>
-			<visible>Window.IsVisible(videolibrary) | Window.IsVisible(musiclibrary)</visible>
+			<visible>Window.IsVisible(videos) | Window.IsVisible(music)</visible>
 		</item>
 	</include>
 	<include name="Dock_Refresh">
@@ -393,6 +442,7 @@
 		<item>
 			<icon>dock\icons\weather-location.png</icon>
 			<label>$LOCALIZE[50061]</label>
+			<onclick>Dialog.Close(1202)</onclick>
 			<onclick>Control.Message(3,moveup)</onclick>
 		</item>
 	</include>
@@ -400,6 +450,7 @@
 		<item>
 			<icon>dock\icons\weather-refresh.png</icon>
 			<label>$LOCALIZE[184]</label>
+			<onclick>Dialog.Close(1202)</onclick>
 			<onclick>Weather.Refresh</onclick>
 		</item>
 	</include>
@@ -408,7 +459,7 @@
 			<icon>dock\icons\weather-settings.png</icon>
 			<label>$LOCALIZE[10004]</label>
 			<onclick>Dialog.Close(1202)</onclick>
-			<onclick>ActivateWindow(weathersettings)</onclick>
+			<onclick>ReplaceWindow(servicesettings,weather)</onclick>
 		</item>
 	</include>
 	<!-- Dock Playlist Items -->
@@ -416,24 +467,24 @@
 		<item>
 			<icon>dock\icons\playlist-open.png</icon>
 			<label>21385</label>
-			<onclick>SendClick(6)</onclick>
 			<onclick>Dialog.Close(1203)</onclick>
+			<onclick>SendClick(6)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Playlist_Save">
 		<item>
 			<icon>dock\icons\playlist-save.png</icon>
 			<label>190</label>
-			<onclick>SendClick(7)</onclick>
 			<onclick>Dialog.Close(1203)</onclick>
+			<onclick>SendClick(7)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Playlist_Save_1201">
 		<item>
 			<icon>dock\icons\playlist-save.png</icon>
 			<label>190</label>
-			<onclick>SendClick(21)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>SendClick(21)</onclick>
 			<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 		</item>
 	</include>
@@ -441,16 +492,16 @@
 		<item>
 			<icon>dock\icons\playlist-clear.png</icon>
 			<label>192</label>
-			<onclick>SendClick(8)</onclick>
 			<onclick>Dialog.Close(1203)</onclick>
+			<onclick>SendClick(8)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Playlist_Clear_Music">
 		<item>
 			<icon>dock\icons\playlist-clear.png</icon>
 			<label>192</label>
-			<onclick>ReplaceWindow(music)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>ReplaceWindow(music)</onclick>
 			<visible>Window.IsVisible(MusicPlaylist)</visible>
 		</item>
 	</include>
@@ -458,8 +509,8 @@
 		<item>
 			<icon>dock\icons\playlist-clear.png</icon>
 			<label>192</label>
-			<onclick>ReplaceWindow(music)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>ReplaceWindow(music)</onclick>
 			<visible>Window.IsVisible(VideoPlaylist)</visible>
 		</item>
 	</include>
@@ -509,24 +560,24 @@
 		<item>
 			<icon>dock\icons\power.png</icon>
 			<label>$LOCALIZE[50062]</label>
-			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Power_Options_1202">
 		<item>
 			<icon>dock\icons\power.png</icon>
 			<label>$LOCALIZE[50062]</label>
-			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<onclick>Dialog.Close(1202)</onclick>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Power_Options_1203">
 		<item>
 			<icon>dock\icons\power.png</icon>
 			<label>$LOCALIZE[50062]</label>
-			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 			<onclick>Dialog.Close(1203)</onclick>
+			<onclick>ActivateWindow(ShutdownMenu)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Now_Playing_1200">
@@ -542,8 +593,8 @@
 		<item>
 			<icon>dock\icons\nowplaying.png</icon>
 			<label>$LOCALIZE[50144]</label>
-			<onclick>FullScreen</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>FullScreen</onclick>
 			<visible>Player.HasMedia + !VideoPlayer.IsFullscreen</visible>
 		</item>
 	</include>
@@ -551,8 +602,8 @@
 		<item>
 			<icon>dock\icons\nowplaying.png</icon>
 			<label>$LOCALIZE[50144]</label>
-			<onclick>FullScreen</onclick>
 			<onclick>Dialog.Close(1202)</onclick>
+			<onclick>FullScreen</onclick>
 			<visible>Player.HasMedia + !VideoPlayer.IsFullscreen</visible>
 		</item>
 	</include>
@@ -560,8 +611,8 @@
 		<item>
 			<icon>dock\icons\nowplaying.png</icon>
 			<label>$LOCALIZE[50144]</label>
-			<onclick>FullScreen</onclick>
 			<onclick>Dialog.Close(1203)</onclick>
+			<onclick>FullScreen</onclick>
 			<visible>Player.HasMedia + !VideoPlayer.IsFullscreen</visible>
 		</item>
 	</include>
@@ -578,24 +629,24 @@
 		<item>
 			<icon>dock\icons\nav.png</icon>
 			<label>$LOCALIZE[50063]</label>
-			<onclick>ActivateWindow(PlayerControls)</onclick>
 			<onclick>Dialog.Close(1201)</onclick>
+			<onclick>ActivateWindow(PlayerControls)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Nav_1202">
 		<item>
 			<icon>dock\icons\nav.png</icon>
 			<label>$LOCALIZE[50063]</label>
-			<onclick>ActivateWindow(PlayerControls)</onclick>
 			<onclick>Dialog.Close(1202)</onclick>
+			<onclick>ActivateWindow(PlayerControls)</onclick>
 		</item>
 	</include>
 	<include name="Dock_Nav_1203">
 		<item>
 			<icon>dock\icons\nav.png</icon>
 			<label>$LOCALIZE[50063]</label>
-			<onclick>ActivateWindow(PlayerControls)</onclick>
 			<onclick>Dialog.Close(1203)</onclick>
+			<onclick>ActivateWindow(PlayerControls)</onclick>
 		</item>
 	</include>
 	<include name="Dock_System_Info">

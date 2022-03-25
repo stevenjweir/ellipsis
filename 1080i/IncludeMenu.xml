@@ -38,33 +38,311 @@
 			<animation effect="fade" time="300">Hidden</animation>
 			<animation effect="fade" time="300">WindowOpen</animation>
 			<animation effect="fade" time="300">WindowClose</animation>
-			<control type="image">
-				<left>-454</left>
-				<top>579</top>
-				<width>908</width>
-				<height>72</height>
-				<texture>filter_iconlabel.png</texture>
-			</control>
 			<control type="label">
 				<description>Current Selection</description>
+				<visible>!Control.HasFocus(9550)</visible>
 				<left>-960</left>
-				<top>576</top>
+				<top>-60</top>
 				<width>1920</width>
 				<height>72</height>
 				<align>center</align>
 				<aligny>center</aligny>
-				<label>[UPPERCASE]$INFO[Container(9000).ListItem.Label][/UPPERCASE]</label>
-				<font>Selected_Item</font>
+				<font>Extra_Large</font>
+				<label>$INFO[Container(9000).ListItem.Label]</label>
 				<textcolor>TextSelectedItem</textcolor>
 				<shadowcolor>TextShadow</shadowcolor>
 			</control>
+			<control type="label">
+				<description>Current Selection</description>
+				<visible>Control.HasFocus(9550)</visible>
+				<left>-960</left>
+				<top>-60</top>
+				<width>1920</width>
+				<height>72</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[Container(9000).ListItem.Label]</label>
+				<font>Extra_Large</font>
+				<textcolor>TextMedium</textcolor>
+				<shadowcolor>TextShadow</shadowcolor>
+			</control>
+		</control>
+	</include>
+	<include name="Sub_HomeMenu">
+		<control type="wraplist" id="9550">
+			<left>-958</left>
+			<top>-225</top>
+			<height>150</height>
+			<width>1920</width>
+			<animation effect="fade" time="300">Hidden</animation>
+			<animation effect="fade" time="300">WindowClose</animation>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onback>9000</onback>
+			<focusposition>1</focusposition>
+			<orientation>vertical</orientation>
+			<scrolltime>250</scrolltime>
+			<itemlayout height="50" width="1920">
+				<control type="label">
+					<visible>Control.HasFocus(9550)</visible>
+					<animation type="Visible" reversible="false">
+						<effect type="fade" start="0" end="100" tween="sine" easing="in" time="300"/>
+						<effect type="slide" start="0,-800" end="0,0" tween="elastic" easing="out" time="300"/>
+					</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>1920</width>
+					<height>50</height>
+					<font>Default</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>TextMedium</textcolor>
+					<shadowcolor>TextShadow</shadowcolor>
+					<label>$INFO[ListItem.label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout height="50" width="1920">
+				<control type="label">
+					<visible>Control.HasFocus(9550)</visible>
+					<animation type="Visible" reversible="false">
+						<effect type="fade" start="0" end="100" tween="sine" easing="in" time="300"/>
+						<effect type="slide" start="0,-800" end="0,0" tween="elastic" easing="out" time="300"/>
+					</animation>
+					<left>0</left>
+					<top>0</top>
+					<width>1920</width>
+					<height>50</height>
+					<font>Large</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<shadowcolor>TextShadow</shadowcolor>
+					<label>$INFO[ListItem.label]</label>
+				</control>
+			</focusedlayout>
+			<content>
+				<item>
+					<label>20386</label>
+					<onclick>ActivateWindow(Videos,RecentlyAddedMovies)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>135</label>
+					<onclick>ActivateWindow(Videos,MovieGenres)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>369</label>
+					<onclick>ActivateWindow(Videos,MovieTitles)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>345</label>
+					<onclick>ActivateWindow(Videos,MovieYears)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>344</label>
+					<onclick>ActivateWindow(Videos,MovieActors)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>20348</label>
+					<onclick>ActivateWindow(Videos,MovieDirectors)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>20388</label>
+					<onclick>ActivateWindow(Videos,MovieStudios)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>20434</label>
+					<onclick>ActivateWindow(Videos,MovieSets)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>20451</label>
+					<onclick>ActivateWindow(Videos,MovieCountries)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>20459</label>
+					<onclick>ActivateWindow(Videos,MovieTags)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>10028</label>
+					<onclick>ActivateWindow(special://videoplaylists/)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>1037</label>
+					<onclick>ActivateWindow(addons://sources/video/)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>744</label>
+					<onclick>ActivateWindow(sources://video/)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library)</visible>
+				</item>
+				<item>
+					<label>50164</label>
+					<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_tv_library)</visible>
+				</item>
+				<item>
+					<label>626</label>
+					<onclick>ActivateWindow(Videos,InProgressTvShows)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_tv_library)</visible>
+				</item>
+				<item>
+					<label>135</label>
+					<onclick>ActivateWindow(Videos,TvShowGenres)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_tv_library)</visible>
+				</item>
+				<item>
+					<label>369</label>
+					<onclick>ActivateWindow(Videos,TvShowTitles)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_tv_library)</visible>
+				</item>
+				<item>
+					<label>345</label>
+					<onclick>ActivateWindow(Videos,TvShowYears)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_tv_library)</visible>
+				</item>
+				<item>
+					<label>344</label>
+					<onclick>ActivateWindow(Videos,TvShowActors)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_tv_library)</visible>
+				</item>
+				<item>
+					<label>20388</label>
+					<onclick>ActivateWindow(Videos,TvShowStudios)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_tv_library)</visible>
+				</item>
+				<item>
+					<label>50092</label>
+					<onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library)</visible>
+				</item>
+				<item>
+					<label>135</label>
+					<onclick>ActivateWindow(Videos,MusicVideoGenres)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library)</visible>
+				</item>
+				<item>
+					<label>369</label>
+					<onclick>ActivateWindow(Videos,MusicVideoTitles)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library)</visible>
+				</item>
+				<item>
+					<label>345</label>
+					<onclick>ActivateWindow(Videos,MusicVideoYears)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library)</visible>
+				</item>
+				<item>
+					<label>133</label>
+					<onclick>ActivateWindow(Videos,MusicVideoArtists)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library)</visible>
+				</item>
+				<item>
+					<label>132</label>
+					<onclick>ActivateWindow(Videos,MusicVideoAlbums)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library)</visible>
+				</item>
+				<item>
+					<label>20348</label>
+					<onclick>ActivateWindow(Videos,MusicVideoDirectors)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library)</visible>
+				</item>
+				<item>
+					<label>20388</label>
+					<onclick>ActivateWindow(Videos,MusicVideoStudios)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library)</visible>
+				</item>
+				<item>
+					<label>50099</label>
+					<onclick>ActivateWindow(Music,RecentlyAddedAlbums)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>50100</label>
+					<onclick>ActivateWindow(Music,RecentlyPlayedAlbums)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>135</label>
+					<onclick>ActivateWindow(Music,Genres)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>133</label>
+					<onclick>ActivateWindow(Music,Artists)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>132</label>
+					<onclick>ActivateWindow(Music,Albums)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>134</label>
+					<onclick>ActivateWindow(Music,Song)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>50098</label>
+					<onclick>ActivateWindow(Music,Top100)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>10504</label>
+					<onclick>ActivateWindow(Music,Top100Songs)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>10505</label>
+					<onclick>ActivateWindow(Music,Top100Albums)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>521</label>
+					<onclick>ActivateWindow(Music,Compilations)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>1050</label>
+					<onclick>ActivateWindow(Music,Singles)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>345</label>
+					<onclick>ActivateWindow(Music,Years)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>10500</label>
+					<onclick>ActivateWindow(special://musicplaylists/)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>1038</label>
+					<onclick>ActivateWindow(addons://sources/audio/)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+				<item>
+					<label>744</label>
+					<onclick>ActivateWindow(sources://music/)</onclick>
+					<visible>String.Contains(Container(9000).ListItem.Icon,icon_home_music)</visible>
+				</item>
+			</content>
 		</control>
 	</include>
 	<!-- Menu Standard Items -->
 	<include name="Menu_Scripts">
 		<item>
 			<visible>!Skin.HasSetting(Disable_Scripts_Home_Icon)</visible>
-			<icon>icon_home_scripts.png</icon>
+			<icon>icon_home_settings.png</icon>
 			<label>0</label>
 			<onclick>ActivateWindow(AddonBrowser)</onclick>
 		</item>
@@ -74,7 +352,7 @@
 			<visible>!Skin.HasSetting(Disable_Music_Home_Icon)</visible>
 			<icon>icon_home_music.png</icon>
 			<label>1211</label>
-			<onclick>ActivateWindow(Music)</onclick>
+			<onclick>ActivateWindow(Music,Artists)</onclick>
 		</item>
 	</include>
 	<include name="Menu_Videos">
@@ -89,7 +367,7 @@
 		<item>
 			<visible>!Skin.HasSetting(Disable_Play_DVD_Home_Icon)</visible>
 			<icon>icon_home_disc.png</icon>
-			<label>$LOCALIZE[50066]</label>
+			<label>[CAPITALIZE]$LOCALIZE[50066][/CAPITALIZE]</label>
 			<onclick>PlayDVD</onclick>
 			<visible>System.HasMediaDVD</visible>
 		</item>
@@ -99,7 +377,7 @@
 			<visible>!Skin.HasSetting(Disable_Tv_Library_Home_Icon)</visible>
 			<visible>Library.HasContent(TVShows)</visible>
 			<icon>icon_home_tv_library.png</icon>
-			<label>$LOCALIZE[50067]</label>
+			<label>[CAPITALIZE]$LOCALIZE[50067][/CAPITALIZE]</label>
 			<onclick>ActivateWindow(Videos,TvShowTitles)</onclick>
 		</item>
 	</include>
@@ -108,7 +386,7 @@
 			<visible>!Skin.HasSetting(Disable_Movie_Library_Home_Icon)</visible>
 			<visible>Library.HasContent(Movies)</visible>
 			<icon>icon_home_movie_library.png</icon>
-			<label>$LOCALIZE[20342]</label>
+			<label>[CAPITALIZE]$LOCALIZE[20342][/CAPITALIZE]</label>
 			<onclick>ActivateWindow(Videos,MovieTitles)</onclick>
 		</item>
 	</include>
@@ -116,8 +394,8 @@
 		<item>
 			<visible>!Skin.HasSetting(Disable_Music_Video_Library_Home_Icon)</visible>
 			<visible>Library.HasContent(MusicVideos)</visible>
-			<icon>icon_home_musicvideo_library.png</icon>
-			<label>$LOCALIZE[50068]</label>
+			<icon>icon_home_videosmusic_library.png</icon>
+			<label>[CAPITALIZE]$LOCALIZE[50068][/CAPITALIZE]</label>
 			<onclick>ActivateWindow(Videos,MusicVideoTitles)</onclick>
 		</item>
 	</include>
@@ -154,76 +432,6 @@
 		</item>
 	</include>
 	<!-- Settings Items -->
-	<include name="Settings_Videos">
-		<item>
-			<icon>menu\settings\videos.png</icon>
-			<label>10017</label>
-			<onclick>ActivateWindow(VideosSettings)</onclick>
-		</item>
-	</include>
-	<include name="Settings_Music">
-		<item>
-			<icon>menu\settings\music.png</icon>
-			<label>10015</label>
-			<onclick>ActivateWindow(musicsettings)</onclick>
-		</item>
-	</include>
-	<include name="Settings_Pictures">
-		<item>
-			<icon>menu\settings\pictures.png</icon>
-			<label>10012</label>
-			<onclick>ActivateWindow(picturessettings)</onclick>
-		</item>
-	</include>
-	<include name="Settings_Profiles">
-		<item>
-			<icon>menu\settings\profiles.png</icon>
-			<label>10034</label>
-			<onclick>ActivateWindow(Profiles)</onclick>
-		</item>
-	</include>
-	<include name="Settings_Weather">
-		<item>
-			<icon>menu\settings\weather.png</icon>
-			<label>10014</label>
-			<onclick>ActivateWindow(WeatherSettings)</onclick>
-		</item>
-	</include>
-	<include name="Settings_System">
-		<item>
-			<icon>menu\settings\system.png</icon>
-			<label>10016</label>
-			<onclick>ActivateWindow(SystemSettings)</onclick>
-		</item>
-	</include>
-	<include name="Settings_Appearance">
-		<item>
-			<icon>menu\settings\appearance.png</icon>
-			<label>10019</label>
-			<onclick>ActivateWindow(AppearanceSettings)</onclick>
-		</item>
-	</include>
-	<include name="Settings_AddOn">
-		<item>
-			<icon>menu\settings\addons.png</icon>
-			<label>50153</label>
-			<onclick>ActivateWindow(addonbrowser)</onclick>
-		</item>
-	</include>
-	<include name="Settings_Skin">
-		<item>
-			<icon>menu\settings\skin.png</icon>
-			<label>$LOCALIZE[50069]</label>
-			<onclick>ActivateWindow(skinsettings)</onclick>
-		</item>
-	</include>
-	<include name="Settings_System_Info">
-		<item>
-			<icon>menu\settings\sys_info.png</icon>
-			<label>$LOCALIZE[50070]</label>
-			<onclick>ActivateWindow(SystemInfo)</onclick>
-		</item>
-	</include>
 	<include name="Menu_Icons">
 		<control type="group">
 			<left>0</left>
@@ -680,6 +888,7 @@
 				<top>0</top>
 				<height>384</height>
 				<width>1920</width>
+				<onup condition="String.Contains(Container(9000).ListItem.Icon,icon_home_movie_library) | String.Contains(Container(9000).ListItem.Icon,icon_home_tv_library) | String.Contains(Container(9000).ListItem.Icon,icon_home_videosmusic_library) | String.Contains(Container(9000).ListItem.Icon,icon_home_music)">SetFocus(9550)</onup>
 				<ondown>ActivateWindow(1200)</ondown>
 				<include>Menu_Layout</include>
 				<content>
@@ -695,6 +904,7 @@
 					<include>Menu_Music</include>
 				</content>
 			</control>
+			<include>Sub_HomeMenu</include>
 			<include>Menu_Icons</include>
 			<include>Menu_Label</include>
 		</control>
@@ -709,8 +919,8 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[5] - $LOCALIZE[3]</label>
-				<visible>Control.HasFocus(9000)</visible>
+				<label>[CAPITALIZE]$LOCALIZE[14201][/CAPITALIZE]</label>
+				<visible>Control.HasFocus(9030)</visible>
 			</control>
 			<control type="label">
 				<left>0</left>
@@ -719,7 +929,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[5] - $LOCALIZE[2]</label>
+				<label>[CAPITALIZE]$LOCALIZE[14212][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9001)</visible>
 			</control>
 			<control type="label">
@@ -729,7 +939,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[5] - $LOCALIZE[1]</label>
+				<label>[CAPITALIZE]$LOCALIZE[10003][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9002)</visible>
 			</control>
 			<control type="label">
@@ -739,7 +949,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[10034]</label>
+				<label>[CAPITALIZE]$LOCALIZE[14210][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9003)</visible>
 			</control>
 			<control type="label">
@@ -749,7 +959,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[5] - $LOCALIZE[8]</label>
+				<label>[CAPITALIZE]$LOCALIZE[50165][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9010)</visible>
 			</control>
 			<control type="label">
@@ -759,7 +969,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[5] - $LOCALIZE[14036]</label>
+				<label>[CAPITALIZE]$LOCALIZE[14208][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9011)</visible>
 			</control>
 			<control type="label">
@@ -769,7 +979,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[5] - $LOCALIZE[13000]</label>
+				<label>[CAPITALIZE]$LOCALIZE[14209][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9012)</visible>
 			</control>
 			<control type="label">
@@ -779,7 +989,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[24001]</label>
+				<label>[CAPITALIZE]$LOCALIZE[24001][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9013)</visible>
 			</control>
 			<control type="label">
@@ -789,7 +999,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[10019]</label>
+				<label>[CAPITALIZE]$LOCALIZE[14207][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9020)</visible>
 			</control>
 			<control type="label">
@@ -799,7 +1009,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[50069]</label>
+				<label>[CAPITALIZE]$LOCALIZE[20077][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9021)</visible>
 			</control>
 			<control type="label">
@@ -809,7 +1019,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[50070]</label>
+				<label>[CAPITALIZE]$LOCALIZE[138][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9022)</visible>
 			</control>
 			<control type="label">
@@ -819,7 +1029,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>$LOCALIZE[5] - $LOCALIZE[36037]</label>
+				<label>[CAPITALIZE]$LOCALIZE[14205][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9023)</visible>
 			</control>
 		</control>
@@ -827,7 +1037,7 @@
 			<left>960</left>
 			<top>540</top>
 			<control type="image">
-				<visible>Control.HasFocus(9000)</visible>
+				<visible>Control.HasFocus(9030)</visible>
 				<left>-475</left>
 				<top>-350</top>
 				<width>200</width>
@@ -935,7 +1145,7 @@
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
-				<visible>!Control.HasFocus(9000)</visible>
+				<visible>!Control.HasFocus(9030)</visible>
 				<left>-475</left>
 				<top>-350</top>
 				<width>200</width>
@@ -949,7 +1159,7 @@
 				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
-				<texture>menu\settings\music_nf.png</texture>
+				<texture>menu\settings\media_nf.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
@@ -958,7 +1168,7 @@
 				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
-				<texture>menu\settings\pictures_nf.png</texture>
+				<texture>menu\settings\filemanager_nf.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
@@ -976,7 +1186,7 @@
 				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
-				<texture>menu\settings\weather_nf.png</texture>
+				<texture>menu\settings\eventlog_nf.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
@@ -1043,7 +1253,7 @@
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
-				<visible>Control.HasFocus(9000)</visible>
+				<visible>Control.HasFocus(9030)</visible>
 				<left>-475</left>
 				<top>-350</top>
 				<width>200</width>
@@ -1057,7 +1267,7 @@
 				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
-				<texture>menu\settings\music_f.png</texture>
+				<texture>menu\settings\media_f.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
@@ -1066,7 +1276,7 @@
 				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
-				<texture>menu\settings\pictures_f.png</texture>
+				<texture>menu\settings\filemanager_f.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
@@ -1084,7 +1294,7 @@
 				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
-				<texture>menu\settings\weather_f.png</texture>
+				<texture>menu\settings\eventlog_f.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
@@ -1150,7 +1360,7 @@
 				<texture>menu\settings\tv_f.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
-			<control type="button" id="9000">
+			<control type="button" id="9030">
 				<left>-475</left>
 				<top>-350</top>
 				<width>200</width>
@@ -1161,7 +1371,7 @@
 				<onright>9001</onright>
 				<onup>close</onup>
 				<ondown>9010</ondown>
-				<onclick>ActivateWindow(VideosSettings)</onclick>
+				<onclick>ActivateWindow(playersettings)</onclick>
 			</control>
 			<control type="button" id="9001">
 				<left>-225</left>
@@ -1170,11 +1380,11 @@
 				<height>200</height>
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
-				<onleft>9000</onleft>
+				<onleft>9030</onleft>
 				<onright>9002</onright>
 				<onup>close</onup>
 				<ondown>9011</ondown>
-				<onclick>ActivateWindow(musicsettings)</onclick>
+				<onclick>ActivateWindow(mediasettings)</onclick>
 			</control>
 			<control type="button" id="9002">
 				<left>25</left>
@@ -1187,7 +1397,7 @@
 				<onright>9003</onright>
 				<onup>close</onup>
 				<ondown>9012</ondown>
-				<onclick>ActivateWindow(picturessettings)</onclick>
+				<onclick>ActivateWindow(filemanager)</onclick>
 			</control>
 			<control type="button" id="9003">
 				<left>275</left>
@@ -1197,10 +1407,10 @@
 				<texturenofocus>-</texturenofocus>
 				<texturefocus>-</texturefocus>
 				<onleft>9002</onleft>
-				<onright>9000</onright>
+				<onright>9030</onright>
 				<onup>close</onup>
 				<ondown>9013</ondown>
-				<onclick>ActivateWindow(Profiles)</onclick>
+				<onclick>ActivateWindow(profiles)</onclick>
 			</control>
 			<control type="button" id="9010">
 				<left>-475</left>
@@ -1211,9 +1421,9 @@
 				<texturefocus>-</texturefocus>
 				<onleft>9013</onleft>
 				<onright>9011</onright>
-				<onup>9000</onup>
+				<onup>9030</onup>
 				<ondown>9020</ondown>
-				<onclick>ActivateWindow(WeatherSettings)</onclick>
+				<onclick>ActivateWindow(eventlog)</onclick>
 			</control>
 			<control type="button" id="9011">
 				<left>-225</left>
@@ -1239,7 +1449,7 @@
 				<onright>9013</onright>
 				<onup>9002</onup>
 				<ondown>9022</ondown>
-				<onclick>ActivateWindow(SystemSettings)</onclick>
+				<onclick>ActivateWindow(systemsettings)</onclick>
 			</control>
 			<control type="button" id="9013">
 				<left>275</left>
@@ -1265,7 +1475,7 @@
 				<onright>9021</onright>
 				<onup>9010</onup>
 				<ondown>noop</ondown>
-				<onclick>ActivateWindow(AppearanceSettings)</onclick>
+				<onclick>ActivateWindow(interfacesettings)</onclick>
 			</control>
 			<control type="button" id="9021">
 				<left>-225</left>
@@ -1291,7 +1501,7 @@
 				<onright>9023</onright>
 				<onup>9012</onup>
 				<ondown>noop</ondown>
-				<onclick>ActivateWindow(SystemInfo)</onclick>
+				<onclick>ActivateWindow(systeminfo)</onclick>
 			</control>
 			<control type="button" id="9023">
 				<left>275</left>
@@ -1304,7 +1514,7 @@
 				<onright>9020</onright>
 				<onup>9013</onup>
 				<ondown>noop</ondown>
-				<onclick>ActivateWindow(PVRSettings)</onclick>
+				<onclick>ActivateWindow(pvrsettings)</onclick>
 			</control>
 		</control>
 	</include>

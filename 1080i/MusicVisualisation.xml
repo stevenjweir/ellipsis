@@ -4,6 +4,13 @@
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
 	<controls>
+			<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture background="true">$INFO[Player.Art(artist.fanart)]</texture>
+		</control>
 		<control type="visualisation" id="2">
 			<description>visualisation</description>
 			<left>0</left>

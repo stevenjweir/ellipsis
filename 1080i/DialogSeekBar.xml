@@ -13,6 +13,8 @@
             <top>58</top>
             <animation effect="slide" start="0,-117" end="0" time="300" tween="sine" easing="out" reversible="false">WindowOpen</animation>
             <animation effect="slide" start="0" end="0,-117" time="300" tween="sine" easing="in" reversible="false">WindowClose</animation>
+			<animation effect="slide" start="0,-117" end="0" time="300" tween="sine" easing="out" reversible="false" condition="Control.IsVisible(175)">Conditional</animation>
+            <animation effect="slide" start="0" end="0,-117" time="300" tween="sine" easing="in" reversible="false" condition="!Control.IsVisible(175)">Conditional</animation>
             <control type="image">
                 <left>-150</left>
                 <top>-2</top>

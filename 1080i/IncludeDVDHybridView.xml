@@ -45,6 +45,14 @@
 						<top>0</top>
 						<width>290</width>
 						<height>424</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(3).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
 						<texture>dvdbox-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -102,6 +110,14 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(2).Art(poster)]</texture>
 						<visible>!IsEmpty(Container(55).ListItem(2).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(2).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -171,6 +187,14 @@
 						<top>0</top>
 						<width>376</width>
 						<height>552</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(1).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
 						<texture>dvdbox-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -231,6 +255,14 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(0).Art(poster)]</texture>
 						<visible>!IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(0).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -309,6 +341,14 @@
 						<top>0</top>
 						<width>290</width>
 						<height>424</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(2).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
 						<texture>dvdbox-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -366,6 +406,14 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(1).Art(poster)]</texture>
 						<visible>!IsEmpty(Container(55).ListItem(1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(1).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -435,6 +483,14 @@
 						<top>0</top>
 						<width>330</width>
 						<height>484</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(0).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
 						<texture>dvdbox-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -484,7 +540,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(55).ListItem(-1).Icon</info>
-						<visible>IsEmpty(Container(55).ListItem((-1).Art(poster))</visible>
+						<visible>IsEmpty(Container(55).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -494,6 +550,14 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(-1).Art(poster)]</texture>
 						<visible>!IsEmpty(Container(55).ListItem(-1).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(-1).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -573,6 +637,14 @@
 						<top>0</top>
 						<width>290</width>
 						<height>424</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(2).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>424</height>
 						<texture>dvdbox-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -642,6 +714,14 @@
 						<top>0</top>
 						<width>330</width>
 						<height>484</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(1).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>484</height>
 						<texture>dvdbox-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -705,6 +785,14 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(55).ListItem(0).Art(poster)]</texture>
 						<visible>!IsEmpty(Container(55).ListItem(0).Art(poster))</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>552</height>
+						<texture>overlays\dvd\$INFO[Container(55).ListItem(0).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>

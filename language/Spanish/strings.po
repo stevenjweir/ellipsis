@@ -113,8 +113,8 @@ msgid "Hide Now Playing Widget"
 msgstr "Ocultar ventana Reproduciendo Ahora"
 
 msgctxt "#50024"
-msgid "SETTINGS - EllipsisUI SETTINGS"
-msgstr "CONFIGURACIÓN - EllipsisUI"
+msgid "EllipsisUI Settings"
+msgstr "Configuración - EllipsisUI"
 
 msgctxt "#50025"
 msgid "Coming Soon..."
@@ -497,8 +497,8 @@ msgid "LOGIN SCREEN DISABLED"
 msgstr "PANTALLA DE AUTENTIFICACIÓN DESHABILITADA"
 
 msgctxt "#50120"
-msgid "SETTINGS - SYSTEM INFO"
-msgstr "CONFIGURACIÓN - INFORMACIÓN DEL SISTEMA"
+msgid "System Info"
+msgstr "Información del sistema"
 
 msgctxt "#50121"
 msgid "Name:"
@@ -671,3 +671,11 @@ msgstr "Muchísimas gracias por[CR]elegir EllipsisUI..."
 msgctxt "#50163"
 msgid "PRESS"
 msgstr "PULSE"
+
+msgctxt "#50164"
+msgid "Recently added episodes"
+msgstr "Episodios recién añadidos"
+
+msgctxt "#50165"
+msgid "Event Log"
+msgstr "Registro de eventos"

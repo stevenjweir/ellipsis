@@ -34,6 +34,7 @@
 		</control>
 		<control type="group">
 			<control type="image" id="4000">
+			<visible>!Substring(ListItem.Studio,/)</visible>
 				<aspectratio align="center">keep</aspectratio>
 				<left>1</left>
 				<top>-5</top>

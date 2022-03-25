@@ -46,6 +46,14 @@
 						<top>0</top>
 						<width>290</width>
 						<height>290</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(3).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>290</height>
 						<texture>iconview-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -104,6 +112,14 @@
 						<texture diffuse="iconview-diffuse.png"/>
 						<info>Container(58).ListItem(2).Thumb</info>
 						<visible>!IsEmpty(Container(58).ListItem(2).Thumb)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>330</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(2).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -174,6 +190,14 @@
 						<top>0</top>
 						<width>376</width>
 						<height>376</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(1).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>376</height>
 						<texture>iconview-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -235,6 +259,14 @@
 						<texture diffuse="iconview-diffuse.png"/>
 						<info>Container(58).ListItem(0).Thumb</info>
 						<visible>!IsEmpty(Container(58).ListItem(0).Thumb)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>376</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(0).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -314,6 +346,14 @@
 						<top>0</top>
 						<width>290</width>
 						<height>290</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(2).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>290</height>
 						<texture>iconview-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -372,6 +412,14 @@
 						<texture diffuse="iconview-diffuse.png"/>
 						<info>Container(58).ListItem(1).Thumb</info>
 						<visible>!IsEmpty(Container(58).ListItem(1).Thumb)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>290</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(1).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -442,6 +490,14 @@
 						<top>0</top>
 						<width>330</width>
 						<height>330</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(0).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>330</height>
 						<texture>iconview-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -491,7 +547,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="iconview-diffuse.png"/>
 						<info>Container(58).ListItem(-1).ActualIcon</info>
-						<visible>IsEmpty(Container(58).ListItem((-1).Thumb)</visible>
+						<visible>IsEmpty(Container(58).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -502,6 +558,14 @@
 						<texture diffuse="iconview-diffuse.png"/>
 						<info>Container(58).ListItem(-1).Thumb</info>
 						<visible>!IsEmpty(Container(58).ListItem(-1).Thumb)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>376</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(-1).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -582,6 +646,14 @@
 						<top>0</top>
 						<width>290</width>
 						<height>290</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(2).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>290</width>
+						<height>290</height>
 						<texture>iconview-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -652,6 +724,14 @@
 						<top>0</top>
 						<width>330</width>
 						<height>330</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(1).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>330</width>
+						<height>330</height>
 						<texture>iconview-overlay.png</texture>
 					</control>
 					<control type="image">
@@ -716,6 +796,14 @@
 						<texture diffuse="iconview-diffuse.png"/>
 						<info>Container(58).ListItem(0).Thumb</info>
 						<visible>!IsEmpty(Container(58).ListItem(0).Thumb)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>376</width>
+						<height>376</height>
+						<texture>overlays\icon\$INFO[Container(58).ListItem(0).Overlay]</texture>
+						<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>

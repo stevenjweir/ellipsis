@@ -21,15 +21,15 @@
 			<include>Zoom_Out_WindowClose</include>
 			<control type="image">
 				<description>background image</description>
-				<left>456</left>
-				<top>183</top>
-				<width>1006</width>
-				<height>714</height>
+				<left>356</left>
+				<top>83</top>
+				<width>1206</width>
+				<height>1014</height>
 				<texture>dialogs\dialog-background-select.png</texture>
 			</control>
 			<control type="group">
 				<left>548</left>
-				<top>256</top>
+				<top>206</top>
 				<width>825</width>
 				<height>567</height>
 				<control type="group">
@@ -62,50 +62,31 @@
 						<textcolor>Text</textcolor>
 					</control>
 				</control>
-				<control type="group">
-					<visible>Control.HasFocus(6)</visible>
-					<control type="image">
-						<description>dialog icon</description>
-						<left>375</left>
-						<top>9</top>
-						<width>75</width>
-						<height>75</height>
-						<texture fallback="DefaultAddon.png">$INFO[Container(6).ListItem.Icon]</texture>
-					</control>
-					<control type="image">
-						<description>dialog icon</description>
-						<left>375</left>
-						<top>9</top>
-						<width>75</width>
-						<height>75</height>
-						<texture>musicvideo-overlay.png</texture>
-					</control>
-				</control>
 				<control type="list" id="3">
-					<left>22</left>
+					<left>-43</left>
 					<top>172</top>
-					<width>780</width>
-					<height>276</height>
+					<width>930</width>
+					<height>480</height>
 					<onleft>5</onleft>
 					<onright>5</onright>
 					<onup>5</onup>
 					<ondown>5</ondown>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="69">
+					<itemlayout height="80">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>780</width>
-							<height>69</height>
+							<width>900</width>
+							<height>80</height>
 							<texture border="8">controls\button_nf.png</texture>
 						</control>
 						<control type="label">
-							<left>15</left>
+							<left>30</left>
 							<top>6</top>
-							<width>750</width>
-							<height>52</height>
-							<font>Medium</font>
+							<width>835</width>
+							<height>70</height>
+							<font>Medium_Large</font>
 							<aligny>center</aligny>
 							<selectedcolor>Highlight</selectedcolor>
 							<textcolor>Text</textcolor>
@@ -113,29 +94,29 @@
 							<info>ListItem.Label</info>
 						</control>
 					</itemlayout>
-					<focusedlayout height="69">
+					<focusedlayout height="80">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>780</width>
-							<height>69</height>
+							<width>900</width>
+							<height>80</height>
 							<visible>!Control.HasFocus(3)</visible>
 							<texture border="8">controls\button_nf.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>780</width>
-							<height>69</height>
+							<width>900</width>
+							<height>80</height>
 							<visible>Control.HasFocus(3)</visible>
 							<texture border="8">controls\button_f.png</texture>
 						</control>
 						<control type="label">
-							<left>15</left>
+							<left>30</left>
 							<top>6</top>
-							<width>750</width>
-							<height>52</height>
-							<font>Medium</font>
+							<width>835</width>
+							<height>70</height>
+							<font>Medium_Large</font>
 							<aligny>center</aligny>
 							<selectedcolor>Highlight</selectedcolor>
 							<textcolor>Text</textcolor>
@@ -145,41 +126,49 @@
 					</focusedlayout>
 				</control>
 				<control type="list" id="6">
-					<left>22</left>
+					<left>-43</left>
 					<top>172</top>
-					<width>780</width>
-					<height>276</height>
+					<width>930</width>
+					<height>480</height>
 					<onleft>6</onleft>
 					<onright>6</onright>
 					<onup>5</onup>
 					<ondown>5</ondown>
 					<pagecontrol>-</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="69">
+					<itemlayout height="120">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>780</width>
-							<height>69</height>
+							<width>900</width>
+							<height>120</height>
 							<texture border="8">controls\button_nf.png</texture>
 						</control>
-						<control type="label">
+						<control type="image">
 							<left>15</left>
+							<top>10</top>
+							<width>90</width>
+							<height>90</height>
+							<aspectratio align="center" scalediffuse="false">keep</aspectratio>
+							<texture fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="label">
+							<left>120</left>
 							<top>6</top>
-							<width>750</width>
-							<height>52</height>
-							<font>Medium</font>
-							<aligny>center</aligny>
+							<width>735</width>
+							<height>110</height>
+							<font>Heading_Small</font>
+							<aligny>top</aligny>
 							<selectedcolor>Highlight</selectedcolor>
 							<textcolor>Text</textcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-							<left>765</left>
-							<top>6</top>
-							<width>750</width>
-							<height>52</height>
+							<left>120</left>
+							<top>60</top>
+							<width>735</width>
+							<height>56</height>
 							<font>Medium</font>
 							<aligny>center</aligny>
 							<selectedcolor>Highlight</selectedcolor>
@@ -188,40 +177,48 @@
 							<info>ListItem.Label2</info>
 						</control>
 					</itemlayout>
-					<focusedlayout height="69">
+					<focusedlayout height="120">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>780</width>
-							<height>69</height>
+							<width>900</width>
+							<height>120</height>
 							<visible>!Control.HasFocus(6)</visible>
 							<texture border="8">controls\button_nf.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>780</width>
-							<height>69</height>
+							<width>900</width>
+							<height>120</height>
 							<visible>Control.HasFocus(6)</visible>
 							<texture border="8">controls\button_f.png</texture>
 						</control>
-						<control type="label">
+						<control type="image">
 							<left>15</left>
+							<top>10</top>
+							<width>90</width>
+							<height>90</height>
+							<aspectratio align="center" scalediffuse="false">keep</aspectratio>
+							<texture fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+						</control>
+						<control type="label">
+							<left>120</left>
 							<top>6</top>
-							<width>750</width>
-							<height>52</height>
-							<font>Medium</font>
-							<aligny>center</aligny>
+							<width>735</width>
+							<height>110</height>
+							<font>Heading_Small</font>
+							<aligny>top</aligny>
 							<selectedcolor>Highlight</selectedcolor>
 							<textcolor>Text</textcolor>
 							<align>left</align>
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
-							<left>765</left>
-							<top>6</top>
-							<width>750</width>
-							<height>52</height>
+							<left>120</left>
+							<top>60</top>
+							<width>735</width>
+							<height>56</height>
 							<font>Medium</font>
 							<aligny>center</aligny>
 							<selectedcolor>Highlight</selectedcolor>
@@ -232,14 +229,13 @@
 					</focusedlayout>
 				</control>
 				<control type="button" id="5">
-					<description>Cancel Button</description>
 					<left>262</left>
-					<top>480</top>
+					<top>700</top>
 					<width>300</width>
 					<height>69</height>
 					<align>center</align>
-					<texturenofocus border="8">controls\button_red_nf.png</texturenofocus>
-					<texturefocus border="8">controls\button_red_f.png</texturefocus>
+					<texturenofocus border="8">controls\button_nf.png</texturenofocus>
+					<texturefocus border="8">controls\button_f.png</texturefocus>
 					<textcolor>Text</textcolor>
 					<disabledcolor>DisabledText</disabledcolor>
 					<label>222</label>

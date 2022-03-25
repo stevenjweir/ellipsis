@@ -113,7 +113,7 @@ msgid "Hide Now Playing Widget"
 msgstr ""
 
 msgctxt "#50024"
-msgid "SETTINGS - EllipsisUI SETTINGS"
+msgid "EllipsisUI Settings"
 msgstr ""
 
 msgctxt "#50025"
@@ -497,7 +497,7 @@ msgid "LOGIN SCREEN DISABLED"
 msgstr ""
 
 msgctxt "#50120"
-msgid "SETTINGS - SYSTEM INFO"
+msgid "System Info"
 msgstr ""
 
 msgctxt "#50121"
@@ -670,4 +670,12 @@ msgstr ""
 
 msgctxt "#50163"
 msgid "PRESS"
+msgstr ""
+
+msgctxt "#50164"
+msgid "Recently added episodes"
+msgstr ""
+
+msgctxt "#50165"
+msgid "Event Log"
 msgstr ""
