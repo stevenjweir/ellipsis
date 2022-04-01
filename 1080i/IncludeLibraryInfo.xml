@@ -2,7 +2,7 @@
 <includes>
 	<include name="Library_Info">
 		<control type="group">
-		<visible>!ListItem.IsParentFolder</visible>
+			<visible>!ListItem.IsParentFolder</visible>
 			<!-- Show Case Views -->
 			<control type="group">
 				<visible>Control.IsVisible(50)</visible>
@@ -19,7 +19,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -34,7 +34,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<description>Episode And Title</description>
 							<left>28</left>
@@ -61,52 +61,55 @@
 						</control>
 						<control type="textbox">
 							<left>28</left>
-							<top>112</top>
+							<top>115</top>
 							<width>772</width>
-							<height>108</height>
+							<height>112</height>
 							<font>Library_Normal_20</font>
 							<textcolor>Text</textcolor>
 							<label>$INFO[ListItem.Plot]</label>
 							<align>center</align>
 							<autoscroll>False</autoscroll>
 						</control>
-						<control type="image">
-							<left>54</left>
-							<top>240</top>
-							<width>170</width>
-							<height>26</height>
-							<texture>$INFO[ListItem.StarRating]</texture>
-						</control>
 						<control type="grouplist">
-							<left>-60</left>
+							<left>28</left>
 							<top>238</top>
-							<width>1100</width>
-							<height>33</height>
+							<width>772</width>
+							<height>52</height>
 							<itemgap>13</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<control type="label">
+								<visible>!String.IsEmpty(ListItem.Rating)</visible>
 								<width>auto</width>
-								<height>33</height>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<align>center</align>
+								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]    </label>
+							</control>
+							<control type="label">
+								<width>auto</width>
+								<height>44</height>
 								<font>Library_Normal_14</font>
 								<textcolor>Text</textcolor>
 								<label>$LOCALIZE[50163]</label>
 								<align>right</align>
-								<aligny>bottom</aligny>
+								<aligny>center</aligny>
 							</control>
 							<control type="image">
 								<width>33</width>
-								<height>33</height>
+								<height>44</height>
+								<aspectratio align="center" scalediffuse="false">keep</aspectratio>
 								<texture>menu\library\info-icon.png</texture>
 							</control>
 							<control type="label">
 								<width>auto</width>
-								<height>33</height>
+								<height>44</height>
 								<font>Library_Normal_14</font>
 								<textcolor>Text</textcolor>
 								<label>$LOCALIZE[50065]</label>
 								<align>left</align>
-								<aligny>bottom</aligny>
+								<aligny>center</aligny>
 							</control>
 						</control>
 						<control type="grouplist">
@@ -134,7 +137,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -149,7 +152,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<description>TV Show</description>
 							<left>28</left>
@@ -211,7 +214,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -226,18 +229,44 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
-						<control type="image">
-							<left>280</left>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
+						<control type="grouplist">
+							<left>28</left>
 							<top>12</top>
-							<width>170</width>
-							<height>26</height>
-							<texture>$INFO[ListItem.StarRating]</texture>
+							<width>670</width>
+							<height>52</height>
+							<itemgap>10</itemgap>
+							<orientation>horizontal</orientation>
+							<align>center</align>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.Rating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
+							</control>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>     $LOCALIZE[38018]:</label>
+								<align>right</align>
+							</control>
+							<control type="image">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>288</width>
+								<height>46</height>
+								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<texture>$INFO[ListItem.UserRating]rating.png</texture>
+							</control>
 						</control>
 						<control type="textbox">
 							<description>TV Show</description>
 							<left>28</left>
-							<top>42</top>
+							<top>54</top>
 							<width>669</width>
 							<height>112</height>
 							<font>Library_Light_28</font>
@@ -251,7 +280,7 @@
 						<control type="label">
 							<description>Watched</description>
 							<left>28</left>
-							<top>150</top>
+							<top>164</top>
 							<width>669</width>
 							<height>52</height>
 							<font>Library_Normal_22</font>
@@ -285,7 +314,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -300,17 +329,44 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
-						<control type="image">
-							<left>280</left>
-							<top>12</top>
-							<width>170</width>
-							<height>26</height>
-							<texture>$INFO[ListItem.StarRating]</texture>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
+						<control type="grouplist">
+							<left>28</left>
+							<top>11</top>
+							<width>670</width>
+							<height>52</height>
+							<itemgap>10</itemgap>
+							<orientation>horizontal</orientation>
+							<align>center</align>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.Rating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
+							</control>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>     $LOCALIZE[38018]:</label>
+								<align>right</align>
+							</control>
+							<control type="image">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>288</width>
+								<height>46</height>
+								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<texture>$INFO[ListItem.UserRating]rating.png</texture>
+							</control>
 						</control>
 						<control type="textbox">
+							<animation effect="slide" end="0,40" condition="ListItem.IsCollection">Conditional</animation>
 							<left>28</left>
-							<top>42</top>
+							<top>51</top>
 							<width>669</width>
 							<height>112</height>
 							<font>Library_Light_28</font>
@@ -323,7 +379,7 @@
 						</control>
 						<control type="label">
 							<left>28</left>
-							<top>158</top>
+							<top>168</top>
 							<width>669</width>
 							<height>52</height>
 							<font>Library_Light_20</font>
@@ -357,7 +413,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -372,7 +428,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="textbox">
 							<left>28</left>
 							<top>7</top>
@@ -434,7 +490,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -449,7 +505,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>22</top>
@@ -513,7 +569,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -528,13 +584,39 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
-						<control type="image">
-							<left>385</left>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
+						<control type="grouplist">
+							<left>28</left>
 							<top>15</top>
-							<width>170</width>
-							<height>26</height>
-							<texture>$INFO[ListItem.StarRating]</texture>
+							<width>879</width>
+							<height>52</height>
+							<itemgap>10</itemgap>
+							<orientation>horizontal</orientation>
+							<align>center</align>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.Rating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
+							</control>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>     $LOCALIZE[38018]:</label>
+								<align>right</align>
+							</control>
+							<control type="image">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>288</width>
+								<height>46</height>
+								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<texture>$INFO[ListItem.UserRating]rating.png</texture>
+							</control>
 						</control>
 						<control type="textbox">
 							<description>Episode And Title</description>
@@ -632,7 +714,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -648,16 +730,43 @@
 					</control>
 					<control type="group">
 						<top>10</top>
-						<visible>!IsEmpty(ListItem.Title)</visible>
-						<control type="image">
-							<left>280</left>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
+						<control type="grouplist">
+							<left>28</left>
 							<top>15</top>
-							<width>170</width>
-							<height>26</height>
-							<texture>$INFO[ListItem.StarRating]</texture>
+							<width>670</width>
+							<height>52</height>
+							<itemgap>10</itemgap>
+							<orientation>horizontal</orientation>
+							<align>center</align>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.Rating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
+							</control>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>     $LOCALIZE[38018]:</label>
+								<align>right</align>
+							</control>
+							<control type="image">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>288</width>
+								<height>46</height>
+								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<texture>$INFO[ListItem.UserRating]rating.png</texture>
+							</control>
 						</control>
 						<control type="textbox">
 							<description>Title And Year</description>
+							<animation effect="slide" end="0,25" condition="ListItem.IsCollection">Conditional</animation>
 							<left>28</left>
 							<top>50</top>
 							<width>669</width>
@@ -751,7 +860,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -766,7 +875,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<description>TV Show</description>
 							<left>28</left>
@@ -829,7 +938,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -844,13 +953,39 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
-						<control type="image">
-							<left>280</left>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
+						<control type="grouplist">
+							<left>28</left>
 							<top>15</top>
-							<width>170</width>
-							<height>26</height>
-							<texture>$INFO[ListItem.StarRating]</texture>
+							<width>670</width>
+							<height>52</height>
+							<itemgap>10</itemgap>
+							<orientation>horizontal</orientation>
+							<align>center</align>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.Rating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
+							</control>
+							<control type="label">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>auto</width>
+								<height>52</height>
+								<font>Library_Normal_18</font>
+								<textcolor>Text</textcolor>
+								<label>     $LOCALIZE[38018]:</label>
+								<align>right</align>
+							</control>
+							<control type="image">
+								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
+								<width>288</width>
+								<height>46</height>
+								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<texture>$INFO[ListItem.UserRating]rating.png</texture>
+							</control>
 						</control>
 						<control type="textbox">
 							<description>TV Show</description>
@@ -947,7 +1082,7 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<visible>String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
 							<left>28</left>
 							<top>0</top>
@@ -962,7 +1097,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="textbox">
 							<left>28</left>
 							<top>48</top>
@@ -1067,8 +1202,20 @@
 						<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 					</control>
 					<control type="group">
-						<visible>IsEmpty(ListItem.Title)</visible>
 						<control type="label">
+							<left>28</left>
+							<top>0</top>
+							<width>669</width>
+							<height>531</height>
+							<font>Library_Light_25</font>
+							<textcolor>Text</textcolor>
+							<label>[B]$INFO[ListItem.Title][/B]</label>
+							<align>center</align>
+							<aligny>center</aligny>
+							<scroll>true</scroll>
+						</control>
+						<control type="label">
+							<visible>String.IsEmpty(ListItem.Title)</visible>
 							<left>28</left>
 							<top>0</top>
 							<width>669</width>

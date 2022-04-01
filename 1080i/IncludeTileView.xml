@@ -48,7 +48,7 @@
                 <!-- Show Far Left Icon On Move Previous -->
                 <control type="group">
                     <visible>Container(57).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(-2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(-2).Label)</visible>
                     <animation type="Hidden" reversible="false">
                         <effect type="fade" start="0" end="100" time="250" />
                         <effect type="slide" start="0,0" end="248,0" time="250" />
@@ -66,7 +66,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png">DefaultVideo.png</texture>
                         <info>Container(57).ListItem(-2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -76,7 +76,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png">DefaultVideo.png</texture>
                         <info>Container(57).ListItem(-2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -93,7 +93,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -103,7 +103,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -116,7 +116,7 @@
                 <!-- Move Icon 1 To Icon 2 Position On Move Previous -->
                 <control type="group">
                     <visible>Container(57).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(-1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(-1).Label)</visible>
                     <animation effect="zoom" start="-894,82,192,384" end="-543,75,240,480" time="250" reversible="false">Hidden</animation>
                     <left>-894</left>
                     <top>82</top>
@@ -130,7 +130,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -140,7 +140,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -157,7 +157,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -167,7 +167,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -193,7 +193,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -203,7 +203,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -220,7 +220,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -230,7 +230,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -243,7 +243,7 @@
                 <!-- Move Icon 3 To Icon 4 Position On Move Previous -->
                 <control type="group">
                     <visible>Container(57).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="-192,0,384,768" end="318,75,240,480" time="250" reversible="false">Hidden</animation>
                     <left>-192</left>
                     <top>0</top>
@@ -257,7 +257,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -267,7 +267,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -284,7 +284,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -294,7 +294,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -307,7 +307,7 @@
                 <!-- Move Icon 4 To Icon 5 Position On Move Previous -->
                 <control type="group">
                     <visible>Container(57).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(2).Label)</visible>
                     <animation effect="zoom" start="318,75,240,480" end="702,82,192,384" time="250" reversible="false">Hidden</animation>
                     <left>318</left>
                     <top>75</top>
@@ -321,7 +321,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -331,7 +331,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -348,7 +348,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -358,7 +358,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -371,7 +371,7 @@
                 <!-- Hide Far Right Icon On Move Previous -->
                 <control type="group">
                     <visible>Container(57).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(3).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(3).Label)</visible>
                     <animation type="Hidden" reversible="false">
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0,0" end="248,0" time="250" />
@@ -388,7 +388,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(3).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(3).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -398,7 +398,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(3).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(3).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -415,7 +415,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(3).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(3).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -425,7 +425,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(3).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(3).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(3).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -443,7 +443,7 @@
                 <!-- Hide Far Left Icon On Move Next -->
                 <control type="group">
                     <visible>Container(57).OnNext</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(-3).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(-3).Label)</visible>
                     <animation type="Hidden" reversible="false">
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0,0" end="-248,0" time="250" />
@@ -460,7 +460,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-3).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-3).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-3).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -470,7 +470,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-3).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-3).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-3).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -487,7 +487,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-3).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-3).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-3).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -497,7 +497,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-3).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-3).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-3).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -510,7 +510,7 @@
                 <!-- Move Icon 2 To Icon 1 Position On Move Next -->
                 <control type="group">
                     <visible>Container(57).OnNext</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(-2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(-2).Label)</visible>
                     <animation effect="zoom" start="-543,75,240,480" end="-894,82,192,384" time="250" reversible="false">Hidden</animation>
                     <left>-543</left>
                     <top>75</top>
@@ -524,7 +524,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -534,7 +534,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -551,7 +551,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -561,7 +561,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -574,7 +574,7 @@
                 <!-- Move Icon 3 To Icon 2 Position On Move Next -->
                 <control type="group">
                     <visible>Container(57).OnNext</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(-1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(-1).Label)</visible>
                     <animation effect="zoom" start="-192,0,384,768" end="-543,75,240,480" time="250" reversible="false">Hidden</animation>
                     <left>-192</left>
                     <top>0</top>
@@ -588,7 +588,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -598,7 +598,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -615,7 +615,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -625,7 +625,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -651,7 +651,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -661,7 +661,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -678,7 +678,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -688,7 +688,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -701,7 +701,7 @@
                 <!-- Move Icon 5 To Icon 4 Position On Move Next -->
                 <control type="group">
                     <visible>Container(57).OnNext</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="702,82,192,384" end="318,75,240,480" time="250" reversible="false">Hidden</animation>
                     <left>702</left>
                     <top>82</top>
@@ -715,7 +715,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -725,7 +725,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -742,7 +742,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -752,7 +752,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -765,7 +765,7 @@
                 <!-- Show Far Right Icon On Move Next -->
                 <control type="group">
                     <visible>Container(57).OnNext</visible>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(2).Label)</visible>
                     <animation type="Hidden" reversible="false">
                         <effect type="fade" start="0" end="100" time="250" />
                         <effect type="slide" start="248,0" end="0,0" time="250" />
@@ -783,7 +783,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -793,7 +793,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -810,7 +810,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -820,7 +820,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -842,7 +842,7 @@
                     <top>82</top>
                     <width>192</width>
                     <height>384</height>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(-2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(-2).Label)</visible>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -851,7 +851,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -861,7 +861,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -878,7 +878,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -888,7 +888,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -904,7 +904,7 @@
                     <top>75</top>
                     <width>240</width>
                     <height>480</height>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(-1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(-1).Label)</visible>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -913,7 +913,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -923,7 +923,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(-1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -940,7 +940,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -950,7 +950,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(-1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -974,7 +974,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -984,7 +984,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1001,7 +1001,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(0).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1011,7 +1011,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(0).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(0).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(0).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1027,7 +1027,7 @@
                     <top>75</top>
                     <width>240</width>
                     <height>480</height>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(1).Label)</visible>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -1036,7 +1036,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1046,7 +1046,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1063,7 +1063,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(1).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1073,7 +1073,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(1).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(1).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1089,7 +1089,7 @@
                     <top>82</top>
                     <width>192</width>
                     <height>384</height>
-                    <visible>!IsEmpty(Container(57).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(57).ListItemNoWrap(2).Label)</visible>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -1098,7 +1098,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1108,7 +1108,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture diffuse="iconview-diffuse.png" />
                         <info>Container(57).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1125,7 +1125,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(2).ActualIcon</info>
-                        <visible>IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>
@@ -1135,7 +1135,7 @@
                         <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                         <texture flipy="true" diffuse="iconview-reflect-diffuse.png" />
                         <info>Container(57).ListItem(2).Thumb</info>
-                        <visible>!IsEmpty(Container(57).ListItem(2).Thumb)</visible>
+                        <visible>!String.IsEmpty(Container(57).ListItem(2).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>

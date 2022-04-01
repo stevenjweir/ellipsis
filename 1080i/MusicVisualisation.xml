@@ -57,15 +57,16 @@
 				<height>45</height>
 				<font>Library_Bold_24</font>
 				<textcolor>TextGrey</textcolor>
+				<align>left</align>
 				<label>$INFO[MusicPlayer.Title]</label>
 				<scroll>true</scroll>
 			</control>
 			<control type="image">
 				<left>987</left>
-				<top>33</top>
+				<top>44</top>
 				<width>216</width>
 				<height>34</height>
-				<texture>rating1.png</texture>
+				<texture>$INFO[MusicPlayer.UserRating]rating.png</texture>
 			</control>
 			<control type="label">
 				<left>282</left>

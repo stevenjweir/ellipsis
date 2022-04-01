@@ -11,7 +11,7 @@
                 <!-- Hide Far Right Icon On Move Previous -->
                 <control type="group">
                     <visible>Container(52).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(52).ListItemNoWrap(3).Label)</visible>
+                    <visible>!String.IsEmpty(Container(52).ListItemNoWrap(3).Label)</visible>
                     <animation type="Hidden" reversible="false">
                         <effect type="fade" start="100" end="0" time="250" />
                         <effect type="slide" start="0" end="192" time="250" />
@@ -54,7 +54,7 @@
                 <!-- Move Icon 2 To Icon 3 Position On Move Previous -->
                 <control type="group">
                     <visible>Container(52).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
                     <animation effect="zoom" start="238,22,330,660" end="471,44,290,579" time="250" reversible="false">Hidden</animation>
                     <left>238</left>
                     <top>22</top>
@@ -94,7 +94,7 @@
                 <!-- Move Icon 1 To Icon 2 Position On Move Previous -->
                 <control type="group">
                     <visible>Container(52).OnPrevious</visible>
-                    <visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="0,0,376,753" end="238,22,330,660" time="250" reversible="false">Hidden</animation>
                     <left>0</left>
                     <top>0</top>
@@ -182,7 +182,7 @@
                 <!-- Show Far Right Icon On Move Next -->
                 <control type="group">
                     <visible>Container(52).OnNext</visible>
-                    <visible>!IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
                     <animation type="Hidden" reversible="false">
                         <effect type="fade" start="0" end="100" time="250" />
                         <effect type="slide" start="192" end="0" time="250" />
@@ -226,7 +226,7 @@
                 <!-- Move Icon 3 To Icon 2 Position On Move Next -->
                 <control type="group">
                     <visible>Container(52).OnNext</visible>
-                    <visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
                     <animation effect="zoom" start="471,44,290,579" end="238,22,330,660" time="250" reversible="false">Hidden</animation>
                     <left>471</left>
                     <top>44</top>
@@ -266,7 +266,7 @@
                 <!-- Move Icon 2 To Icon 1 Position On Move Next -->
                 <control type="group">
                     <visible>Container(52).OnNext</visible>
-                    <visible>!IsEmpty(Container(52).ListItemNoWrap(0).Label)</visible>
+                    <visible>!String.IsEmpty(Container(52).ListItemNoWrap(0).Label)</visible>
                     <animation effect="zoom" start="238,22,330,660" end="0,0,376,753" time="250" reversible="false">Hidden</animation>
                     <left>238</left>
                     <top>22</top>
@@ -363,7 +363,7 @@
                         <effect type="slide" start="0" end="-471" center="auto" time="150" tween="back" easing="in" />
                         <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
                     </animation>
-                    <visible>!IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(52).ListItemNoWrap(2).Label)</visible>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>
@@ -409,7 +409,7 @@
                         <effect type="slide" start="0" end="-238" center="auto" time="150" tween="back" easing="in" />
                         <effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" />
                     </animation>
-                    <visible>!IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(52).ListItemNoWrap(1).Label)</visible>
                     <control type="image">
                         <left>0</left>
                         <top>0</top>

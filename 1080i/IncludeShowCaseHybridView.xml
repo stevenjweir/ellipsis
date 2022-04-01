@@ -14,7 +14,7 @@
 				<!-- Hide Far Right Icon On Move Previous -->
 				<control type="group">
 					<visible>Container(51).OnPrevious</visible>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(4).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(4).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="100" end="0" time="250"/>
 						<effect type="slide" start="0" end="192" time="250"/>
@@ -31,7 +31,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(4).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -40,7 +40,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(4).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -65,7 +65,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(4).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -74,7 +74,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(4).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(4).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -87,7 +87,7 @@
 				<!-- Move Icon 3 To Icon 4 Position On Move Previous -->
 				<control type="group">
 					<visible>Container(51).OnPrevious</visible>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
 					<animation effect="zoom" start="536,99,262,771" end="741,135,213,627" time="250" reversible="false">Hidden</animation>
 					<left>536</left>
 					<top>99</top>
@@ -101,7 +101,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(3).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -110,7 +110,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(3).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -135,7 +135,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(3).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -144,7 +144,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(3).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -157,7 +157,7 @@
 				<!-- Move Icon 2 To Icon 3 Position On Move Previous -->
 				<control type="group">
 					<visible>Container(51).OnPrevious</visible>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
 					<animation effect="zoom" start="288,56,324,948" end="536,99,262,771" time="250" reversible="false">Hidden</animation>
 					<left>288</left>
 					<top>56</top>
@@ -171,7 +171,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(2).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -180,7 +180,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(2).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -205,7 +205,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(2).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -214,7 +214,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(2).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -227,7 +227,7 @@
 				<!-- Move Icon 1 To Icon 2 Position On Move Previous -->
 				<control type="group">
 					<visible>Container(51).OnPrevious</visible>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
 					<animation effect="zoom" start="0,0,399,1170" end="288,56,324,948" time="250" reversible="false">Hidden</animation>
 					<left>0</left>
 					<top>0</top>
@@ -241,7 +241,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(1).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -250,7 +250,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(1).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -275,7 +275,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(1).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -284,7 +284,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(1).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -314,7 +314,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(0).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -323,7 +323,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(0).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -348,7 +348,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(0).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -357,7 +357,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(0).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -375,7 +375,7 @@
 				<!-- Show Far Right Icon On Move Next -->
 				<control type="group">
 					<visible>Container(51).OnNext</visible>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="0" end="100" time="250"/>
 						<effect type="slide" start="192" end="0" time="250"/>
@@ -393,7 +393,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(3).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -402,7 +402,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(3).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -427,7 +427,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(3).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -436,7 +436,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(3).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -449,7 +449,7 @@
 				<!-- Move Icon 4 To Icon 3 Position On Move Next -->
 				<control type="group">
 					<visible>Container(51).OnNext</visible>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
 					<animation effect="zoom" start="741,135,213,627" end="536,99,262,771" time="250" reversible="false">Hidden</animation>
 					<left>741</left>
 					<top>135</top>
@@ -463,7 +463,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(2).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -472,7 +472,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(2).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -497,7 +497,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(2).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -506,7 +506,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(2).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -519,7 +519,7 @@
 				<!-- Move Icon 3 To Icon 2 Position On Move Next -->
 				<control type="group">
 					<visible>Container(51).OnNext</visible>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
 					<animation effect="zoom" start="536,99,262,771" end="288,56,324,948" time="250" reversible="false">Hidden</animation>
 					<left>536</left>
 					<top>99</top>
@@ -533,7 +533,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(1).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -542,7 +542,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(1).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -567,7 +567,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(1).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -576,7 +576,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(1).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -589,7 +589,7 @@
 				<!-- Move Icon 2 To Icon 1 Position On Move Next -->
 				<control type="group">
 					<visible>Container(51).OnNext</visible>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(0).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(0).Label)</visible>
 					<animation effect="zoom" start="288,56,324,948" end="0,0,399,1170" time="250" reversible="false">Hidden</animation>
 					<left>288</left>
 					<top>56</top>
@@ -603,7 +603,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(0).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -612,7 +612,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(0).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -637,7 +637,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(0).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -646,7 +646,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(0).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -675,7 +675,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(-1).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -684,7 +684,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(-1).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -709,7 +709,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(-1).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -718,7 +718,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(-1).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(-1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -746,7 +746,7 @@
 						<effect type="slide" start="0" end="-741" center="auto" time="150" tween="back" easing="in"/>
 						<effect type="fade" start="100" end="0" time="150" tween="sine" easing="in"/>
 					</animation>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -755,7 +755,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(3).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -764,7 +764,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(3).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -789,7 +789,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(3).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -798,7 +798,7 @@
 						<height>314</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(3).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(3).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -822,7 +822,7 @@
 						<effect type="slide" start="0" end="-536" center="auto" time="150" tween="back" easing="in"/>
 						<effect type="fade" start="100" end="0" time="150" tween="sine" easing="in"/>
 					</animation>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -831,7 +831,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(2).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -840,7 +840,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(2).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -865,7 +865,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(2).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -874,7 +874,7 @@
 						<height>386</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(2).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(2).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -898,7 +898,7 @@
 						<effect type="slide" start="0" end="-288" center="auto" time="150" tween="back" easing="in"/>
 						<effect type="fade" start="100" end="0" time="150" tween="sine" easing="in"/>
 					</animation>
-					<visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
+					<visible>!String.IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -907,7 +907,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(1).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -916,7 +916,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(1).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -941,7 +941,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(1).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -950,7 +950,7 @@
 						<height>474</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(1).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(1).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -983,7 +983,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png"/>
 						<info>Container(51).ListItem(0).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -992,7 +992,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="dvdbox-diffuse.png">$INFO[Container(51).ListItem(0).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1017,7 +1017,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png"/>
 						<info>Container(51).ListItem(0).Icon</info>
-						<visible>IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1026,7 +1026,7 @@
 						<height>585</height>
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture flipy="true" diffuse="dvdbox-reflect-diffuse.png">$INFO[Container(51).ListItem(0).Art(poster)]</texture>
-						<visible>!IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
+						<visible>!String.IsEmpty(Container(51).ListItem(0).Art(poster))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1051,7 +1051,7 @@
 				<!-- Show Far Top Icon On Move Previous -->
 				<control type="group">
 					<visible>Container(62).OnPrevious</visible>
-					<visible>!IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
+					<visible>!String.IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="0" end="100" time="250"/>
 					</animation>
@@ -1068,7 +1068,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(-1).Icon</info>
-						<visible>IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
+						<visible>String.IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1078,7 +1078,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(-1).Thumb</info>
-						<visible>!IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1099,7 +1099,7 @@
 				<!-- Hide Far Bottom Icon On Move Previous -->
 				<control type="group">
 					<visible>Container(62).OnPrevious</visible>
-					<visible>!IsEmpty(Container(62).ListItemNoWrap(2).Label)</visible>
+					<visible>!String.IsEmpty(Container(62).ListItemNoWrap(2).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="0" end="100" time="250"/>
 					</animation>
@@ -1115,7 +1115,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(2).Icon</info>
-						<visible>IsEmpty(Container(62).ListItem(2).Thumb)</visible>
+						<visible>String.IsEmpty(Container(62).ListItem(2).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1125,7 +1125,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(2).Thumb</info>
-						<visible>!IsEmpty(Container(62).ListItem(2).Thumb)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItem(2).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1146,7 +1146,7 @@
 				<!-- Move Icon 2 To Icon 3 Position On Move Previous -->
 				<control type="group">
 					<visible>Container(62).OnPrevious</visible>
-					<visible>!IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
+					<visible>!String.IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="zoom" start="1113,372,600,339" end="1200,711,426,240" time="125"/>
 						<effect type="slide" start="0,0" end="0,-150" time="125" tween="sine" easing="out" delay="125"/>
@@ -1163,7 +1163,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(1).Icon</info>
-						<visible>IsEmpty(Container(62).ListItem(1).Thumb)</visible>
+						<visible>String.IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1173,7 +1173,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(1).Thumb</info>
-						<visible>!IsEmpty(Container(62).ListItem(1).Thumb)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1194,7 +1194,7 @@
 				<!-- Move Icon 1 To Icon 2 Position On Move Previous -->
 				<control type="group">
 					<visible>Container(62).OnPrevious</visible>
-					<visible>!IsEmpty(Container(62).ListItemNoWrap(0).Label)</visible>
+					<visible>!String.IsEmpty(Container(62).ListItemNoWrap(0).Label)</visible>
 					<animation effect="zoom" start="1200,282,426,240" end="1113,372,600,339" time="250" reversible="false">Hidden</animation>
 					<left>1200</left>
 					<top>282</top>
@@ -1208,7 +1208,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(0).Icon</info>
-						<visible>IsEmpty(Container(62).ListItem(0).Thumb)</visible>
+						<visible>String.IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1218,7 +1218,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(0).Thumb</info>
-						<visible>!IsEmpty(Container(62).ListItem(0).Thumb)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1244,7 +1244,7 @@
 				<!-- Hide Far Top Icon On Move Next -->
 				<control type="group">
 					<visible>Container(62).OnNext</visible>
-					<visible>!IsEmpty(Container(62).ListItemNoWrap(-2).Label)</visible>
+					<visible>!String.IsEmpty(Container(62).ListItemNoWrap(-2).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="100" end="0" time="250"/>
 					</animation>
@@ -1260,7 +1260,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(-2).Icon</info>
-						<visible>IsEmpty(Container(62).ListItem(-2).Thumb)</visible>
+						<visible>String.IsEmpty(Container(62).ListItem(-2).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1270,7 +1270,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(-2).Thumb</info>
-						<visible>!IsEmpty(Container(62).ListItem(-2).Thumb)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItem(-2).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1291,7 +1291,7 @@
 				<!-- Show Far Bottom Icon On Move Next -->
 				<control type="group">
 					<visible>Container(62).OnNext</visible>
-					<visible>!IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
+					<visible>!String.IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="fade" start="0" end="100" time="250"/>
 					</animation>
@@ -1308,7 +1308,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(1).Icon</info>
-						<visible>IsEmpty(Container(62).ListItem(1).Thumb)</visible>
+						<visible>String.IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1318,7 +1318,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(1).Thumb</info>
-						<visible>!IsEmpty(Container(62).ListItem(1).Thumb)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1339,7 +1339,7 @@
 				<!-- Move Icon 2 To Icon 1 Position On Move Next -->
 				<control type="group">
 					<visible>Container(62).OnNext</visible>
-					<visible>!IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
+					<visible>!String.IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
 					<animation type="Hidden" reversible="false">
 						<effect type="zoom" start="1113,372,600,339" end="1200,132,426,240" time="125"/>
 						<effect type="slide" start="0,0" end="0,150" time="125" tween="sine" easing="out" delay="125"/>
@@ -1356,7 +1356,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(-1).Icon</info>
-						<visible>IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
+						<visible>String.IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1366,7 +1366,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(-1).Thumb</info>
-						<visible>!IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1400,7 +1400,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(0).Icon</info>
-						<visible>IsEmpty(Container(62).ListItem(0).Thumb)</visible>
+						<visible>String.IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1410,7 +1410,7 @@
 						<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 						<texture diffuse="episode-diffuse.png"/>
 						<info>Container(62).ListItem(0).Thumb</info>
-						<visible>!IsEmpty(Container(62).ListItem(0).Thumb)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -1447,7 +1447,7 @@
 							<effect type="slide" start="0" end="0,148" center="auto" time="150" tween="back" easing="in"/>
 							<effect type="fade" start="100" end="0" time="150" tween="sine" easing="in"/>
 						</animation>
-						<visible>!IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
+						<visible>!String.IsEmpty(Container(62).ListItemNoWrap(-1).Label)</visible>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
@@ -1456,7 +1456,7 @@
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
 							<info>Container(62).ListItem(-1).Icon</info>
-							<visible>IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
+							<visible>String.IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1466,7 +1466,7 @@
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
 							<info>Container(62).ListItem(-1).Thumb</info>
-							<visible>!IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
+							<visible>!String.IsEmpty(Container(62).ListItem(-1).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1491,7 +1491,7 @@
 					<top>560</top>
 					<width>426</width>
 					<height>240</height>
-					<visible>!IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
+					<visible>!String.IsEmpty(Container(62).ListItemNoWrap(1).Label)</visible>
 					<control type="group">
 						<animation type="WindowOpen" reversible="false">
 							<effect type="slide" start="0,-148" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out"/>
@@ -1509,7 +1509,7 @@
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
 							<info>Container(62).ListItem(1).Icon</info>
-							<visible>IsEmpty(Container(62).ListItem(1).Thumb)</visible>
+							<visible>String.IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1519,7 +1519,7 @@
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
 							<info>Container(62).ListItem(1).Thumb</info>
-							<visible>!IsEmpty(Container(62).ListItem(1).Thumb)</visible>
+							<visible>!String.IsEmpty(Container(62).ListItem(1).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1562,7 +1562,7 @@
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
 							<info>Container(62).ListItem(0).Icon</info>
-							<visible>IsEmpty(Container(62).ListItem(0).Thumb)</visible>
+							<visible>String.IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1572,7 +1572,7 @@
 							<aspectratio align="center" scalediffuse="false">scale</aspectratio>
 							<texture diffuse="episode-diffuse.png"/>
 							<info>Container(62).ListItem(0).Thumb</info>
-							<visible>!IsEmpty(Container(62).ListItem(0).Thumb)</visible>
+							<visible>!String.IsEmpty(Container(62).ListItem(0).Thumb)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -1766,7 +1766,7 @@
 			<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
 			<visible>Control.IsVisible(51) + !Window.IsActive(1201)</visible>
 			<visible>!Skin.HasSetting(Disable_Icon_Labels)</visible>
-			<visible>!IsEmpty(ListItem.Title)</visible>
+			<visible>!String.IsEmpty(ListItem.Title)</visible>
 			<animation effect="fade" time="300">Visible</animation>
 			<animation effect="fade" time="300">Hidden</animation>
 			<animation effect="fade" time="300">WindowOpen</animation>

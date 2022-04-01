@@ -679,3 +679,23 @@ msgstr ""
 msgctxt "#50165"
 msgid "Event Log"
 msgstr ""
+
+msgctxt "#50166"
+msgid "Enter text here..."
+msgstr ""
+
+msgctxt "#50167"
+msgid "Hardware decoding"
+msgstr ""
+
+msgctxt "#50168"
+msgid "Inactive"
+msgstr ""
+
+msgctxt "#50169"
+msgid "Decoder"
+msgstr ""
+
+msgctxt "#50170"
+msgid "Memory Used:"
+msgstr ""
