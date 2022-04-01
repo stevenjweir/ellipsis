@@ -172,23 +172,6 @@
 			<texturedownfocus>-</texturedownfocus>
 			<visible>false</visible>
 		</control>
-		<control type="selectbutton" id="5035">
-			<description>Visualisation Select Button</description>
-			<left>0</left>
-			<top>0</top>
-			<width>300</width>
-			<height>52</height>
-			<label>-</label>
-			<font>Default</font>
-			<textcolor>Text</textcolor>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<texturebg>keyboard-btn-space-focus.png</texturebg>
-			<onleft>500</onleft>
-			<onright>500</onright>
-			<onup>500</onup>
-			<ondown>500</ondown>
-		</control>
 		<!-- Dock Scroller Icons - Counter Clockwise Mothion -->
 		<control type="group" id="7501">
 			<visible>Container(9500).OnPrevious</visible>
@@ -538,6 +521,7 @@
 					<include>Dock_SkipForward</include>
 					<include>Dock_Random</include>
 					<include>Dock_Repeat</include>
+					<include>Dock_Rate</include>
 					<include>Dock_Visualisation</include>
 					<include>Dock_Visualisation_Settings</include>
 					<include>Dock_Visualisation_Presets</include>

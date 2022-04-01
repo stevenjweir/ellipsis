@@ -10,31 +10,31 @@
 		<control type="image">
 			<include>FlagLayout</include>
 			<texture>$INFO[ListItem.VideoAspect,flags\videoaspect\,.png]</texture>
-			<visible>!IsEmpty(ListItem.VideoAspect)</visible>
+			<visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
 		</control>
 		<control type="image">
 			<include>FlagLayout</include>
 			<texture>$INFO[ListItem.VideoResolution,flags\videoresolution\,.png]</texture>
-			<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+			<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
 		</control>
 		<control type="image">
 			<include>FlagLayout</include>
 			<texture>$INFO[ListItem.VideoCodec,flags\videocodec\,.png]</texture>
-			<visible>!IsEmpty(ListItem.VideoCodec)</visible>
+			<visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
 		</control>
 		<control type="image">
 			<include>FlagLayout</include>
 			<texture>$INFO[ListItem.AudioChannels,flags\audiochannels\,.png]</texture>
-			<visible>!IsEmpty(ListItem.AudioChannels)</visible>
+			<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
 		</control>
 		<control type="image">
 			<include>FlagLayout</include>
 			<texture>$INFO[ListItem.AudioCodec,flags\audiocodec\,.png]</texture>
-			<visible>!IsEmpty(ListItem.AudioCodec)</visible>
+			<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
 		</control>
 		<control type="group">
 			<control type="image" id="4000">
-			<visible>!Substring(ListItem.Studio,/)</visible>
+			<visible>!String.Contains(ListItem.Studio,/)</visible>
 				<aspectratio align="center">keep</aspectratio>
 				<left>1</left>
 				<top>-5</top>
@@ -43,7 +43,7 @@
 				<texture fallback="empty">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
 			</control>
 			<control type="textbox">
-				<visible>Substring(ListItem.Studio,/)</visible>
+				<visible>String.Contains(ListItem.Studio,/)</visible>
 				<top>1</top>
 				<left>1</left>
 				<width>110</width>

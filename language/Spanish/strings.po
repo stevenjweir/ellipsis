@@ -679,3 +679,23 @@ msgstr "Episodios recién añadidos"
 msgctxt "#50165"
 msgid "Event Log"
 msgstr "Registro de eventos"
+
+msgctxt "#50166"
+msgid "Enter text here..."
+msgstr "Introducir texto aquí"
+
+msgctxt "#50167"
+msgid "Hardware decoding"
+msgstr "Decodificación por Hardware"
+
+msgctxt "#50168"
+msgid "Inactive"
+msgstr "Inactivo"
+
+msgctxt "#50169"
+msgid "Decoder"
+msgstr "Decodificador"
+
+msgctxt "#50170"
+msgid "Memory Used:"
+msgstr "Memoria Usada:"

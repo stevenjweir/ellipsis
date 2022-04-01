@@ -51,7 +51,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -79,7 +79,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-2).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -89,7 +89,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-2).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -106,7 +106,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -133,7 +133,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-1).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -143,7 +143,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-1).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -186,7 +186,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(0).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(0).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -196,7 +196,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(0).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(0).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -213,7 +213,7 @@
                     <top>0</top>
                     <width>680</width>
                     <height>402</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -240,7 +240,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(1).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(1).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -250,7 +250,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(1).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(1).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -267,7 +267,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -294,7 +294,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(2).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(2).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -304,7 +304,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(2).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(2).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -321,7 +321,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(3).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(3).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -348,7 +348,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(3).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(3).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(3).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -358,7 +358,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(3).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(3).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(3).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -380,7 +380,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(-3).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(-3).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -407,7 +407,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-3).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(-3).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(-3).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -417,7 +417,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-3).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(-3).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(-3).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -434,7 +434,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -461,7 +461,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-2).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -471,7 +471,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-2).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -488,7 +488,7 @@
                     <top>0</top>
                     <width>680</width>
                     <height>402</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -515,7 +515,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-1).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -525,7 +525,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-1).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -568,7 +568,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(0).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(0).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -578,7 +578,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(0).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(0).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -595,7 +595,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -622,7 +622,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(1).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(1).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -632,7 +632,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(1).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(1).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -649,7 +649,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -677,7 +677,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(2).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(2).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -687,7 +687,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(2).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(2).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -708,7 +708,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(-2).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -729,7 +729,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-2).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -739,7 +739,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-2).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(-2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -766,7 +766,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(-1).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -787,7 +787,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-1).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -797,7 +797,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(-1).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(-1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -844,7 +844,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(0).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(0).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -854,7 +854,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(0).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(0).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(0).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -881,7 +881,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(1).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -902,7 +902,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(1).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(1).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -912,7 +912,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(1).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(1).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(1).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -939,7 +939,7 @@
                     <top>88</top>
                     <width>444</width>
                     <height>262</height>
-                    <visible>!IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
+                    <visible>!String.IsEmpty(Container(53).ListItemNoWrap(2).Label)</visible>
                     <control type="group">
                         <left>0</left>
                         <top>0</top>
@@ -960,7 +960,7 @@
                             <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(2).ActualIcon</info>
-                            <visible>IsEmpty(Container(53).ListItem(2).Thumb)</visible>
+                            <visible>String.IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>
@@ -970,7 +970,7 @@
                             <aspectratio align="center" scalediffuse="false">scale</aspectratio>
                             <texture diffuse="record-diffuse.png" />
                             <info>Container(53).ListItem(2).Thumb</info>
-                            <visible>!IsEmpty(Container(53).ListItem(2).Thumb)</visible>
+                            <visible>!String.IsEmpty(Container(53).ListItem(2).Thumb)</visible>
                         </control>
                         <control type="image">
                             <left>0</left>

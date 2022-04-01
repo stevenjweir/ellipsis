@@ -203,7 +203,7 @@
 					<height>75</height>
 					<texture>settings\tabs\videos_general_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,0)</visible>
 				</control>
 				<control type="image">
 					<left>-194</left>
@@ -212,7 +212,7 @@
 					<height>75</height>
 					<texture>settings\tabs\music_files_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,1)</visible>
 				</control>
 				<control type="image">
 					<left>-94</left>
@@ -221,7 +221,7 @@
 					<height>75</height>
 					<texture>settings\tabs\videos_dvd_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,2)</visible>
 				</control>
 				<control type="image">
 					<left>4</left>
@@ -230,7 +230,7 @@
 					<height>75</height>
 					<texture>settings\tabs\pictures_slideshow_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,3)</visible>
 				</control>
 				<control type="image">
 					<left>104</left>
@@ -239,7 +239,7 @@
 					<height>75</height>
 					<texture>settings\tabs\videos_subtitles_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-96)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
 					<left>202</left>
@@ -248,7 +248,7 @@
 					<height>75</height>
 					<texture>settings\tabs\impaired_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-95)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,5)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,5)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
@@ -328,7 +328,7 @@
 					<height>75</height>
 					<texture>settings\tabs\music_library_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-100)  | Control.HasFocus(20)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,0)</visible>
 				</control>
 				<control type="image">
 					<left>-194</left>
@@ -337,7 +337,7 @@
 					<height>75</height>
 					<texture>settings\tabs\pictures_files_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,1)</visible>
 				</control>
 				<control type="image">
 					<left>-96</left>
@@ -346,7 +346,7 @@
 					<height>75</height>
 					<texture>settings\tabs\videos_options_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,2)</visible>
 				</control>
 				<control type="image">
 					<left>2</left>
@@ -355,7 +355,7 @@
 					<height>75</height>
 					<texture>settings\tabs\videos_library_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,3)</visible>
 				</control>
 				<control type="image">
 					<left>100</left>
@@ -364,7 +364,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_OSD_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-96)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
@@ -433,7 +433,7 @@
 					<height>75</height>
 					<texture>settings\tabs\network_services_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,0)</visible>
 				</control>
 				<control type="image">
 					<left>-193</left>
@@ -442,7 +442,7 @@
 					<height>75</height>
 					<texture>settings\tabs\network_internet_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,1)</visible>
 				</control>
 				<control type="image">
 					<left>-94</left>
@@ -451,7 +451,7 @@
 					<height>75</height>
 					<texture>settings\tabs\network_upnp_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,2)</visible>
 				</control>
 				<control type="image">
 					<left>4</left>
@@ -460,7 +460,7 @@
 					<height>75</height>
 					<texture>settings\tabs\network_airplay_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,3)</visible>
 				</control>
 				<control type="image">
 					<left>103</left>
@@ -469,7 +469,7 @@
 					<height>75</height>
 					<texture>settings\tabs\weather_general_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-96)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
@@ -538,7 +538,7 @@
 					<height>75</height>
 					<texture>settings\tabs\system_videooutput_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,0)</visible>
 				</control>
 				<control type="image">
 					<left>-194</left>
@@ -547,7 +547,7 @@
 					<height>75</height>
 					<texture>settings\tabs\system_audiooutput_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,1)</visible>
 				</control>
 				<control type="image">
 					<left>-94</left>
@@ -556,7 +556,7 @@
 					<height>75</height>
 					<texture>settings\tabs\system_input_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,2)</visible>
 				</control>
 				<control type="image">
 					<left>4</left>
@@ -565,7 +565,7 @@
 					<height>75</height>
 					<texture>settings\tabs\sysinfo_network_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,3)</visible>
 				</control>
 				<control type="image">
 					<left>104</left>
@@ -574,7 +574,7 @@
 					<height>75</height>
 					<texture>settings\tabs\system_power_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-96)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
 					<left>202</left>
@@ -583,7 +583,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_EPG_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-95)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,5)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,5)</visible>
 				</control>
 				<control type="image">
 					<left>300</left>
@@ -592,7 +592,7 @@
 					<height>75</height>
 					<texture>settings\tabs\system_debug_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-94)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,6)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,6)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
@@ -683,7 +683,7 @@
 					<height>75</height>
 					<texture>settings\tabs\appearance_lookandfeel_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,0)</visible>
 				</control>
 				<control type="image">
 					<left>-94</left>
@@ -692,7 +692,7 @@
 					<height>75</height>
 					<texture>settings\tabs\appearance_region_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,1)</visible>
 				</control>
 				<control type="image">
 					<left>4</left>
@@ -701,7 +701,7 @@
 					<height>75</height>
 					<texture>settings\tabs\appearance_screensaver_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,2)</visible>
 				</control>
 				<control type="image">
 					<left>104</left>
@@ -710,7 +710,7 @@
 					<height>75</height>
 					<texture>settings\tabs\system_masterlock_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,3)</visible>
 				</control>
 				<control type="image">
 					<left>202</left>
@@ -719,7 +719,7 @@
 					<height>75</height>
 					<texture>settings\tabs\skinsettings_homepage_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-96)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
 					<left>-194</left>
@@ -788,7 +788,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_main_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-100) | Control.HasFocus(20)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,0)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,0)</visible>
 				</control>
 				<control type="image">
 					<left>-194</left>
@@ -797,7 +797,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_OSD_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-99)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,1)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,1)</visible>
 				</control>
 				<control type="image">
 					<left>-94</left>
@@ -806,7 +806,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_EPG_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-98)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,2)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,2)</visible>
 				</control>
 				<control type="image">
 					<left>4</left>
@@ -815,7 +815,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_channels_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-97)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,3)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,3)</visible>
 				</control>
 				<control type="image">
 					<left>104</left>
@@ -824,7 +824,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_REC_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-96)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,4)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,4)</visible>
 				</control>
 				<control type="image">
 					<left>202</left>
@@ -833,7 +833,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_timer_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-95)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,5)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,5)</visible>
 				</control>
 				<control type="image">
 					<left>300</left>
@@ -842,7 +842,7 @@
 					<height>75</height>
 					<texture>settings\tabs\system_masterlock_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-94)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,6)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,6)</visible>
 				</control>
 				<control type="image">
 					<left>398</left>
@@ -851,7 +851,7 @@
 					<height>75</height>
 					<texture>settings\tabs\PVR_options_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-93)</visible>
-					<visible>IntegerGreaterThan(Container(3).NumItems,7)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,7)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>

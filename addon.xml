@@ -1,4 +1,4 @@
-<addon id="skin.ellipsisUI" name="EllipsisUI" provider-name="TeamUI" version="1.5.1">
+<addon id="skin.ellipsisUI" name="EllipsisUI" provider-name="TeamUI" version="1.5.2">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 		<import addon="resource.images.studios.white" version="0.0.1"/>

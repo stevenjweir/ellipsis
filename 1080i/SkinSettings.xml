@@ -210,23 +210,6 @@
 				<enable>!Skin.HasSetting(Disable_Clock_Animation)</enable>
 				<pulseonselect>false</pulseonselect>
 			</control>
-			<control type="radiobutton" id="104">
-				<visible>ControlGroup(9000).HasFocus(30)</visible>
-				<label>$LOCALIZE[50001]</label>
-				<left>0</left>
-				<top>0</top>
-				<width>1596</width>
-				<height>69</height>
-				<textoffsetx>22</textoffsetx>
-				<font>Default</font>
-				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
-				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
-				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
-				<onclick>Skin.ToggleSetting(Enable_Cerberus_Background_Effect)</onclick>
-				<selected>Skin.HasSetting(Enable_Cerberus_Background_Effect)</selected>
-				<pulseonselect>false</pulseonselect>
-			</control>
 			<control type="radiobutton" id="105">
 				<visible>ControlGroup(9000).HasFocus(30)</visible>
 				<label>$LOCALIZE[50002]</label>
@@ -499,7 +482,26 @@
 				<onclick>Skin.ToggleSetting(Enable_Time_Of_Day_Background)</onclick>
 				<onclick>Skin.Reset(Enable_Custom_Background)</onclick>
 				<onclick>Skin.Reset(Enable_Custom_Background_Folder)</onclick>
+				<onclick>Skin.SetString(Changed_1,true)</onclick>
 				<selected>Skin.HasSetting(Enable_Time_Of_Day_Background)</selected>
+				<pulseonselect>false</pulseonselect>
+			</control>
+			<control type="radiobutton" id="104">
+				<visible>ControlGroup(9000).HasFocus(31)</visible>
+				<label>$LOCALIZE[50001]</label>
+				<left>0</left>
+				<top>0</top>
+				<width>1596</width>
+				<height>69</height>
+				<textoffsetx>22</textoffsetx>
+				<font>Default</font>
+				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
+				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
+				<onclick>Skin.SetString(Changed_2,true)</onclick>
+				<onclick>Skin.ToggleSetting(Enable_Cerberus_Background_Effect)</onclick>
+				<selected>Skin.HasSetting(Enable_Cerberus_Background_Effect)</selected>
 				<pulseonselect>false</pulseonselect>
 			</control>
 			<control type="radiobutton" id="301">

@@ -28,7 +28,7 @@
 					<height>52</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Icon]</texture>
-					<visible>IsEmpty(ListItem.Art(poster))</visible>
+					<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -58,7 +58,7 @@
 					<textcolor>Text</textcolor>
 					<align>left</align>
 					<info>ListItem.Label</info>
-					<visible>Substring(ListItem.Overlay,OverlayUnwatched.png)</visible>
+					<visible>String.Contains(ListItem.Overlay,OverlayUnwatched.png)</visible>
 					<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 				</control>
 				<control type="label">
@@ -72,7 +72,7 @@
 					<textcolor>Text</textcolor>
 					<align>left</align>
 					<info>ListItem.Label</info>
-					<visible>!Substring(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					<visible>!String.Contains(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 				</control>
 				<control type="label">
 					<left>1190</left>
@@ -111,7 +111,7 @@
 					<height>52</height>
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Icon]</texture>
-					<visible>IsEmpty(ListItem.Art(poster))</visible>
+					<visible>String.IsEmpty(ListItem.Art(poster))</visible>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -150,7 +150,7 @@
 					<textcolor>Text</textcolor>
 					<align>left</align>
 					<info>ListItem.Label</info>
-					<visible>Substring(ListItem.Overlay,OverlayUnwatched.png)</visible>
+					<visible>String.Contains(ListItem.Overlay,OverlayUnwatched.png)</visible>
 					<visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 				</control>
 				<control type="label">
@@ -164,7 +164,7 @@
 					<textcolor>Text</textcolor>
 					<align>left</align>
 					<info>ListItem.Label</info>
-					<visible>!Substring(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
+					<visible>!String.Contains(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 				</control>
 				<control type="label">
 					<left>1190</left>

@@ -47,6 +47,16 @@
 			</control>
 		</control>
 	</include>
+	<variable name="VideoHWDecoderVar">
+		<value condition="Player.Process(videohwdecoder)">$LOCALIZE[19074]</value>
+		<value>$LOCALIZE[50168]</value>
+	</variable>
+	<variable name="MusicInfoThumbVar">
+		<value condition="!String.IsEmpty(Listitem.Art(thumb))">$INFO[Listitem.Art(thumb)]</value>
+		<value condition="String.IsEqual(listitem.dbtype,artist)">DefaultArtist.png</value>
+		<value condition="String.IsEqual(listitem.dbtype,album)">DefaultAlbumCover.png</value>
+		<value>DefaultAudio.png</value>
+	</variable>
 	<include name="FolderName">
 		<control type="group">
 			<visible>!Skin.HasSetting(Disable_Current_Folder_Section_Widget)</visible>
@@ -56,7 +66,7 @@
 				<width>96</width>
 				<height>96</height>
 				<texture>current_folder.png</texture>
-				<visible>!IsEmpty(Container.FolderName)</visible>
+				<visible>!String.IsEmpty(Container.FolderName)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -81,6 +91,15 @@
 			<texturefocus border="8">controls\button_f.png</texturefocus>
 			<texturenofocus/>
 		</definition>
+	</include>
+	<include name="SettingsItemCommon">
+		<texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>
+		<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
+		<height>69</height>
+		<aligny>center</aligny>
+		<textoffsetx>22</textoffsetx>
+		<alttexturefocus border="4,5,6,8">controls\button_f.png</alttexturefocus>
+		<alttexturenofocus border="4,5,6,8">controls\button_nf.png</alttexturenofocus>
 	</include>
 	<include name="DefaultDialogButton">
 		<param name="width">315</param>
@@ -109,21 +128,21 @@
 		</definition>
 	</include>
 	<include name="Center_Tab_Settings">
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,0)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,1)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,2)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,3)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,4)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,5)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,6)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,7)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,8)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,9)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,10)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,11)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,12)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,13)">Conditional</animation>
-		<animation effect="slide" end="-49,0" condition="IntegerGreaterThan(Container(3).NumItems,14)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,0)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,1)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,2)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,3)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,4)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,5)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,6)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,7)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,8)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,9)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,10)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,11)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,12)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,13)">Conditional</animation>
+		<animation effect="slide" end="-49,0" condition="Integer.IsGreater(Container(3).NumItems,14)">Conditional</animation>
 	</include>
 	<include name="KeyboardButton">
 		<width>72</width>
@@ -159,7 +178,7 @@
 				<label>$LOCALIZE[20342]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://1/,left) | Substring(Container.FolderPath,videodb://1/,right)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://1/,left) | String.Contains(Container.FolderPath,videodb://1/,right)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -169,7 +188,7 @@
 				<label>$LOCALIZE[50073]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://1/1/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://1/1/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -179,7 +198,7 @@
 				<label>$LOCALIZE[50074]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://1/2/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://1/2/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -189,7 +208,7 @@
 				<label>$LOCALIZE[50075]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://1/3/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://1/3/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -199,7 +218,7 @@
 				<label>$LOCALIZE[50076]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://1/4/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://1/4/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -209,7 +228,7 @@
 				<label>$LOCALIZE[50077]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://1/5/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://1/5/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -219,7 +238,7 @@
 				<label>$LOCALIZE[50078]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://1/6/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://1/6/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -229,7 +248,7 @@
 				<label>$LOCALIZE[50067]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://2/,left) | Substring(Container.FolderPath,videodb://2/,right)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://2/,left) | String.Contains(Container.FolderPath,videodb://2/,right)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -239,7 +258,7 @@
 				<label>$LOCALIZE[50079]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://2/1/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://2/1/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -249,7 +268,7 @@
 				<label>$LOCALIZE[50080]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://2/2/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://2/2/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -259,7 +278,7 @@
 				<label>$LOCALIZE[50081]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://2/3/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://2/3/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -269,7 +288,7 @@
 				<label>$LOCALIZE[50082]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://2/4/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://2/4/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -279,7 +298,7 @@
 				<label>$LOCALIZE[50083]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://3/,left) | Substring(Container.FolderPath,videodb://3/,right)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://3/,left) | String.Contains(Container.FolderPath,videodb://3/,right)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -289,7 +308,7 @@
 				<label>$LOCALIZE[50084]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://3/1/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://3/1/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -299,7 +318,7 @@
 				<label>$LOCALIZE[50085]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://3/2/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://3/2/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -309,7 +328,7 @@
 				<label>$LOCALIZE[50086]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://3/3/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://3/3/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -319,7 +338,7 @@
 				<label>$LOCALIZE[50087]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://3/4/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://3/4/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -329,7 +348,7 @@
 				<label>$LOCALIZE[50088]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://3/5/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://3/5/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -339,7 +358,7 @@
 				<label>$LOCALIZE[50089]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://3/6/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://3/6/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -349,7 +368,7 @@
 				<label>$LOCALIZE[50090]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://4/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://4/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -359,7 +378,7 @@
 				<label>$LOCALIZE[50091]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://5/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://5/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -369,7 +388,7 @@
 				<label>$LOCALIZE[50092]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,videodb://6/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,videodb://6/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -379,7 +398,7 @@
 				<label>$LOCALIZE[50093]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://1/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://1/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -389,7 +408,7 @@
 				<label>$LOCALIZE[50094]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://2/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://2/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -399,7 +418,7 @@
 				<label>$LOCALIZE[50095]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://3/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://3/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -409,7 +428,7 @@
 				<label>$LOCALIZE[50096]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://10/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://10/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -419,7 +438,7 @@
 				<label>$LOCALIZE[50097]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://4/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://4/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -429,7 +448,7 @@
 				<label>$LOCALIZE[50098]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://5/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://5/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -439,7 +458,7 @@
 				<label>$LOCALIZE[50099]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://6/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://6/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -449,7 +468,7 @@
 				<label>$LOCALIZE[50100]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://7/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://7/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -459,7 +478,7 @@
 				<label>$LOCALIZE[50101]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://8/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://8/,left)</visible>
 			</control>
 			<control type="fadelabel">
 				<left>144</left>
@@ -469,7 +488,7 @@
 				<label>$LOCALIZE[50102]</label>
 				<font>NowPlaying_Label</font>
 				<textcolor>Text</textcolor>
-				<visible>Substring(Container.FolderPath,musicdb://9/,left)</visible>
+				<visible>String.Contains(Container.FolderPath,musicdb://9/,left)</visible>
 			</control>
 		</control>
 	</include>
@@ -611,10 +630,10 @@
 			<texture>background2.png</texture>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))]</visible>
-			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Art(fanart))]</visible>
-			<visible>![Skin.HasSetting(Enable_Custom_Background) + !IsEmpty(Skin.String(Custom_Background))]</visible>
-			<visible>![Skin.HasSetting(Enable_Custom_Background_Folder) + !IsEmpty(Skin.String(Custom_Background_Folder))]</visible>
+			<visible>![!String.IsEmpty(Fanart.Image) + String.IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![!Skin.HasSetting(Disable_Fanart) + String.IsEmpty(Fanart.Image) + !String.IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![Skin.HasSetting(Enable_Custom_Background) + !String.IsEmpty(Skin.String(Custom_Background))]</visible>
+			<visible>![Skin.HasSetting(Enable_Custom_Background_Folder) + !String.IsEmpty(Skin.String(Custom_Background_Folder))]</visible>
 			<visible>!Skin.HasSetting(Enable_Time_Of_Day_Background)</visible>
 		</control>
 		<control type="visualisation">
@@ -658,7 +677,7 @@
 			<fadetime>300</fadetime>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))</visible>
+			<visible>!String.IsEmpty(Fanart.Image) + String.IsEmpty(ListItem.Art(fanart))</visible>
 		</control>
 		<control type="image">
 			<left>0</left>
@@ -669,7 +688,7 @@
 			<fadetime>300</fadetime>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>!Skin.HasSetting(Disable_Fanart) + !IsEmpty(ListItem.Art(fanart))</visible>
+			<visible>!Skin.HasSetting(Disable_Fanart) + !String.IsEmpty(ListItem.Art(fanart))</visible>
 		</control>
 		<control type="image">
 			<left>0</left>
@@ -680,9 +699,9 @@
 			<texture diffuse="background-diffuse.png" background="true"/>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))]</visible>
-			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Art(fanart))]</visible>
-			<visible>Skin.HasSetting(Enable_Custom_Background) + !IsEmpty(Skin.String(Custom_Background))</visible>
+			<visible>![!String.IsEmpty(Fanart.Image) + String.IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![!Skin.HasSetting(Disable_Fanart) + String.IsEmpty(Fanart.Image) + !String.IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>Skin.HasSetting(Enable_Custom_Background) + !String.IsEmpty(Skin.String(Custom_Background))</visible>
 		</control>
 		<control type="multiimage">
 			<left>0</left>
@@ -695,18 +714,18 @@
 			<colordiffuse>BackgroundDiffuse</colordiffuse>
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))]</visible>
-			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Art(fanart))]</visible>
-			<visible>![Skin.HasSetting(Enable_Custom_Background) + !IsEmpty(Skin.String(Custom_Background))]</visible>
-			<visible>Skin.HasSetting(Enable_Custom_Background_Folder) + !IsEmpty(Skin.String(Custom_Background_Folder))</visible>
+			<visible>![!String.IsEmpty(Fanart.Image) + String.IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![!Skin.HasSetting(Disable_Fanart) + String.IsEmpty(Fanart.Image) + !String.IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![Skin.HasSetting(Enable_Custom_Background) + !String.IsEmpty(Skin.String(Custom_Background))]</visible>
+			<visible>Skin.HasSetting(Enable_Custom_Background_Folder) + !String.IsEmpty(Skin.String(Custom_Background_Folder))</visible>
 		</control>
 		<control type="group">
 			<visible>![!Skin.HasSetting(Disable_Visualisation) + Player.HasAudio]</visible>
 			<visible>![!Skin.HasSetting(Disable_Background_Video) + Player.HasVideo]</visible>
-			<visible>![!IsEmpty(Fanart.Image) + IsEmpty(ListItem.Art(fanart))]</visible>
-			<visible>![!Skin.HasSetting(Disable_Fanart) + IsEmpty(Fanart.Image) + !IsEmpty(ListItem.Art(fanart))]</visible>
-			<visible>![Skin.HasSetting(Enable_Custom_Background) + !IsEmpty(Skin.String(Custom_Background))]</visible>
-			<visible>![Skin.HasSetting(Enable_Custom_Background_Folder) + !IsEmpty(Skin.String(Custom_Background_Folder))]</visible>
+			<visible>![!String.IsEmpty(Fanart.Image) + String.IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![!Skin.HasSetting(Disable_Fanart) + String.IsEmpty(Fanart.Image) + !String.IsEmpty(ListItem.Art(fanart))]</visible>
+			<visible>![Skin.HasSetting(Enable_Custom_Background) + !String.IsEmpty(Skin.String(Custom_Background))]</visible>
+			<visible>![Skin.HasSetting(Enable_Custom_Background_Folder) + !String.IsEmpty(Skin.String(Custom_Background_Folder))]</visible>
 			<visible>Skin.HasSetting(Enable_Time_Of_Day_Background)</visible>
 			<control type="image">
 				<left>0</left>

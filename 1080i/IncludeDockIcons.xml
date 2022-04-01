@@ -153,6 +153,13 @@
 			<visible>Window.IsVisible(VideoPlaylist) | Window.IsVisible(MusicPlaylist)</visible>
 		</item>
 	</include>
+	<include name="Dock_Rate">
+		<item>
+			<icon>dock\icons\favourites.png</icon>
+			<label>$LOCALIZE[38018]</label>
+			<onclick>setrating</onclick>
+		</item>
+	</include>
 	<include name="Dock_Slideshow">
 		<item>
 			<icon>dock\icons\slideshow.png</icon>
@@ -213,28 +220,28 @@
 			<icon>dock\icons\sort-direction-asc.png</icon>
 			<label>$LOCALIZE[580]</label>
 			<onclick>SendClick(10025,4)</onclick>
-			<visible>StringCompare(Container.SortOrder,$LOCALIZE[584])</visible>
+			<visible>String.IsEqual(Container.SortOrder,$LOCALIZE[584])</visible>
 			<visible>Window.IsVisible(videos)</visible>
 		</item>
 		<item id="31012">
 			<icon>dock\icons\sort-direction-des.png</icon>
 			<label>$LOCALIZE[580]</label>
 			<onclick>SendClick(10025,4)</onclick>
-			<visible>StringCompare(Container.SortOrder,$LOCALIZE[585])</visible>
+			<visible>String.IsEqual(Container.SortOrder,$LOCALIZE[585])</visible>
 			<visible>Window.IsVisible(videos)</visible>
 		</item>
-				<item id="31020">
+		<item id="31020">
 			<icon>dock\icons\sort-direction-asc.png</icon>
 			<label>$LOCALIZE[580]</label>
 			<onclick>SendClick(10502,4)</onclick>
-			<visible>StringCompare(Container.SortOrder,$LOCALIZE[584])</visible>
+			<visible>String.IsEqual(Container.SortOrder,$LOCALIZE[584])</visible>
 			<visible>Window.IsVisible(music)</visible>
 		</item>
 		<item id="31021">
 			<icon>dock\icons\sort-direction-des.png</icon>
 			<label>$LOCALIZE[580]</label>
 			<onclick>SendClick(10502,4)</onclick>
-			<visible>StringCompare(Container.SortOrder,$LOCALIZE[585])</visible>
+			<visible>String.IsEqual(Container.SortOrder,$LOCALIZE[585])</visible>
 			<visible>Window.IsVisible(music)</visible>
 		</item>
 	</include>
@@ -357,7 +364,7 @@
 			<label>$LOCALIZE[587]: $LOCALIZE[16041] - $INFO[Window(music).Property(filter)]</label>
 			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(19)</onclick>
-			<visible>!IsEmpty(Window(music).Property(filter))</visible>
+			<visible>!String.IsEmpty(Window(music).Property(filter))</visible>
 			<visible>Window.IsVisible(music)</visible>
 		</item>
 		<item>
@@ -365,7 +372,7 @@
 			<label>$LOCALIZE[587]: $LOCALIZE[16041] - $INFO[Window(videos).Property(filter)]</label>
 			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(19)</onclick>
-			<visible>!IsEmpty(Window(videos).Property(filter))</visible>
+			<visible>!String.IsEmpty(Window(videos).Property(filter))</visible>
 			<visible>Window.IsVisible(videos)</visible>
 		</item>
 		<item>
@@ -373,7 +380,7 @@
 			<label>$LOCALIZE[587]: $LOCALIZE[13551]</label>
 			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(19)</onclick>
-			<visible>IsEmpty(Window(music).Property(filter))</visible>
+			<visible>String.IsEmpty(Window(music).Property(filter))</visible>
 			<visible>Window.IsVisible(music)</visible>
 		</item>
 		<item>
@@ -381,7 +388,7 @@
 			<label>$LOCALIZE[587]: $LOCALIZE[13551]</label>
 			<onclick>Dialog.Close(1201)</onclick>
 			<onclick>SendClick(19)</onclick>
-			<visible>IsEmpty(Window(videos).Property(filter))</visible>
+			<visible>String.IsEmpty(Window(videos).Property(filter))</visible>
 			<visible>Window.IsVisible(videos)</visible>
 		</item>
 	</include>
