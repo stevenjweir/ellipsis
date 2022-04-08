@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="136">
-    <include>Fade_In_WindowOpen</include>
-    <include>Fade_Out_WindowClose</include>
+<window>
+<onload condition="Window.IsActive(Startup)">Dialog.Close(all,true)</onload>
     <coordinates>
         <system>1</system>
         <left>0</left>

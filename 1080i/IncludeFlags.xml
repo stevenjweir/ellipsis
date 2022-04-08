@@ -3,7 +3,7 @@
 	<include name="FlagLayout">
 		<left>0</left>
 		<top>0</top>
-		<width>90</width>
+		<width>82</width>
 		<height>45</height>
 	</include>
 	<include name="MediaFlags">
@@ -32,27 +32,96 @@
 			<texture>$INFO[ListItem.AudioCodec,flags\audiocodec\,.png]</texture>
 			<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
 		</control>
-		<control type="group">
-			<control type="image" id="4000">
+		<control type="textbox">
+			<visible>!String.IsEmpty(ListItem.MPAA)</visible>
+			<width>60</width>
+			<height>45</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>[B]$INFO[ListItem.MPAA][/B]</label>
+			<font>Profile_Medium_2</font>
+		</control>
+		<control type="image">
+			<visible>!String.Contains(Control.GetLabel(358),empty.png)</visible>
 			<visible>!String.Contains(ListItem.Studio,/)</visible>
-				<aspectratio align="center">keep</aspectratio>
-				<left>1</left>
-				<top>-5</top>
-				<width>100</width>
-				<height>50</height>
-				<texture fallback="empty">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
-			</control>
-			<control type="textbox">
-				<visible>String.Contains(ListItem.Studio,/)</visible>
-				<top>1</top>
-				<left>1</left>
-				<width>110</width>
-				<height>45</height>
-				<align>center</align>
-				<aligny>center</aligny>
-				<label>$INFO[ListItem.Studio]</label>
-				<font>Tiny</font>
-			</control>
+			<visible>!String.IsEmpty(ListItem.Studio)</visible>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+			<left>1</left>
+			<top>-5</top>
+			<width>100</width>
+			<height>50</height>
+			<texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+		</control>
+		<control type="textbox">
+			<visible>String.Contains(Control.GetLabel(358),empty.png) | String.Contains(ListItem.Studio,/)</visible>
+			<visible>!String.IsEmpty(ListItem.Studio)</visible>
+			<top>1</top>
+			<left>1</left>
+			<width>100</width>
+			<height>45</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$INFO[ListItem.Studio]</label>
+			<font>Tiny</font>
+		</control>
+	</include>
+	<include name="MediaFlagsInfo">
+		<control type="image">
+			<include>FlagLayout</include>
+			<texture>$INFO[ListItem.VideoAspect,flags\videoaspect\,.png]</texture>
+			<visible>!String.IsEmpty(ListItem.VideoAspect)</visible>
+		</control>
+		<control type="image">
+			<include>FlagLayout</include>
+			<texture>$INFO[ListItem.VideoResolution,flags\videoresolution\,.png]</texture>
+			<visible>!String.IsEmpty(ListItem.VideoResolution)</visible>
+		</control>
+		<control type="image">
+			<include>FlagLayout</include>
+			<texture>$INFO[ListItem.VideoCodec,flags\videocodec\,.png]</texture>
+			<visible>!String.IsEmpty(ListItem.VideoCodec)</visible>
+		</control>
+		<control type="image">
+			<include>FlagLayout</include>
+			<texture>$INFO[ListItem.AudioChannels,flags\audiochannels\,.png]</texture>
+			<visible>!String.IsEmpty(ListItem.AudioChannels)</visible>
+		</control>
+		<control type="image">
+			<include>FlagLayout</include>
+			<texture>$INFO[ListItem.AudioCodec,flags\audiocodec\,.png]</texture>
+			<visible>!String.IsEmpty(ListItem.AudioCodec)</visible>
+		</control>
+		<control type="textbox">
+			<visible>!String.IsEmpty(ListItem.MPAA)</visible>
+			<width>60</width>
+			<height>45</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>[B]$INFO[ListItem.MPAA][/B]</label>
+			<font>Profile_Medium_2</font>
+		</control>
+		<control type="image">
+			<visible>!String.Contains(Control.GetLabel(359),empty.png)</visible>
+			<visible>!String.Contains(ListItem.Studio,/)</visible>
+			<visible>!String.IsEmpty(ListItem.Studio)</visible>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+			<left>1</left>
+			<top>-5</top>
+			<width>100</width>
+			<height>50</height>
+			<texture>resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+		</control>
+		<control type="textbox">
+			<visible>String.Contains(Control.GetLabel(359),empty.png) | String.Contains(ListItem.Studio,/)</visible>
+			<visible>!String.IsEmpty(ListItem.Studio)</visible>
+			<top>1</top>
+			<left>1</left>
+			<width>100</width>
+			<height>45</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$INFO[ListItem.Studio]</label>
+			<font>Tiny</font>
 		</control>
 	</include>
 </includes>

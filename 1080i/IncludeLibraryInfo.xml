@@ -3,6 +3,15 @@
 	<include name="Library_Info">
 		<control type="group">
 			<visible>!ListItem.IsParentFolder</visible>
+			<control type="image" id="358">
+				<visible>!String.Contains(ListItem.Studio,/)</visible>
+				<visible>!String.IsEmpty(ListItem.Studio)</visible>
+				<left>-300</left>
+				<top>-300</top>
+				<width>1</width>
+				<height>1</height>
+				<texture fallback="empty.png">resource://resource.images.studios.white/$INFO[ListItem.Studio,,.png]</texture>
+			</control>
 			<!-- Show Case Views -->
 			<control type="group">
 				<visible>Control.IsVisible(50)</visible>
@@ -55,20 +64,20 @@
 							<height>52</height>
 							<font>Library_Light_20</font>
 							<textcolor>Text</textcolor>
-							<label>$INFO[ListItem.Date,$LOCALIZE[20416]: ]     $INFO[ListItem.Duration,$LOCALIZE[180]: , [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</label>
+							<label>$INFO[ListItem.Date,$LOCALIZE[20416]: ,  -  ]$VAR[ItemDuration]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
 						<control type="textbox">
 							<left>28</left>
-							<top>115</top>
+							<top>122</top>
 							<width>772</width>
 							<height>112</height>
 							<font>Library_Normal_20</font>
 							<textcolor>Text</textcolor>
 							<label>$INFO[ListItem.Plot]</label>
 							<align>center</align>
-							<autoscroll>False</autoscroll>
+							<autoscroll delay="6500" time="2500" repeat="2500">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						</control>
 						<control type="grouplist">
 							<left>28</left>
@@ -82,7 +91,7 @@
 								<visible>!String.IsEmpty(ListItem.Rating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<align>center</align>
 								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]    </label>
@@ -113,11 +122,11 @@
 							</control>
 						</control>
 						<control type="grouplist">
-							<left>-45</left>
+							<left>15</left>
 							<top>288</top>
-							<width>830</width>
+							<width>800</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -190,11 +199,11 @@
 							<scroll>true</scroll>
 						</control>
 						<control type="grouplist">
-							<left>-54</left>
-							<top>238</top>
-							<width>740</width>
+							<left>15</left>
+							<top>228</top>
+							<width>700</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -242,7 +251,7 @@
 								<visible>!String.IsEmpty(ListItem.Rating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
 							</control>
@@ -250,7 +259,7 @@
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>     $LOCALIZE[38018]:</label>
 								<align>right</align>
@@ -290,11 +299,11 @@
 							<scroll>true</scroll>
 						</control>
 						<control type="grouplist">
-							<left>-46</left>
+							<left>15</left>
 							<top>228</top>
-							<width>726</width>
+							<width>700</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -342,7 +351,7 @@
 								<visible>!String.IsEmpty(ListItem.Rating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
 							</control>
@@ -350,7 +359,7 @@
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>     $LOCALIZE[38018]:</label>
 								<align>right</align>
@@ -384,16 +393,16 @@
 							<height>52</height>
 							<font>Library_Light_20</font>
 							<textcolor>Text</textcolor>
-							<label>[CAPITALIZE]$INFO[ListItem.Director][/CAPITALIZE]</label>
+							<label>[B][CAPITALIZE]$INFO[ListItem.Director,,  -  ][/CAPITALIZE]$VAR[ItemDuration][/B]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
 						<control type="grouplist">
-							<left>-52</left>
+							<left>12</left>
 							<top>224</top>
-							<width>726</width>
+							<width>690</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -436,7 +445,7 @@
 							<height>112</height>
 							<font>Library_Light_28</font>
 							<textcolor>Text</textcolor>
-							<label>[B]$INFO[ListItem.Title][/B]$INFO[ListItem.Duration, (, [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]])</label>
+							<label>[B]$INFO[ListItem.Title],,  -  ][/B]$VAR[ItemDuration]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 							<scrolltime>200</scrolltime>
@@ -469,7 +478,7 @@
 							<top>229</top>
 							<width>726</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -597,7 +606,7 @@
 								<visible>!String.IsEmpty(ListItem.Rating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
 							</control>
@@ -605,7 +614,7 @@
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>     $LOCALIZE[38018]:</label>
 								<align>right</align>
@@ -638,22 +647,22 @@
 							<top>148</top>
 							<width>879</width>
 							<height>52</height>
-							<font>Library_Normal_20</font>
+							<font>Library_Light_20</font>
 							<textcolor>Text</textcolor>
-							<label>$INFO[ListItem.Date,$LOCALIZE[20416]: ,]      $INFO[ListItem.Duration,$LOCALIZE[180]: , [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]]</label>
+							<label>$INFO[ListItem.Date,$LOCALIZE[20416]: ,  -  ]$VAR[ItemDuration]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
 						<control type="textbox">
 							<left>28</left>
-							<top>198</top>
+							<top>205</top>
 							<width>879</width>
 							<height>180</height>
 							<font>Library_Normal_20</font>
 							<textcolor>Text</textcolor>
 							<label>$INFO[ListItem.Plot]</label>
 							<align>center</align>
-							<autoscroll>False</autoscroll>
+							<autoscroll delay="6500" time="2500" repeat="2500">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						</control>
 						<control type="grouplist">
 							<left>-190</left>
@@ -692,7 +701,7 @@
 							<top>454</top>
 							<width>936</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -733,7 +742,7 @@
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="grouplist">
 							<left>28</left>
-							<top>15</top>
+							<top>8</top>
 							<width>670</width>
 							<height>52</height>
 							<itemgap>10</itemgap>
@@ -743,7 +752,7 @@
 								<visible>!String.IsEmpty(ListItem.Rating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
 							</control>
@@ -751,7 +760,7 @@
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>     $LOCALIZE[38018]:</label>
 								<align>right</align>
@@ -780,27 +789,27 @@
 							<autoscroll delay="1500" time="1000" repeat="1500">true</autoscroll>
 						</control>
 						<control type="label">
-							<description>Director</description>
+							<description>Director and Duration</description>
 							<left>28</left>
 							<top>150</top>
 							<width>669</width>
 							<height>52</height>
 							<font>Library_Light_20</font>
 							<textcolor>Text</textcolor>
-							<label>[CAPITALIZE]$INFO[ListItem.Director][/CAPITALIZE]</label>
+							<label>[B][CAPITALIZE]$INFO[ListItem.Director,,  -  ][/CAPITALIZE]$VAR[ItemDuration][/B]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
 						<control type="textbox">
 							<left>28</left>
-							<top>193</top>
+							<top>200</top>
 							<width>669</width>
 							<height>185</height>
 							<font>Library_Normal_20</font>
 							<textcolor>Text</textcolor>
 							<label>$INFO[ListItem.Plot]</label>
 							<align>center</align>
-							<autoscroll>False</autoscroll>
+							<autoscroll delay="6500" time="2500" repeat="2500">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						</control>
 						<control type="grouplist">
 							<left>-190</left>
@@ -835,11 +844,11 @@
 							</control>
 						</control>
 						<control type="grouplist">
-							<left>45</left>
+							<left>20</left>
 							<top>450</top>
-							<width>auto</width>
+							<width>690</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -913,11 +922,11 @@
 							<scroll>true</scroll>
 						</control>
 						<control type="grouplist">
-							<left>-68</left>
-							<top>465</top>
-							<width>740</width>
+							<left>20</left>
+							<top>450</top>
+							<width>690</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -966,7 +975,7 @@
 								<visible>!String.IsEmpty(ListItem.Rating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>$INFO[ListItem.Rating,$LOCALIZE[563]: ,]</label>
 							</control>
@@ -974,7 +983,7 @@
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 								<width>auto</width>
 								<height>52</height>
-								<font>Library_Normal_18</font>
+								<font>Library_Light_18</font>
 								<textcolor>Text</textcolor>
 								<label>     $LOCALIZE[38018]:</label>
 								<align>right</align>
@@ -1015,14 +1024,14 @@
 						</control>
 						<control type="textbox">
 							<left>28</left>
-							<top>216</top>
+							<top>223</top>
 							<width>669</width>
 							<height>147</height>
 							<font>Library_Normal_20</font>
 							<textcolor>Text</textcolor>
 							<label>$INFO[ListItem.Plot]</label>
 							<align>center</align>
-							<autoscroll>False</autoscroll>
+							<autoscroll delay="6500" time="2500" repeat="2500">Skin.HasSetting(Enable.AutoScroll)</autoscroll>
 						</control>
 						<control type="grouplist">
 							<left>-190</left>
@@ -1057,11 +1066,11 @@
 							</control>
 						</control>
 						<control type="grouplist">
-							<left>-65</left>
+							<left>10</left>
 							<top>459</top>
-							<width>726</width>
+							<width>706</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>
@@ -1105,7 +1114,7 @@
 							<height>132</height>
 							<font>Library_Light_35</font>
 							<textcolor>Text</textcolor>
-							<label>[B]$INFO[ListItem.Title][/B]$INFO[ListItem.Duration, (, [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]])</label>
+							<label>[B]$INFO[ListItem.Title],,  -  ][/B]$VAR[ItemDuration]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 							<scrolltime>200</scrolltime>
@@ -1181,7 +1190,7 @@
 							<top>454</top>
 							<width>936</width>
 							<height>45</height>
-							<itemgap>15</itemgap>
+							<itemgap>10</itemgap>
 							<align>center</align>
 							<orientation>horizontal</orientation>
 							<include>MediaFlags</include>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="104">
+<window>
 	<defaultcontrol>1</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -47,10 +47,10 @@
 				<height>27</height>
 				<info>Player.Volume</info>
 				<texturebg>dialogs\volume-slider-back.png</texturebg>
-				<lefttexture>-</lefttexture>
+				<lefttexture></lefttexture>
 				<midtexture>dialogs\volume-slider-full.png</midtexture>
-				<righttexture>-</righttexture>
-				<overlaytexture>-</overlaytexture>
+				<righttexture></righttexture>
+				<overlaytexture></overlaytexture>
 				<visible>true</visible>
 				<reveal>true</reveal>
 			</control>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="146">
+<window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
@@ -22,9 +22,9 @@
 			<visible>!Window.IsActive(textviewer)</visible>
 			<control type="image">
 				<description>background image</description>
-				<left>96</left>
+				<left>46</left>
 				<top>68</top>
-				<width>1726</width>
+				<width>1826</width>
 				<height>946</height>
 				<texture>dialogs\dialog-background-tall.png</texture>
 			</control>
@@ -42,8 +42,8 @@
 					<top>14</top>
 					<width>96</width>
 					<height>48</height>
-					<label>-</label>
-					<font>-</font>
+					<label/>
+					<font></font>
 					<onclick>PreviousMenu</onclick>
 					<texturefocus>DialogCloseButton-focus.png</texturefocus>
 					<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -59,14 +59,7 @@
 					<width>250</width>
 					<height>250</height>
 					<aspectratio align="center" scalediffuse="false">scale</aspectratio>
-					<texture diffuse="iconview-diffuse.png">$INFO[ListItem.Icon]</texture>
-				</control>
-				<control type="image">
-					<left>370</left>
-					<top>320</top>
-					<width>250</width>
-					<height>250</height>
-					<texture>iconview-overlay.png</texture>
+					<texture fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
 					<description>header label</description>
@@ -268,10 +261,10 @@
 					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 				<control type="grouplist" id="9000">
-					<left>200</left>
+					<left>100</left>
 					<top>819</top>
 					<height>63</height>
-					<width>1490</width>
+					<width>1690</width>
 					<align>center</align>
 					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
@@ -325,6 +318,18 @@
 						<textoffsetx>35</textoffsetx>
 						<radiowidth>18</radiowidth>
 						<radioheight>18</radioheight>
+						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_f.png</texturefocus>
+					</control>
+					<control type="button" id="10">
+						<description>Dependencies</description>
+						<width>215</width>
+						<height>63</height>
+						<label>39024</label>
+						<font>Default</font>
+						<align>center</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
 						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
 						<texturefocus border="5">controls/button_f.png</texturefocus>
 					</control>

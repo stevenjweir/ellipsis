@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="503">
+<window>
 	<defaultcontrol always="true">50</defaultcontrol>
+	<views>59</views>
 	<controls>
 		<!-- Backgrounds -->
 		<include>Background</include>
@@ -42,7 +43,7 @@
 					<onright>100</onright>
 					<onup>50</onup>
 					<ondown>50</ondown>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="69">
 						<control type="image">
@@ -319,7 +320,7 @@
 					<onright>ActivateWindow(1203)</onright>
 					<onup>100</onup>
 					<ondown>100</ondown>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="69">
 						<control type="image">

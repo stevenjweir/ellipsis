@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window type="dialog" id="114">
+<window type="dialog">
 	<defaultcontrol always="true">99</defaultcontrol>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
@@ -14,9 +14,9 @@
 			<top>-30</top>
 			<width>1</width>
 			<height>1</height>
-			<label>-</label>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
+			<label/>
+			<texturenofocus></texturenofocus>
+			<texturefocus></texturefocus>
 			<onfocus>SetFocus(100)</onfocus>
 		</control>
 		<control type="image">
@@ -55,7 +55,7 @@
 				<top>0</top>
 				<width>0</width>
 				<height>0</height>
-				<pagecontrol>-</pagecontrol>
+				<pagecontrol></pagecontrol>
 				<orientation>horizontal</orientation>
 				<scrolltime>300</scrolltime>
 				<visible>false</visible>
@@ -63,13 +63,13 @@
 				<focusedlayout/>
 				<content>
 					<item id="1">
-						<onclick>noop</onclick>
+						<onclick></onclick>
 					</item>
 					<item id="2">
-						<onclick>noop</onclick>
+						<onclick></onclick>
 					</item>
 					<item id="3">
-						<onclick>noop</onclick>
+						<onclick></onclick>
 					</item>
 				</content>
 			</control>
@@ -513,14 +513,13 @@
 					<top>702</top>
 					<width>96</width>
 					<height>96</height>
-					<label>-</label>
-					<font>-</font>
+					<label/>
+					<font></font>
 					<texturenofocus>menu\nav\nav_player_skipback_NF.png</texturenofocus>
 					<texturefocus>menu\nav\nav_player_skipback_FO.png</texturefocus>
 					<onleft>206</onleft>
 					<onright>201</onright>
 					<onup>100</onup>
-					<ondown>noop</ondown>
 					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 				<control type="button" id="201">
@@ -528,14 +527,13 @@
 					<top>702</top>
 					<width>96</width>
 					<height>96</height>
-					<label>-</label>
-					<font>-</font>
+					<label/>
+					<font></font>
 					<texturenofocus>menu\nav\nav_player_rewind_NF.png</texturenofocus>
 					<texturefocus>menu\nav\nav_player_rewind_FO.png</texturefocus>
 					<onleft>200</onleft>
 					<onright>202</onright>
 					<onup>100</onup>
-					<ondown>noop</ondown>
 					<onclick>PlayerControl(Rewind)</onclick>
 				</control>
 				<control type="button" id="202">
@@ -543,14 +541,13 @@
 					<top>702</top>
 					<width>96</width>
 					<height>96</height>
-					<label>-</label>
-					<font>-</font>
+					<label/>
+					<font></font>
 					<texturenofocus>menu\nav\nav_player_stop_NF.png</texturenofocus>
 					<texturefocus>menu\nav\nav_player_stop_FO.png</texturefocus>
 					<onleft>201</onleft>
 					<onright>203</onright>
 					<onup>100</onup>
-					<ondown>noop</ondown>
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
 				<control type="button" id="203">
@@ -558,14 +555,13 @@
 					<top>702</top>
 					<width>96</width>
 					<height>96</height>
-					<label>-</label>
-					<font>-</font>
-					<texturenofocus>-</texturenofocus>
-					<texturefocus>-</texturefocus>
+					<label/>
+					<font></font>
+					<texturenofocus></texturenofocus>
+					<texturefocus></texturefocus>
 					<onleft>202</onleft>
 					<onright>204</onright>
 					<onup>100</onup>
-					<ondown>noop</ondown>
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
 				<control type="image">
@@ -609,14 +605,13 @@
 					<top>702</top>
 					<width>96</width>
 					<height>96</height>
-					<label>-</label>
-					<font>-</font>
+					<label/>
+					<font></font>
 					<texturenofocus>menu\nav\nav_player_fforward_NF.png</texturenofocus>
 					<texturefocus>menu\nav\nav_player_fforward_FO.png</texturefocus>
 					<onleft>203</onleft>
 					<onright>205</onright>
 					<onup>100</onup>
-					<ondown>noop</ondown>
 					<onclick>PlayerControl(Forward)</onclick>
 				</control>
 				<control type="button" id="205">
@@ -624,14 +619,13 @@
 					<top>702</top>
 					<width>96</width>
 					<height>96</height>
-					<label>-</label>
-					<font>-</font>
+					<label/>
+					<font></font>
 					<texturenofocus>menu\nav\nav_player_skipforward_NF.png</texturenofocus>
 					<texturefocus>menu\nav\nav_player_skipforward_FO.png</texturefocus>
 					<onleft>204</onleft>
 					<onright>206</onright>
 					<onup>100</onup>
-					<ondown>noop</ondown>
 					<onclick>PlayerControl(Next)</onclick>
 				</control>
 			</control>

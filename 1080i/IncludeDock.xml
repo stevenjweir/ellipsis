@@ -134,7 +134,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="radiobutton" id="7">
@@ -142,7 +142,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="radiobutton" id="14">
@@ -150,7 +150,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="button" id="8">
@@ -158,7 +158,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="button" id="21">
@@ -166,7 +166,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="radiobutton" id="9">
@@ -174,7 +174,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="togglebutton" id="4">
@@ -182,7 +182,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="togglebutton" id="20">
@@ -191,7 +191,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="radiobutton" id="16">
@@ -199,7 +199,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="radiobutton" id="17">
@@ -207,7 +207,7 @@
 			<top>0</top>
 			<height>15</height>
 			<width>15</width>
-			<label>-</label>
+			<label/>
 			<visible>false</visible>
 		</control>
 		<control type="spincontrol" id="503">
@@ -215,15 +215,15 @@
 			<top>0</top>
 			<width>15</width>
 			<height>15</height>
-			<label>-</label>
-			<font>-</font>
-			<textcolor>-</textcolor>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<textureup>-</textureup>
-			<texturedown>-</texturedown>
-			<textureupfocus>-</textureupfocus>
-			<texturedownfocus>-</texturedownfocus>
+			<label/>
+			<font></font>
+			<textcolor></textcolor>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
+			<textureup></textureup>
+			<texturedown></texturedown>
+			<textureupfocus></textureupfocus>
+			<texturedownfocus></texturedownfocus>
 			<visible>false</visible>
 		</control>
 		<control type="group">

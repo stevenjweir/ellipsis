@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="2006">
-	<defaultcontrol>-</defaultcontrol>
+<window>
+	<defaultcontrol></defaultcontrol>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
 	<controls>

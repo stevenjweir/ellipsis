@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="103">
+<window>
 	<defaultcontrol always="true">300</defaultcontrol>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
@@ -53,8 +53,8 @@
 				<textcolor>Highlight</textcolor>
 				<align>center</align>
 				<aligny>center</aligny>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturefocus></texturefocus>
+				<texturenofocus></texturenofocus>
 			</control>
 			<control type="group">
 				<left>353</left>

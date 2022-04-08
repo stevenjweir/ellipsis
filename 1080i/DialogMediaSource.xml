@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="129">
+<window>
 	<defaultcontrol>10</defaultcontrol>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
@@ -47,7 +47,7 @@
 					<width>1545</width>
 					<align>center</align>
 					<font>Heading</font>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 				</control>
 				<control type="label" id="0">
@@ -68,7 +68,7 @@
 					<onleft>9000</onleft>
 					<onright>9000</onright>
 					<ondown>12</ondown>
-					<pagecontrol>-</pagecontrol>
+					<pagecontrol></pagecontrol>
 					<scrolltime>200</scrolltime>
 					<itemlayout height="69">
 						<control type="image">
@@ -202,8 +202,8 @@
 					<textcolor>Highlight</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<texturefocus>-</texturefocus>
-					<texturenofocus>-</texturenofocus>
+					<texturefocus></texturefocus>
+					<texturenofocus></texturenofocus>
 				</control>
 				<control type="group" id="9001">
 					<control type="button" id="20">

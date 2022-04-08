@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="111">
+<window>
     <include>Fade_In_WindowOpen</include>
     <include>Fade_Out_WindowClose</include>
     <defaultcontrol>9000</defaultcontrol>
@@ -44,7 +44,7 @@
                 <height>483</height>
                 <itemgap>0</itemgap>
                 <align>center</align>
-                <pagecontrol>-</pagecontrol>
+                <pagecontrol></pagecontrol>
                 <usecontrolcoords>true</usecontrolcoords>
                 <onleft>9000</onleft>
                 <onright>9000</onright>
@@ -128,9 +128,9 @@
                         <top>0</top>
                         <width>410</width>
                         <height>69</height>
-                        <font>-</font>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <font></font>
+                        <texturefocus></texturefocus>
+                        <texturenofocus></texturenofocus>
                         <pulseonselect>false</pulseonselect>
                         <onleft>205</onleft>
                         <onright>201</onright>
@@ -145,9 +145,9 @@
                         <top>0</top>
                         <width>410</width>
                         <height>69</height>
-                        <font>-</font>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <font></font>
+                        <texturefocus></texturefocus>
+                        <texturenofocus></texturenofocus>
                         <pulseonselect>false</pulseonselect>
                         <onleft>200</onleft>
                         <onright>202</onright>
@@ -162,9 +162,9 @@
                         <top>0</top>
                         <width>410</width>
                         <height>69</height>
-                        <font>-</font>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <font></font>
+                        <texturefocus></texturefocus>
+                        <texturenofocus></texturenofocus>
                         <pulseonselect>false</pulseonselect>
                         <onleft>201</onleft>
                         <onright>203</onright>
@@ -179,9 +179,9 @@
                         <top>0</top>
                         <width>410</width>
                         <height>69</height>
-                        <font>-</font>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <font></font>
+                        <texturefocus></texturefocus>
+                        <texturenofocus></texturenofocus>
                         <pulseonselect>false</pulseonselect>
                         <onleft>202</onleft>
                         <onright>204</onright>
@@ -196,9 +196,9 @@
                         <top>0</top>
                         <width>410</width>
                         <height>69</height>
-                        <font>-</font>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <font></font>
+                        <texturefocus></texturefocus>
+                        <texturenofocus></texturenofocus>
                         <pulseonselect>false</pulseonselect>
                         <onleft>203</onleft>
                         <onright>205</onright>
@@ -213,9 +213,9 @@
                         <top>0</top>
                         <width>410</width>
                         <height>69</height>
-                        <font>-</font>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <font></font>
+                        <texturefocus></texturefocus>
+                        <texturenofocus></texturenofocus>
                         <pulseonselect>false</pulseonselect>
                         <onleft>204</onleft>
                         <onright>200</onright>
@@ -261,7 +261,7 @@
                             <top>0</top>
                             <width>410</width>
                             <height>69</height>
-                            <label>-</label>
+                            <label/>
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>Default</font>

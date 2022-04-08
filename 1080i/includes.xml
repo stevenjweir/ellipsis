@@ -57,6 +57,19 @@
 		<value condition="String.IsEqual(listitem.dbtype,album)">DefaultAlbumCover.png</value>
 		<value>DefaultAudio.png</value>
 	</variable>
+		<variable name="Durat_hh">
+		<value condition="Integer.IsGreaterOrEqual(ListItem.Duration(h),1) + String.Contains(System.Language,russian)">$INFO[ListItem.Duration(h)] [LOWERCASE]$LOCALIZE[12392][/LOWERCASE]</value>
+		<value condition="Integer.IsGreaterOrEqual(ListItem.Duration(h),1)">$INFO[ListItem.Duration(h)] h</value>
+	</variable>
+	<variable name="Durat_mm">
+		<value condition="Integer.IsGreaterOrEqual(ListItem.Duration(m),1)">$INFO[ListItem.Duration(m)] [LOWERCASE]$LOCALIZE[12391][/LOWERCASE]</value>
+		<value/>
+	</variable>
+	<variable name="ItemDuration">
+		<value condition="Container.Content(songs)">$INFO[ListItem.Duration]</value>
+		<value condition="Integer.IsLess(ListItem.Duration,3600)">$INFO[ListItem.Duration(m),,[LOWERCASE] $LOCALIZE[12391][/LOWERCASE]]</value>
+		<value>$VAR[Durat_hh] $VAR[Durat_mm]</value>
+	</variable>
 	<include name="FolderName">
 		<control type="group">
 			<visible>!Skin.HasSetting(Disable_Current_Folder_Section_Widget)</visible>

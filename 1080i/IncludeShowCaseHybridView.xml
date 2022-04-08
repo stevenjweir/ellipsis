@@ -1603,7 +1603,7 @@
 			<ondown>ActivateWindow(1201)</ondown>
 			<orientation>horizontal</orientation>
 			<viewtype label="50136">list</viewtype>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol></pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout height="585" width="246"/>
 			<focusedlayout height="585" width="246"/>
@@ -1619,7 +1619,7 @@
 			<onup>62</onup>
 			<ondown>62</ondown>
 			<viewtype label="50136">list</viewtype>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol></pagecontrol>
 			<scrolltime>200</scrolltime>
 			<itemlayout height="585" width="246"/>
 			<focusedlayout height="585" width="246"/>

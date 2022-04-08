@@ -22,11 +22,11 @@
 				<top>0</top>
 				<width>90</width>
 				<height>75</height>
-				<label>-</label>
+				<label/>
 				<align>center</align>
-				<textcolor>-</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<textcolor/>
+				<texturefocus/>
+				<texturenofocus/>
 			</control>
 			<control type="button" id="31">
 				<description>Hidden Tab 2 Control</description>
@@ -34,11 +34,11 @@
 				<top>0</top>
 				<width>90</width>
 				<height>75</height>
-				<label>-</label>
+				<label/>
 				<align>center</align>
-				<textcolor>-</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<textcolor/>
+				<texturefocus/>
+				<texturenofocus/>
 			</control>
 			<control type="button" id="32">
 				<description>Hidden Tab 3 Control</description>
@@ -46,11 +46,11 @@
 				<top>0</top>
 				<width>90</width>
 				<height>75</height>
-				<label>-</label>
+				<label/>
 				<align>center</align>
-				<textcolor>-</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<textcolor/>
+				<texturefocus/>
+				<texturenofocus/>
 			</control>
 			<control type="button" id="33">
 				<description>Hidden Tab 3 Control</description>
@@ -58,11 +58,11 @@
 				<top>0</top>
 				<width>90</width>
 				<height>75</height>
-				<label>-</label>
+				<label/>
 				<align>center</align>
-				<textcolor>-</textcolor>
-				<texturefocus>-</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<textcolor/>
+				<texturefocus/>
+				<texturenofocus/>
 			</control>
 		</control>
 		<control type="group">
@@ -153,7 +153,7 @@
 			<width>1596</width>
 			<height>483</height>
 			<itemgap>0</itemgap>
-			<pagecontrol>-</pagecontrol>
+			<pagecontrol/>
 			<onleft>9000</onleft>
 			<onright>9000</onright>
 			<onup>9001</onup>
@@ -168,7 +168,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Intro)</onclick>
@@ -185,7 +185,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Clock_Animation)</onclick>
@@ -202,7 +202,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Clock_Second_Hand)</onclick>
@@ -220,11 +220,28 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Fanart)</onclick>
 				<selected>Skin.HasSetting(Disable_Fanart)</selected>
+				<pulseonselect>false</pulseonselect>
+			</control>
+			<control type="radiobutton" id="116">
+				<visible>ControlGroup(9000).HasFocus(30)</visible>
+				<label>$LOCALIZE[20189]</label>
+				<left>0</left>
+				<top>0</top>
+				<width>1596</width>
+				<height>69</height>
+				<textoffsetx>22</textoffsetx>
+				<font>Default</font>
+				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
+				<texturenofocus/>
+				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
+				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
+				<onclick>Skin.ToggleSetting(Enable.AutoScroll)</onclick>
+				<selected>Skin.HasSetting(Enable.AutoScroll)</selected>
 				<pulseonselect>false</pulseonselect>
 			</control>
 			<control type="radiobutton" id="106">
@@ -237,7 +254,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Hide_MusicInfo_Visualisation)</onclick>
@@ -254,7 +271,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Visualisation)</onclick>
@@ -271,7 +288,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Background_Video)</onclick>
@@ -288,7 +305,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Visor)</onclick>
@@ -305,7 +322,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Edge_Filter)</onclick>
@@ -322,7 +339,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Icon_Labels)</onclick>
@@ -339,7 +356,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Current_Folder_Section_Widget)</onclick>
@@ -356,7 +373,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Unwatched_Overlay)</onclick>
@@ -373,7 +390,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Enable_SubtitleScript)</onclick>
@@ -391,7 +408,7 @@
 				<font>Default</font>
 				<textoffsetx>22</textoffsetx>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<onclick>Skin.SetFile(Path_SubtitleScript,.py)</onclick>
 				<enable>Skin.HasSetting(Enable_SubtitleScript)</enable>
 				<pulseonselect>false</pulseonselect>
@@ -406,7 +423,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Enable_Custom_Background)</onclick>
@@ -426,7 +443,7 @@
 				<font>Default</font>
 				<textoffsetx>22</textoffsetx>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<onclick>Skin.SetImage(Custom_Background)</onclick>
 				<enable>Skin.HasSetting(Enable_Custom_Background)</enable>
 				<pulseonselect>false</pulseonselect>
@@ -441,7 +458,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Enable_Custom_Background_Folder)</onclick>
@@ -461,7 +478,7 @@
 				<font>Default</font>
 				<textoffsetx>22</textoffsetx>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<onclick>Skin.SetPath(Custom_Background_Folder)</onclick>
 				<enable>Skin.HasSetting(Enable_Custom_Background_Folder)</enable>
 				<pulseonselect>false</pulseonselect>
@@ -476,7 +493,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Enable_Time_Of_Day_Background)</onclick>
@@ -496,7 +513,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.SetString(Changed_2,true)</onclick>
@@ -514,7 +531,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Videos_Home_Icon)</onclick>
@@ -531,7 +548,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Play_DVD_Home_Icon)</onclick>
@@ -548,7 +565,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Tv_Library_Home_Icon)</onclick>
@@ -565,7 +582,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Movie_Library_Home_Icon)</onclick>
@@ -582,7 +599,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Music_Video_Library_Home_Icon)</onclick>
@@ -599,7 +616,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Pictures_Home_Icon)</onclick>
@@ -616,7 +633,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Programs_Home_Icon)</onclick>
@@ -633,7 +650,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_File_Manager_Home_Icon)</onclick>
@@ -650,7 +667,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Weather_Home_Icon)</onclick>
@@ -667,7 +684,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Scripts_Home_Icon)</onclick>
@@ -684,7 +701,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Music_Home_Icon)</onclick>
@@ -701,7 +718,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Disable_Now_Playing_Widget)</onclick>
@@ -718,7 +735,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Enable_Debug_Grid_Overlay)</onclick>
@@ -735,7 +752,7 @@
 				<textoffsetx>22</textoffsetx>
 				<font>Default</font>
 				<texturefocus border="4,5,6,8">controls\button_f.png</texturefocus>
-				<texturenofocus>-</texturenofocus>
+				<texturenofocus/>
 				<textureradioonfocus>controls\radiobutton_f.png</textureradioonfocus>
 				<textureradioonnofocus>controls\radiobutton_nf.png</textureradioonnofocus>
 				<onclick>Skin.ToggleSetting(Enable_Debug_Info)</onclick>

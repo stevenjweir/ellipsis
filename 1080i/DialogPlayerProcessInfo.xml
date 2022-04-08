@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window type="dialog" id="142">
+<window type="dialog">
 	<controls>
 		<control type="group">
 			<include>Fade_In_WindowOpen</include>

@@ -11,7 +11,7 @@
             <onup>50</onup>
             <ondown>50</ondown>
             <viewtype label="535">list</viewtype>
-            <pagecontrol>-</pagecontrol>
+            <pagecontrol></pagecontrol>
             <scrolltime>200</scrolltime>
             <itemlayout height="69">
                 <control type="image">

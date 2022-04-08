@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="101">
+<window>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
 	<coordinates>
@@ -35,7 +35,7 @@
 				<top>0</top>
 				<width>0</width>
 				<height>0</height>
-				<font>-</font>
+				<font></font>
 				<visible>false</visible>
 			</control>
 			<control type="label">
@@ -55,7 +55,7 @@
 				<width>930</width>
 				<height>105</height>
 				<align>center</align>
-				<label>-</label>
+				<label/>
 				<font>Medium</font>
 			</control>
 			<control type="progress" id="20">
@@ -65,10 +65,10 @@
 				<width>704</width>
 				<height>46</height>
 				<texturebg>controls\progressbar_back.png</texturebg>
-				<lefttexture>-</lefttexture>
+				<lefttexture></lefttexture>
 				<midtexture>controls\progressbar_full.png</midtexture>
-				<righttexture>-</righttexture>
-				<overlaytexture>-</overlaytexture>
+				<righttexture></righttexture>
+				<overlaytexture></overlaytexture>
 				<reveal>true</reveal>
 				<info>System.Progressbar</info>
 			</control>
@@ -82,7 +82,7 @@
 				<control type="button" id="11">
 					<width>300</width>
 					<height>69</height>
-					<label>-</label>
+					<label/>
 					<font>Default</font>
 					<align>center</align>
 					<texturenofocus border="4,5,6,8">controls\button_green_nf.png</texturenofocus>
@@ -93,7 +93,7 @@
 				<control type="button" id="10">
 					<width>300</width>
 					<height>69</height>
-					<label>-</label>
+					<label/>
 					<font>Default</font>
 					<align>center</align>
 					<texturenofocus border="8">controls\button_red_nf.png</texturenofocus>
@@ -104,7 +104,7 @@
 				<control type="button" id="12">
 					<width>300</width>
 					<height>69</height>
-					<label>-</label>
+					<label/>
 					<font>Default</font>
 					<align>center</align>
 					<textcolor>Text</textcolor>

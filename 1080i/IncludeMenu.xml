@@ -944,7 +944,7 @@
 				<height>40</height>
 				<font>Large</font>
 				<align>center</align>
-				<label>[CAPITALIZE]$LOCALIZE[50165][/CAPITALIZE]</label>
+				<label>[CAPITALIZE]$LOCALIZE[50171][/CAPITALIZE]</label>
 				<visible>Control.HasFocus(9010)</visible>
 			</control>
 			<control type="label">
@@ -1171,7 +1171,7 @@
 				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
-				<texture>menu\settings\eventlog_nf.png</texture>
+				<texture>menu\settings\games_nf.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
@@ -1279,7 +1279,7 @@
 				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
-				<texture>menu\settings\eventlog_f.png</texture>
+				<texture>menu\settings\games_f.png</texture>
 				<include>SettingsAnimation</include>
 			</control>
 			<control type="image">
@@ -1350,8 +1350,8 @@
 				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9003</onleft>
 				<onright>9001</onright>
 				<onup>close</onup>
@@ -1363,8 +1363,8 @@
 				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9030</onleft>
 				<onright>9002</onright>
 				<onup>close</onup>
@@ -1376,8 +1376,8 @@
 				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9001</onleft>
 				<onright>9003</onright>
 				<onup>close</onup>
@@ -1389,8 +1389,8 @@
 				<top>-350</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9002</onleft>
 				<onright>9030</onright>
 				<onup>close</onup>
@@ -1402,21 +1402,21 @@
 				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9013</onleft>
 				<onright>9011</onright>
 				<onup>9030</onup>
 				<ondown>9020</ondown>
-				<onclick>ActivateWindow(eventlog)</onclick>
+				<onclick>ActivateWindow(gamesettings)</onclick>
 			</control>
 			<control type="button" id="9011">
 				<left>-225</left>
 				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9010</onleft>
 				<onright>9012</onright>
 				<onup>9001</onup>
@@ -1428,8 +1428,8 @@
 				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9011</onleft>
 				<onright>9013</onright>
 				<onup>9002</onup>
@@ -1441,8 +1441,8 @@
 				<top>-100</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9012</onleft>
 				<onright>9010</onright>
 				<onup>9003</onup>
@@ -1454,12 +1454,11 @@
 				<top>150</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9023</onleft>
 				<onright>9021</onright>
 				<onup>9010</onup>
-				<ondown>noop</ondown>
 				<onclick>ActivateWindow(interfacesettings)</onclick>
 			</control>
 			<control type="button" id="9021">
@@ -1467,12 +1466,11 @@
 				<top>150</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9020</onleft>
 				<onright>9022</onright>
 				<onup>9011</onup>
-				<ondown>noop</ondown>
 				<onclick>ActivateWindow(skinsettings)</onclick>
 			</control>
 			<control type="button" id="9022">
@@ -1480,12 +1478,11 @@
 				<top>150</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9021</onleft>
 				<onright>9023</onright>
 				<onup>9012</onup>
-				<ondown>noop</ondown>
 				<onclick>ActivateWindow(systeminfo)</onclick>
 			</control>
 			<control type="button" id="9023">
@@ -1493,12 +1490,11 @@
 				<top>150</top>
 				<width>200</width>
 				<height>200</height>
-				<texturenofocus>-</texturenofocus>
-				<texturefocus>-</texturefocus>
+				<texturenofocus></texturenofocus>
+				<texturefocus></texturefocus>
 				<onleft>9022</onleft>
 				<onright>9020</onright>
 				<onup>9013</onup>
-				<ondown>noop</ondown>
 				<onclick>ActivateWindow(pvrsettings)</onclick>
 			</control>
 		</control>
