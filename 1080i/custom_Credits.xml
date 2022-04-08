@@ -91,7 +91,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -118,7 +118,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -145,7 +145,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -478,7 +478,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>KAREN WARANIS</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -488,7 +488,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>AONGHUS FRASER</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -498,7 +498,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>ALEXANDRE PILLOUD</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -508,7 +508,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>BOB KRATTLI</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -518,7 +518,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>BJARTE ROLLAND</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -528,7 +528,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>GEORGE WELSH</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -538,7 +538,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>MARTY McFLY JR.</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -548,7 +548,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>JAMIE SOARES SILVA</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -558,7 +558,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>ENRICO ACKERMANN</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -568,7 +568,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -577,7 +577,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>NICK GIBSON</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -587,7 +587,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>PATRICK GRUBER</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -597,7 +597,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>NICHOLAS WHITE</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -607,7 +607,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>MARKUS KAHLE</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -617,7 +617,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>DEAN MOILER</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -627,7 +627,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>ALAN HAWKINS</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -637,7 +637,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>BARRY WILLIAMS</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -647,7 +647,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>JOHAN WESSBERG</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -657,7 +657,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>MIKE HERTEL</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -667,7 +667,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>KENNY JOHANSSON</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -677,7 +677,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>STUART MCLEAN</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -687,7 +687,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>WILLIAM O'NEILL</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -697,7 +697,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>ROBERT SCHUELER</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -707,7 +707,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>STEPHAN MARX</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -717,7 +717,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>RICHARD DOBOSZ</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -727,7 +727,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<label>NEIL BURGOYNE</label>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
@@ -737,7 +737,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -791,7 +791,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -818,7 +818,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -845,7 +845,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -872,7 +872,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -899,7 +899,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -908,7 +908,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -928,7 +928,7 @@
 				<control type="label">
 					<width>1920</width>
 					<height>120</height>
-					<label>-</label>
+					<label/>
 					<textcolor>Text</textcolor>
 					<font>Credits_Info</font>
 					<align>center</align>
@@ -941,8 +941,8 @@
 			<onfocus>Dialog.Close(1204)</onfocus>
 			<onclick>PlayerControl(stop)</onclick>
 			<onclick>Dialog.Close(1204)</onclick>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
+			<texturenofocus></texturenofocus>
+			<texturefocus></texturefocus>
 			<animation effect="fade" start="0" end="0" time="0" delay="132000">Focus</animation>
 		</control>
 		<include>Debug</include>

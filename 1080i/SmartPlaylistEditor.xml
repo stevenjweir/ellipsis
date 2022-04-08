@@ -30,7 +30,7 @@
 					<height>70</height>
 					<width>1520</width>
 					<font>Heading</font>
-					<label>-</label>
+					<label/>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -42,7 +42,6 @@
 					<bottom>0</bottom>
 					<texturefocus/>
 					<texturenofocus/>
-					<onclick>noop</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="500">
@@ -174,14 +173,14 @@
 				<include content="DefaultDialogButton">
 					<param name="id" value="20"/>
 					<param name="label" value="$LOCALIZE[186]"/>
-					<param name="focus" value="controls\button_green_nf.png"/>
-					<param name="nofocus" value="controls\button_green_f.png"/>
+					<param name="focus" value="controls\button_green_f.png"/>
+					<param name="nofocus" value="controls\button_green_nf.png"/>
 				</include>
 				<include content="DefaultDialogButton">
 					<param name="id" value="21"/>
 					<param name="label" value="$LOCALIZE[222]"/>
-					<param name="focus" value="controls\button_red_nf.png"/>
-					<param name="nofocus" value="controls\button_red_f.png"/>
+					<param name="focus" value="controls\button_red_f.png"/>
+					<param name="nofocus" value="controls\button_red_nf.png"/>
 				</include>
 			</control>
 		</control>

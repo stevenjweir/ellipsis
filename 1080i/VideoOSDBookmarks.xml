@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="125">
+<window>
     <include>Fade_In_WindowOpen</include>
     <include>Fade_Out_WindowClose</include>
     <defaultcontrol>2</defaultcontrol>
@@ -86,7 +86,7 @@
                     <onup>200</onup>
                     <scrolltime>200</scrolltime>
                     <viewtype label="536">icon</viewtype>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol></pagecontrol>
                     <orientation>horizontal</orientation>
                     <itemlayout width="429" height="230">
                         <control type="image">

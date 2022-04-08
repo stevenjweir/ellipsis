@@ -494,13 +494,10 @@
             <top>510</top>
             <width>798</width>
             <height>225</height>
-            <onleft>noop</onleft>
-            <onright>noop</onright>
-            <onup>noop</onup>
             <ondown>ActivateWindow(1200)</ondown>
             <viewtype label="50135">list</viewtype>
             <orientation>horizontal</orientation>
-            <pagecontrol>-</pagecontrol>
+            <pagecontrol></pagecontrol>
             <scrolltime>0</scrolltime>
             <itemlayout height="225" width="798">
                 <control type="label">

@@ -170,7 +170,7 @@
 				<onright>20</onright>
 				<onup>570</onup>
 				<ondown>22</ondown>
-				<label>-</label>
+				<label/>
 				<align>left</align>
 				<aligny>center</aligny>
 				<left>90</left>

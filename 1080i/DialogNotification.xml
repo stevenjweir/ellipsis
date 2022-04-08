@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="107">
+<window>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
 	<coordinates>
@@ -38,7 +38,7 @@
 				<top>8</top>
 				<height>90</height>
 				<width>1725</width>
-				<label>-</label>
+				<label/>
 				<font>Toast_Heading</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -49,7 +49,7 @@
 				<top>8</top>
 				<height>90</height>
 				<width>1420</width>
-				<label>-</label>
+				<label/>
 				<font>Toast_Heading</font>
 				<align>right</align>
 				<aligny>center</aligny>

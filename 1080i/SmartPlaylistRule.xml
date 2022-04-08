@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window type="dialog" id="129">
+<window type="dialog">
 	<defaultcontrol always="true">15</defaultcontrol>
 	<include>Fade_In_WindowOpen</include>
 	<include>Fade_Out_WindowClose</include>
@@ -91,7 +91,7 @@
 					<font>Default</font>
 					<textcolor>Highlight</textcolor>
 					<aligny>center</aligny>
-					<label>-</label>
+					<label/>
 					<textoffsetx>22</textoffsetx>
 					<hinttext>$LOCALIZE[50166]</hinttext>
 					<texturenofocus border="4,5,6,8">controls\button_nf.png</texturenofocus>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="2600">
+<window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<controls>
 		<!-- Backgrounds -->
@@ -13,8 +13,8 @@
 			<ondown>ActivateWindow(1202)</ondown>
 			<onleft>ActivateWindow(1202)</onleft>
 			<onright>ActivateWindow(1202)</onright>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
+			<texturenofocus></texturenofocus>
+			<texturefocus></texturefocus>
 		</control>
 		<control type="spincontrol" id="3">
 			<description>weather location select</description>
@@ -22,13 +22,13 @@
 			<top>-150</top>
 			<width>15</width>
 			<height>15</height>
-			<font>-</font>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<textureup>-</textureup>
-			<texturedown>-</texturedown>
-			<textureupfocus>-</textureupfocus>
-			<texturedownfocus>-</texturedownfocus>
+			<font></font>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
+			<textureup></textureup>
+			<texturedown></texturedown>
+			<textureupfocus></textureupfocus>
+			<texturedownfocus></texturedownfocus>
 		</control>
 		<control type="group">
 			<include>Fade_In_WindowOpen</include>

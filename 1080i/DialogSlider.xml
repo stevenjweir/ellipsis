@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="145">
+<window>
     <defaultcontrol>11</defaultcontrol>
     <include>Fade_In_WindowOpen</include>
     <include>Fade_Out_WindowClose</include>
@@ -50,8 +50,8 @@
                 <width>600</width>
                 <height>48</height>
                 <aligny>top</aligny>
-                <texturefocus>-</texturefocus>
-                <texturenofocus>-</texturenofocus>
+                <texturefocus></texturefocus>
+                <texturenofocus></texturenofocus>
                 <sliderwidth>400</sliderwidth>
                 <sliderheight>32</sliderheight>
                 <texturesliderbar>controls\slider_large_back.png</texturesliderbar>

@@ -44,10 +44,10 @@
 				<width>704</width>469
 				<height>46</height>31
 				<texturebg>controls\progressbar_back.png</texturebg>
-				<lefttexture>-</lefttexture>
+				<lefttexture></lefttexture>
 				<midtexture>controls\progressbar_full.png</midtexture>
-				<righttexture>-</righttexture>
-				<overlaytexture>-</overlaytexture>
+				<righttexture></righttexture>
+				<overlaytexture></overlaytexture>
 			</control>
 			<control type="label">
 				<description>heading label</description>
@@ -66,7 +66,7 @@
 				<width>930</width>
 				<height>105</height>
 				<align>center</align>
-				<label>-</label>
+				<label/>
 				<font>Medium</font>
 			</control>
 			<control type="label" id="30">
@@ -75,7 +75,7 @@
 				<top>0</top>
 				<width>0</width>
 				<height>0</height>
-				<font>-</font>
+				<font></font>
 				<visible>false</visible>
 			</control>
 		</control>

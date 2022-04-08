@@ -1,69 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="147">
-    <defaultcontrol always="true">60</defaultcontrol>
-    <include>Fade_In_WindowOpen</include>
-    <include>Fade_Out_WindowClose</include>
-    <coordinates>
-        <system>1</system>
-        <left>0</left>
-        <top>0</top>
-    </coordinates>
-    <controls>
-        <control type="image">
-            <left>0</left>
-            <top>0</top>
-            <width>1920</width>
-            <height>1080</height>
-            <texture>filter_keyboard_shadow.png</texture>
-        </control>
-        <control type="group">
-            <include>Zoom_In_WindowOpen</include>
-            <include>Zoom_Out_WindowClose</include>
-            <control type="image">
-                <description>background image</description>
-                <left>276</left>
-                <top>123</top>
-                <width>1365</width>
-                <height>915</height>
-                <texture>dialogs\dialog-background-profile.png</texture>
-            </control>
-            <control type="image">
-                <description>background image</description>
-                <left>1488</left>
-                <top>183</top>
-                <width>96</width>
-                <height>96</height>
-                <texture>dialogs\smart-editor-dialog-icon.png</texture>
-            </control>
-            <control type="textbox" id="5">
-                <left>354</left>
-                <top>213</top>
-                <width>1080</width>
-                <height>675</height>
-                <font>Medium</font>
-                <align>justify</align>
-                <pagecontrol>60</pagecontrol>
-                <textcolor>TextMedium</textcolor>
-                <autoscroll delay="6000" time="2000" repeat="10000">true</autoscroll>
-            </control>
-            <control type="scrollbar" id="60">
-                <left>1518</left>
-                <top>339</top>
-                <width>39</width>
-                <height>420</height>
-                <texturesliderbackground border="13">ScrollBarV.png</texturesliderbackground>
-                <texturesliderbar border="13">ScrollBarV_bar.png</texturesliderbar>
-                <texturesliderbarfocus border="13">ScrollBarV_bar.png</texturesliderbarfocus>
-                <textureslidernib>ScrollBarNib.png</textureslidernib>
-                <textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-                <onleft>Close</onleft>
-                <onright>Close</onright>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
-                <visible allowhiddenfocus="true">Control.HasFocus(60)</visible>
-                <animation effect="fade" start="100" end="0" time="400">Hidden</animation>
-            </control>
-        </control>
-        <include>Debug</include>
-    </controls>
+<window>
+	<defaultcontrol always="true">1000</defaultcontrol>
+	<include>Fade_In_WindowOpen</include>
+	<include>Fade_Out_WindowClose</include>
+	<controls>
+		<control type="image">
+			<left>0</left>
+			<top>0</top>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>filter_keyboard_shadow.png</texture>
+		</control>
+		<control type="group">
+			<left>13%</left>
+			<centertop>50%</centertop>
+			<height>770</height>
+			<control type="image">
+				<description>background image</description>
+				<left>-160</left>
+				<top>-120</top>
+				<width>1800</width>
+				<height>1050</height>
+				<texture>dialogs\dialog-background-tall.png</texture>
+			</control>
+			<control type="label" id="1">
+				<description>header label</description>
+				<left>-100</left>
+				<top>-35</top>
+				<height>63</height>
+				<width>1590</width>
+				<align>center</align>
+				<aligny>center</aligny>
+				<font>Heading</font>
+				<label>$LOCALIZE[13406]</label>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="textbox" id="5">
+				<left>1%</left>
+				<top>35</top>
+				<width>85%</width>
+				<height>735</height>
+				<shadowcolor>black</shadowcolor>
+				<pagecontrol>3000</pagecontrol>
+				<font>Medium</font>
+				<monofont>Mono26</monofont>
+			</control>
+			<control type="scrollbar" id="3000">
+				<left>-3000</left>
+				<top>-3000</top>
+				<width>1</width>
+				<height>1</height>
+				<texturefocus/>
+				<texturenofocus/>
+				<label/>
+				<font/>
+				<ondown>3000</ondown>
+				<onup>3000</onup>
+			</control>
+		</control>
+		<control type="button" id="1000">
+			<left>-3000</left>
+			<top>-3000</top>
+			<width>1</width>
+			<height>1</height>
+			<texturefocus/>
+			<texturenofocus/>
+			<label/>
+			<font/>
+			<onclick>Action(Close)</onclick>
+			<onup>PageUp(3000)</onup>
+			<ondown>PageDown(3000)</ondown>
+		</control>
+		<control type="button">
+			<left>180</left>
+			<top>113</top>
+			<width>60</width>
+			<height>60</height>
+			<texturefocus>menu\nav\nav_arrow_up_FO.png</texturefocus>
+			<texturenofocus>menu\nav\nav_arrow_up_FO.png</texturenofocus>
+			<onclick>SetFocus(3000)</onclick>
+			<onclick>Up</onclick>
+		</control>
+		<control type="button">
+			<left>180</left>
+			<top>936</top>
+			<width>60</width>
+			<height>60</height>
+			<onclick>SetFocus(3000)</onclick>
+			<onclick>Down</onclick>
+			<texturefocus>menu\nav\nav_arrow_down_FO.png</texturefocus>
+			<texturenofocus>menu\nav\nav_arrow_down_FO.png</texturenofocus>
+		</control>
+		<control type="label">
+			<left>1400</left>
+			<top>945</top>
+			<width>380</width>
+			<height>35</height>
+			<font>Medium</font>
+			<textcolor>grey</textcolor>
+			<align>right</align>
+			<aligny>center</aligny>
+			<label>$LOCALIZE[50130] $INFO[Container(5).CurrentPage] $LOCALIZE[20163] $INFO[Container(5).NumPages]</label>
+			<wrapmultiline>true</wrapmultiline>
+			<visible>Integer.IsGreater(Container(5).NumPages,1)</visible>
+		</control>
+		<include>Debug</include>
+	</controls>
 </window>

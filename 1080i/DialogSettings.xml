@@ -33,7 +33,7 @@
 					<right>100</right>
 					<height>70</height>
 					<font>Heading</font>
-					<label>-</label>
+					<label/>
 					<aligny>center</aligny>
 				</control>
 				<control type="button" id="22002">
@@ -44,7 +44,6 @@
 					<bottom>0</bottom>
 					<texturefocus/>
 					<texturenofocus/>
-					<onclick>noop</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="5">
@@ -52,7 +51,7 @@
 				<left>29</left>
 				<top>100</top>
 				<width>1160</width>
-				<height>750</height>
+				<height>586</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>5</onup>
@@ -76,6 +75,8 @@
 			<control type="sliderex" id="13">
 				<description>Default Slider</description>
 				<include>DefaultSettingButton</include>
+				<font>Default</font>
+				<textwidth>800</textwidth>
 			</control>
 			<control type="label" id="14">
 				<description>Default Label</description>
@@ -100,20 +101,20 @@
 				<include content="DefaultDialogButton">
 					<param name="id" value="28"/>
 					<param name="label" value=""/>
-					<param name="focus" value="controls\button_green_nf.png"/>
-					<param name="nofocus" value="controls\button_green_f.png"/>
+					<param name="focus" value="controls\button_green_f.png"/>
+					<param name="nofocus" value="controls\button_green_nf.png"/>
 				</include>
 				<include content="DefaultDialogButton">
 					<param name="id" value="29"/>
 					<param name="label" value=""/>
-					<param name="focus" value="controls\button_red_nf.png"/>
-					<param name="nofocus" value="controls\button_red_f.png"/>
+					<param name="focus" value="controls\button_red_f.png"/>
+					<param name="nofocus" value="controls\button_red_nf.png"/>
 				</include>
 				<include content="DefaultDialogButton">
 					<param name="id" value="30"/>
 					<param name="label" value=""/>
-					<texturenofocus border="8">controls\button_nf.png</texturenofocus>
-					<texturefocus border="8">controls\button_f.png</texturefocus>
+					<param name="focus" value="controls\button_f.png"/>
+					<param name="nofocus" value="controls\button_nf.png"/>
 				</include>
 			</control>
 		</control>

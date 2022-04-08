@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="115">
+<window>
 	<defaultcontrol>1</defaultcontrol>
 	<coordinates>
 		<system>1</system>
@@ -16,9 +16,9 @@
 			<animation effect="slide" start="0,-117" end="0" time="300" tween="sine" easing="out" reversible="false" condition="Control.IsVisible(175)">Conditional</animation>
 			<animation effect="slide" start="0" end="0,-117" time="300" tween="sine" easing="in" reversible="false" condition="!Control.IsVisible(175)">Conditional</animation>
 			<control type="image">
-				<left>-150</left>
+				<left>-180</left>
 				<top>-2</top>
-				<width>579</width>
+				<width>639</width>
 				<height>58</height>
 				<texture>dialogs\tab-seek-sub.png</texture>
 			</control>
@@ -30,8 +30,8 @@
 				<font>Seek</font>
 				<textcolor>TextSeek</textcolor>
 				<align>center</align>
-				<label>$INFO[Player.SeekStepSize]    $INFO[Player.Chapter,$LOCALIZE[21396] ]$INFO[Player.Chaptercount, of ]</label>
-				<visible>Player.ChapterCount</visible>
+				<label>$INFO[MusicPlayer.TimeSpeed,,   ]$INFO[Player.SeekStepSize,,   ]$INFO[Player.Chapter,$LOCALIZE[21396] ]$INFO[Player.Chaptercount, / ]</label>
+				<visible>Integer.IsGreater(Player.ChapterCount,0)</visible>
 			</control>
 			<control type="label">
 				<left>-125</left>
@@ -41,19 +41,8 @@
 				<font>Seek</font>
 				<textcolor>TextSeek</textcolor>
 				<align>center</align>
-				<label>$INFO[Player.SeekStepSize]</label>
-				<visible>!Player.ChapterCount</visible>
-			</control>
-			<control type="label">
-				<left>-125</left>
-				<top>-4</top>
-				<width>529</width>
-				<height>58</height>
-				<font>Seek</font>
-				<textcolor>TextSeek</textcolor>
-				<align>center</align>
-				<label>$INFO[MusicPlayer.TimeSpeed]</label>
-				<visible>String.IsEmpty(Player.SeekStepSize)</visible>
+				<label>$INFO[MusicPlayer.TimeSpeed,,   ]$INFO[Player.SeekStepSize]</label>
+				<visible>!Integer.IsGreater(Player.ChapterCount,0)</visible>
 			</control>
 		</control>
 		<control type="group">
@@ -81,7 +70,7 @@
 				<lefttexture>controls\progress_left.png</lefttexture>
 				<midtexture>controls\progress_middle.png</midtexture>
 				<righttexture>controls\progress_right</righttexture>
-				<overlaytexture>-</overlaytexture>
+				<overlaytexture/>
 			</control>
 			<control type="slider" id="401">
 				<description>Seek Slider</description>
@@ -183,10 +172,10 @@
 					<height>16</height>
 					<info>Player.CacheLevel</info>
 					<texturebg>controls\cache-slider-bkgd.png</texturebg>
-					<lefttexture>-</lefttexture>
+					<lefttexture/>
 					<midtexture>controls\cache-slider-full.png</midtexture>
-					<righttexture>-</righttexture>
-					<overlaytexture>-</overlaytexture>
+					<righttexture/>
+					<overlaytexture/>
 					<reveal>true</reveal>
 				</control>
 			</control>

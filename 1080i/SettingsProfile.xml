@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window id="34">
+<window>
 	<defaultcontrol>2</defaultcontrol>
 	<controls>
 		<!-- Backgrounds -->
@@ -25,16 +25,16 @@
 			<top>0</top>
 			<width>15</width>
 			<height>15</height>
-			<label>-</label>
+			<label/>
 			<onleft>4</onleft>
 			<onright>4</onright>
 			<onup>2</onup>
 			<ondown>4</ondown>
-			<font>-</font>
-			<texturefocus>-</texturefocus>
-			<texturenofocus>-</texturenofocus>
-			<textureradioonfocus>-</textureradioonfocus>
-			<textureradioonnofocus>-</textureradioonnofocus>
+			<font></font>
+			<texturefocus></texturefocus>
+			<texturenofocus></texturenofocus>
+			<textureradioonfocus></textureradioonfocus>
+			<textureradioonnofocus></textureradioonnofocus>
 		</control>
 		<!-- Elipsis Visor -->
 		<include>Visor_Filter</include>

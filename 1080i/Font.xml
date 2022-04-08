@@ -75,6 +75,11 @@
             <filename>Ellipsis_normal.ttf</filename>
             <size>39</size>
         </font>
+		<font>
+			<name>Mono26</name>
+			<filename>NotoMono-Regular.ttf</filename>
+			<size>26</size>
+		</font>
         <!-- Credits -->
         <font>
             <name>Credits_Intro</name>

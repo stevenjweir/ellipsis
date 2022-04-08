@@ -54,9 +54,9 @@
 	<include name="Dock_Subtitle">
 		<item>
 			<icon>dock\icons\subtitle.png</icon>
-			<label>$LOCALIZE[462]</label>
-			<onclick>RunScript($INFO[Skin.String(Path_SubtitleScript)])</onclick>
-			<visible>Skin.HasSetting(Enable_SubtitleScript)</visible>
+			<label>$LOCALIZE[24133]</label>
+			<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
+			<visible>!VideoPlayer.Content(LiveTV) | VideoPlayer.HasSubtitles</visible>
 		</item>
 	</include>
 	<include name="Dock_Visualisation">

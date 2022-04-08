@@ -762,7 +762,7 @@
             <onleft>ActivateWindow(1201)</onleft>
             <onright>ActivateWindow(1201)</onright>
             <viewtype label="50134">list</viewtype>
-            <pagecontrol>-</pagecontrol>
+            <pagecontrol></pagecontrol>
             <scrolltime>200</scrolltime>
             <itemlayout height="69" width="798">
                 <control type="image">
