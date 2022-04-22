@@ -240,9 +240,9 @@
 					<control type="group">
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="grouplist">
-							<left>28</left>
+							<left>20</left>
 							<top>12</top>
-							<width>670</width>
+							<width>690</width>
 							<height>52</height>
 							<itemgap>10</itemgap>
 							<orientation>horizontal</orientation>
@@ -266,9 +266,9 @@
 							</control>
 							<control type="image">
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
-								<width>288</width>
-								<height>46</height>
-								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<width>210</width>
+								<height>44</height>
+								<aspectratio align="left" aligny="center" scalediffuse="false">keep</aspectratio>
 								<texture>$INFO[ListItem.UserRating]rating.png</texture>
 							</control>
 						</control>
@@ -311,7 +311,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>Container.Content(Movies)</visible>
+					<visible>Container.Content(Movies) | Container.Content(sets)</visible>
 					<left>597</left>
 					<top>634</top>
 					<control type="image">
@@ -340,9 +340,10 @@
 					<control type="group">
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="grouplist">
-							<left>28</left>
+							<visible>!ListItem.IsCollection</visible>
+							<left>20</left>
 							<top>11</top>
-							<width>670</width>
+							<width>690</width>
 							<height>52</height>
 							<itemgap>10</itemgap>
 							<orientation>horizontal</orientation>
@@ -366,9 +367,9 @@
 							</control>
 							<control type="image">
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
-								<width>288</width>
-								<height>46</height>
-								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<width>210</width>
+								<height>44</height>
+								<aspectratio align="left" aligny="center" scalediffuse="false">keep</aspectratio>
 								<texture>$INFO[ListItem.UserRating]rating.png</texture>
 							</control>
 						</control>
@@ -487,7 +488,7 @@
 				</control>
 				<control type="group">
 					<visible>Control.IsVisible(50)</visible>
-					<visible>!Container.Content(MusicVideos) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Movies) + !Container.Content(Episodes)</visible>
+					<visible>!Container.Content(MusicVideos) + !Container.Content(TVShows) + !Container.Content(Seasons) + !Container.Content(Movies) + !Container.Content(sets) + !Container.Content(Episodes)</visible>
 					<left>544</left>
 					<top>634</top>
 					<control type="image">
@@ -516,17 +517,19 @@
 					<control type="group">
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="label">
+							<visible>!Container.Content(albums)</visible>
 							<left>28</left>
 							<top>22</top>
 							<width>772</width>
 							<height>52</height>
-							<font>Library_Light_35</font>
+							<font>Library_Light_25</font>
 							<textcolor>Text</textcolor>
 							<label>[B]$INFO[ListItem.Title][/B]$INFO[ListItem.Label2, - (,)]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
 						<control type="label">
+							<visible>Container.Content(songs)</visible>
 							<left>28</left>
 							<top>94</top>
 							<width>772</width>
@@ -538,6 +541,31 @@
 							<scroll>true</scroll>
 						</control>
 						<control type="label">
+							<visible>Container.Content(albums)</visible>
+							<left>28</left>
+							<top>120</top>
+							<width>772</width>
+							<height>48</height>
+							<font>Library_Light_25</font>
+							<textcolor>Text</textcolor>
+							<label>[B]$INFO[ListItem.Artist][/B]</label>
+							<align>center</align>
+							<scroll>true</scroll>
+						</control>
+						<control type="label">
+							<visible>Container.Content(albums)</visible>
+							<left>28</left>
+							<top>28</top>
+							<width>772</width>
+							<height>52</height>
+							<font>Library_Light_25</font>
+							<textcolor>Text</textcolor>
+							<label>[B]$INFO[ListItem.Album]$INFO[ListItem.Year, (,)][/B]</label>
+							<align>center</align>
+							<scroll>true</scroll>
+						</control>
+						<control type="label">
+							<visible>Container.Content(songs)</visible>
 							<left>28</left>
 							<top>158</top>
 							<width>772</width>
@@ -555,7 +583,7 @@
 							<height>52</height>
 							<font>Library_Light_25</font>
 							<textcolor>Text</textcolor>
-							<label>[B]$INFO[ListItem.Genre][/B]</label>
+							<label>$INFO[ListItem.Genre]</label>
 							<align>center</align>
 							<scroll>true</scroll>
 						</control>
@@ -741,9 +769,10 @@
 						<top>10</top>
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="grouplist">
-							<left>28</left>
+							<visible>!ListItem.IsCollection</visible>
+							<left>20</left>
 							<top>8</top>
-							<width>670</width>
+							<width>690</width>
 							<height>52</height>
 							<itemgap>10</itemgap>
 							<orientation>horizontal</orientation>
@@ -767,9 +796,9 @@
 							</control>
 							<control type="image">
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
-								<width>288</width>
-								<height>46</height>
-								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<width>210</width>
+								<height>44</height>
+								<aspectratio align="left" aligny="center" scalediffuse="false">keep</aspectratio>
 								<texture>$INFO[ListItem.UserRating]rating.png</texture>
 							</control>
 						</control>
@@ -964,9 +993,9 @@
 					<control type="group">
 						<visible>!String.IsEmpty(ListItem.Title)</visible>
 						<control type="grouplist">
-							<left>28</left>
+							<left>20</left>
 							<top>15</top>
-							<width>670</width>
+							<width>690</width>
 							<height>52</height>
 							<itemgap>10</itemgap>
 							<orientation>horizontal</orientation>
@@ -990,9 +1019,9 @@
 							</control>
 							<control type="image">
 								<visible>!String.IsEmpty(ListItem.UserRating)</visible>
-								<width>288</width>
-								<height>46</height>
-								<aspectratio align="left" scalediffuse="false">keep</aspectratio>
+								<width>210</width>
+								<height>44</height>
+								<aspectratio align="left" aligny="center" scalediffuse="false">keep</aspectratio>
 								<texture>$INFO[ListItem.UserRating]rating.png</texture>
 							</control>
 						</control>

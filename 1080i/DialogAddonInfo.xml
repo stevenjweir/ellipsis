@@ -43,7 +43,7 @@
 					<width>96</width>
 					<height>48</height>
 					<label/>
-					<font></font>
+					<font/>
 					<onclick>PreviousMenu</onclick>
 					<texturefocus>DialogCloseButton-focus.png</texturefocus>
 					<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -155,7 +155,7 @@
 						<top>135</top>
 						<width>210</width>
 						<height>38</height>
-						<label>$LOCALIZE[563]:</label>
+						<label>$LOCALIZE[126]:</label>
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>Default</font>
@@ -167,7 +167,7 @@
 						<top>135</top>
 						<width>660</width>
 						<height>38</height>
-						<label>$INFO[ListItem.Rating]</label>
+						<label>$INFO[ListItem.Property(Addon.Status)]$INFO[ListItem.Property(Addon.ValidUpdateVersion), - ($LOCALIZE[19114]: ,)]</label>
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Default</font>
@@ -225,39 +225,40 @@
 					</control>
 				</control>
 				<control type="image">
-					<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+					<visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])</visible>
 					<description>Icon image</description>
 					<left>1389</left>
-					<top>279</top>
-					<width>210</width>
-					<height>210</height>
+					<top>179</top>
+					<width>310</width>
+					<height>310</height>
 					<texture>dialogs/dialog-icon-info.png</texture>
 				</control>
 				<control type="textbox" id="400">
-					<visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+					<visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])</visible>
 					<description>Description</description>
 					<left>200</left>
 					<top>603</top>
 					<height>162</height>
 					<width>1490</width>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>Default</font>
-					<textcolor>TextMedium</textcolor>
 					<label>$INFO[ListItem.AddonDescription]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 				<control type="textbox" id="400">
-					<visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+					<visible>String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24170]) | String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24171])</visible>
 					<description>Description</description>
 					<left>200</left>
 					<top>603</top>
 					<height>162</height>
 					<width>1490</width>
 					<align>center</align>
+					<aligny>center</aligny>
 					<font>Default</font>
 					<align>left</align>
-					<textcolor>TextMedium</textcolor>
-					<label>$INFO[ListItem.AddonBroken]</label>
+					<textcolor>red</textcolor>
+					<label>[B]$INFO[ListItem.AddonLifecycleType]$INFO[ListItem.AddonLifecycleDesc, - ,][/B]</label>
 					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 				<control type="grouplist" id="9000">
@@ -296,6 +297,18 @@
 						<texturefocus border="5">controls/button_f.png</texturefocus>
 					</control>
 					<control type="button" id="8">
+						<description>Update Addon button</description>
+						<width>215</width>
+						<height>63</height>
+						<label>24138</label>
+						<font>Default</font>
+						<align>center</align>
+						<aligny>top</aligny>
+						<textoffsety>3</textoffsety>
+						<texturenofocus border="5">controls/button_nf.png</texturenofocus>
+						<texturefocus border="5">controls/button_f.png</texturefocus>
+					</control>
+					<control type="button" id="14">
 						<description>Update Addon button</description>
 						<width>215</width>
 						<height>63</height>

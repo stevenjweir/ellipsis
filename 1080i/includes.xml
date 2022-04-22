@@ -8,9 +8,7 @@
 	<include file="IncludeCommonViewTypes.xml"/>
 	<include file="IncludeLibraryInfo.xml"/>
 	<include file="IncludeFlags.xml"/>
-	<include file="IncludeFileStack.xml"/>
 	<include file="IncludeAnims.xml"/>
-	<include file="IncludeTBBNews.xml"/>
 	<include file="IncludeDebug.xml"/>
 	<include name="Sort_Letter">
 		<control type="group">
@@ -57,7 +55,7 @@
 		<value condition="String.IsEqual(listitem.dbtype,album)">DefaultAlbumCover.png</value>
 		<value>DefaultAudio.png</value>
 	</variable>
-		<variable name="Durat_hh">
+	<variable name="Durat_hh">
 		<value condition="Integer.IsGreaterOrEqual(ListItem.Duration(h),1) + String.Contains(System.Language,russian)">$INFO[ListItem.Duration(h)] [LOWERCASE]$LOCALIZE[12392][/LOWERCASE]</value>
 		<value condition="Integer.IsGreaterOrEqual(ListItem.Duration(h),1)">$INFO[ListItem.Duration(h)] h</value>
 	</variable>
@@ -66,6 +64,7 @@
 		<value/>
 	</variable>
 	<variable name="ItemDuration">
+		<value condition="Container.Content(MusicVideos)">$INFO[ListItem.Duration(mm:ss)]</value>
 		<value condition="Container.Content(songs)">$INFO[ListItem.Duration]</value>
 		<value condition="Integer.IsLess(ListItem.Duration,3600)">$INFO[ListItem.Duration(m),,[LOWERCASE] $LOCALIZE[12391][/LOWERCASE]]</value>
 		<value>$VAR[Durat_hh] $VAR[Durat_mm]</value>
@@ -73,6 +72,7 @@
 	<include name="FolderName">
 		<control type="group">
 			<visible>!Skin.HasSetting(Disable_Current_Folder_Section_Widget)</visible>
+			<top>-45</top>
 			<control type="image">
 				<left>48</left>
 				<top>975</top>
@@ -739,7 +739,7 @@
 			<visible>![!Skin.HasSetting(Disable_Fanart) + String.IsEmpty(Fanart.Image) + !String.IsEmpty(ListItem.Art(fanart))]</visible>
 			<visible>![Skin.HasSetting(Enable_Custom_Background) + !String.IsEmpty(Skin.String(Custom_Background))]</visible>
 			<visible>![Skin.HasSetting(Enable_Custom_Background_Folder) + !String.IsEmpty(Skin.String(Custom_Background_Folder))]</visible>
-			<visible>Skin.HasSetting(Enable_Time_Of_Day_Background)</visible>
+			<visible>Skin.HasSetting(Enable_Time_Of_Day_Background) + String.IsEmpty(ListItem.Art(artist.fanart))</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>

@@ -491,7 +491,7 @@
                         <aspectratio align="center" scalediffuse="false">keep</aspectratio>
                         <texture diffuse="dvdbox-diffuse.png" />
                         <info>Container(56).ListItem(-1).ActualIcon</info>
-                        <visible>String.IsEmpty(Container(56).ListItem((-1).Thumb)</visible>
+                        <visible>String.IsEmpty(Container(56).ListItem(-1).Thumb)</visible>
                     </control>
                     <control type="image">
                         <left>0</left>

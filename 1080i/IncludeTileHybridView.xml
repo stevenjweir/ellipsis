@@ -843,7 +843,7 @@
 			</control>
 		</control>
 		<control type="list" id="58">
-			<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)</visible>
+			<visible>Container.Content(Artists) | Container.Content(Albums) | Container.Content(Songs) | Container.Content(MusicVideos)  | Container.Content(Images)</visible>
 			<left>162</left>
 			<top>178</top>
 			<width>798</width>

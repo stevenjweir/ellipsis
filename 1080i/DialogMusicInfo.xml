@@ -75,7 +75,7 @@
 			<control type="group">
 				<visible>!Skin.HasSetting(Discography)</visible>
 				<visible>Container.Content(albums)</visible>
-				<left>-140</left>
+				<left>15</left>
 				<control type="label">
 					<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 					<left>550</left>
@@ -107,7 +107,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>303</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Genre]</label>
 					<textcolor>Text</textcolor>
@@ -125,7 +125,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>340</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Year]</label>
 					<textcolor>Text</textcolor>
@@ -143,7 +143,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>378</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Album_Mood)]</label>
 					<textcolor>Text</textcolor>
@@ -161,7 +161,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>416</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Album_Style)]</label>
 					<textcolor>Text</textcolor>
@@ -179,7 +179,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>453</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Album_Theme)]</label>
 					<textcolor>Text</textcolor>
@@ -197,7 +197,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>490</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Album_Type)]</label>
 					<textcolor>Text</textcolor>
@@ -215,7 +215,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>528</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Album_Label)]</label>
 					<textcolor>Text</textcolor>
@@ -233,7 +233,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>566</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Rating]</label>
 					<textcolor>Text</textcolor>
@@ -248,20 +248,20 @@
 					<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 				</control>
 				<control type="textbox">
-					<left>300</left>
+					<left>150</left>
 					<top>660</top>
-					<width>1380</width>
+					<width>1405</width>
 					<height>165</height>
 					<font>Medium_Bold</font>
 					<label>$INFO[ListItem.Property(Album_Description)]</label>
 					<textcolor>Text</textcolor>
-					<align>left</align>
+					<align>justify</align>
 					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 			</control>
 			<control type="group">
 				<visible>Container.Content(songs)</visible>
-				<left>-120</left>
+				<left>15</left>
 				<control type="label">
 					<visible>!String.IsEmpty(ListItem.UserRating)</visible>
 					<left>550</left>
@@ -293,7 +293,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>303</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.TrackNumber]</label>
 					<textcolor>Text</textcolor>
@@ -311,7 +311,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>340</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Duration]</label>
 					<textcolor>Text</textcolor>
@@ -329,7 +329,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>378</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Genre]</label>
 					<textcolor>Text</textcolor>
@@ -347,7 +347,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>416</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.PlayCount]</label>
 					<textcolor>Text</textcolor>
@@ -365,7 +365,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>453</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.LastPlayed]</label>
 					<textcolor>Text</textcolor>
@@ -383,7 +383,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>490</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Path]</label>
 					<textcolor>Text</textcolor>
@@ -401,7 +401,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>528</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Filename]</label>
 					<textcolor>Text</textcolor>
@@ -419,7 +419,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>566</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Rating]</label>
 					<textcolor>Text</textcolor>
@@ -439,7 +439,7 @@
 					<width>1380</width>
 					<height>165</height>
 					<font>Medium_Bold</font>
-					<label>$INFO[ListItem.Property(Role.Composer),[B][COLOR TextMedium]$LOCALIZE[29903]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Conductor),[B][COLOR TextMedium]$LOCALIZE[29905]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Orchestra),[B][COLOR TextMedium]$LOCALIZE[38034]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Lyricist),[B][COLOR TextMedium]$LOCALIZE[38035]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Remixer),[B][COLOR TextMedium]$LOCALIZE[38036]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Arranger),[B][COLOR TextMedium]$LOCALIZE[38037]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Engineer),[B][COLOR TextMedium]$LOCALIZE[38038]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Producer),[B][COLOR TextMedium]$LOCALIZE[38039]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.DJMixer),[B][COLOR TextMedium]$LOCALIZE[38040]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Mixer),[B][COLOR TextMedium]$LOCALIZE[38041]: [/B][/COLOR]</label>
+					<label>$INFO[ListItem.Property(Role.Composer),[B][COLOR TextMedium]$LOCALIZE[29903]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Conductor),[B][COLOR TextMedium]$LOCALIZE[29905]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Orchestra),[B][COLOR TextMedium]$LOCALIZE[38034]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Lyricist),[B][COLOR TextMedium]$LOCALIZE[38035]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Remixer),[B][COLOR TextMedium]$LOCALIZE[38036]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Arranger),[B][COLOR TextMedium]$LOCALIZE[38037]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Engineer),[B][COLOR TextMedium]$LOCALIZE[38038]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Producer),[B][COLOR TextMedium]$LOCALIZE[38039]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.DJMixer),[B][COLOR TextMedium]$LOCALIZE[38040]: [/B][/COLOR],  ]$INFO[ListItem.Property(Role.Mixer),[B][COLOR TextMedium]$LOCALIZE[38041]: [/B][/COLOR]]</label>
 					<textcolor>Text</textcolor>
 					<align>left</align>
 					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
@@ -448,7 +448,7 @@
 			<control type="group">
 				<visible>!Skin.HasSetting(Discography)</visible>
 				<visible>Container.Content(artists)</visible>
-				<left>-115</left>
+				<left>15</left>
 				<control type="label">
 					<left>550</left>
 					<top>303</top>
@@ -461,7 +461,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>303</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Artist_YearsActive)]</label>
 					<textcolor>Text</textcolor>
@@ -479,7 +479,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>340</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Type)]</label>
 					<textcolor>Text</textcolor>
@@ -497,7 +497,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>378</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Instrument)]</label>
 					<textcolor>Text</textcolor>
@@ -515,7 +515,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>416</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Born)]</label>
 					<textcolor>Text</textcolor>
@@ -533,7 +533,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>453</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Formed)]</label>
 					<textcolor>Text</textcolor>
@@ -551,7 +551,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>490</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Style)]</label>
 					<textcolor>Text</textcolor>
@@ -569,7 +569,7 @@
 				<control type="label">
 					<left>854</left>
 					<top>528</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Mood)]</label>
 					<textcolor>Text</textcolor>
@@ -589,7 +589,7 @@
 					<visible>!String.IsEmpty(ListItem.Property(Artist_Died))</visible>
 					<left>854</left>
 					<top>566</top>
-					<width>838</width>
+					<width>700</width>
 					<font>Medium_Bold</font>
 					<label fallback="161">$INFO[ListItem.Property(Artist_Died)]</label>
 					<textcolor>Text</textcolor>
@@ -604,14 +604,14 @@
 					<colordiffuse>LibraryPanelDiffuse</colordiffuse>
 				</control>
 				<control type="textbox">
-					<left>300</left>
+					<left>150</left>
 					<top>660</top>
-					<width>1380</width>
+					<width>1405</width>
 					<height>165</height>
 					<font>Medium_Bold</font>
 					<label>$INFO[ListItem.Property(Artist_Description)]</label>
 					<textcolor>Text</textcolor>
-					<align>left</align>
+					<align>justify</align>
 					<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
 				</control>
 			</control>
@@ -678,9 +678,9 @@
 				</itemlayout>
 				<focusedlayout width="1014" height="55">
 					<control type="image">
-						<left>20</left>
+						<left>45</left>
 						<top>0</top>
-						<width>994</width>
+						<width>970</width>
 						<height>55</height>
 						<texture border="4,5,6,8">controls\button_f.png</texture>
 						<visible>Control.HasFocus(50)</visible>

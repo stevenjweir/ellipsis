@@ -204,6 +204,7 @@
 			<label/>
 			<onclick>Container.NextViewMode</onclick>
 			<onclick>SetFocus(9500)</onclick>
+			<visible>!Container.Content(addons) + !Window.IsVisible(addonbrowser)</visible>
 		</item>
 	</include>
 	<include name="Dock_SortAs">
@@ -213,6 +214,7 @@
 			<onclick>Container.NextSortMethod</onclick>
 			<onclick>SetFocus(9500)</onclick>
 			<visible>!Window.IsVisible(VideoPlaylist) + !Window.IsVisible(MusicPlaylist)</visible>
+			<visible>!Container.Content(addons) + !Window.IsVisible(addonbrowser)</visible>
 		</item>
 	</include>
 	<include name="Dock_SortDirection">
@@ -244,34 +246,48 @@
 			<visible>String.IsEqual(Container.SortOrder,$LOCALIZE[585])</visible>
 			<visible>Window.IsVisible(music)</visible>
 		</item>
+		<item id="31030">
+			<icon>dock\icons\sort-direction-asc.png</icon>
+			<label>$LOCALIZE[580]</label>
+			<onclick>SendClick(10040,4)</onclick>
+			<visible>String.IsEqual(Container.SortOrder,$LOCALIZE[584])</visible>
+			<visible>Container.Content(addons)</visible>
+		</item>
+		<item id="31031">
+			<icon>dock\icons\sort-direction-des.png</icon>
+			<label>$LOCALIZE[580]</label>
+			<onclick>SendClick(10040,4)</onclick>
+			<visible>String.IsEqual(Container.SortOrder,$LOCALIZE[585])</visible>
+			<visible>Container.Content(addons)</visible>
+		</item>
 	</include>
 	<include name="Dock_HideForeignAddons">
 		<item id="31003">
 			<icon>dock\icons\filter-on.png</icon>
 			<label>50156</label>
 			<onclick>Dialog.Close(1201)</onclick>
-			<onclick>SendClick(7)</onclick>
+			<onclick>SendClick(10040,7)</onclick>
 			<visible>System.GetBool(general.addonforeignfilter) + Container.Content(addons)</visible>
 		</item>
 		<item id="31004">
 			<icon>dock\icons\filter-off.png</icon>
 			<label>25001</label>
 			<onclick>Dialog.Close(1201)</onclick>
-			<onclick>SendClick(7)</onclick>
+			<onclick>SendClick(10040,7)</onclick>
 			<visible>!System.GetBool(general.addonforeignfilter) + Container.Content(addons)</visible>
 		</item>
 		<item id="31005">
 			<icon>dock\icons\show_broken_on.png</icon>
 			<label>50159</label>
 			<onclick>Dialog.Close(1201)</onclick>
-			<onclick>SendClick(8)</onclick>
+			<onclick>SendClick(10040,8)</onclick>
 			<visible>System.GetBool(general.addonbrokenfilter) + Container.Content(addons)</visible>
 		</item>
 		<item id="31006">
 			<icon>dock\icons\show_broken_off.png</icon>
 			<label>50160</label>
 			<onclick>Dialog.Close(1201)</onclick>
-			<onclick>SendClick(8)</onclick>
+			<onclick>SendClick(10040,8)</onclick>
 			<visible>!System.GetBool(general.addonbrokenfilter) + Container.Content(addons)</visible>
 		</item>
 	</include>
@@ -280,14 +296,14 @@
 			<icon>dock\icons\search.png</icon>
 			<label>50158</label>
 			<onclick>Dialog.Close(1201)</onclick>
-			<onclick>SendClick(5)</onclick>
+			<onclick>ReplaceWindow(systemsettings,addons)</onclick>
 			<visible>Window.IsActive(addonbrowser)</visible>
 		</item>
 		<item id="31008">
 			<icon>dock\icons\refresh.png</icon>
 			<label>24034</label>
 			<onclick>Dialog.Close(1201)</onclick>
-			<onclick>SendClick(9)</onclick>
+			<onclick>SendClick(10040,9)</onclick>
 			<visible>Window.IsActive(addonbrowser)</visible>
 		</item>
 	</include>
@@ -445,6 +461,22 @@
 		</item>
 	</include>
 	<!-- Dock Weather Items -->
+	<include name="Dock_Weather_Addon">
+		<item>
+			<icon>dock\icons\show_broken_on.png</icon>
+			<label>$LOCALIZE[24029]</label>
+			<onclick>Dialog.Close(1202)</onclick>
+			<onclick>ReplaceWindow(servicesettings,weather)</onclick>
+		</item>
+	</include>
+	<include name="Dock_Weather_Settings">
+		<item>
+			<icon>dock\icons\weather-settings.png</icon>
+			<label>$LOCALIZE[10004]</label>
+			<onclick>Dialog.Close(1202)</onclick>
+			<onclick>Addon.OpenSettings($INFO[Weather.plugin])</onclick>
+		</item>
+	</include>
 	<include name="Dock_Weather_Location">
 		<item>
 			<icon>dock\icons\weather-location.png</icon>
@@ -459,14 +491,6 @@
 			<label>$LOCALIZE[184]</label>
 			<onclick>Dialog.Close(1202)</onclick>
 			<onclick>Weather.Refresh</onclick>
-		</item>
-	</include>
-	<include name="Dock_Weather_Settings">
-		<item>
-			<icon>dock\icons\weather-settings.png</icon>
-			<label>$LOCALIZE[10004]</label>
-			<onclick>Dialog.Close(1202)</onclick>
-			<onclick>ReplaceWindow(servicesettings,weather)</onclick>
 		</item>
 	</include>
 	<!-- Dock Playlist Items -->
