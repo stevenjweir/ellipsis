@@ -216,14 +216,14 @@
 			<width>15</width>
 			<height>15</height>
 			<label/>
-			<font></font>
-			<textcolor></textcolor>
-			<texturefocus></texturefocus>
-			<texturenofocus></texturenofocus>
-			<textureup></textureup>
-			<texturedown></texturedown>
-			<textureupfocus></textureupfocus>
-			<texturedownfocus></texturedownfocus>
+			<font/>
+			<textcolor/>
+			<texturefocus/>
+			<texturenofocus/>
+			<textureup/>
+			<texturedown/>
+			<textureupfocus/>
+			<texturedownfocus/>
 			<visible>false</visible>
 		</control>
 		<control type="group">
@@ -620,9 +620,10 @@
 				<ondown>9500</ondown>
 				<include>Dock_Layout</include>
 				<content>
+					<include>Dock_Weather_Addon</include>
+					<include>Dock_Weather_Settings</include>
 					<include>Dock_Weather_Location</include>
 					<include>Dock_Weather_Refresh</include>
-					<include>Dock_Weather_Settings</include>
 					<include>Dock_Power_Options_1202</include>
 					<include>Dock_Nav_1202</include>
 					<include>Dock_Now_Playing_1202</include>

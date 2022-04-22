@@ -75,6 +75,7 @@
 					<visible>!String.Contains(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 				</control>
 				<control type="label">
+					<visible>!Container.Content(addons)</visible>
 					<left>1190</left>
 					<top>6</top>
 					<width>380</width>
@@ -85,6 +86,21 @@
 					<textcolor>Text</textcolor>
 					<align>right</align>
 					<info>ListItem.Label2</info>
+				</control>
+				<control type="label">
+					<visible>Container.Content(addons)</visible>
+					<visible>!String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])</visible>
+					<left>590</left>
+					<top>6</top>
+					<width>980</width>
+					<height>52</height>
+					<font>Default</font>
+					<aligny>center</aligny>
+					<scroll>false</scroll>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>right</align>
+					<label>$INFO[ListItem.AddonLifecycleType]$INFO[ListItem.AddonLifecycleDesc, - ,]</label>
 				</control>
 			</itemlayout>
 			<focusedlayout height="69">
@@ -167,6 +183,7 @@
 					<visible>!String.Contains(ListItem.Overlay,OverlayUnwatched.png) | Skin.HasSetting(Disable_Unwatched_Overlay)</visible>
 				</control>
 				<control type="label">
+					<visible>!Container.Content(addons)</visible>
 					<left>1190</left>
 					<top>6</top>
 					<width>380</width>
@@ -177,6 +194,20 @@
 					<textcolor>Text</textcolor>
 					<align>right</align>
 					<info>ListItem.Label2</info>
+				</control>
+				<control type="label">
+					<visible>Container.Content(addons)</visible>
+					<visible>!String.IsEqual(ListItem.AddonLifecycleType,$LOCALIZE[24169])</visible>
+					<left>590</left>
+					<top>6</top>
+					<width>980</width>
+					<height>52</height>
+					<font>Default</font>
+					<aligny>center</aligny>
+					<selectedcolor>Highlight</selectedcolor>
+					<textcolor>Text</textcolor>
+					<align>right</align>
+					<label>$INFO[ListItem.AddonLifecycleType]$INFO[ListItem.AddonLifecycleDesc, - ,]</label>
 				</control>
 			</focusedlayout>
 		</control>

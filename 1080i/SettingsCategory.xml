@@ -865,7 +865,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_masterlock_nf.png</texture>
+					<texture>settings\tabs\system_power_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-94)</visible>
 					<visible>Integer.IsGreater(Container(3).NumItems,6)</visible>
 				</control>
@@ -874,9 +874,18 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\PVR_options_nf.png</texture>
+					<texture>settings\tabs\system_masterlock_nf.png</texture>
 					<visible>!ControlGroup(3).HasFocus(-93)</visible>
 					<visible>Integer.IsGreater(Container(3).NumItems,7)</visible>
+				</control>
+				<control type="image">
+					<left>496</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_options_nf.png</texture>
+					<visible>!ControlGroup(3).HasFocus(-92)</visible>
+					<visible>Integer.IsGreater(Container(3).NumItems,8)</visible>
 				</control>
 				<control type="image">
 					<left>-292</left>
@@ -949,7 +958,7 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\system_masterlock_f.png</texture>
+					<texture>settings\tabs\system_power_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-94)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="300,0,90,75" end="297,-3,96,81" time="200"/>
@@ -960,10 +969,21 @@
 					<top>0</top>
 					<width>90</width>
 					<height>75</height>
-					<texture>settings\tabs\PVR_options_f.png</texture>
+					<texture>settings\tabs\system_masterlock_f.png</texture>
 					<visible>ControlGroup(3).HasFocus(-93)</visible>
 					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
 						<effect type="zoom" start="398,0,90,75" end="395,-3,96,81" time="200"/>
+					</animation>
+				</control>
+				<control type="image">
+					<left>496</left>
+					<top>0</top>
+					<width>90</width>
+					<height>75</height>
+					<texture>settings\tabs\PVR_options_f.png</texture>
+					<visible>ControlGroup(3).HasFocus(-92)</visible>
+					<animation type="Conditional" condition="!ControlGroup(5).HasFocus">
+						<effect type="zoom" start="496,0,90,75" end="493,-3,96,81" time="200"/>
 					</animation>
 				</control>
 			</control>

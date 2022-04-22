@@ -159,27 +159,17 @@
 					<height>76</height>
 					<texture>menu\nav\rss_frame.png</texture>
 				</control>
-				<control type="label">
-					<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-					<left>150</left>
-					<top>570</top>
-					<width>1335</width>
-					<align>left</align>
-					<font>RSS_Title</font>
-					<label>$LOCALIZE[50108]</label>
-					<textcolor>Text</textcolor>
-				</control>
 				<control type="rss">
 					<description>rss feed</description>
 					<visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-					<left>405</left>
+					<left>160</left>
 					<top>570</top>
-					<width>840</width>
+					<width>1080</width>
 					<font>RSS_Feed</font>
 					<urlset>1</urlset>
 					<textcolor>99FFFFFF</textcolor>
 					<titlecolor>BBFFFFFF</titlecolor>
-					<headlinecolor>DDFFFFFF</headlinecolor>
+					<headlinecolor>RSSHomeHeadline</headlinecolor>
 				</control>
 			</control>
 			<control type="group">
@@ -319,21 +309,21 @@
 					<textcolor>Text</textcolor>
 				</control>
 				<control type="image">
-					<left>150</left>
-					<top>574</top>
+					<left>588</left>
+					<top>550</top>
 					<width>150</width>
 					<height>45</height>
 					<texture>menu\nav\kodilogo_nav.png</texture>
 				</control>
 				<control type="label">
 					<description>Kodi XBE BUILD Version</description>
-					<left>308</left>
-					<top>568</top>
-					<width>1028</width>
+					<left>100</left>
+					<top>600</top>
+					<width>1135</width>
 					<label>$INFO[system.buildversion] $LOCALIZE[50117] $INFO[system.builddate])</label>
 					<textcolor>Text</textcolor>
-					<font>Default</font>
-					<align>left</align>
+					<font>Medium_Bold</font>
+					<align>center</align>
 				</control>
 			</control>
 			<control type="group">
@@ -435,7 +425,7 @@
 						<onclick condition="Container(500).HasFocus(1)">ActivateWindow(Videos,TvShowTitles)</onclick>
 					</item>
 					<item>
-						<label>$LOCALIZE[10005]</label>
+						<label>$LOCALIZE[2]</label>
 						<onclick>Dialog.Close(114)</onclick>
 						<onclick>ActivateWindow(Music)</onclick>
 						<visible>Container(500).HasFocus(1)</visible>
